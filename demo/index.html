@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="assets/css/starter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Talis</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="col-md-8 py-5 px-3 mx-auto">
+
+      <header class="page-header">
+        <h1>Primary task
+          <small class="text-muted">Additional information</small>
+        </h1>
+      </header>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+
+      <section class="row">
+        <div class="col-md-12">
+          <h2>Typography</h2>
+          <h1>h1, .alpha</h1>
+          <h2>h2, .beta</h2>
+          <h3>h3, .gamma</h3>
+          <h4>h4, .delta</h4>
+          <h5>h5, .epsilon</h5>
+          <h6>h6, .zeta</h6>
+          <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Ut at augue leo. In eros ligula, volutpat id neque eu, maximus
+            pretium nisl. Aliquam non mi lobortis augue cursus dignissim. Vivamus blandit augue eget sapien facilisis suscipit.
+            In bibendum lacus sed orci condimentum, a faucibus ante dignissim. <a href="#">Quisque vel mi dolor. Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia Curae</a>a; Vivamus et erat eu tellus sollicitudin egestas
+            venenatis consectetur massa. Curabitur non euismod lorem. Vivamus viverra nisl at vulputate pharetra. In hac habitasse
+            platea dictumst.</p>
+          <ul>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+          </ul>
+        </div>
+        <div class="col-xs-12">
+          <div class="well">
+            <h1>h1, .alpha</h1>
+            <h2>h2, .beta</h2>
+            <h3>h3, .gamma</h3>
+            <h4>h4, .delta</h4>
+            <h5>h5, .epsilon</h5>
+            <h6>h6, .zeta</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at augue leo. In eros ligula, volutpat id neque eu,
+              maximus pretium nisl. Aliquam non mi lobortis augue cursus dignissim. Vivamus blandit augue eget sapien facilisis
+              suscipit. In bibendum lacus sed orci condimentum, a faucibus ante dignissim. Quisque vel mi dolor. Vestibulum
+              ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus et erat eu tellus sollicitudin
+              egestas venenatis consectetur massa. Curabitur non euismod lorem. Vivamus viverra nisl at vulputate pharetra.
+              In hac habitasse platea dictumst.</p>
+            <ul>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ul>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" assigned="true">
+              </div>
+
+              <div class="mb-3">
+                <label for="text">A textarea</label>
+                <textarea id="text" class="form-control" rows="3">I'm a textarea</textarea>
+              </div>
+
+              <label class="sr-only" for="searchInput">Search</label>
+              <div class="input-group mb-3">
+                  <input class="form-control" id="searchInput" type="search" placeholder="Search the library catalogue">
+                  <button class="btn btn-outline-primary" type="button">
+                    <i class="fa fa-fw fa-search"></i>
+                    <span class="sr-only">Search</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div class="mb-3">
+              <label for="select-num">Choose a number:</label>
+              <select class="form-control" id="select-num">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="custom-select">Custom select:</label>
+              <select class="form-select" id="custom-select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <button class="btn btn-primary" type="button">I'm a button</button>
+
+            <button class="btn btn-primary" type="button" disabled>I'm a disabled button</button>
+
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown
+              </button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Dropdown header</li>
+                <li>
+                  <a class="dropdown-item" href="#">Link 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                </li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Dropdown header</li>
+                <li>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </li>
+                <li class="divider"></li>
+                <li class="danger">
+                  <a class="dropdown-item" href="#">Delete</a>
+                </li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <div class="col-xs-12">
+              <h2>Buttons</h2>
+              <h3>Normal</h3>
+              <button type="button" class="btn btn-default">Normal button</button>
+              <button type="button" class="btn btn-primary">Primary button</button>
+              <button type="button" class="btn btn-success">Success button</button>
+              <button type="button" class="btn btn-warning">Warning button</button>
+              <button type="button" class="btn btn-info">Info button</button>
+              <button type="button" class="btn btn-danger">Danger button</button>
+              <button type="button" class="btn btn-link">Link button</button>
+            </div>
+            <div class="col-xs-12">
+              <h3>Large</h3>
+              <button type="button" class="btn btn-lg btn-default">Normal button</button>
+              <button type="button" class="btn btn-lg btn-primary">Primary button</button>
+              <button type="button" class="btn btn-lg btn-success">Success button</button>
+              <button type="button" class="btn btn-lg btn-warning">Warning button</button>
+              <button type="button" class="btn btn-lg btn-info">Info button</button>
+              <button type="button" class="btn btn-lg btn-danger">Danger button</button>
+              <button type="button" class="btn btn-lg btn-link">Link button</button>
+              <button type="button" class="btn btn-default btn-lg" disabled>Default inactive button</button>
+              <button type="button" class="btn btn-primary btn-lg" disabled>Default inactive button</button>
+            </div>
+
+            <div class="btn-group">
+              <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" disabled>
+                I'm a disabled dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Dropdown header</li>
+                <li>
+                  <a href="#">Link 1</a>
+                </li>
+                <li>
+                  <a href="#">Link 2</a>
+                </li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Dropdown header</li>
+                <li>
+                  <a href="#">Link 3</a>
+                </li>
+                <li class="divider"></li>
+                <li class="danger">
+                  <a href="#">Delete</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <div class="col-xs-12">
+          <h2>Buttons</h2>
+          <h3>Normal</h3>
+          <button type="button" class="btn btn-default">Normal button</button>
+          <button type="button" class="btn btn-primary">Primary button</button>
+          <button type="button" class="btn btn-success">Success button</button>
+          <button type="button" class="btn btn-warning">Warning button</button>
+          <button type="button" class="btn btn-info">Info button</button>
+          <button type="button" class="btn btn-danger">Danger button</button>
+          <button type="button" class="btn btn-link">Link button</button>
+        </div>
+        <div class="col-xs-12">
+          <h3>Large</h3>
+          <button type="button" class="btn btn-lg btn-default">Normal button</button>
+          <button type="button" class="btn btn-lg btn-primary">Primary button</button>
+          <button type="button" class="btn btn-lg btn-success">Success button</button>
+          <button type="button" class="btn btn-lg btn-warning">Warning button</button>
+          <button type="button" class="btn btn-lg btn-info">Info button</button>
+          <button type="button" class="btn btn-lg btn-danger">Danger button</button>
+          <button type="button" class="btn btn-lg btn-link">Link button</button>
+          <button type="button" class="btn btn-default btn-lg" disabled>Default inactive button</button>
+          <button type="button" class="btn btn-primary btn-lg" disabled>Default inactive button</button>
+        </div>
+        <div class="col-xs-12">
+          <h3>XS</h3>
+          <button class="btn btn-xs btn-default">XS button</button>
+          <button class="btn btn-xs btn-primary">XS button</button>
+        </div>
+      </section>
+      <hr>
+      <section class="row">
+        <div class="col-xs-12">
+          <h2>Tables</h2>
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Status</th>
+                <th>Course</th>
+                <th>Requester</th>
+                <th class="text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <span class="label label-default">Normal</span>
+                </td>
+                <td>Computer Science</td>
+                <td>Daniel Matthew</td>
+                <td>
+                  <div class="btn-group pull-right">
+                    <a href="#" data-toggle="dropdown" class="btn btn-lg btn-link dropdown-toggle">
+                      <i class="fa fa-ellipsis-v"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#">View details</a>
+                      </li>
+                      <li>
+                        <a href="#">Upload document</a>
+                      </li>
+                      <li>
+                        <a href="#">Edit &amp; resubmit</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <span class="label label-primary">Live</span>
+                </td>
+                <td>Computer Science</td>
+                <td>Daniel Matthew</td>
+                <td>
+                  <div class="btn-group disabled pull-right">
+                    <a href="#" data-toggle="dropdown" class="btn btn-lg btn-link dropdown-toggle">
+                      <i class="fa fa-ellipsis-v"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#">View details</a>
+                      </li>
+                      <li>
+                        <a href="#">Upload document</a>
+                      </li>
+                      <li>
+                        <a href="#">Edit &amp; resubmit</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <span class="label label-danger">Failed</span>
+                </td>
+                <td>Computer Science</td>
+                <td>Daniel Matthew</td>
+                <td>
+                  <div class="btn-group pull-right">
+                    <a href="#" data-toggle="dropdown" class="btn btn-lg btn-link dropdown-toggle">
+                      <i class="fa fa-ellipsis-v"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#">View details</a>
+                      </li>
+                      <li>
+                        <a href="#">Upload document</a>
+                      </li>
+                      <li>
+                        <a href="#">Edit &amp; resubmit</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <span class="label label-warning">Warning</span>
+                </td>
+                <td>Computer Science</td>
+                <td>Daniel Matthew</td>
+                <td>
+                  <div class="btn-group pull-right">
+                    <a href="#" data-toggle="dropdown" class="btn btn-lg btn-link dropdown-toggle">
+                      <i class="fa fa-ellipsis-v"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#">View details</a>
+                      </li>
+                      <li>
+                        <a href="#">Upload document</a>
+                      </li>
+                      <li>
+                        <a href="#">Edit &amp; resubmit</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <hr>
+      <section class="row">
+        <div class="col-xs-12">
+          <h2>Forms</h2>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword2" disabled placeholder="I'm disabled">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="searchInput">Search</label>
+              <div class="input-group">
+                <input class="form-control" id="searchInput" type="search" placeholder="Search the library catalogue">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                    <i class="fa fa-fw fa-search"></i>
+                    <span class="sr-only">Search</span>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select-num-again">Choose a number:</label>
+              <select class="form-control" id="select-num-again">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="custom-select-again">Custom select:</label>
+              <select class="custom-select" id="custom-select-again">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input o-custom-control__input--pink" id="customCheck2">
+              <label class="custom-control-label" for="customCheck2">Check this custom pink checkbox</label>
+            </div>
+
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio3" name="customRadio" class="o-custom-control__input--pink custom-control-input">
+              <label class="custom-control-label" for="customRadio3">Or toggle this other custom radio</label>
+            </div>
+
+
+            <div class="form-group">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </form>
+          <hr>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="row">
+        <div class="col-xs-12">
+          <h2>Navigation</h2>
+          <h3>Tabs</h3>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home" role="tab" data-toggle="tab">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#profile" role="tab" data-toggle="tab">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#messages" role="tab" data-toggle="tab">Messages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#settings" role="tab" data-toggle="tab">Settings</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">Home tab</div>
+            <div role="tabpanel" class="tab-pane" id="profile">Profile tab</div>
+            <div role="tabpanel" class="tab-pane" id="messages">Messages tab</div>
+            <div role="tabpanel" class="tab-pane" id="settings">Settings tab</div>
+          </div>
+
+          <h3>Pills</h3>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Messages</a>
+            </li>
+          </ul>
+
+          <h3>Stacked Pills</h3>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Messages</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr>
+
+      <section class="row">
+        <div class="col-xs-12">
+          <h2>Dropdowns</h2>
+          <div class="btn-group">
+            <button class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" href="#">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Dropdown header</li>
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Dropdown header</li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+              <li class="divider"></li>
+              <li class="danger">
+                <a href="#">Delete</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              Button dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Dropdown header</li>
+              <li>
+                <button>Button 1</button>
+              </li>
+              <li class="active">
+                <button>Button active</button>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Dropdown header</li>
+              <li class="disabled">
+                <button disabled>Button disabled</button>
+              </li>
+              <li class="divider"></li>
+              <li class="danger">
+                <button>Button delete</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <section class="row">
+        <div class="col-xs-12">
+          <h2>Alerts</h2>
+          <!-- Basic -->
+          <div class="alert alert-info" id="alert">
+            <span>Something has happened. Yup.</span>
+            <a href="#alert" class="btn btn-alert btn-outline-light">Click me</a>
+            <a href="#alert" class="btn btn-alert--primary btn-outline-dark">Click me</a>
+            <button class="btn btn-alert btn-outline-light">Click me</button>
+            <button class="btn btn-alert--primary btn-outline-dark">Click me</button>
+          </div>
+
+          <!-- Success -->
+          <div class="alert alert-success">
+            <p class="mb-0">Something
+              <strong>good</strong> has happened.</p> <button class="btn btn-alert btn-outline-dark">Click me</button>
+          </div>
+
+          <p class="text-success">Success!</p>
+
+          <!-- Info -->
+          <div class="alert alert-warning">
+            <p class="mb-0">Something
+              <strong>useful</strong> has happened.</p> <button class="btn btn-alert btn-outline-dark">Click me</button>
+          </div>
+
+          <p class="text-warning">
+            Warning!
+          </p>
+
+          <!-- Danger -->
+          <div class="alert alert-danger">
+            <p class="mb-0">Something
+              <strong>bad</strong> has happened. <a href="error.html" class="alert-link">error</a></p> <button class="btn btn-alert">Click me</button>
+              <a href="error.html" class="btn btn-alert btn-outline-dark">Click me</a>
+
+          </div>
+
+        <p class="text-danger">
+          Danger, Will Robinson!
+        </p>
+        </div>
+      </section>
+      <hr>
+      <section class="row">
+        <div class="col-xs-12">
+          <h2 id="badges">Badges</h2>
+
+          <span class="badge bg-light text-dark">Basic</span>
+          <span class="badge bg-primary">Primary</span>
+          <span class="badge bg-info">Info</span>
+          <span class="badge bg-success">Success</span>
+          <span class="badge bg-warning">Warning</span>
+          <span class="badge bg-danger">Danger</span>
+
+          <button class="btn btn-primary">Messages
+            <span class="badge rounded-pill bg-secondary">99</span>
+          </button>
+        </div>
+      </section>
+      <hr>
+      <section class="row">
+        <div class="col-xs-12">
+          <h2>Pagination</h2>
+          <h3>Pagination Block</h3>
+          <nav class="text-center">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#">Prev</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">4</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">5</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">6</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">7</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">8</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+          <h3>Pager</h3>
+          <nav>
+            <ul class="pagination justify-content-between">
+              <li class="page-item disabled">
+                <a class="page-link" href="#">
+                  <span aria-hidden="true">&larr;</span> Older</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">Newer
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <hr>
+      <section class="row">
+        <div class="col-xs-12">
+
+              <div class="col-xs-12">
+                <h2>Buttons</h2>
+                <h3>Normal</h3>
+                <button type="button" class="btn btn-default">Normal button</button>
+                <button type="button" class="btn btn-primary">Primary button</button>
+                <button type="button" class="btn btn-success">Success button</button>
+                <button type="button" class="btn btn-warning">Warning button</button>
+                <button type="button" class="btn btn-info">Info button</button>
+                <button type="button" class="btn btn-danger">Danger button</button>
+                <button type="button" class="btn btn-link">Link button</button>
+              </div>
+              <div class="col-xs-12">
+                <h3>Large</h3>
+                <button type="button" class="btn btn-lg btn-outline-primary">Normal button</button>
+                <button type="button" class="btn btn-lg btn-primary">Primary button</button>
+                <button type="button" class="btn btn-lg btn-success">Success button</button>
+                <button type="button" class="btn btn-lg btn-warning">Warning button</button>
+                <button type="button" class="btn btn-lg btn-info">Info button</button>
+                <button type="button" class="btn btn-lg btn-danger">Danger button</button>
+                <button type="button" class="btn btn-lg btn-link">Link button</button>
+                <button type="button" class="btn btn-outline-primary btn-lg" disabled>Default inactive button</button>
+                <button type="button" class="btn btn-primary btn-lg" disabled>Default inactive button</button>
+              </div>
+          </div>
+      </section>
+      <section class="row">
+        <div class="col-xs-12">
+          <h2>Modals</h2>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">
+            Launch demo modal
+          </button>
+        </div>
+      </section>
+      <hr>
+
+      <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-label">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem quis dolore voluptas et, sint, impedit amet quos, sequi minima commodi odio accusantium excepturi ratione ullam qui libero error laborum quam!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+    </main>
+  </body>
+  <div
+    hidden
+    class="loading-indicator qa-loading-indicator"
+    role="status"
+    aria-live="polite">
+
+    <div class="cradle">
+      <div class="cradle-node">
+        <div class="cradle-ball"></div>
+      </div>
+      <div class="cradle-node">
+        <div class="cradle-ball"></div>
+      </div>
+      <div class="cradle-node">
+        <div class="cradle-ball"></div>
+      </div>
+      <div class="cradle-node">
+        <div class="cradle-ball"></div>
+      </div>
+    </div>
+
+    <span class="sr-only">Loading</span>
+
+  </div>
+
+  <script>
+    document.querySelector('.js-loader-toggle').addEventListener('click', () => {
+      document.querySelector('.loading-indicator').toggleAttribute('hidden');
+    });
+  </script>
+
+
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="module" src="../assets/app.js"></script>
+  </body>
+</html>

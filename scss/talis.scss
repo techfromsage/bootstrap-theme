@@ -1,0 +1,140 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+//
+// Bring in Bootstrap
+//
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+// @import "bootstrap/scss/bootstrap";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Toggle global options
+$enable-gradients: false;
+$enable-shadows: false;
+
+// Customize some defaults
+@import "bootstrap/scss/functions"; // Required
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$turquoise: #017d87;
+$accent: #005d64;
+$pink: #c5197d;
+$green: #25828d;
+$yellow: #FFC943;
+$red: #C42129;
+$purple: #4a2b80;
+$orange: #f47821;
+
+$brand-success:         #77E0CE !default;
+$brand-info:            #4CC3D6 !default;
+$brand-warning:         #FFC943 !default;
+$brand-danger:          #C42129 !default;
+
+$primary:       $turquoise !default;
+$secondary:     $accent !default;
+$success:       $brand-success !default;
+$info:          $brand-info !default;
+$warning:       $brand-warning !default;
+$danger:        $brand-danger !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
+$body-color: $gray-700 !default;
+$body-bg: #fff;
+
+$font-family-sans-serif: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-size-base: 0.8125rem !default;
+
+$line-height-base: 1.6 !default;
+
+$h1-font-size: $font-size-base * 2.3076923077 !default;
+$h2-font-size: $font-size-base * 2.3076923077 !default;
+$h3-font-size: $font-size-base * 1.538461538 !default;
+$h4-font-size: $font-size-base * 1.538461538 !default;
+$h5-font-size: $font-size-base !default;
+$h6-font-size: $font-size-base !default;
+
+$headings-font-weight: 300;
+
+$border-radius: 0.23rem !default;
+
+$nav-tabs-border-radius: 0 !default;
+
+$alert-border-radius: 0;
+$alert-border-width: 0;
+$alert-bg-scale: -50%;
+$alert-color-scale: 0;
+$alert-border-scale: 0;
+
+$modal-backdrop-opacity: .8;
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+@import "bootstrap/scss/root"; // Required
+@import "bootstrap/scss/reboot"; // Required
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/offcanvas";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+
+.alert {
+  border-left-width: 3px;
+}
