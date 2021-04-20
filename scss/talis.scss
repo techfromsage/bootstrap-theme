@@ -95,7 +95,12 @@ $modal-backdrop-opacity: .8;
 
 $input-btn-focus-width: 1px !default;
 $input-btn-focus-box-shadow: 0 0 0 1px currentColor !default;
-$btn-font-weight: 600;
+$btn-font-weight: 600 !default;
+$btn-transition: background-color 1s cubic-bezier(0.19, 1, 0.22, 1) !default;
+$btn-disabled-opacity: 1 !default;
+$btn-link-color: $primary !default;
+$btn-link-hover-color: $accent !default;
+$btn-link-disabled-color: $gray-500 !default;
 
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
