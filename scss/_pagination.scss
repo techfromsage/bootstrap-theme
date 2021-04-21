@@ -1,0 +1,14 @@
+.pagination {
+  .page-link:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 1px inset $primary;
+  }
+
+  > .active > .page-link {
+    color: $primary;
+    background-image: linear-gradient(0deg, $primary 4px, transparent 4px);
+    background-color: #fff;
+    border-color: $primary;
+    font-weight: 600;
+  }
+}

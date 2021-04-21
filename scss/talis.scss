@@ -40,6 +40,7 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
+$white: #fff !default;
 
 $turquoise: #017d87;
 $accent: #005d64;
@@ -103,6 +104,14 @@ $btn-link-color: $primary !default;
 $btn-link-hover-color: $accent !default;
 $btn-link-disabled-color: $gray-500 !default;
 
+$pagination-border-color: $primary;
+$pagination-transition: none !default;
+$pagination-hover-border-color: $primary !default;
+
+$pagination-disabled-color:         $gray-500;
+$pagination-disabled-bg:            $white;
+$pagination-disabled-border-color:  $primary;
+
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
@@ -148,3 +157,4 @@ $btn-link-disabled-color: $gray-500 !default;
 @import 'alerts';
 @import 'buttons';
 @import 'pager';
+@import 'pagination';
