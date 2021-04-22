@@ -24,6 +24,7 @@
     "css": "npm-run-all css-compile css-prefix",
     "server": "serve docs --listen 3000",
     "start": "npm-run-all --parallel watch server",
+    "release": "npm run standard-version",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
     "test": "npm run css-lint && npm run css"
   },
@@ -41,6 +42,7 @@
     "purgecss": "^4.0.2",
     "prettier": "^2.2.1",
     "serve": "^11.3.2",
+    "standard-version": "9.2.0",
     "stylelint": "^13.12.0",
     "stylelint-config-twbs-bootstrap": "^2.1.0",
     "yarn": "1.22.10"
