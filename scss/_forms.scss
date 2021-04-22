@@ -38,6 +38,15 @@
   background-image: escape-svg($form-check-input-checked-bg-image--alt);
 }
 
-.form-check-radio--alt:checked[type="radio"] {
+.form-check-input--alt:checked[type="radio"] {
   background-image: escape-svg($form-check-radio-checked-bg-image--alt);
+}
+
+.help-block {
+  display: block;
+  margin-top: .3125rem;
+  margin-bottom: .625rem;
+  font-size: 12px;
+  font-style: italic;
+  color: $gray-700;
 }
