@@ -116,7 +116,10 @@ $badge-padding-y:                   .1538461538em;
 $badge-padding-x:                   .3076923077em;
 $badge-border-radius:               .2307692308em;
 
-$modal-backdrop-opacity: .8;
+$breadcrumb-padding-y:              .5rem !default;
+$breadcrumb-margin-bottom:          1.25rem !default;
+$breadcrumb-divider-color:          $gray-700;
+$breadcrumb-active-color:           $gray-700;
 
 $input-btn-focus-width: 1px !default;
 $input-btn-focus-box-shadow: 0 0 0 1px currentColor !default;
@@ -160,6 +163,7 @@ $form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='ht
 $form-check-input-checked-bg-image--alt:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color--alt}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
 $form-check-radio-checked-bg-image--alt:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$form-check-input-checked-color--alt}'/></svg>");
 
+$modal-backdrop-opacity: .8 !default;
 $modal-md:                          600px !default ;
 $modal-header-border-color:         $gray-200 !default;
 $modal-footer-border-color:         $gray-300 !default;

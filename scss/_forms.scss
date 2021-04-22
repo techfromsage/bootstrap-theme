@@ -32,14 +32,14 @@
   &:focus {
     outline: 2px solid $pink;
   }
-}
 
-.form-check-input--alt:checked[type="checkbox"] {
-  background-image: escape-svg($form-check-input-checked-bg-image--alt);
-}
+  &:checked[type="checkbox"] {
+    background-image: escape-svg($form-check-input-checked-bg-image--alt);
+  }
 
-.form-check-input--alt:checked[type="radio"] {
-  background-image: escape-svg($form-check-radio-checked-bg-image--alt);
+  &:checked[type="radio"] {
+    background-image: escape-svg($form-check-radio-checked-bg-image--alt);
+  }
 }
 
 .help-block {
