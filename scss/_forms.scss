@@ -1,0 +1,7 @@
+.form-group {
+  @extend .mb-3;
+}
+
+::placeholder {
+  font-style: italic;
+}

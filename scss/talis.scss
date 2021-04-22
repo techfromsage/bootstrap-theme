@@ -104,6 +104,31 @@ $btn-link-color: $primary !default;
 $btn-link-hover-color: $accent !default;
 $btn-link-disabled-color: $gray-500 !default;
 
+$input-color:                           $black !default;
+$input-border-color:                    $gray-600 !default;
+$input-disabled-bg:                     $gray-100 !default;
+$input-disabled-border-color:           $gray-200 !default;
+
+$input-focus-border-color:              $primary !default;
+$input-focus-width:                     1px !default;
+$input-focus-box-shadow:                0 0 0 1px $primary !default;
+
+$input-placeholder-color:               $gray-700 !default;
+$input-plaintext-color:                 $black !default;
+
+$input-btn-focus-color:                 $primary !default;
+
+$form-label-color:                      $black !default;
+$form-label-margin-bottom:              0.3846153846em !default;
+
+$form-select-focus-border-color:        $input-focus-border-color !default;
+$form-select-focus-width:               $input-focus-width !default;
+$form-select-focus-box-shadow:          0 0 0 $form-select-focus-width $input-btn-focus-color !default;
+
+$navbar-dark-color:                     $white !default;
+$navbar-dark-hover-color:               $white !default;
+$navbar-dark-active-color:              $white !default;
+
 $pagination-border-color: $primary;
 $pagination-transition: none !default;
 $pagination-hover-border-color: $primary !default;
@@ -111,6 +136,11 @@ $pagination-hover-border-color: $primary !default;
 $pagination-disabled-color:         $gray-500;
 $pagination-disabled-bg:            $white;
 $pagination-disabled-border-color:  $primary;
+
+$table-striped-bg:            $gray-100;
+$table-cell-vertical-align:   middle;
+$table-border-color:          $gray-200;
+$table-group-separator-color: $gray-200;
 
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
@@ -156,5 +186,7 @@ $pagination-disabled-border-color:  $primary;
 
 @import 'alerts';
 @import 'buttons';
+@import 'forms';
 @import 'pager';
 @import 'pagination';
+@import 'tables';
