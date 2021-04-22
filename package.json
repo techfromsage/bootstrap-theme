@@ -1,7 +1,6 @@
 {
   "name": "@talis/bootstrap-theme",
   "version": "1.0.0-alpha.0",
-  "private": true,
   "description": "A theme to make Bootstrap look like Talis",
   "author": "dm@talis.com",
   "repository": {
