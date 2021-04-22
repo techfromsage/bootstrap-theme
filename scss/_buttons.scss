@@ -130,3 +130,15 @@
   font-weight: 400;
 }
 
+.btn-xs {
+  @include button-size(
+    0.15385em,
+    0.30769em,
+    1em,
+    3px
+  );
+
+  line-height: 1.0769230769;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
