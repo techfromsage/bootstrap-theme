@@ -1,0 +1,76 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.alpha,
+.beta,
+.gamma,
+.delta,
+.epsilon,
+.zeta {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h4,
+.h4,
+.delta,
+h5,
+.h5,
+.epsilon,
+h6,
+.h6,
+.zeta {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1,
+.h1,
+.alpha,
+h3,
+.h3,
+.gamma,
+h5,
+.h5,
+.epsilon {
+  color: $black;
+}
+
+h2,
+.h2,
+.beta,
+h4,
+.h4,
+.delta {
+  color: $gray-600;
+}
+
+h5,
+.h5,
+.epsilon,
+h6,
+.h6,
+.zeta {
+  font-weight: 700;
+}
+
+h6,
+.h6,
+.zeta {
+  color: $gray-700;
+}
