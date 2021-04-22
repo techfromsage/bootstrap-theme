@@ -25,3 +25,19 @@
   box-shadow: none;
   outline: 2px solid $primary;
 }
+
+.form-check-input--alt {
+  box-shadow: 0 0 0 1px $pink;
+
+  &:focus {
+    outline: 2px solid $pink;
+  }
+}
+
+.form-check-input--alt:checked[type="checkbox"] {
+  background-image: escape-svg($form-check-input-checked-bg-image--alt);
+}
+
+.form-check-radio--alt:checked[type="radio"] {
+  background-image: escape-svg($form-check-radio-checked-bg-image--alt);
+}

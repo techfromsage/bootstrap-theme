@@ -150,11 +150,15 @@ $form-select-focus-box-shadow:          0 0 0 $form-select-focus-width $input-bt
 
 $form-check-input-border:                 none !default;
 $form-check-input-checked-color:          $primary !default;
+$form-check-input-checked-color--alt:     $pink !default;
 $form-check-input-checked-bg-color:       $white !default;
 $form-check-input-checked-border-color:   $primary !default;
 $form-check-min-height:                   2rem !default;
 $form-check-padding-start:                1.5rem !default;
 $form-check-input-border-radius:          3px !default;
+$form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$form-check-input-checked-color}'/></svg>");
+$form-check-input-checked-bg-image--alt:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color--alt}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+$form-check-radio-checked-bg-image--alt:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$form-check-input-checked-color--alt}'/></svg>");
 
 $modal-md:                          600px !default ;
 $modal-header-border-color:         $gray-200 !default;
