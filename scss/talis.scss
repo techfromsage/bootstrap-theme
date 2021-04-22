@@ -101,8 +101,6 @@ $nav-pills-link-active-color:       $primary !default;
 $nav-pills-link-active-bg:          $white !default;
 $nav-pills-border-radius:           3px;
 
-$alert-padding-y:               .9375rem !default;
-$alert-padding-x:               .9375rem !default;
 $alert-margin-bottom:           1.25rem !default;
 $alert-border-radius: 0;
 $alert-border-width: 0;
@@ -225,3 +223,4 @@ $table-group-separator-color: $gray-200;
 @import 'pagination';
 @import 'tables';
 @import 'typography';
+@import 'well';
