@@ -73,16 +73,20 @@ $font-size-base: 0.8125rem !default;
 
 $line-height-base: 1.6 !default;
 
-$h1-font-size: $font-size-base * 2.3076923077 !default;
-$h2-font-size: $font-size-base * 2.3076923077 !default;
-$h3-font-size: $font-size-base * 1.538461538 !default;
-$h4-font-size: $font-size-base * 1.538461538 !default;
-$h5-font-size: $font-size-base !default;
-$h6-font-size: $font-size-base !default;
+$paragraph-margin-bottom: 0.625rem !default;
+
+$h1-font-size: 13px * 2.3076923077 !default;
+$h2-font-size: 13px * 2.3076923077 !default;
+$h3-font-size: 13px * 1.538461538 !default;
+$h4-font-size: 13px * 1.538461538 !default;
+$h5-font-size: 13px !default;
+$h6-font-size: 13px !default;
 
 $headings-font-weight: 300;
 
-$border-radius: 0.23rem !default;
+$border-radius: 3px !default;
+
+$spacer: .9375rem !default;
 
 $nav-link-font-weight:              600 !default;
 $nav-link-hover-color:              $accent !default;
@@ -97,6 +101,9 @@ $nav-pills-link-active-color:       $primary !default;
 $nav-pills-link-active-bg:          $white !default;
 $nav-pills-border-radius:           3px;
 
+$alert-padding-y:               .9375rem !default;
+$alert-padding-x:               .9375rem !default;
+$alert-margin-bottom:           1.25rem !default;
 $alert-border-radius: 0;
 $alert-border-width: 0;
 $alert-bg-scale: -60%;
@@ -142,6 +149,11 @@ $form-label-margin-bottom:              0.3846153846em !default;
 $form-select-focus-border-color:        $input-focus-border-color !default;
 $form-select-focus-width:               $input-focus-width !default;
 $form-select-focus-box-shadow:          0 0 0 $form-select-focus-width $input-btn-focus-color !default;
+
+$modal-md:                          600px !default ;
+$modal-header-border-color:         $gray-200 !default;
+$modal-footer-border-color:         $gray-300 !default;
+$modal-dialog-margin-y-sm-up:       1.875rem !default;
 
 $navbar-dark-color:                     $white !default;
 $navbar-dark-hover-color:               $white !default;
@@ -207,6 +219,7 @@ $table-group-separator-color: $gray-200;
 @import 'buttons';
 @import 'dropdown';
 @import 'forms';
+@import 'modal';
 @import 'navs';
 @import 'pager';
 @import 'pagination';
