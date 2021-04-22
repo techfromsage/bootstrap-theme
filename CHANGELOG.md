@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-alpha.0](https://github.com/talis/bootstrap-theme/compare/v0.0.1...v1.0.0-alpha.0) (2021-04-22)
+
+
+### Bug Fixes
+
+* add `page-header` ([11ae9fe](https://github.com/talis/bootstrap-theme/commit/11ae9fe709bd0759971361aee1bac1e8f6906ac4))
+* update navbar and dropdowns ([b3e67e9](https://github.com/talis/bootstrap-theme/commit/b3e67e914dd2a7e1b41a1c40a3f486d041771e64))
+* update radio selector ([53b7108](https://github.com/talis/bootstrap-theme/commit/53b7108fab467b73c3d33bdebc54666765c498e7))
+
 ### 0.0.1 (2021-04-22)
 
 

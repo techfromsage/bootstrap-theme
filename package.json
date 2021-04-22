@@ -1,6 +1,6 @@
 {
   "name": "@talis/bootstrap-theme",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha.0",
   "private": true,
   "description": "A theme to make Bootstrap look like Talis",
   "author": "dm@talis.com",
@@ -9,7 +9,7 @@
     "url": "git+https://github.com/talis/bootstrap-theme.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
     "url": "https://github.com/talis/bootstrap-theme/issues"
@@ -24,7 +24,7 @@
     "css": "npm-run-all css-compile css-prefix",
     "server": "serve docs --listen 3000",
     "start": "npm-run-all --parallel watch server",
-    "release": "npm run standard-version",
+    "release": "standard-version",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
     "test": "npm run css-lint && npm run css"
   },
