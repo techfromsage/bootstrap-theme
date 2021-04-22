@@ -148,6 +148,14 @@ $form-select-focus-border-color:        $input-focus-border-color !default;
 $form-select-focus-width:               $input-focus-width !default;
 $form-select-focus-box-shadow:          0 0 0 $form-select-focus-width $input-btn-focus-color !default;
 
+$form-check-input-border:                 none !default;
+$form-check-input-checked-color:          $primary !default;
+$form-check-input-checked-bg-color:       $white !default;
+$form-check-input-checked-border-color:   $primary !default;
+$form-check-min-height:                   2rem !default;
+$form-check-padding-start:                1.5rem !default;
+$form-check-input-border-radius:          3px !default;
+
 $modal-md:                          600px !default ;
 $modal-header-border-color:         $gray-200 !default;
 $modal-footer-border-color:         $gray-300 !default;

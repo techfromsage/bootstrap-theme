@@ -5,3 +5,23 @@
 ::placeholder {
   font-style: italic;
 }
+
+.form-check-input {
+  width: 16px;
+  height: 16px;
+  box-shadow: 0 0 0 1px $primary;
+}
+
+.form-check-label.form-label {
+  margin-bottom: 0;
+}
+
+.form-check-input:hover {
+  background-color: $gray-200;
+}
+
+.form-check-input:focus {
+  border: 0;
+  box-shadow: none;
+  outline: 2px solid $primary;
+}
