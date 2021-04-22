@@ -93,6 +93,13 @@ $alert-color-scale: 0;
 $alert-border-scale: 0;
 $alert-link-font-weight: 400;
 
+$badge-font-size:                   1em;
+$badge-font-weight:                 600;
+$badge-color:                       $black;
+$badge-padding-y:                   .1538461538em;
+$badge-padding-x:                   .3076923077em;
+$badge-border-radius:               .2307692308em;
+
 $modal-backdrop-opacity: .8;
 
 $input-btn-focus-width: 1px !default;
@@ -185,6 +192,7 @@ $table-group-separator-color: $gray-200;
 @import "bootstrap/scss/utilities/api";
 
 @import 'alerts';
+@import 'badges';
 @import 'buttons';
 @import 'forms';
 @import 'pager';

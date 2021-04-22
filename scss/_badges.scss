@@ -1,0 +1,18 @@
+.badge {
+  line-height: 1.0769230769;
+  text-transform: uppercase;
+
+  &.bg-primary,
+  &.bg-danger {
+    color: $white;
+  }
+}
+
+.label {
+  @extend .badge;
+}
+
+.badge-default,
+.label-default {
+  background-color: #AAD0D0;
+}
