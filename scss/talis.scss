@@ -84,7 +84,14 @@ $headings-font-weight: 300;
 
 $border-radius: 0.23rem !default;
 
+$nav-link-font-weight:              600 !default;
+$nav-link-hover-color:              $accent !default;
+$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $primary !default;
+$nav-tabs-link-active-border-color: $white $white $primary !default;
 $nav-tabs-border-radius: 0 !default;
+$nav-link-disabled-color:           $gray-500 !default;
+$nav-tabs-border-color:             transparent !default;
+$nav-tabs-link-active-color:        $primary !default;
 
 $alert-border-radius: 0;
 $alert-border-width: 0;
@@ -194,7 +201,9 @@ $table-group-separator-color: $gray-200;
 @import 'alerts';
 @import 'badges';
 @import 'buttons';
+@import 'dropdown';
 @import 'forms';
+@import 'navs';
 @import 'pager';
 @import 'pagination';
 @import 'tables';
