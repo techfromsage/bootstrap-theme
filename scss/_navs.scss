@@ -23,3 +23,25 @@
     background-color: $gray-200;
   }
 }
+
+.nav-pills {
+  .nav-link {
+    border: 1px solid transparent;
+  }
+
+  .nav-link.active,
+  .nav-pills .show > .nav-link {
+    border-color: $primary;
+  }
+
+  .nav-link:focus {
+    outline: 0;
+    background-color: $white;
+    border: 1px solid $primary;
+    box-shadow: 0 0 0 1px $primary;
+  }
+
+  .nav-link:hover {
+    background: $gray-200;
+  }
+}
