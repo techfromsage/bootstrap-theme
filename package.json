@@ -8,6 +8,9 @@
     "type": "git",
     "url": "git+https://github.com/talis/bootstrap-theme.git"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "bugs": {
     "url": "https://github.com/talis/bootstrap-theme/issues"
   },
