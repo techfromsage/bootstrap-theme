@@ -1,3 +1,15 @@
 .show.dropdown-toggle::after {
   transform: rotate(180deg);
 }
+
+.dropdown-header {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dropdown-item:focus {
+  outline: 2px solid $primary;
+  outline-offset: -2px;
+  color: $accent;
+}

@@ -121,6 +121,15 @@ $breadcrumb-margin-bottom:          1.25rem !default;
 $breadcrumb-divider-color:          $gray-700;
 $breadcrumb-active-color:           $gray-700;
 
+$dropdown-divider-bg:               $gray-400 !default;
+$dropdown-divider-margin-y:         .5625rem !default;
+$dropdown-link-color:               $primary !default;
+$dropdown-link-hover-color:         $accent !default;
+$dropdown-header-color:             $gray-700;
+$dropdown-item-padding-y:           3px !default;
+$dropdown-item-padding-x:           20px !default;
+$dropdown-header-padding:           3px $dropdown-item-padding-x !default;
+
 $input-btn-focus-width: 1px !default;
 $input-btn-focus-box-shadow: 0 0 0 1px currentColor !default;
 $btn-font-weight: 600 !default;
@@ -172,6 +181,9 @@ $modal-dialog-margin-y-sm-up:       1.875rem !default;
 $navbar-dark-color:                     $white !default;
 $navbar-dark-hover-color:               $white !default;
 $navbar-dark-active-color:              $white !default;
+$navbar-padding-y:                  0 !default;
+$navbar-nav-link-padding-x:         .75rem !default;
+$nav-link-height:                   3.75rem !default;
 
 $pagination-border-color: $primary;
 $pagination-transition: none !default;
@@ -234,6 +246,7 @@ $table-group-separator-color: $gray-200;
 @import 'dropdown';
 @import 'forms';
 @import 'modal';
+@import 'navbar';
 @import 'navs';
 @import 'pager';
 @import 'pagination';
