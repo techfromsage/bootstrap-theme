@@ -60,7 +60,12 @@
 
   background-color: $white;
 
+  &:hover {
+    color: #a71a22;
+  }
+
   &:focus {
+    color: #a71a22;
     box-shadow: 0 0 0 $btn-focus-width #a71a22;
   }
 
