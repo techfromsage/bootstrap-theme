@@ -51,7 +51,7 @@ FormValidator.prototype.getSummaryHtml = function() {
   for (var e = 0, o = this.errors.length; e < o; e++) {
       var i = this.errors[e];
       t += "<li>",
-      t += '<a href="#' + FormValidator.escapeHtml(i.fieldName) + '">',
+      t += '<a class="alert-link" href="#' + FormValidator.escapeHtml(i.fieldName) + '">',
       t += FormValidator.escapeHtml(i.message),
       t += "</a>",
       t += "</li>"
