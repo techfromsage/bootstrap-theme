@@ -1,3 +1,7 @@
+label {
+  color: $black;
+}
+
 .form-group {
   @extend .mb-3;
 }
@@ -46,7 +50,20 @@
   display: block;
   margin-top: .3125rem;
   margin-bottom: .625rem;
-  font-size: 12px;
   font-style: italic;
   color: $gray-700;
+}
+
+.field-label,
+.field-hint,
+.field-error {
+  display: block;
+}
+
+.field-hint {
+  font-style: italic;
+}
+
+.field-label + .field-hint {
+  margin-bottom: $form-label-margin-bottom;
 }
