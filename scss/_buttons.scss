@@ -152,6 +152,7 @@
 }
 
 .btn-lg {
+  line-height: 1.333;
   font-weight: 400;
 }
 
@@ -166,4 +167,9 @@
   line-height: 1.0769230769;
   text-transform: uppercase;
   vertical-align: baseline;
+}
+
+.btn-action {
+  @extend .btn-lg;
+  @extend .btn-link;
 }
