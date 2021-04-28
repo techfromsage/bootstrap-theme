@@ -1,6 +1,11 @@
 ## Usage
-Import `talis.scss` ahead of your app styles.
+1. Add `@talis:registry=https://npm.pkg.github.com` to your project's `.npmrc` file.
+2. Two options:
+   - **Either** import `talis.scss` which includes Bootstrap customisations _and_ Bootstrap v5;
+   - **Or** include the Talis variables ahead of Bootstrap, and the Talis components afterwards.
 
+## Migrating from Bootstrap v3
+TBC
 ## Contributing
 
 Be sure to have [Node.js](https://nodejs.org/) installed before proceeding.
