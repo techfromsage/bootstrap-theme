@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-beta.0](https://github.com/talis/bootstrap-theme/compare/v1.0.0-alpha.0...v1.0.0-beta.0) (2021-04-28)
+
+
+### Features
+
+* add skip-link ([dfd4ce7](https://github.com/talis/bootstrap-theme/commit/dfd4ce73f2eb15f70272908d44c882f255c1298a))
+
+
+### Bug Fixes
+
+* `btn-danger` hover state ([38043fe](https://github.com/talis/bootstrap-theme/commit/38043fe60974141fc51796086ec807cd1eb40367))
+* swap mixin for `btn-danger` ([f91d472](https://github.com/talis/bootstrap-theme/commit/f91d472453ded82c567214ffddc7fbd832b691a4))
+* update `.navbar-brand` ([9d8c010](https://github.com/talis/bootstrap-theme/commit/9d8c010486fe7b62e76ffa2c49977ef4b846e33b))
+* update `btn-alert:active` ([4ae4687](https://github.com/talis/bootstrap-theme/commit/4ae468734edcffd5ec9fe6740964df699510f01c))
+* update `btn-lg` ([47b742c](https://github.com/talis/bootstrap-theme/commit/47b742cdbb6e6bf1ba3345330ab4e2b63dcdd436))
+* update button active state ([054a2a8](https://github.com/talis/bootstrap-theme/commit/054a2a8fc19f0d722570a7d79a465085225de641))
+* update checkbox/radio focus ([d9d93e1](https://github.com/talis/bootstrap-theme/commit/d9d93e1135da4ca2a40558c0f62d104f9d7b91cd))
+* update link states ([1973773](https://github.com/talis/bootstrap-theme/commit/1973773643fe247a45e911f7f21f0c18a9edfaf5))
+
 ## [1.0.0-alpha.0](https://github.com/talis/bootstrap-theme/compare/v0.0.1...v1.0.0-alpha.0) (2021-04-22)
 
 
