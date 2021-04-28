@@ -416,8 +416,8 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="form-label" for="select-num-again">Choose a number:</label>
-              <select class="form-control" id="select-num-again">
+              <label class="form-label" for="select-num-again">Choose a number</label>
+              <select class="form-select" id="select-num-again">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -426,8 +426,11 @@
               </select>
             </div>
             <div class="form-group">
-              <label class="form-label" for="custom-select-again">Custom select:</label>
-              <select class="custom-select" id="custom-select-again">
+              <label class="form-label" for="custom-select-again">
+                Custom select
+                <p class="help-block">Select menus have more consistent styles</p>
+              </label>
+              <select class="form-select" id="custom-select-again">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -437,9 +440,19 @@
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="exampleInputFile">File input</label>
-              <input type="file" id="exampleInputFile">
-              <p class="help-block">Example block-level help text here.</p>
+              <label class="form-label" for="exampleInputFile">
+                File input
+                <p class="help-block">Bootstrap v5 adds this <code>-plaintext</code> modifer</p>
+              </label>
+              <input class="form-control-plaintext" type="file" id="exampleInputFile">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="exampleInputFile">
+                File input
+                <p class="help-block">…it also adds this jazzy new file-picker with use of <code>.form-control</code></p>
+              </label>
+              <input class="form-control" type="file" id="exampleInputFile">
             </div>
 
             <div class="form-check">
