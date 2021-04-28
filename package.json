@@ -10,6 +10,9 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
+  "files": [
+    "scss"
+  ],
   "bugs": {
     "url": "https://github.com/talis/bootstrap-theme/issues"
   },
