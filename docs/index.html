@@ -48,7 +48,9 @@
               <a class="nav-link" href="forms.html">Forms</a>
             </li>
             <li class="nav-item">
-              <button class="nav-link js-loader-toggle dropdown-toggle" type="button">Toggle loader</a>
+              <button class="nav-link js-loader-toggle" type="button">
+                Toggle loader
+              </button>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -1162,7 +1164,17 @@ I'm a textarea</textarea
         .addEventListener("click", () => {
           document
             .querySelector(".loading-indicator")
-            .toggleAttribute("hidden");
+            .removeAttribute("hidden");
+
+          document
+            .querySelector("body")
+            .addEventListener("keydown", (e) => {
+              if (e.keyCode === 27) {
+                document
+                  .querySelector(".loading-indicator")
+                  .setAttribute("hidden", "");
+              }
+            });
         });
     </script>
   </body>
