@@ -1,0 +1,191 @@
+$enable-gradients: false;
+$enable-shadows: false;
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+$white: #fff !default;
+
+$turquoise: #017d87;
+$accent: #005d64;
+$pink: #c5197d;
+$green: #25828d;
+$yellow: #FFC943;
+$red: #C42129;
+$purple: #4a2b80;
+$orange: #f47821;
+
+$brand-success:         #77E0CE !default;
+$brand-info:            #4CC3D6 !default;
+$brand-warning:         #FFC943 !default;
+$brand-danger:          #C42129 !default;
+
+$primary:       $turquoise !default;
+$secondary:     $accent !default;
+$success:       $brand-success !default;
+$info:          $brand-info !default;
+$warning:       $brand-warning !default;
+$danger:        $brand-danger !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
+$body-color: $gray-700 !default;
+$body-bg: #fff;
+
+$font-family-sans-serif: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-size-base: 0.8125rem !default;
+
+$line-height-base: 1.6 !default;
+
+$paragraph-margin-bottom: 0.625rem !default;
+
+$h1-font-size: 13px * 2.3076923077 !default;
+$h2-font-size: 13px * 2.3076923077 !default;
+$h3-font-size: 13px * 1.538461538 !default;
+$h4-font-size: 13px * 1.538461538 !default;
+$h5-font-size: 13px !default;
+$h6-font-size: 13px !default;
+
+$headings-font-weight: 300;
+
+$border-radius: 3px !default;
+
+$spacer: .9375rem !default;
+
+$nav-link-font-weight:              600 !default;
+$nav-link-hover-color:              $accent !default;
+$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $primary !default;
+$nav-tabs-link-active-border-color: $white $white $primary !default;
+$nav-tabs-border-radius: 0 !default;
+$nav-link-disabled-color:           $gray-500 !default;
+$nav-tabs-border-color:             transparent !default;
+$nav-tabs-link-active-color:        $primary !default;
+
+$nav-pills-link-active-color:       $primary !default;
+$nav-pills-link-active-bg:          $white !default;
+$nav-pills-border-radius:           3px;
+
+$alert-margin-bottom:           1.25rem !default;
+$alert-border-radius: 0;
+$alert-border-width: 0;
+$alert-bg-scale: -60%;
+$alert-color-scale: 0;
+$alert-border-scale: 0;
+$alert-link-font-weight: 400;
+
+$badge-font-size:                   1em;
+$badge-font-weight:                 600;
+$badge-color:                       $black;
+$badge-padding-y:                   .1538461538em;
+$badge-padding-x:                   .3076923077em;
+$badge-border-radius:               .2307692308em;
+
+$breadcrumb-padding-y:              .5rem !default;
+$breadcrumb-margin-bottom:          1.25rem !default;
+$breadcrumb-divider-color:          $gray-700;
+$breadcrumb-active-color:           $gray-700;
+
+$dropdown-divider-bg:               $gray-400 !default;
+$dropdown-divider-margin-y:         .5625rem !default;
+$dropdown-link-color:               $primary !default;
+$dropdown-link-hover-color:         $accent !default;
+$dropdown-header-color:             $gray-700;
+$dropdown-item-padding-y:           3px !default;
+$dropdown-item-padding-x:           20px !default;
+$dropdown-header-padding:           3px $dropdown-item-padding-x !default;
+
+$input-btn-focus-width: 1px !default;
+$input-btn-focus-box-shadow: 0 0 0 1px currentColor !default;
+$btn-font-weight: 600 !default;
+$btn-border-width: 1px !default;
+$btn-transition: background-color 1s cubic-bezier(0.19, 1, 0.22, 1) !default;
+$btn-disabled-opacity: 1 !default;
+$btn-active-box-shadow:       0 !default;
+$btn-active-border-shade-amount:  0 !default;
+$btn-active-border-tint-amount:   0 !default;
+$btn-link-color: $primary !default;
+$btn-link-hover-color: $accent !default;
+$btn-link-disabled-color: $gray-500 !default;
+$btn-padding-y-lg:            11px !default;
+$btn-padding-x-lg:            19px !default;
+$btn-font-size-lg:            1.09375rem !default;
+
+$cradle-anim-dur: 607.5ms;
+$cradle-anim-fun: cubic-bezier(0, 0, 0.5, 1);
+$cradle-colour-anim-dur: $cradle-anim-dur * 4;
+$cradle-ball-colour-default: #107179;
+$cradle-ball-colour-teal: #6fdac9;
+$cradle-ball-colour-gold: #fbbf45;
+$cradle-ball-colour-pink: #fc4589;
+$cradle-ball-colour-blue: #59d1e4;
+$cradle-shadow-colour: rgba($black, 0.15);
+
+$input-color:                           $black !default;
+$input-border-color:                    $gray-600 !default;
+$input-disabled-bg:                     $gray-100 !default;
+$input-disabled-border-color:           $gray-200 !default;
+
+$input-focus-border-color:              $primary !default;
+$input-focus-width:                     1px !default;
+$input-focus-box-shadow:                0 0 0 1px $primary !default;
+
+$input-placeholder-color:               $gray-700 !default;
+$input-plaintext-color:                 $black !default;
+
+$input-btn-focus-color:                 $primary !default;
+
+$form-label-color:                      $black !default;
+$form-label-margin-bottom:              0.3846153846em !default;
+
+$form-select-focus-border-color:        $input-focus-border-color !default;
+$form-select-focus-width:               $input-focus-width !default;
+$form-select-focus-box-shadow:          0 0 0 $form-select-focus-width $input-btn-focus-color !default;
+
+$form-check-input-border:                 none !default;
+$form-check-input-checked-color:          $primary !default;
+$form-check-input-checked-color--alt:     $pink !default;
+$form-check-input-checked-bg-color:       $white !default;
+$form-check-input-checked-border-color:   $primary !default;
+$form-check-min-height:                   2rem !default;
+$form-check-padding-start:                1.5rem !default;
+$form-check-input-border-radius:          3px !default;
+$form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$form-check-input-checked-color}'/></svg>");
+$form-check-input-checked-bg-image--alt:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color--alt}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+$form-check-radio-checked-bg-image--alt:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$form-check-input-checked-color--alt}'/></svg>");
+
+$link-hover-color: $accent !default;
+$link-hover-decoration: none !default;
+
+$modal-backdrop-opacity: .8 !default;
+$modal-md:                          600px !default ;
+$modal-header-border-color:         $gray-200 !default;
+$modal-footer-border-color:         $gray-300 !default;
+$modal-dialog-margin-y-sm-up:       1.875rem !default;
+
+$navbar-dark-color:                     $white !default;
+$navbar-dark-hover-color:               $white !default;
+$navbar-dark-active-color:              $white !default;
+$navbar-padding-y:                  0 !default;
+$navbar-nav-link-padding-x:         .75rem !default;
+$nav-link-height:                   3.75rem !default;
+$navbar-brand-font-size:            1.09375rem !default;
+
+$pagination-border-color: $primary;
+$pagination-transition: none !default;
+$pagination-hover-border-color: $primary !default;
+
+$pagination-disabled-color:         $gray-500;
+$pagination-disabled-bg:            $white;
+$pagination-disabled-border-color:  $primary;
+
+$table-striped-bg:            $gray-100;
+$table-cell-vertical-align:   middle;
+$table-border-color:          $gray-200;
+$table-group-separator-color: $gray-200;
