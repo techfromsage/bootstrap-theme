@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-beta.1](https://github.com/talis/bootstrap-theme/compare/v1.0.0-beta.0...v1.0.0-beta.1) (2021-04-29)
+
+
+### Bug Fixes
+
+* add loader ([cd4d063](https://github.com/talis/bootstrap-theme/commit/cd4d063c6764f5547a366ed5c7ff7afc0dcc89ef))
+
 ## [1.0.0-beta.0](https://github.com/talis/bootstrap-theme/compare/v1.0.0-alpha.0...v1.0.0-beta.0) (2021-04-28)
 
 
