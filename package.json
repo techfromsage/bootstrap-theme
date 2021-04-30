@@ -3,6 +3,7 @@
   "version": "1.0.0-beta.2",
   "description": "A theme to make Bootstrap look like Talis",
   "author": "dm@talis.com",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/talis/bootstrap-theme.git"
