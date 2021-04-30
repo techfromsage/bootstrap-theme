@@ -1,3 +1,4 @@
+# Bootstrap v5 Theme
 ## Usage
 1. Add `@talis:registry=https://npm.pkg.github.com` to your project's `.npmrc` file.
 2. Two options:
@@ -5,7 +6,16 @@
    - **Or** include the Talis variables ahead of Bootstrap, and the Talis components afterwards.
 
 ## Migrating from Bootstrap v3
-TBC
+The following Bootstrap v3 components no longer exist, but we have included them:
+
+- `.page-header`
+- `.form-group`
+- `.label`
+- `.btn-default`
+- `.btn-xs`
+- `.well`
+- `.pager`
+
 ## Contributing
 
 Be sure to have [Node.js](https://nodejs.org/) installed before proceeding.
