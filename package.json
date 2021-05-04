@@ -31,7 +31,8 @@
     "start": "npm-run-all --parallel watch server",
     "release": "standard-version",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
-    "test": "npm run css-lint && npm run css"
+    "test": "npm run css-lint && npm run css",
+    "prepare": "husky install"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta3",
