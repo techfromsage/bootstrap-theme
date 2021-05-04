@@ -25,6 +25,8 @@
     "css-prefix": "postcss --replace docs/assets/css/talis.css --use autoprefixer --map",
     "css-purge": "purgecss --keyframes --css docs/assets/css/talis.css --content docs/index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output docs/assets/css/",
     "css": "npm-run-all css-compile css-prefix",
+    "docs": "eleventy",
+    "docs:watch": "eleventy --serve",
     "server": "serve docs --listen 3000",
     "start": "npm-run-all --parallel watch server",
     "release": "standard-version",
@@ -58,16 +60,6 @@
   "browserslist": [
     "last 2 versions"
   ],
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.js": [
       "eslint --fix",

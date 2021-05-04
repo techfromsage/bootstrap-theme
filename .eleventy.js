@@ -1,0 +1,11 @@
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addWatchTarget('./scss');
+  eleventyConfig.addPassthroughCopy("./src/css");
+
+  return {
+    dir: {
+      input: "src/docs",
+      output: "docs",
+    },
+  };
+};
