@@ -1,0 +1,37 @@
+<div hidden="" class="loading-indicator qa-loading-indicator" role="status" aria-live="polite">
+  <div class="cradle">
+    <div class="cradle-node">
+      <div class="cradle-ball"></div>
+    </div>
+    <div class="cradle-node">
+      <div class="cradle-ball"></div>
+    </div>
+    <div class="cradle-node">
+      <div class="cradle-ball"></div>
+    </div>
+    <div class="cradle-node">
+      <div class="cradle-ball"></div>
+    </div>
+  </div>
+
+  <span class="sr-only">Loading</span>
+</div>
+<script>
+  document
+    .querySelector(".js-loader-toggle")
+    .addEventListener("click", () => {
+      document
+        .querySelector(".loading-indicator")
+        .removeAttribute("hidden");
+
+      document
+        .querySelector("body")
+        .addEventListener("keydown", (e) => {
+          if (e.keyCode === 27) {
+            document
+              .querySelector(".loading-indicator")
+              .setAttribute("hidden", "");
+          }
+        });
+    });
+</script>

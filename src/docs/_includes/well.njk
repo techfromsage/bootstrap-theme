@@ -1,0 +1,39 @@
+<div class="well">
+  {% include "typography.njk" %}
+  {% include "forms.njk" %}
+
+  <button class="btn btn-default" type="button">I'm a button</button>
+
+  <button class="btn btn-default" type="button" disabled>
+    I'm a disabled button
+  </button>
+
+  <div class="btn-group">
+    <button
+      class="btn btn-default dropdown-toggle"
+      data-bs-toggle="dropdown"
+    >
+      Dropdown
+    </button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-header">Dropdown header</li>
+      <li>
+        <a class="dropdown-item" href="#">Link 1</a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#">Link 2</a>
+      </li>
+      <li class="divider"></li>
+      <li class="dropdown-header">Dropdown header</li>
+      <li>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </li>
+      <li class="divider"></li>
+      <li class="danger">
+        <a class="dropdown-item" href="#">Delete</a>
+      </li>
+    </ul>
+  </div>
+
+  {% include "button.njk" %}
+</div>
