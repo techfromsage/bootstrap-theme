@@ -1,0 +1,4 @@
+/// @deprecated Prefer `.visually-hidden`
+.sr-only {
+  @extend .visually-hidden;
+}
