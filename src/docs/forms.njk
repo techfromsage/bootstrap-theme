@@ -1,0 +1,161 @@
+---
+title: Exemplar Form
+---
+{% block head %}
+<script
+defer
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+></script>
+
+{% include "partials/global/form-validator.njk" %}
+
+{% endblock %}
+
+<header class="page-header">
+  <h1>{{ title }}</h1>
+</header>
+
+<div class="row">
+  <div class="col">
+    <form id="registration" novalidate>
+      <div class="alert alert-info">
+        All fields are required, unless marked optional
+      </div>
+
+      <div
+        tabindex="-1"
+        role="group"
+        id="errorSummary"
+        class="alert alert-danger errorSummary d-none"
+      ></div>
+
+      <div class="form-group field">
+        <label class="form-label" for="name">Name</label>
+        <input
+          class="form-control"
+          type="text"
+          name=""
+          id="name"
+          aria-required="true"
+          autocomplete="given-name"
+        />
+      </div>
+
+      <div class="form-group field">
+        <label class="form-label" for="email">
+          <span class="field-label">Email</span>
+          <span class="field-hint">A valid email address</span>
+        </label>
+        <input
+          class="form-control"
+          type="email"
+          name=""
+          id="email"
+          autocomplete="email"
+          aria-required="true"
+        />
+      </div>
+
+      <div class="form-group field">
+        <label class="form-label" for="email">
+          <span class="field-label">Password</span>
+          <span class="field-hint">Longer than 8 characters</span>
+        </label>
+        <input
+          class="form-control"
+          type="password"
+          name=""
+          id="password"
+          autocomplete="current-password"
+          aria-required="true"
+          min-length="8"
+        />
+      </div>
+
+      <div class="form-group field">
+        <label class="form-label" for="custom-select-again">
+          <span class="field-label">Custom select</span>
+          <span class="field-hint">
+            Select menus have more consistent styles
+          </span>
+        </label>
+        <select class="form-select" id="custom-select-again">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Pick a side</legend>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            id="radio"
+            name="radio"
+          />
+          <label class="form-check-label form-label" for="radio">Left</label>
+        </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            id="radio-checked"
+            name="radio"
+            checked
+          />
+          <label class="form-check-label form-label" for="radio-checked"
+            >Right</label
+          >
+        </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            id="radio-checked-again"
+            name="radio"
+          />
+          <label class="form-check-label form-label" for="radio-checked-again"
+            >Centre</label
+          >
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <label class="form-label" for="exampleInputFile-jazzy">
+          <span class="field-label">File input</span>
+          <span class="field-hint">Pick a file… any file…</span>
+        </label>
+        <input class="form-control" type="file" id="exampleInputFile-jazzy" />
+      </div>
+
+      <div class="controls">
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="reset" class="btn btn-default">Clear</button>
+      </div>
+    </form>
+  </div>
+  <div class="col">
+    <h2>Guidelines</h2>
+    <ol>
+      <li><code>novalidate</code> set on form to disable browser validation</li>
+      <li>Top-aligned labels</li>
+      <li>
+        Use the appropriate <code>autocomplete</code> attribute for the field in
+        question.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete"
+          >View the list of values at MDN</a
+        >
+      </li>
+      <li>All fields required by default; explicitly mark those which are optional.</li>
+    </ol>
+  </div>
+</div>
+

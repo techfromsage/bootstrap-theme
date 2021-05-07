@@ -1,0 +1,6 @@
+{% macro button( text = 'Button label', data = { type: 'default'}) %}
+  <button
+    class="btn btn-{{ data.type }} {% if data.size %}btn-{{ data.size }}{% endif %}"
+    type="button"
+  >{{ text }}</button>
+{% endmacro %}
