@@ -1,30 +1,17 @@
+{% from "macros/buttons.njk" import button %}
+
 <h2>Buttons</h2>
 <h3>Normal</h3>
-  <button type="button" class="btn btn-default">
-    Normal button
-  </button>
-  <button type="button" class="btn btn-primary">
-    Primary button
-  </button>
-  <button type="button" class="btn btn-outline-success">
-    Success button
-  </button>
-  <button type="button" class="btn btn-outline-warning">
-    Warning button
-  </button>
-  <button type="button" class="btn btn-outline-info">
-    Info button
-  </button>
-  <button type="button" class="btn btn-outline-danger">
-    Danger button
-  </button>
-  <button type="button" class="btn btn-link">Link button</button>
-
+  {{ button("Normal button", { type: 'default' }) }}
+  {{ button("Primary button", { type: 'primary' }) }}
+  {{ button("Success button", { type: 'success' }) }}
+  {{ button("Warning button", { type: 'warning' }) }}
+  {{ button("Info button", { type: 'info' }) }}
+  {{ button("Danger button", { type: 'danger' }) }}
+  {{ button("Link button", { type: 'link' }) }}
 
   <h3>Large</h3>
-  <button type="button" class="btn btn-lg btn-default">
-    Normal button
-  </button>
+  {{ button("Normal button", { type: 'default', size: 'lg' }) }}
   <button type="button" class="btn btn-lg btn-primary">
     Primary button
   </button>
