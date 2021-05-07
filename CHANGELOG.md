@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-beta.4](https://github.com/talis/bootstrap-theme/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2021-05-07)
+
+
+### Bug Fixes
+
+* add 'sr-only' util for backwards-compat ([c4bf590](https://github.com/talis/bootstrap-theme/commit/c4bf590a07a81e1ca89ac4964f8d6cbd1719d4c2))
+
+## [1.0.0-beta.4](https://github.com/talis/bootstrap-theme/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2021-05-07)
+
+
+### Bug Fixes
+
+* add 'sr-only' util for backwards-compat ([c4bf590](https://github.com/talis/bootstrap-theme/commit/c4bf590a07a81e1ca89ac4964f8d6cbd1719d4c2))
+
 ## [1.0.0-beta.3](https://github.com/talis/bootstrap-theme/compare/v1.0.0-beta.1...v1.0.0-beta.3) (2021-04-30)
 
 ## [1.0.0-beta.1](https://github.com/talis/bootstrap-theme/compare/v1.0.0-beta.0...v1.0.0-beta.1) (2021-04-29)
