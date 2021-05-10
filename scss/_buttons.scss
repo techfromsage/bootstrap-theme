@@ -40,6 +40,10 @@
   border-color: transparent;
   font-weight: 600;
   text-decoration: none;
+
+  &:focus {
+    background-color: transparent;
+  }
 }
 
 .btn-outline-primary,
