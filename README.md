@@ -1,20 +1,11 @@
 # Bootstrap v5 Theme
 ## Usage
-1. Add `@talis:registry=https://npm.pkg.github.com` to your project's `.npmrc` file.
-2. Two options:
+1. Create a [Personal Access Token](https://github.com/settings/tokens/) granting the `write:packages` scope. `write` also allows `read`… 
+2. Add `@talis:registry=https://npm.pkg.github.com` to your project's `.npmrc` file.
+3. Two options:
    - **Either** import `talis.scss` which includes Bootstrap customisations _and_ Bootstrap v5;
    - **Or** include the Talis variables ahead of Bootstrap, and the Talis components afterwards.
 
-## Migrating from Bootstrap v3
-The following Bootstrap v3 components no longer exist, but we have included them:
-
-- `.page-header`
-- `.form-group`
-- `.label`
-- `.btn-default`
-- `.btn-xs`
-- `.well`
-- `.pager`
 
 ## Contributing
 
@@ -51,6 +42,7 @@ The following npm scripts are available to you in this starter repo. With the ex
 
 | Script | Description |
 | --- | --- |
+| `docs` | Builds the Eleventy-powered documentation site
 | `server` | Starts a local server (<http://localhost:3000>) for development |
 | `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
 | `css` | Runs `css-compile` and `css-prefix` |
@@ -63,8 +55,6 @@ The following npm scripts are available to you in this starter repo. With the ex
 ### Optimizing CSS
 
 Before you start to use tools that remove Bootstrap styling like [PurgeCSS](#purgecss), you can make some broad optimizations by only including the stylesheets you think you'll need.
-
-Look to the `scss/starter.scss` file for your two options of including all of Bootstrap, or a subset of our styles and components.
 
 ### Optimizing JS
 
@@ -89,5 +79,3 @@ PurgeCSS is a PostCSS plugin and [can be configured](https://purgecss.com/config
 ### Stylelint
 
 Stylelint is included, as is Bootstrap's default Stylelint config, [stylelint-config-twbs-bootstrap](https://github.com/twbs/stylelint-config-twbs-bootstrap).
-
-At the root of the repo, `.stylelintignore` is used to list files that we ignore when linting and `.stylelintrc` is where we tell Stylelint to use the Bootstrap config. The former is recommended based on your specific needs, while the latter is required.
