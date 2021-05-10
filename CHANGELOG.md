@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-rc.0](https://github.com/talis/bootstrap-theme/compare/v1.0.0-beta.4...v1.0.0-rc.0) (2021-05-10)
+
+
+### Bug Fixes
+
+* resolve btn-link regression ([5d18a45](https://github.com/talis/bootstrap-theme/commit/5d18a454e87f912c4dfa9fbe2c354cd7de561dbc))
+
 ## [1.0.0-beta.4](https://github.com/talis/bootstrap-theme/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2021-05-07)
 
 
