@@ -9,12 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-      crossorigin="anonymous"
-    />
+    <script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js"
       integrity="sha512-DSdiuNZtfUhehZHXtit9Sa/83i06YSnvT8Js8drwdkVCDMk3JwpIxdhf2oRUByUDB3wguN2iAzoTNfxFAuqGyA=="
@@ -106,6 +101,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
 ></script>
 
 <script defer src="/bootstrap-theme/assets/FormValidator.js"></script>
+<script defer src="/bootstrap-theme/assets/example-form.js"></script>
 
 
 
@@ -129,13 +125,12 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
       ></div>
 
       <div class="form-group field">
-        <label class="form-label" for="name">Name</label>
+        <label class="form-label" for="name">Name (Optional)</label>
         <input
           class="form-control"
           type="text"
-          name=""
+          name="name"
           id="name"
-          aria-required="true"
           autocomplete="given-name"
         />
       </div>
@@ -148,7 +143,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
         <input
           class="form-control"
           type="email"
-          name=""
+          name="email"
           id="email"
           autocomplete="email"
           aria-required="true"
@@ -173,22 +168,33 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
 
       <div class="form-group field">
         <label class="form-label" for="custom-select-again">
-          <span class="field-label">Custom select</span>
-          <span class="field-hint">
-            Select menus have more consistent styles
-          </span>
+          <span class="field-label">Options (Optional)</span>
         </label>
         <select class="form-select" id="custom-select-again">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+          <option>1 (One)</option>
+          <option>2 (Two)</option>
+          <option>3 (Three)</option>
+          <option>4 (Four)</option>
+          <option>5 (Five)</option>
         </select>
       </div>
 
+      <div class="form-group field">
+        <label class="form-label" for="message">
+          <span class="field-label">Comment</span>
+          <span class="field-hint">Tell us a little about yourself, in 240 characters or less.</span>
+        </label>
+        <textarea
+          class="form-control"
+          type="message"
+          name="message"
+          id="message"
+          aria-required="true"
+        ></textarea>
+      </div>
+
       <fieldset>
-        <legend>Pick a side</legend>
+        <legend>Pick a side (Optional)</legend>
         <div class="form-check">
           <input
             class="form-check-input"
@@ -205,7 +211,6 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
             type="radio"
             id="radio-checked"
             name="radio"
-            checked
           />
           <label class="form-check-label form-label" for="radio-checked"
             >Right</label
@@ -220,14 +225,24 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
             name="radio"
           />
           <label class="form-check-label form-label" for="radio-checked-again"
-            >Centre</label
+            >Sit on the fence</label
           >
         </div>
       </fieldset>
 
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="check"
+          name="check"
+        />
+        <label class="form-check-label form-label" for="check">Opt-in to our amazing newsletter</label>
+      </div>
+
       <div class="form-group">
         <label class="form-label" for="exampleInputFile-jazzy">
-          <span class="field-label">File input</span>
+          <span class="field-label">File input (Optional)</span>
           <span class="field-hint">Pick a file… any file…</span>
         </label>
         <input class="form-control" type="file" id="exampleInputFile-jazzy" />
@@ -244,6 +259,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
     <ol>
       <li><code>novalidate</code> set on form to disable browser validation</li>
       <li>Top-aligned labels</li>
+      <li>Labels always visible</li>
+      <li>A new row for each question</li>
+      <li>Use a hint to explain any validation rules which have been applied to the input</li>
       <li>
         Use the appropriate <code>autocomplete</code> attribute for the field in
         question.
@@ -253,6 +271,22 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
         >
       </li>
       <li>All fields required by default; explicitly mark those which are optional.</li>
+      <li>Use a <code>fieldset</code> to group multiple controls. A <code>legend</code> describes a group like a <code>label</code> describes an individual control.</li>
+      <li>Use sensible defaults: design for common circumstances first.</li>
+      <li>The input width gives users a clue as to the length of the content it requires.</li>
+      <li>Do not disable the form submit button: allow it to be discovered and trigger the form validation rules.</li>
+    </ol>
+
+    <h3>Validation</h3>
+    <p>Messsages should:</p>
+    <ol>
+      <li>Be concise</li>
+      <li>Be consistent</li>
+      <li>Be specific</li>
+      <li>Avoid jargon</li>
+      <li>Use plain language</li>
+      <li>Use active voice</li>
+      <li>Not blame the user</li>
     </ol>
   </div>
 </div>

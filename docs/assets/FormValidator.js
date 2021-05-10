@@ -46,7 +46,7 @@ FormValidator.prototype.showSummary = function() {
 }
 ,
 FormValidator.prototype.getSummaryHtml = function() {
-  var t = '<h3 class="h6 errorSummary-heading">There\'s a problem</h6>';
+  var t = '<h2 class="h5 errorSummary-heading">There\'s a problem</h2>';
   t += "<ul>";
   for (var e = 0, o = this.errors.length; e < o; e++) {
       var i = this.errors[e];
@@ -84,7 +84,7 @@ FormValidator.prototype.showInlineErrors = function() {
 ,
 
 FormValidator.prototype.showInlineError = function(t) {
-  var e = '<span class="field-error text-danger"><i class="fas fa-exclamation-triangle"></i> ' + FormValidator.escapeHtml(t.message) + "</span>"
+  var e = '<span class="field-error text-danger"><i class="fal fa-exclamation-triangle"></i> ' + FormValidator.escapeHtml(t.message) + "</span>"
     , o = $("#" + t.fieldName)
     , i = o.parents(".field")
     , n = i.find("label")
@@ -123,34 +123,46 @@ FormValidator.prototype.validate = function() {
           }
   return 0 === this.errors.length
 }
+function CharacterCountdown(t, e) {
+  this.field = $(t),
+  this.status = $('<div class="indicator help-block" role="status" aria-live="polite" />'),
+  this.setOptions(e),
+  this.updateStatus(this.options.maxLength),
+  this.field.parent().append(this.status),
+  this.field.on("input", $.proxy(this, "onChange"))
+}
+CharacterCountdown.prototype.setOptions = function(t) {
+  this.options = $.extend({
+      maxLength: 100,
+      message: "You have %count% characters remaining."
+  }, t)
+}
+,
+CharacterCountdown.prototype.onChange = function(t) {
+  this.updateStatus(this.options.maxLength - this.field.val().length)
+}
+,
+CharacterCountdown.prototype.updateStatus = function(t) {
+  var e = this.options.message.replace(/%count%/, t);
+  this.status.html(e)
+}
+;
 
-
-var validator = new FormValidator(document.getElementById('registration'));
-validator.addValidator("email", [
-  {
-    method: function (field) {
-      return field.value.length > 0;
-    },
-    message: "Enter your email address",
-  },
-  {
-    method: function (field) {
-      return field.value.indexOf("@") > -1;
-    },
-    message: "You need to enter the ‘at’ symbol in the email address",
-  },
-]);
-validator.addValidator("password", [
-  {
-    method: function (field) {
-      return field.value.length > 0;
-    },
-    message: "Enter your password",
-  },
-  {
-    method: function (field) {
-      return field.value.length > 8;
-    },
-    message: "Your password must contain at least 8 characters",
-  },
-]);
+function PasswordRevealer(t) {
+  this.el = t,
+  $(this.el).wrap('<div class="input-group"></div>'),
+  this.container = $(this.el).parent(),
+  this.createButton()
+}
+PasswordRevealer.prototype.createButton = function() {
+  this.button = $('<button class="btn btn-default" type="button">Show</button>'),
+  this.container.append(this.button),
+  this.button.on("click", $.proxy(this, "onButtonClick"))
+}
+,
+PasswordRevealer.prototype.onButtonClick = function() {
+  "password" === this.el.type ? (this.el.type = "text",
+  this.button.text("Hide")) : (this.el.type = "password",
+  this.button.text("Show"))
+}
+;
