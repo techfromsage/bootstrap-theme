@@ -1,6 +1,10 @@
+.modal-header {
+  justify-content: center;
+}
+
 .modal-title {
+  font-size: $h1-font-size;
   margin: 0;
-  line-height: 1.6;
   color: $black;
 }
 
