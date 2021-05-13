@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-rc.1](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.0...v1.0.0-rc.1) (2021-05-13)
+
+
+### Bug Fixes
+
+* update modal title & header styles ([cba49c0](https://github.com/talis/bootstrap-theme/commit/cba49c0a98254d067e59aa49ce9917edf8804d3b))
+
 ## [1.0.0-rc.0](https://github.com/talis/bootstrap-theme/compare/v1.0.0-beta.4...v1.0.0-rc.0) (2021-05-10)
 
 
