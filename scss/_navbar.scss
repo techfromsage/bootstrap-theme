@@ -4,8 +4,10 @@
 }
 
 .navbar-nav button.nav-link {
-  background-color: $primary;
+  width: 100%;
   border: 0;
+  background-color: $primary;
+  text-align: left;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
