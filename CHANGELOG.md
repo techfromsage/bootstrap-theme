@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-rc.2](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2021-05-19)
+
+
+### Bug Fixes
+
+* adjust nav item padding on smaller screen ([ca9c0ac](https://github.com/talis/bootstrap-theme/commit/ca9c0ac598524edc510323e04b92a5ef7056e5b4))
+* update button width for collapsed menu ([9969da5](https://github.com/talis/bootstrap-theme/commit/9969da55ddf7e3dde760ad3a68c3c43f95e40873))
+
 ## [1.0.0-rc.1](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.0...v1.0.0-rc.1) (2021-05-13)
 
 
