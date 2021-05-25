@@ -20,12 +20,10 @@
     <title>Exemplar Form | Talis</title>
   </head>
   <body>
-    
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="o-skip-link" href="#content">Skip to main content</a>
   <div class="container-fluid">
-    <a class="navbar-brand" href="/bootstrap-theme/">Talis</a>
+    <a class="navbar-brand">Talis</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -39,12 +37,28 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active"  href="/bootstrap-theme/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/bootstrap-theme/forms">Forms</a>
-        </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link "  href="/bootstrap-theme/">Home</a>
+          </li>
+        
+          
+          
+
+          
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active"  aria-current="page" href="/bootstrap-theme/forms/">Forms</a>
+          </li>
+        
         <li class="nav-item">
           <button class="nav-link js-loader-toggle" type="button">
             Toggle loader
@@ -92,17 +106,16 @@
       
   <main id="content" tabindex="-1">
     
+
 <script
-defer
-type="text/javascript"
-src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+  defer
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
 ></script>
 
 <script defer src="/bootstrap-theme/assets/FormValidator.js"></script>
 <script defer src="/bootstrap-theme/assets/example-form.js"></script>
-
-
-
+ 
 
 <header class="page-header">
   <h1>Exemplar Form</h1>
@@ -111,10 +124,6 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
 <div class="row">
   <div class="col-md-8">
     <form id="registration" novalidate>
-      <div class="alert alert-info">
-        All fields are required, unless marked optional
-      </div>
-
       <div
         tabindex="-1"
         role="group"
@@ -122,51 +131,86 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
         class="alert alert-danger errorSummary d-none"
       ></div>
 
-      <div class="form-group field">
-        <label class="form-label" for="name">Name (Optional)</label>
-        <input
-          class="form-control"
-          type="text"
-          name="name"
-          id="name"
-          autocomplete="given-name"
-        />
-      </div>
+      <fieldset>
+        <legend>Your details</legend>
+        <p class="help-block--new">
+          Here is some instructional text about why you might want to fill in these fields.
+        </p>
+        <div class="row">
+        <div class="form-group field col-6">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="given-name"
+          />
+        </div>
+        </div>
 
-      <div class="form-group field">
-        <label class="form-label" for="email">
-          <span class="field-label">Email</span>
-          <span class="field-hint">A valid email address</span>
-        </label>
-        <input
-          class="form-control"
-          type="email"
-          name="email"
-          id="email"
-          autocomplete="email"
-          aria-required="true"
-        />
-      </div>
+<div class="row">
+        <div class="form-group field col-6">
+          <label class="form-label" for="email">
+            <span class="field-label"
+              >Email <span class="field-required">(Required)</span></span
+            >
+            <span class="field-hint">A valid email address</span>
+          </label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            aria-required="true"
+          />
+        </div>
+</div>
+        <div class="row">
 
-      <div class="form-group field">
-        <label class="form-label" for="email">
-          <span class="field-label">Password</span>
-          <span class="field-hint">Longer than 8 characters</span>
-        </label>
-        <input
-          class="form-control"
-          type="password"
-          name=""
-          id="password"
-          autocomplete="current-password"
-          aria-required="true"
-          min-length="8"
-        />
-      </div>
+        <div class="form-group field col-6">
+          <label class="form-label" for="password">
+            <span class="field-label">Password <span class="field-required">(Required)</span></span>
+            <span class="field-hint">Longer than 8 characters</span>
+          </label>
+          <input
+            class="form-control"
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="current-password"
+            aria-required="true"
+            min-length="8"
+          />
+        </div>
+        </div>
 
-      <div class="form-group field">
+                <div class="row">
+
+        <div class="form-group field">
+          <label class="form-label" for="otp">
+            <span class="field-label">One-time code <span class="field-required">(Required)</span></span>
+          </label>
+          <div class="col-2">
+          <input
+            class="form-control"
+            type="otp"
+            name="otp"
+            id="otp"
+            autocomplete="one-time-password"
+            aria-required="true"
+            min-length="6"
+            max-length="6"
+          />
+        </div>
+        </div>
+      </fieldset>
+
+<div class="row">
+      <div class="form-group field col-6">
         <label class="form-label" for="custom-select-again">
-          <span class="field-label">Options (Optional)</span>
+          <span class="field-label">Options</span>
         </label>
         <select class="form-select" id="custom-select-again">
           <option>1 (One)</option>
@@ -176,11 +220,14 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
           <option>5 (Five)</option>
         </select>
       </div>
+</div>
 
       <div class="form-group field">
         <label class="form-label" for="message">
           <span class="field-label">Comment</span>
-          <span class="field-hint">Tell us a little about yourself, in 240 characters or less.</span>
+          <span class="field-hint"
+            >Tell us a little about yourself, in 240 characters or less.</span
+          >
         </label>
         <textarea
           class="form-control"
@@ -192,7 +239,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
       </div>
 
       <fieldset>
-        <legend>Pick a side (Optional)</legend>
+        <legend>Pick a side</legend>
         <div class="form-check">
           <input
             class="form-check-input"
@@ -235,18 +282,21 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
           id="check"
           name="check"
         />
-        <label class="form-check-label form-label" for="check">Opt-in to our amazing newsletter</label>
+        <label class="form-check-label form-label" for="check"
+          >Opt-in to our amazing newsletter</label
+        >
       </div>
 
-      <div class="form-group">
+<div class="row">
+      <div class="form-group col-6">
         <label class="form-label" for="exampleInputFile-jazzy">
-          <span class="field-label">File input (Optional)</span>
+          <span class="field-label">File input</span>
           <span class="field-hint">Pick a file… any file…</span>
         </label>
         <input class="form-control" type="file" id="exampleInputFile-jazzy" />
       </div>
-
-      <div class="controls">
+</div>
+      <div class="controls mb-5">
         <button type="submit" class="btn btn-primary">Login</button>
         <button type="reset" class="btn btn-default">Clear</button>
       </div>
@@ -259,7 +309,10 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
       <li>Top-aligned labels</li>
       <li>Labels always visible</li>
       <li>A new row for each question</li>
-      <li>Use a hint to explain any validation rules which have been applied to the input</li>
+      <li>
+        Use a hint to explain any validation rules which have been applied to
+        the input
+      </li>
       <li>
         Use the appropriate <code>autocomplete</code> attribute for the field in
         question.
@@ -268,11 +321,24 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
           >View the list of values at MDN</a
         >
       </li>
-      <li>All fields required by default; explicitly mark those which are optional.</li>
-      <li>Use a <code>fieldset</code> to group multiple controls. A <code>legend</code> describes a group like a <code>label</code> describes an individual control.</li>
+      <li>
+        All fields required by default; explicitly mark those which are
+        optional.
+      </li>
+      <li>
+        Use a <code>fieldset</code> to group multiple controls. A
+        <code>legend</code> describes a group like a
+        <code>label</code> describes an individual control.
+      </li>
       <li>Use sensible defaults: design for common circumstances first.</li>
-      <li>The input width gives users a clue as to the length of the content it requires.</li>
-      <li>Do not disable the form submit button: allow it to be discovered and trigger the form validation rules.</li>
+      <li>
+        The input width gives users a clue as to the length of the content it
+        requires.
+      </li>
+      <li>
+        Do not disable the form submit button: allow it to be discovered and
+        trigger the form validation rules.
+      </li>
     </ol>
 
     <h3>Validation</h3>
@@ -288,7 +354,6 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
     </ol>
   </div>
 </div>
-
 
   </main>
 

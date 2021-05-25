@@ -46,17 +46,17 @@ FormValidator.prototype.showSummary = function() {
 }
 ,
 FormValidator.prototype.getSummaryHtml = function() {
-  var t = '<h2 class="h5 errorSummary-heading">There\'s a problem</h2>';
-  t += "<ul>";
-  for (var e = 0, o = this.errors.length; e < o; e++) {
-      var i = this.errors[e];
-      t += "<li>",
-      t += '<a class="alert-link" href="#' + FormValidator.escapeHtml(i.fieldName) + '">',
-      t += FormValidator.escapeHtml(i.message),
-      t += "</a>",
-      t += "</li>"
-  }
-  return t += "</ul>"
+  var t = `<span>We have found <b>${this.errors.length}</b> issues. Please correct them to continue.</span>`;
+  // t += "<ul>";
+  // for (var e = 0, o = this.errors.length; e < o; e++) {
+  //     var i = this.errors[e];
+  //     t += "<li>",
+  //     t += '<a class="alert-link" href="#' + FormValidator.escapeHtml(i.fieldName) + '">',
+  //     t += FormValidator.escapeHtml(i.message),
+  //     t += "</a>",
+  //     t += "</li>"
+  // }
+  return t;
 }
 ,
 FormValidator.prototype.hideSummary = function() {
@@ -84,14 +84,14 @@ FormValidator.prototype.showInlineErrors = function() {
 ,
 
 FormValidator.prototype.showInlineError = function(t) {
-  var e = '<span class="field-error text-danger"><i class="fal fa-exclamation-triangle"></i> ' + FormValidator.escapeHtml(t.message) + "</span>"
+  var e = '<span class="field-error">' + FormValidator.escapeHtml(t.message) + "</span>"
     , o = $("#" + t.fieldName)
     , i = o.parents(".field")
     , n = i.find("label")
     , s = i.find("legend");
   i.find(".field-error").remove(),
   s.length ? (s.append(e),
-  i.attr("aria-invalid", "true")) : (n.append(e),
+  i.attr("aria-invalid", "true")) : (i.append(e),
   o.attr("aria-invalid", "true"))
 }
 ,

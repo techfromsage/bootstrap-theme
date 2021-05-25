@@ -1,3 +1,5 @@
+@use "sass:math";
+
 label {
   color: $black;
 }
@@ -6,7 +8,7 @@ legend {
   color: $black;
   font-weight: 300;
   margin-bottom: .25rem;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 .form-group {
@@ -69,4 +71,24 @@ legend {
 
 .field-hint {
   font-style: italic;
+}
+
+.field-required {
+  color: $gray-700;
+  font-weight: 600;
+}
+
+.field-error {
+  margin-top: math.div($spacer,2);
+  border-left: 3px solid $red;
+  padding-left: $spacer;
+  color: $red;
+}
+
+.help-block--new {
+  margin-bottom: 1.25rem;
+  padding-left: $spacer;
+  color: $black;
+  background-color: $white;
+  border-left: 3px solid $primary;
 }
