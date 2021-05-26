@@ -3,9 +3,10 @@
 }
 
 .modal-title {
-  font-size: $h1-font-size;
   margin: 0;
   color: $black;
+  font-size: $h1-font-size;
+  font-weight: 300;
 }
 
 .modal-content {
