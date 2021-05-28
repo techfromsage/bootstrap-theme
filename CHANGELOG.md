@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-rc.3](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.2...v1.0.0-rc.3) (2021-05-28)
+
+
+### Bug Fixes
+
+* **modal:** define font-weight ([60e74c6](https://github.com/talis/bootstrap-theme/commit/60e74c69f9def08713c6164d1b06f4d721c60451))
+* lighten `.dropdown-header` font-weight ([6545288](https://github.com/talis/bootstrap-theme/commit/6545288ba9209b8a5aafab8e85169f49a3295cde))
+
 ## [1.0.0-rc.2](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2021-05-19)
 
 
