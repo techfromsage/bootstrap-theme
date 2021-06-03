@@ -1,0 +1,36 @@
+@use "sass:math";
+
+.toast {
+  margin-bottom: $toast-spacing;
+  font-weight: 300;
+
+  &-success {
+    background-color: #d0e6dd;
+  }
+
+  &-info {
+    background-color: #a4d1ea;
+  }
+
+  &-warning {
+    background-color: #fed989;
+  }
+
+  &-danger {
+    background-color: #fed989;
+  }
+
+  .btn-close {
+    width: auto;
+    height: auto;
+    background: transparent;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    font-weight: 300;
+    opacity: 1;
+  }
+}
+
+.toast-body {
+  padding: $toast-padding-y math.div($toast-padding-x, 2) $toast-padding-y $toast-padding-x;
+}

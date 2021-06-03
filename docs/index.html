@@ -10,12 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js"
-      integrity="sha512-DSdiuNZtfUhehZHXtit9Sa/83i06YSnvT8Js8drwdkVCDMk3JwpIxdhf2oRUByUDB3wguN2iAzoTNfxFAuqGyA=="
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     
     <title>Bootstrap v5 Kitchen Sink | Talis</title>
   </head>
@@ -1071,6 +1066,49 @@ I'm a textarea</textarea
   <!-- /.modal-dialog -->
 </div>
 <hr>
+
+<button type="button" class="btn btn-primary btn-lg js-btn-toast">
+  Display a toast
+</button>
+
+<div
+  class="position-relative my-3"
+  role="alert"
+  aria-live="assertive"
+  aria-atomic="true"
+>
+  <div
+    class="
+      toast-container
+      position-absolute
+      bottom-0
+      start-50
+      translate-middle-x
+    "
+  >
+    <div class="toast align-items-center" data-bs-autohide="false">
+      <div class="d-flex">
+        <div class="toast-body">Hello, world! This is a toast message.</div>
+        <button
+          type="button"
+          class="btn-close me-2 m-auto"
+          data-bs-dismiss="toast"
+        >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var toastElList = [].slice.call(document.querySelectorAll(".toast"));
+  var toastList = toastElList.map(function (toastEl) {
+    return new bootstrap.Toast(toastEl);
+  });
+
+  document.querySelector(".js-btn-toast").addEventListener("click", () => {
+    toastList[0].show();
+  });
+</script>
 
 <div hidden="" class="loading-indicator qa-loading-indicator" role="status" aria-live="polite">
   <div class="cradle">

@@ -1,0 +1,42 @@
+<button type="button" class="btn btn-primary btn-lg js-btn-toast">
+  Display a toast
+</button>
+
+<div
+  class="position-relative my-3"
+  role="alert"
+  aria-live="assertive"
+  aria-atomic="true"
+>
+  <div
+    class="
+      toast-container
+      position-absolute
+      bottom-0
+      start-50
+      translate-middle-x
+    "
+  >
+    <div class="toast align-items-center" data-bs-autohide="false">
+      <div class="d-flex">
+        <div class="toast-body">Hello, world! This is a toast message.</div>
+        <button
+          type="button"
+          class="btn-close me-2 m-auto"
+          data-bs-dismiss="toast"
+        >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var toastElList = [].slice.call(document.querySelectorAll(".toast"));
+  var toastList = toastElList.map(function (toastEl) {
+    return new bootstrap.Toast(toastEl);
+  });
+
+  document.querySelector(".js-btn-toast").addEventListener("click", () => {
+    toastList[0].show();
+  });
+</script>

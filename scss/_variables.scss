@@ -41,6 +41,7 @@ $body-bg: #fff;
 
 $font-family-sans-serif: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-size-base: 0.8125rem !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
 
 $line-height-base: 1.6 !default;
 
@@ -193,3 +194,13 @@ $table-striped-bg:            $gray-100;
 $table-cell-vertical-align:   middle;
 $table-border-color:          $gray-200;
 $table-group-separator-color: $gray-200;
+
+$toast-padding-x: 1.5em !default;
+$toast-padding-y: 0.75em !default;
+$toast-font-size: 1.09375rem !default;
+$toast-background-color: #a4d1ea !default;
+$toast-color: $black !default;
+$toast-border-radius: 2rem !default;
+$toast-box-shadow: 0 !default;
+$toast-border-width:                0 !default;
+$toast-max-width: 100% !default;
