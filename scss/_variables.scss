@@ -17,15 +17,15 @@ $turquoise: #017d87;
 $accent: #005d64;
 $pink: #c5197d;
 $green: #25828d;
-$yellow: #FFC943;
-$red: #C42129;
+$yellow: #ffc943;
+$red: #c42129;
 $purple: #4a2b80;
 $orange: #f47821;
 
-$brand-success:         #77E0CE !default;
-$brand-info:            #4CC3D6 !default;
-$brand-warning:         #FFC943 !default;
-$brand-danger:          #C42129 !default;
+$brand-success:         #77e0ce !default;
+$brand-info:            #4cc3d6 !default;
+$brand-warning:         #ffc943 !default;
+$brand-danger:          #c42129 !default;
 
 $primary:       $turquoise !default;
 $secondary:     $accent !default;
@@ -40,12 +40,12 @@ $body-color: $gray-700 !default;
 $body-bg: #fff;
 
 $font-family-sans-serif: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-size-base: 0.8125rem !default;
+$font-size-base: .8125rem !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
 $line-height-base: 1.6 !default;
 
-$paragraph-margin-bottom: 0.625rem !default;
+$paragraph-margin-bottom: .625rem !default;
 
 $h1-font-size: 13px * 2.3076923077 !default;
 $h2-font-size: 13px * 2.3076923077 !default;
@@ -106,7 +106,7 @@ $input-btn-focus-width: 1px !default;
 $input-btn-focus-box-shadow: 0 0 0 1px currentColor !default;
 $btn-font-weight: 600 !default;
 $btn-border-width: 1px !default;
-$btn-transition: background-color 1s cubic-bezier(0.19, 1, 0.22, 1) !default;
+$btn-transition: background-color 1s cubic-bezier(.19, 1, .22, 1) !default;
 $btn-disabled-opacity: 1 !default;
 $btn-active-box-shadow:       0 !default;
 $btn-active-border-shade-amount:  0 !default;
@@ -119,14 +119,14 @@ $btn-padding-x-lg:            19px !default;
 $btn-font-size-lg:            1.09375rem !default;
 
 $cradle-anim-dur: 607.5ms;
-$cradle-anim-fun: cubic-bezier(0, 0, 0.5, 1);
+$cradle-anim-fun: cubic-bezier(0, 0, .5, 1);
 $cradle-colour-anim-dur: $cradle-anim-dur * 4;
 $cradle-ball-colour-default: #107179;
 $cradle-ball-colour-teal: #6fdac9;
 $cradle-ball-colour-gold: #fbbf45;
 $cradle-ball-colour-pink: #fc4589;
 $cradle-ball-colour-blue: #59d1e4;
-$cradle-shadow-colour: rgba($black, 0.15);
+$cradle-shadow-colour: rgba($black, .15);
 
 $input-color:                           $black !default;
 $input-border-color:                    $gray-600 !default;
@@ -143,7 +143,7 @@ $input-plaintext-color:                 $black !default;
 $input-btn-focus-color:                 $primary !default;
 
 $form-label-color:                      $black !default;
-$form-label-margin-bottom:              0.3846153846em !default;
+$form-label-margin-bottom:              .3846153846em !default;
 
 $form-select-focus-border-color:        $input-focus-border-color !default;
 $form-select-focus-width:               $input-focus-width !default;
@@ -165,11 +165,11 @@ $link-hover-color: $accent !default;
 $link-hover-decoration: none !default;
 
 $modal-backdrop-opacity: .8 !default;
-$modal-md:                          600px !default ;
+$modal-md:                          600px !default;
 $modal-header-border-color:         $gray-200 !default;
 $modal-header-border-width:         0 !default;
 $modal-footer-border-width:         1px !default;
-$modal-header-padding:              $spacer*2 $spacer $spacer !default;
+$modal-header-padding:              $spacer * 2 $spacer $spacer !default;
 $modal-title-line-height:           1.6 !default;
 $modal-footer-border-color:         $gray-300 !default;
 $modal-dialog-margin-y-sm-up:       1.875rem !default;
@@ -196,7 +196,7 @@ $table-border-color:          $gray-200;
 $table-group-separator-color: $gray-200;
 
 $toast-padding-x: 1.5em !default;
-$toast-padding-y: 0.75em !default;
+$toast-padding-y: .75em !default;
 $toast-font-size: 1.09375rem !default;
 $toast-background-color: #a4d1ea !default;
 $toast-color: $black !default;

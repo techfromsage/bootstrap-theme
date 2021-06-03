@@ -5,10 +5,10 @@
   }
 
   > .active > .page-link {
-    color: $primary;
-    background-image: linear-gradient(0deg, $primary 4px, transparent 4px);
-    background-color: #fff;
-    border-color: $primary;
     font-weight: 600;
+    color: $primary;
+    background-color: #fff;
+    background-image: linear-gradient(0deg, $primary 4px, transparent 4px);
+    border-color: $primary;
   }
 }

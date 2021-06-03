@@ -1,5 +1,5 @@
 .o-skip-link {
-  @include visually-hidden-focusable;
+  @include visually-hidden-focusable ();
 }
 
 .c-skip-link:focus,
@@ -7,13 +7,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #005d64;
-  color: #fff;
-  font-weight: 600;
   padding: 1rem 2rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: underline;
+  background-color: #005d64;
   outline: 3px solid #fff;
   opacity: initial;
-  text-decoration: underline;
-  text-underline-position: under;
   transition: none;
+  text-underline-position: under;
 }

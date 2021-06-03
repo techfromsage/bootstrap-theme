@@ -36,10 +36,10 @@
 }
 
 .btn-link {
-  background-color: transparent;
-  border-color: transparent;
   font-weight: 600;
   text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
 
   &:focus {
     background-color: transparent;
@@ -91,7 +91,7 @@
   &:focus,
   &:active {
     border-color: $white;
-    box-shadow: 0px 0px 0px $btn-focus-width $white, 0px 0px 0px 2px $primary;
+    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $primary;
   }
 
   &:disabled,
@@ -104,12 +104,12 @@
     background-color: #004b50;
 
     &:focus {
-      box-shadow: 0px 0px 0px $btn-focus-width $white, 0px 0px 0px 2px #004b50;
+      box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px #004b50;
     }
   }
 
   &:active {
-    box-shadow: 0px 0px 0px $btn-focus-width $white, 0px 0px 0px 2px #004b50;
+    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px #004b50;
   }
 }
 
@@ -124,16 +124,16 @@
 
   &:hover {
     color: $black;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, .1);
   }
 
   &:focus {
     border-color: $black;
-    box-shadow: 0px 0px 0px $btn-focus-width $black, 0px 0px 0px 2px transparent;
+    box-shadow: 0 0 0 $btn-focus-width $black, 0 0 0 2px transparent;
   }
 
   &:active:focus {
-    box-shadow: 0px 0px 0px $btn-focus-width $black, 0px 0px 0px 2px transparent;
+    box-shadow: 0 0 0 $btn-focus-width $black, 0 0 0 2px transparent;
   }
 }
 
@@ -155,23 +155,23 @@
 
   &:focus {
     border-color: $black;
-    box-shadow: 0px 0px 0px $btn-focus-width $white, 0px 0px 0px 2px $black;
+    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $black;
   }
 
   &:active:focus {
-    box-shadow: 0px 0px 0px $btn-focus-width $white, 0px 0px 0px 2px $black;
+    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $black;
   }
 }
 
 .btn-lg {
-  line-height: 1.333;
   font-weight: 400;
+  line-height: 1.333;
 }
 
 .btn-xs {
   @include button-size(
-    0.15385em,
-    0.30769em,
+    .15385em,
+    .30769em,
     1em,
     3px
   );

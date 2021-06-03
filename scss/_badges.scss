@@ -13,21 +13,21 @@
 }
 
 .label-primary {
-  background-color: $primary;
   color: $white;
+  background-color: $primary;
 }
 
 .label-danger {
-  background-color: $danger;
   color: $white;
+  background-color: $danger;
 }
 
 .label-warning {
-  background-color: $warning;
   color: $black;
+  background-color: $warning;
 }
 
 .badge-default,
 .label-default {
-  background-color: #AAD0D0;
+  background-color: #aad0d0;
 }

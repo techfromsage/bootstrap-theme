@@ -5,16 +5,16 @@
 
 .navbar-nav button.nav-link {
   width: 100%;
-  border: 0;
-  background-color: $primary;
   text-align: left;
+  background-color: $primary;
+  border: 0;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, .25);
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -25,7 +25,7 @@
 
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  background-image: linear-gradient(0deg, white 4px, transparent 4px);
+  background-image: linear-gradient(0deg, $white 4px, transparent 4px);
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -35,9 +35,9 @@
 }
 
 .navbar-brand {
-  margin-inline-start: -0.75rem;
-  padding-inline-start: 0.9375rem;
-  padding-inline-end: 0.9375rem;
+  margin-inline-start: -.75rem;
+  padding-inline-start: .9375rem;
+  padding-inline-end: .9375rem;
 }
 
 @media (max-width: 992px) {

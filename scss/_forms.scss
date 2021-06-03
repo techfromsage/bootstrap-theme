@@ -5,10 +5,10 @@ label {
 }
 
 legend {
-  color: $black;
-  font-weight: 300;
   margin-bottom: .25rem;
   font-size: 1.125rem;
+  font-weight: 300;
+  color: $black;
 }
 
 .form-group {
@@ -74,20 +74,20 @@ legend {
 }
 
 .field-required {
-  color: $gray-700;
   font-weight: 600;
+  color: $gray-700;
 }
 
 .field-error {
-  margin-top: math.div($spacer,2);
-  border-left: 3px solid $red;
   padding-left: $spacer;
+  margin-top: math.div($spacer, 2);
   color: $red;
+  border-left: 3px solid $red;
 }
 
 .help-block--new {
-  margin-bottom: 1.25rem;
   padding-left: $spacer;
+  margin-bottom: 1.25rem;
   color: $black;
   background-color: $white;
   border-left: 3px solid $primary;
