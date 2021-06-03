@@ -88,8 +88,7 @@
 }
 
 .btn-primary {
-  &:focus,
-  &:active {
+  &:focus {
     border-color: $white;
     box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $primary;
   }
@@ -102,14 +101,11 @@
 
   &:active {
     background-color: #004b50;
+    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px #004b50;
 
     &:focus {
       box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px #004b50;
     }
-  }
-
-  &:active {
-    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px #004b50;
   }
 }
 
