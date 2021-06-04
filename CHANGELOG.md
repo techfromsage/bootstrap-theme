@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-rc.4](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.3...v1.0.0-rc.4) (2021-06-04)
+
+
+### Features
+
+* theme toast ([826902b](https://github.com/talis/bootstrap-theme/commit/826902bb34c3f8315a6bbbd23cdd4a0f4200e284))
+
+
+### Bug Fixes
+
+* **toast:** account for `.btn-close` presence ([3ee88b2](https://github.com/talis/bootstrap-theme/commit/3ee88b2d2314b049a1a9477320465ac071ba799d))
+* **toast:** update danger state ([ac369fc](https://github.com/talis/bootstrap-theme/commit/ac369fc3f01a8225621f1871d598d9ab72ddb251))
+
 ## [1.0.0-rc.3](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.2...v1.0.0-rc.3) (2021-05-28)
 
 
