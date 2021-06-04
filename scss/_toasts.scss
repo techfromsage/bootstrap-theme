@@ -28,9 +28,23 @@
     background: transparent;
     opacity: 1;
     text-underline-offset: 1px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
   }
 }
 
 .toast-body {
-  padding: $toast-padding-y math.div($toast-padding-x, 2) $toast-padding-y $toast-padding-x;
+  padding: $toast-padding-y $toast-padding-x;
+  padding-right: math.div($toast-padding-x, 2);
+
+  &:only-child {
+    padding-right: $toast-padding-x;
+  }
+}
+
+.toast-body + .btn-close {
+  margin-right: $toast-padding-x;
 }
