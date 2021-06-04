@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-rc.5](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.4...v1.0.0-rc.5) (2021-06-04)
+
+
+### Bug Fixes
+
+* **toasts:** account for iconography ([8b78aea](https://github.com/talis/bootstrap-theme/commit/8b78aea1ac2ed151211e2b80ca65cc07482d6bd3))
+
 ## [1.0.0-rc.4](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.3...v1.0.0-rc.4) (2021-06-04)
 
 
