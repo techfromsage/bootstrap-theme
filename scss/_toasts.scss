@@ -23,6 +23,7 @@
   .btn-close {
     width: auto;
     height: auto;
+    padding: 0;
     font-weight: 300;
     text-decoration: underline;
     background: transparent;
@@ -36,15 +37,11 @@
   }
 }
 
-.toast-body {
+.toast > *:only-child {
+  align-items: center;
   padding: $toast-padding-y $toast-padding-x;
-  padding-right: math.div($toast-padding-x, 2);
-
-  &:only-child {
-    padding-right: $toast-padding-x;
-  }
 }
 
-.toast-body + .btn-close {
-  margin-right: $toast-padding-x;
+.toast-body:not(:only-child) {
+  padding: 0 math.div($toast-padding-x, 2);
 }
