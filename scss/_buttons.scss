@@ -14,8 +14,8 @@
     $accent,
     $accent,
     $white,
-    $gray-500,
-    $gray-500
+    $btn-disabled-color,
+    $btn-disabled-color
   );
 
   &:focus,
@@ -66,8 +66,8 @@
     #a71a22,
     #a71a22,
     $white,
-    $gray-500,
-    $gray-500
+    $btn-disabled-color,
+    $btn-disabled-color
   );
 
   &:focus,
@@ -95,8 +95,8 @@
 
   &:disabled,
   &.disabled {
-    background-color: $gray-500;
-    border-color: $gray-500;
+    background-color: $btn-disabled-color;
+    border-color: $btn-disabled-color;
   }
 
   &:active {
@@ -131,6 +131,12 @@
   &:active:focus {
     box-shadow: 0 0 0 $btn-focus-width $black, 0 0 0 2px transparent;
   }
+
+  &:disabled,
+  &.disabled {
+    color: $gray-700;
+    border-color: $btn-disabled-color;
+  }
 }
 
 .btn-alert--primary {
@@ -144,8 +150,8 @@
     $black,
     $white,
     $white,
-    $gray-500,
-    $gray-500,
+    $btn-disabled-color,
+    $btn-disabled-color,
     $white
   );
 
