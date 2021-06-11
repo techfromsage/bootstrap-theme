@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-rc.6](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.5...v1.0.0-rc.6) (2021-06-11)
+
+
+### Bug Fixes
+
+* **buttons:** update `[disabled]` appearance ([b160c70](https://github.com/talis/bootstrap-theme/commit/b160c709372813c081eda3c4dec64c5ec4aec1b2))
+* **pagination:** update `.disabled` colour ([77ce58c](https://github.com/talis/bootstrap-theme/commit/77ce58c40b8a214ba1f5f44015c3dd0c5ca26d6e))
+
 ## [1.0.0-rc.5](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.4...v1.0.0-rc.5) (2021-06-04)
 
 
