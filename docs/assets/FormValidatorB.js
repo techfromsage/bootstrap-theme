@@ -89,14 +89,14 @@ FormValidator.prototype.showInlineError = function(t) {
     , i = o.parents(".field")
     , n = i.find("label")
     , s = i.find("legend");
-  i.find(".field-error").remove(),
+  i.find(".field-error--new").remove(),
   s.length ? (s.append(e),
   i.attr("aria-invalid", "true")) : (i.append(e),
   o.attr("aria-invalid", "true"))
 }
 ,
 FormValidator.prototype.removeInlineErrors = function() {
-  $(this.form).find(".field-error").remove(),
+  $(this.form).find(".field-error--new").remove(),
   $(this.form).find("[aria-invalid]").attr("aria-invalid", "false")
 }
 ,
