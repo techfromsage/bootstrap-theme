@@ -79,6 +79,11 @@ legend {
 }
 
 .field-error {
+  margin-top: math.div($spacer, 2);
+}
+
+.field-error--new {
+  display: inline-block;
   padding-left: $spacer;
   margin-top: math.div($spacer, 2);
   color: $red;

@@ -5,8 +5,12 @@
       "url": "/"
     },
     {
-      "text": "Forms",
-      "url": "/forms/"
+      "text": "Forms A",
+      "url": "/formsA/"
+    },
+    {
+      "text": "Forms B",
+      "url": "/formsB/"
     }
   ]
 }
