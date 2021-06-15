@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="/bootstrap-theme/assets/css/talis.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <title>Forms B | Talis</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="o-skip-link" href="#content">Skip to main content</a>
+  <div class="container-fluid">
+    <a class="navbar-brand">Talis</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+          
+          
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link "  href="/bootstrap-theme/">Home</a>
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link "  href="/bootstrap-theme/formsA/">Forms A</a>
+          </li>
+        
+          
+          
+
+          
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active"  aria-current="page" href="/bootstrap-theme/formsB/">Forms B</a>
+          </li>
+        
+        <li class="nav-item">
+          <button class="nav-link js-loader-toggle" type="button">
+            Toggle loader
+          </button>
+        </li>
+        <li class="nav-item dropdown">
+          <button
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+                Dropdown
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <span class="dropdown-header">Dropdown header</span></li>
+            <li>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li><hr class="dropdown-divider"/></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link disabled"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Disabled</a
+            >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container-fluid">
+      
+  <main id="content" tabindex="-1">
+    
+
+<script
+  defer
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+></script>
+
+<script defer src="/bootstrap-theme/assets/FormValidatorB.js"></script>
+<script defer src="/bootstrap-theme/assets/example-formB.js"></script>
+ 
+
+
+<header class="page-header">
+<div class="alert alert-danger">
+  <strong>Heads up!</strong> This is a work-in-progress and is not final.
+</div>
+  <h1>Forms B</h1>
+</header>
+
+<div class="row">
+  <div class="col-md-8">
+    <form id="registration" class="needs-validation" novalidate>
+
+      <div
+        tabindex="-1"
+        role="group"
+        id="errorSummary"
+        class="alert alert-danger errorSummary d-none"
+      ></div>
+
+      <fieldset>
+        <legend>Your details</legend>
+        <p class="help-block--new">
+          Here is some instructional text about completing this input successfully.
+        </p>
+        <div class="row">
+        <div class="form-group field col-6">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="given-name"
+          />
+        </div>
+        </div>
+
+<div class="row">
+        <div class="form-group field col-6">
+          <label class="form-label" for="email">
+            <span class="field-label"
+              >Email <span class="field-required">(Required)</span></span
+            >
+            <span class="field-hint">A valid email address</span>
+          </label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            aria-required="true"
+            required
+          />
+        </div>
+</div>
+        <div class="row">
+
+        <div class="form-group field col-6">
+          <label class="form-label" for="password">
+            <span class="field-label">Password <span class="field-required">(Required)</span></span>
+            <span class="field-hint">Longer than 8 characters</span>
+          </label>
+          <input
+            class="form-control"
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="current-password"
+            aria-required="true"
+            required
+            min-length="8"
+          />
+        </div>
+        </div>
+
+                <div class="row">
+
+        <div class="form-group field">
+          <label class="form-label" for="otp">
+            <span class="field-label">One-time code <span class="field-required">(Required)</span></span>
+          </label>
+          <div class="col-2">
+          <input
+            class="form-control"
+            type="otp"
+            name="otp"
+            id="otp"
+            autocomplete="one-time-password"
+            aria-required="true"
+            min-length="6"
+            max-length="6"
+          />
+        </div>
+        </div>
+      </fieldset>
+
+<div class="row">
+      <div class="form-group field col-6">
+        <label class="form-label" for="custom-select-again">
+          <span class="field-label">Options</span>
+        </label>
+        <select class="form-select" id="custom-select-again">
+          <option>1 (One)</option>
+          <option>2 (Two)</option>
+          <option>3 (Three)</option>
+          <option>4 (Four)</option>
+          <option>5 (Five)</option>
+        </select>
+      </div>
+</div>
+
+      <div class="form-group field">
+        <label class="form-label" for="message">
+          <span class="field-label">Comment</span>
+          <span class="field-hint"
+            >Tell us a little about yourself, in 240 characters or less.</span
+          >
+        </label>
+        <textarea
+          class="form-control"
+          type="message"
+          name="message"
+          id="message"
+          aria-required="true"
+        ></textarea>
+      </div>
+
+      <fieldset>
+        <legend>Pick a side</legend>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            id="radio"
+            name="radio"
+          />
+          <label class="form-check-label form-label" for="radio">Left</label>
+        </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            id="radio-checked"
+            name="radio"
+          />
+          <label class="form-check-label form-label" for="radio-checked"
+            >Right</label
+          >
+        </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            id="radio-checked-again"
+            name="radio"
+          />
+          <label class="form-check-label form-label" for="radio-checked-again"
+            >Sit on the fence</label
+          >
+        </div>
+      </fieldset>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="check"
+          name="check"
+        />
+        <label class="form-check-label form-label" for="check"
+          >Opt-in to our amazing newsletter</label
+        >
+      </div>
+
+<div class="row">
+      <div class="form-group col-6">
+        <label class="form-label" for="exampleInputFile-jazzy">
+          <span class="field-label">File input</span>
+          <span class="field-hint">Pick a file… any file…</span>
+        </label>
+        <input class="form-control" type="file" id="exampleInputFile-jazzy" />
+      </div>
+</div>
+      <div class="controls mb-5">
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="reset" class="btn btn-default">Clear</button>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-4">
+    <h2>Guidelines</h2>
+    <ol>
+      <li><code>novalidate</code> set on form to disable browser validation</li>
+      <li>Top-aligned labels</li>
+      <li>Labels always visible</li>
+      <li>A new row for each question</li>
+      <li>
+        Use a hint to explain any validation rules which have been applied to
+        the input
+      </li>
+      <li>
+        Use the appropriate <code>autocomplete</code> attribute for the field in
+        question.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete"
+          >View the list of values at MDN</a
+        >
+      </li>
+      <li>
+        All fields required by default; explicitly mark those which are
+        optional.
+      </li>
+      <li>
+        Use a <code>fieldset</code> to group multiple controls. A
+        <code>legend</code> describes a group like a
+        <code>label</code> describes an individual control.
+      </li>
+      <li>Use sensible defaults: design for common circumstances first.</li>
+      <li>
+        The input width gives users a clue as to the length of the content it
+        requires.
+      </li>
+      <li>
+        Do not disable the form submit button: allow it to be discovered and
+        trigger the form validation rules.
+      </li>
+    </ol>
+
+    <h3>Validation</h3>
+    <p>Messsages should:</p>
+    <ol>
+      <li>Be concise</li>
+      <li>Be consistent</li>
+      <li>Be specific</li>
+      <li>Avoid jargon</li>
+      <li>Use plain language</li>
+      <li>Use active voice</li>
+      <li>Not blame the user</li>
+    </ol>
+  </div>
+</div>
+
+  </main>
+
+    </div>
+  </body>
+</html>
