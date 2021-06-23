@@ -2,6 +2,10 @@
 title: Bootstrap v5 Kitchen Sink
 ---
 
+{% from "macros/alerts.njk" import alert %}
+
+{{ alert("For demonstration purposes only. This section is non-normative.", { type: 'warning' }) }}
+
 {% include "page-header.njk" %}
 {% include "breadcrumbs.njk" %}
 {% include "typography.njk" %}
