@@ -85,7 +85,7 @@ legend {
 .field-error--new {
   display: inline-block;
   padding-left: $spacer;
-  margin-top: math.div($spacer, 2);
+  margin-bottom: math.div($spacer, 2);
   color: $red;
   border-left: 3px solid $red;
 }
@@ -96,4 +96,19 @@ legend {
   color: $black;
   background-color: $white;
   border-left: 3px solid $primary;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid,
+.was-validated .form-control:valid, .form-control.is-valid {
+  border-color: $input-border-color;
+}
+
+
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus,
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus,
+.was-validated .form-select:invalid:focus, .form-select.is-invalid:focus,
+.was-validated .form-select:valid:focus, .form-select.is-valid:focus,
+{
+  border-color: $input-focus-border-color;
+  box-shadow: $input-focus-box-shadow;
 }
