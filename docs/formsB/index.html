@@ -48,19 +48,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link "  href="/bootstrap-theme/formsA/">Forms A</a>
-          </li>
-        
-          
-          
-
-          
-            
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link  active"  aria-current="page" href="/bootstrap-theme/formsB/">Forms B</a>
+            <a class="nav-link "  href="/bootstrap-theme/formsA/">Forms</a>
           </li>
         
         <li class="nav-item">
@@ -215,6 +203,46 @@
             max-length="6"
           />
         </div>
+        </div>
+
+        <div class="row">
+          <div class="col-auto">
+            <p class="help-block--new">
+              Here is some instructional text about completing this input successfully.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group field">
+              <label class="form-label" for="date--start">
+                <span class="field-label">Start date <span class="field-required">(Required)</span></span>
+              </label>
+              <div class="input-group mb-3">
+                <input id="date--start" required type="text" class="form-control" placeholder="YYYY-MM-DD" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-primary" type="button" id="button-addon2">
+                  <div class="visually-hidden">Open date picker</div>
+                  <i class="far fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group field">
+
+              <label class="form-label" for="date--end">
+                <span class="field-label">End date <span class="field-required">(Required)</span></span>
+              </label>
+
+              <div class="input-group mb-3">
+                <input id="date--end" type="text" required class="form-control" placeholder="YYYY-MM-DD" aria-describedby="button-addon2">
+                <button class="btn btn-outline-primary" type="button" id="button-addon2">
+                  <div class="visually-hidden">Open date picker</div>
+                  <i class="far fa-calendar-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </fieldset>
 

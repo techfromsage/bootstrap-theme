@@ -51,16 +51,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link  active"  aria-current="page" href="/bootstrap-theme/formsA/">Forms A</a>
-          </li>
-        
-          
-          
-
-          
-
-          <li class="nav-item">
-            <a class="nav-link "  href="/bootstrap-theme/formsB/">Forms B</a>
+            <a class="nav-link  active"  aria-current="page" href="/bootstrap-theme/formsA/">Forms</a>
           </li>
         
         <li class="nav-item">
@@ -131,8 +122,7 @@
 
 <div class="row">
   <div class="col-md-8">
-    <form id="registration" novalidate>
-
+    <form id="registration" class="needs-validation" novalidate>
       <div
         tabindex="-1"
         role="group"
@@ -142,41 +132,40 @@
 
       <fieldset>
         <legend>Your details</legend>
-                  <div class="alert alert-info">
+          <div class="help-block--new">
               Here is some instructional text about completing this input successfully.
           </div>
         <div class="row">
+          <div class="form-group field col-6">
+            <label class="form-label" for="name">Name</label>
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="given-name"
+            />
+          </div>
+        </div>
 
-        <div class="form-group field col-6">
-          <label class="form-label" for="name">Name</label>
-          <input
-            class="form-control"
-            type="text"
-            name="name"
-            id="name"
-            autocomplete="given-name"
-          />
+        <div class="row">
+                <div class="form-group field col-6">
+                  <label class="form-label" for="email">
+                    <span class="field-label"
+                      >Email <span class="field-required">(Required)</span></span
+                    >
+                    <span class="field-hint">A valid email address</span>
+                  </label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="email"
+                    aria-required="true"
+                  />
+                </div>
         </div>
-        </div>
-
-<div class="row">
-        <div class="form-group field col-6">
-          <label class="form-label" for="email">
-            <span class="field-label"
-              >Email <span class="field-required">(Required)</span></span
-            >
-            <span class="field-hint">A valid email address</span>
-          </label>
-          <input
-            class="form-control"
-            type="email"
-            name="email"
-            id="email"
-            autocomplete="email"
-            aria-required="true"
-          />
-        </div>
-</div>
         <div class="row">
 
         <div class="form-group field col-6">
@@ -196,8 +185,7 @@
         </div>
         </div>
 
-                <div class="row">
-
+      <div class="row">
         <div class="form-group field">
           <label class="form-label" for="otp">
             <span class="field-label">One-time code <span class="field-required">(Required)</span></span>
@@ -214,10 +202,56 @@
             max-length="6"
           />
         </div>
-        </div>
-      </fieldset>
+      </div>
 
-<div class="row">
+    </fieldset>
+
+    <fieldset>
+      <legend>Date ranges</legend>
+
+      <div class="row">
+
+        <div class="col-auto">
+        <p class="help-block--new my-2">
+          Here is some instructional text about completing this input successfully.
+        </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-group field">
+            <label class="form-label" for="date--start">
+              <span class="field-label">Start date <span class="field-required">(Required)</span></span>
+            </label>
+
+            <div class="input-group mb-3">
+              <input id="date--start" required type="text" class="form-control" placeholder="YYYY-MM-DD" aria-label="Recipient's username" aria-describedby="button-addon-start">
+              <button class="btn btn-outline-primary" type="button" id="button-addon-start">
+                <div class="visually-hidden">Open date picker</div>
+                <i class="far fa-calendar-alt"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group field">
+
+            <label class="form-label" for="date--end">
+              <span class="field-label">End date <span class="field-required">(Required)</span></span>
+            </label>
+
+            <div class="input-group mb-3">
+              <input id="date--end" type="text" required class="form-control" placeholder="YYYY-MM-DD" aria-describedby="button-addon-end">
+              <button class="btn btn-outline-primary" type="button" id="button-addon-end">
+                <div class="visually-hidden">Open date picker</div>
+                <i class="far fa-calendar-alt"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="row">
       <div class="form-group field col-6">
         <label class="form-label" for="custom-select-again">
           <span class="field-label">Options</span>

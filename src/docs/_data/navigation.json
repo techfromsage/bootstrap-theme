@@ -5,12 +5,8 @@
       "url": "/"
     },
     {
-      "text": "Forms A",
+      "text": "Forms",
       "url": "/formsA/"
-    },
-    {
-      "text": "Forms B",
-      "url": "/formsB/"
     }
   ]
 }
