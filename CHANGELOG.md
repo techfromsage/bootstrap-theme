@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-rc.7](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.6...v1.0.0-rc.7) (2021-07-20)
+
+
+### Bug Fixes
+
+* style progress bar ([dede691](https://github.com/talis/bootstrap-theme/commit/dede691e95d47b51de590477fd2283d508ce23ac))
+* update dropdown item focus colour ([573e501](https://github.com/talis/bootstrap-theme/commit/573e5011ba998d47f06f3e284167aa18e7125919))
+* **forms:** update validation states ([57569b0](https://github.com/talis/bootstrap-theme/commit/57569b0ac791ea47ed9d24692ec8d655c4f52145))
+
 ## [1.0.0-rc.6](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.5...v1.0.0-rc.6) (2021-06-11)
 
 
