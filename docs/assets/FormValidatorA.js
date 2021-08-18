@@ -84,19 +84,19 @@ FormValidator.prototype.showInlineErrors = function() {
 ,
 
 FormValidator.prototype.showInlineError = function(t) {
-  var e = '<span class="field-error--new text-danger"> ' + FormValidator.escapeHtml(t.message) + "</span>"
+  var e = '<span class="field-error"> ' + FormValidator.escapeHtml(t.message) + "</span>"
     , o = $("#" + t.fieldName)
     , i = o.parents(".field")
     , n = i.find("label")
     , s = i.find("legend");
-  i.find(".field-error--new").remove(),
+  i.find(".field-error").remove(),
   s.length ? (s.append(e),
   i.attr("aria-invalid", "true")) : (i.append(e),
   o.attr("aria-invalid", "true"))
 }
 ,
 FormValidator.prototype.removeInlineErrors = function() {
-  $(this.form).find(".field-error--new").remove(),
+  $(this.form).find(".field-error").remove(),
   $(this.form).find("[aria-invalid]").attr("aria-invalid", "false")
 }
 ,
