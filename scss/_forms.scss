@@ -82,23 +82,25 @@ legend {
   margin-top: math.div($spacer, 2);
 }
 
-.field-error--new {
-  display: inline-block;
-  padding-left: $spacer;
+.field-error,
+.help-block {
+  display: block;
+  padding: math.div($spacer, 4) $spacer;
   margin-bottom: math.div($spacer, 2);
+  border-left: 3px solid;
+}
+
+.field-error {
   color: $red;
-  border-left: 3px solid $red;
+  border-left-color: $red;
 }
 
-.help-block--new {
-  padding-left: $spacer;
-  margin-bottom: 1.25rem;
+.help-block {
   color: $black;
-  background-color: $white;
-  border-left: 3px solid $primary;
+  border-left-color: $primary;
 }
 
-.input-group + .field-error--new {
+.input-group + .field-error {
   margin-top: math.div($spacer, 2);
 }
 
