@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.8...v1.0.0) (2021-09-21)
+
+
+### Bug Fixes
+
+* perform linting ([ae4e052](https://github.com/talis/bootstrap-theme/commit/ae4e0528cfd66977b8bd9b8cd83e24dc6fba9116))
+
 ## [1.0.0-rc.8](https://github.com/talis/bootstrap-theme/compare/v1.0.0-rc.7...v1.0.0-rc.8) (2021-08-18)
 
 
