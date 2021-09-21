@@ -55,14 +55,6 @@ legend {
   }
 }
 
-.help-block {
-  display: block;
-  margin-top: .3125rem;
-  margin-bottom: .625rem;
-  font-style: italic;
-  color: $gray-700;
-}
-
 .field-label,
 .field-hint,
 .field-error {
@@ -79,41 +71,45 @@ legend {
 }
 
 .field-error {
-  margin-top: math.div($spacer, 2);
-}
-
-.field-error,
-.help-block {
   display: block;
   padding: math.div($spacer, 4) $spacer;
+  margin-top: math.div($spacer, 2);
   margin-bottom: math.div($spacer, 2);
-  border-left: 3px solid;
-}
-
-.field-error {
   color: $red;
-  border-left-color: $red;
+  border-left: 3px solid $red;
 }
 
 .help-block {
+   display: block;
+  padding: math.div($spacer, 4) $spacer;
+  margin-top: .3125rem;
+  margin-bottom: .625rem;
+  margin-bottom: math.div($spacer, 2);
+  font-style: italic;
   color: $black;
-  border-left-color: $primary;
+  border-left: 3px solid $primary;
 }
 
 .input-group + .field-error {
   margin-top: math.div($spacer, 2);
 }
 
-.was-validated .form-control:invalid, .form-control.is-invalid,
-.was-validated .form-control:valid, .form-control.is-valid {
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated .form-control:valid,
+.form-control.is-valid {
   border-color: $input-border-color;
 }
 
 
-.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus,
-.was-validated .form-control:valid:focus, .form-control.is-valid:focus,
-.was-validated .form-select:invalid:focus, .form-select.is-invalid:focus,
-.was-validated .form-select:valid:focus, .form-select.is-valid:focus {
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus,
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus,
+.was-validated .form-select:invalid:focus,
+.form-select.is-invalid:focus,
+.was-validated .form-select:valid:focus,
+.form-select.is-valid:focus {
   border-color: $input-focus-border-color;
   box-shadow: $input-focus-box-shadow;
 }
