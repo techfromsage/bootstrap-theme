@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/talis/bootstrap-theme/compare/v1.1.0...v1.1.1) (2021-10-05)
+
+
+### Bug Fixes
+
+* **error:** move body styles to class ([969aa60](https://github.com/talis/bootstrap-theme/commit/969aa606d10bff7ae45ff4ebf201dea839bdbd3b))
+
 ## [1.1.0](https://github.com/talis/bootstrap-theme/compare/v1.0.1...v1.1.0) (2021-09-24)
 
 
