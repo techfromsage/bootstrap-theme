@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/talis/bootstrap-theme/compare/v1.1.1...v1.1.2) (2021-10-05)
+
+
+### Bug Fixes
+
+* **error:** nest styles ([7e471fd](https://github.com/talis/bootstrap-theme/commit/7e471fde5ffa84381ddb9f9dbe344f473b023b51))
+
 ### [1.1.1](https://github.com/talis/bootstrap-theme/compare/v1.1.0...v1.1.1) (2021-10-05)
 
 
