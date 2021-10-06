@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/talis/bootstrap-theme/compare/v1.1.2...v1.2.0) (2021-10-06)
+
+
+### Features
+
+* add confirmation modal ([9d92b69](https://github.com/talis/bootstrap-theme/commit/9d92b6915a6d5d0e305dc62d505f50aefb3a351c))
+
 ### [1.1.2](https://github.com/talis/bootstrap-theme/compare/v1.1.1...v1.1.2) (2021-10-05)
 
 
