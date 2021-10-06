@@ -1055,6 +1055,10 @@ I'm a textarea</textarea
   Launch demo modal
 </button>
 
+<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#confirmation-modal">
+  Launch confirmation modal
+</button>
+
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -1075,6 +1079,32 @@ I'm a textarea</textarea
         </button>
         <button type="button" class="btn btn-primary">
           Save changes
+        </button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+<div class="modal o-confirmation-modal fade" id="confirmation-modal" tabindex="-1" role="dialog" aria-labelledby="confirmation-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <img src="/bootstrap-theme/assets/img/discard.svg" class="modal-image" alt="" width="149" height="158" />
+      <div class="modal-header">
+        <h2 class="modal-title" id="confirmation-label">Are you sure?</h2>
+      </div>
+      <div class="modal-body">
+        <p>
+          You will lose your unsaved data.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal">
+          Yes
+        </button>
+        <button type="button" class="btn btn-lg btn-default">
+          Cancel
         </button>
       </div>
     </div>

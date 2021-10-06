@@ -1,0 +1,29 @@
+@use "sass:math";
+
+.o-confirmation-modal {
+
+  .modal-dialog {
+    max-width: 26.25rem;
+  }
+
+  .modal-image {
+    margin: $modal-inner-padding $modal-inner-padding 0;
+  }
+
+  .modal-header {
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+
+  .modal-content {
+    padding: math.div($modal-inner-padding, 2);
+    @include border-radius(0.5rem);
+    font-size: 1rem;
+  }
+
+  .modal-footer {
+    justify-content: flex-start;
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
