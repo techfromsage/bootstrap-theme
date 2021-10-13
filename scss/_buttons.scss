@@ -183,6 +183,7 @@
   vertical-align: baseline;
 }
 
+/// @deprecated Compose existing classes instead
 .btn-action {
   @extend .btn-lg;
   @extend .btn-link;
