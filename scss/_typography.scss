@@ -1,23 +1,27 @@
-h1,
 h2,
-h3,
 h4,
 h5,
 h6,
-.h1,
 .h2,
-.h3,
 .h4,
 .h5,
 .h6,
-.alpha,
 .beta,
-.gamma,
 .delta,
 .epsilon,
 .zeta {
   line-height: 1.1;
 }
+
+h1,
+h3,
+.h1,
+.h3,
+.alpha,
+.gamma {
+  line-height: 1.35;
+}
+
 
 h1,
 h2,
