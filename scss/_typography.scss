@@ -84,3 +84,7 @@ h6,
 a:focus {
   outline: 1px solid currentColor;
 }
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
