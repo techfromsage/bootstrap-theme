@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/talis/bootstrap-theme/compare/v1.2.1...v1.2.2) (2021-10-28)
+
+
+### Bug Fixes
+
+* set `-webkit-font-smoothing: antialiased` ([#11](https://github.com/talis/bootstrap-theme/issues/11)) ([f3ae197](https://github.com/talis/bootstrap-theme/commit/f3ae197643ce40944944326d07305b3f7d91f92a))
+
 ### [1.2.1](https://github.com/talis/bootstrap-theme/compare/v1.2.0...v1.2.1) (2021-10-08)
 
 
