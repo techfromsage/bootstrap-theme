@@ -1,5 +1,9 @@
 @use "sass:math";
 
+.toast-container {
+  z-index: $zindex-popover;
+}
+
 .toast {
   margin-bottom: $toast-spacing;
   font-weight: 300;
