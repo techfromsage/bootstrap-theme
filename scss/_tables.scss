@@ -1,3 +1,9 @@
 th {
   color: $black;
 }
+
+.table-lg {
+  > :not(caption) > * > * {
+    padding: $table-cell-padding-y-lg $table-cell-padding-x-lg;
+  }
+}
