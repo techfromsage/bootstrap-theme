@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/talis/bootstrap-theme/compare/v1.2.2...v1.3.0) (2021-11-05)
+
+
+### Features
+
+* **tables:** introduce table-lg utility ([#13](https://github.com/talis/bootstrap-theme/issues/13)) ([5514b55](https://github.com/talis/bootstrap-theme/commit/5514b556f97a24e41d4161362521158a7e959f3a))
+
+
+### Bug Fixes
+
+* **toasts:** increase zindex to sit above modals ([#12](https://github.com/talis/bootstrap-theme/issues/12)) ([12652fb](https://github.com/talis/bootstrap-theme/commit/12652fba3c4d894b94aaf287839142abf4ecf788))
+
 ### [1.2.2](https://github.com/talis/bootstrap-theme/compare/v1.2.1...v1.2.2) (2021-10-28)
 
 
