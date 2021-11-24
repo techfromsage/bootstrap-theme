@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/talis/bootstrap-theme/compare/v1.3.0...v1.3.1) (2021-11-24)
+
+
+### Bug Fixes
+
+* **pagination:** adjust default pagination sizing ([#15](https://github.com/talis/bootstrap-theme/issues/15)) ([d3d793d](https://github.com/talis/bootstrap-theme/commit/d3d793ddb19dcb79c3a916ced2544b19d4e8c591))
+
 ## [1.3.0](https://github.com/talis/bootstrap-theme/compare/v1.2.2...v1.3.0) (2021-11-05)
 
 
