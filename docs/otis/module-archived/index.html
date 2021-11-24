@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="/bootstrap-theme/assets/css/talis.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <title>Single Module | Talis</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+  <a class="o-skip-link" href="#content">Skip to main content</a>
+  <div class="container">
+    <a class="navbar-brand" href="/bootstrap-theme/">
+      <img src="/bootstrap-theme/assets/img/logo.svg" alt="Talis" width="75" height="30">
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+          
+          
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link "  href="/bootstrap-theme/formsA/">Forms</a>
+          </li>
+        
+          
+          
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link "  href="/bootstrap-theme/error/">Error</a>
+          </li>
+        
+        <li class="nav-item">
+          <button class="nav-link js-loader-toggle" type="button">
+            Toggle loader
+          </button>
+        </li>
+        <li class="nav-item dropdown">
+          <button
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+                Dropdown
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <span class="dropdown-header">Dropdown header</span></li>
+            <li>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li><hr class="dropdown-divider"/></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <button
+            class="nav-link dropdown-toggle"
+            id="otis-dropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+                Otis
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="otis-dropdown">
+            <li>
+              <span class="dropdown-header">My Modules</span></li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/page-layout">My modules</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/module-added">My modules (Module added)</a>
+            </li>
+            <li class="dropdown-divider"/></li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/create-module">Create module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/create-module-invalid">Create module (Invalid)</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/edit-module">Edit module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/edit-module-invalid">Edit module (Invalid)</a>
+            </li>
+                        <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/reset-module">Reset module</a>
+            </li>
+             <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/reset-module-alt">Reset module (alternative)</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/find-module">Find module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/archived-modules">Find archived modules</a>
+            </li>
+            <li class="dropdown-divider"/></li>
+                        <li>
+              <span class="dropdown-header">Module view</span></li>
+            <li>
+
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/module">Single module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/module-archived">Single module (Archived)</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container">
+      
+  <main id="content" tabindex="-1">
+    
+<div class="alert alert-warning">
+  <strong>This module is archived.</strong> Modules are archived when the end date passes, to unarchive please go to ‘edit module’ and  update the end date to sometime in the future.
+</div>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="/bootstrap-theme/otis/page-layout"><i class="far fa-arrow-alt-circle-left"></i> My Modules</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
+
+<header class="page-header d-flex justify-content-between align-items-center">
+  <h1>Encouraging deeper discussion</h1>
+
+  <div>
+    <button class="btn btn-primary btn-lg" type="button">Add resource</button>
+    <button
+      class="btn btn-default btn-lg"
+      id="module-actions"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Actions for Encouraging deeper discussion</span>
+      <i class="far fa-ellipsis-v"></i>
+    </button>
+    <ul
+      class="dropdown-menu dropdown-menu-end"
+      aria-labelledby="module-actions"
+    >
+      <li>
+        <a class="dropdown-item" href="#"> Edit module </a>
+      </li>
+      <li class="dropdown-divider"></li>
+      <li>
+        <a class="dropdown-item" href="#"> Copy playlist link </a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#"> Embed playlist </a>
+      </li>
+      <li class="dropdown-divider"></li>
+      <li>
+        <a class="dropdown-item" href="#"> Download annotations </a>
+      </li>
+      <li>
+        <a class="dropdown-item disabled" href="#"> Leave module </a>
+      </li>
+      <li class="danger">
+        <a class="dropdown-item" href="#"> Reset module </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<section class="mb-4">
+  <!-- Styles -->
+  <style>
+    #chartdiv {
+      background-color: #f8f9fa;
+      border-left: 1px solid #ff4d96;
+
+      width: 100%;
+      height: 21rem;
+      max-width: 100%;
+    }
+  </style>
+
+  <!-- Resources -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+  <!-- Chart code -->
+  <script>
+    am5.ready(function () {
+      // Create root element
+      // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+      var root = am5.Root.new("chartdiv");
+
+      // Set themes
+      // https://www.amcharts.com/docs/v5/concepts/themes/
+      root.setThemes([am5themes_Animated.new(root)]);
+
+      // Create chart
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/
+      var chart = root.container.children.push(
+        am5xy.XYChart.new(root, {
+          panX: true,
+          panY: true,
+          wheelX: "panX",
+          wheelY: "zoomX",
+        })
+      );
+
+      // Add cursor
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+      var cursor = chart.set(
+        "cursor",
+        am5xy.XYCursor.new(root, { behavior: "none" })
+      );
+      cursor.lineY.set("visible", false);
+
+      // Generate random data
+      var date = new Date();
+      date.setHours(0, 0, 0, 0);
+      var value = 100;
+
+      function generateData() {
+        value = Math.round(Math.random() * 10 - 5 + value);
+        am5.time.add(date, "day", 1);
+        return { date: date.getTime(), value: value };
+      }
+
+      function generateDatas(count) {
+        var data = [];
+        for (var i = 0; i < count; ++i) {
+          data.push(generateData());
+        }
+        return data;
+      }
+
+      // Create axes
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+      var xAxis = chart.xAxes.push(
+        am5xy.DateAxis.new(root, {
+          maxDeviation: 0.2,
+          baseInterval: {
+            timeUnit: "day",
+            count: 1,
+          },
+          renderer: am5xy.AxisRendererX.new(root, {}),
+          tooltip: am5.Tooltip.new(root, {}),
+        })
+      );
+
+      var yAxis = chart.yAxes.push(
+        am5xy.ValueAxis.new(root, {
+          renderer: am5xy.AxisRendererY.new(root, {}),
+        })
+      );
+
+      // Add series
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+      var series = chart.series.push(
+        am5xy.LineSeries.new(root, {
+          name: "Series",
+          xAxis: xAxis,
+          yAxis: yAxis,
+          valueYField: "value",
+          valueXField: "date",
+          tooltip: am5.Tooltip.new(root, { labelText: "{valueY}" }),
+        })
+      );
+
+      // Add scrollbar
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
+      chart.set(
+        "scrollbarX",
+        am5.Scrollbar.new(root, { orientation: "horizontal" })
+      );
+
+      // Set data
+      var data = generateDatas(1200);
+      series.data.setAll(data);
+
+      // Make stuff animate on load
+      // https://www.amcharts.com/docs/v5/concepts/animations/
+      series.appear(1000);
+      chart.appear(1000, 100);
+    }); // end am5.ready()
+  </script>
+
+  <div id="chartdiv"></div>
+</section>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">XX Resources</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">XX Students</a>
+  </li>
+</ul>
+
+<div class="table-responsive">
+  <table class="table table-lg table-striped mb-3">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Personal notes</th>
+        <th>Class comments</th>
+        <th>Time spent in resource</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="otis/module">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="otis/module">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer class="py-4 mt-5">
+  <hr />
+  <small class="d-block mb-0">
+    <a href="https://talis.com/accessibility" rel="noreferrer">Accessibility</a>
+  </small>
+  <small class="d-block mb-0"
+    >Copyright © Talis Education Limited, all rights reserved</small
+  >
+</footer>
+
+  </main>
+
+    </div>
+  </body>
+</html>

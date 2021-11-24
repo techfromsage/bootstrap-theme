@@ -15,9 +15,9 @@
     <title>Forms B | Talis</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
   <a class="o-skip-link" href="#content">Skip to main content</a>
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="/bootstrap-theme/">
       <img src="/bootstrap-theme/assets/img/logo.svg" alt="Talis" width="75" height="30">
     </a>
@@ -82,21 +82,68 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >Disabled</a
-            >
+        <li class="nav-item dropdown">
+          <button
+            class="nav-link dropdown-toggle"
+            id="otis-dropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+                Otis
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="otis-dropdown">
+            <li>
+              <span class="dropdown-header">My Modules</span></li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/page-layout">My modules</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/module-added">My modules (Module added)</a>
+            </li>
+            <li class="dropdown-divider"/></li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/create-module">Create module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/create-module-invalid">Create module (Invalid)</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/edit-module">Edit module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/edit-module-invalid">Edit module (Invalid)</a>
+            </li>
+                        <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/reset-module">Reset module</a>
+            </li>
+             <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/reset-module-alt">Reset module (alternative)</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/find-module">Find module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/archived-modules">Find archived modules</a>
+            </li>
+            <li class="dropdown-divider"/></li>
+                        <li>
+              <span class="dropdown-header">Module view</span></li>
+            <li>
+
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/module">Single module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/module-archived">Single module (Archived)</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-    <div class="container-fluid my-2">
+  <div class="container">
       
   <main id="content" tabindex="-1">
     
