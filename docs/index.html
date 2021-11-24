@@ -11,13 +11,13 @@
     />
     <script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
+    
     <title>Bootstrap v5 Kitchen Sink | Talis</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
   <a class="o-skip-link" href="#content">Skip to main content</a>
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="/bootstrap-theme/">
       <img src="/bootstrap-theme/assets/img/logo.svg" alt="Talis" width="75" height="30">
     </a>
@@ -34,25 +34,25 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+          
+          
 
-
-
-
-
+          
 
           <li class="nav-item">
             <a class="nav-link "  href="/bootstrap-theme/formsA/">Forms</a>
           </li>
+        
+          
+          
 
-
-
-
-
+          
 
           <li class="nav-item">
             <a class="nav-link "  href="/bootstrap-theme/error/">Error</a>
           </li>
-
+        
         <li class="nav-item">
           <button class="nav-link js-loader-toggle" type="button">
             Toggle loader
@@ -82,24 +82,71 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >Disabled</a
-            >
+        <li class="nav-item dropdown">
+          <button
+            class="nav-link dropdown-toggle"
+            id="otis-dropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+                Otis
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="otis-dropdown">
+            <li>
+              <span class="dropdown-header">My Modules</span></li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/page-layout">My modules</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/module-added">My modules (Module added)</a>
+            </li>
+            <li class="dropdown-divider"/></li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/create-module">Create module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/create-module-invalid">Create module (Invalid)</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/edit-module">Edit module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/edit-module-invalid">Edit module (Invalid)</a>
+            </li>
+                        <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/reset-module">Reset module</a>
+            </li>
+             <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/reset-module-alt">Reset module (alternative)</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/find-module">Find module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/archived-modules">Find archived modules</a>
+            </li>
+            <li class="dropdown-divider"/></li>
+                        <li>
+              <span class="dropdown-header">Module view</span></li>
+            <li>
+
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/module">Single module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/bootstrap-theme/otis/module-archived">Single module (Archived)</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-    <div class="container-fluid my-2">
-
+  <div class="container">
+      
   <main id="content" tabindex="-1">
-
+    
 
 
 
@@ -279,47 +326,47 @@ I'm a textarea</textarea
     </ul>
   </div>
 
-
+  
 
 <h2>Buttons</h2>
 <h3>Normal</h3>
-
+  
   <button
     class="btn btn-default "
     type="button"
   >Normal button</button>
 
-
+  
   <button
     class="btn btn-primary "
     type="button"
   >Primary button</button>
 
-
+  
   <button
     class="btn btn-success "
     type="button"
   >Success button</button>
 
-
+  
   <button
     class="btn btn-warning "
     type="button"
   >Warning button</button>
 
-
+  
   <button
     class="btn btn-info "
     type="button"
   >Info button</button>
 
-
+  
   <button
     class="btn btn-danger "
     type="button"
   >Danger button</button>
 
-
+  
   <button
     class="btn btn-link "
     type="button"
@@ -327,7 +374,7 @@ I'm a textarea</textarea
 
 
   <h3>Large</h3>
-
+  
   <button
     class="btn btn-default btn-lg"
     type="button"
@@ -401,43 +448,43 @@ I'm a textarea</textarea
 
 <h2>Buttons</h2>
 <h3>Normal</h3>
-
+  
   <button
     class="btn btn-default "
     type="button"
   >Normal button</button>
 
-
+  
   <button
     class="btn btn-primary "
     type="button"
   >Primary button</button>
 
-
+  
   <button
     class="btn btn-success "
     type="button"
   >Success button</button>
 
-
+  
   <button
     class="btn btn-warning "
     type="button"
   >Warning button</button>
 
-
+  
   <button
     class="btn btn-info "
     type="button"
   >Info button</button>
 
-
+  
   <button
     class="btn btn-danger "
     type="button"
   >Danger button</button>
 
-
+  
   <button
     class="btn btn-link "
     type="button"
@@ -445,7 +492,7 @@ I'm a textarea</textarea
 
 
   <h3>Large</h3>
-
+  
   <button
     class="btn btn-default btn-lg"
     type="button"
@@ -514,8 +561,6 @@ I'm a textarea</textarea
 <hr>
 
 <h2>Tables</h2>
-
-<h3>Normal</h3>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -641,57 +686,6 @@ I'm a textarea</textarea
     </tr>
   </tbody>
 </table>
-
-<h3>Large</h3>
-<table class="table table-striped table-lg">
-  <thead>
-    <tr>
-      <th>Course name</th>
-      <th>Course code</th>
-      <th>Course teacher</th>
-      <th class="text-end">Students</th>
-     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="#">Computer Science</a>
-      </td>
-      <td>CS101</td>
-      <td>Daniel Matthew</td>
-      <td>
-        <div class="text-end">
-          100
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="#">Computer Science</a>
-      </td>
-      <td>CS101</td>
-      <td>Daniel Matthew</td>
-      <td>
-        <div class="text-end">
-          100
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="#">Computer Science</a>
-      </td>
-      <td>CS101</td>
-      <td>Daniel Matthew</td>
-      <td>
-        <div class="text-end">
-          100
-        </div>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
 <hr>
 
 <h2>Forms</h2>

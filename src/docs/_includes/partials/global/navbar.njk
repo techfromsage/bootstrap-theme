@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
   <a class="o-skip-link" href="#content">Skip to main content</a>
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="{{ '/' | url }}">
       <img src="{{ '/assets/img/logo.svg' | url }}" alt="Talis" width="75" height="30">
     </a>
@@ -59,14 +59,61 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >Disabled</a
-            >
+        <li class="nav-item dropdown">
+          <button
+            class="nav-link dropdown-toggle"
+            id="otis-dropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+                Otis
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="otis-dropdown">
+            <li>
+              <span class="dropdown-header">My Modules</span></li>
+            <li>
+              <a class="dropdown-item" href="{{ '/otis/page-layout' | url }}">My modules</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ '/otis/module-added' | url }}">My modules (Module added)</a>
+            </li>
+            <li class="dropdown-divider"/></li>
+            <li>
+              <a class="dropdown-item" href="{{ '/otis/create-module' | url }}">Create module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ '/otis/create-module-invalid' | url }}">Create module (Invalid)</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ '/otis/edit-module' | url }}">Edit module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ '/otis/edit-module-invalid' | url }}">Edit module (Invalid)</a>
+            </li>
+                        <li>
+              <a class="dropdown-item" href="{{ '/otis/reset-module' | url }}">Reset module</a>
+            </li>
+             <li>
+              <a class="dropdown-item" href="{{ '/otis/reset-module-alt' | url }}">Reset module (alternative)</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ '/otis/find-module' | url }}">Find module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ '/otis/archived-modules' | url }}">Find archived modules</a>
+            </li>
+            <li class="dropdown-divider"/></li>
+                        <li>
+              <span class="dropdown-header">Module view</span></li>
+            <li>
+
+            <li>
+              <a class="dropdown-item" href="{{ '/otis/module' | url }}">Single module</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ '/otis/module-archived' | url }}">Single module (Archived)</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>

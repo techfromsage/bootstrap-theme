@@ -1,0 +1,276 @@
+---
+title: Single Module
+---
+
+<div class="alert alert-warning">
+  <strong>This module is archived.</strong> Modules are archived when the end date passes, to unarchive please go to ‘edit module’ and  update the end date to sometime in the future.
+</div>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="{{ '/otis/page-layout' | url }}"><i class="far fa-arrow-alt-circle-left"></i> My Modules</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
+
+<header class="page-header d-flex justify-content-between align-items-center">
+  <h1>Encouraging deeper discussion</h1>
+
+  <div>
+    <button class="btn btn-primary btn-lg" type="button">Add resource</button>
+    <button
+      class="btn btn-default btn-lg"
+      id="module-actions"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Actions for Encouraging deeper discussion</span>
+      <i class="far fa-ellipsis-v"></i>
+    </button>
+    <ul
+      class="dropdown-menu dropdown-menu-end"
+      aria-labelledby="module-actions"
+    >
+      <li>
+        <a class="dropdown-item" href="#"> Edit module </a>
+      </li>
+      <li class="dropdown-divider"></li>
+      <li>
+        <a class="dropdown-item" href="#"> Copy playlist link </a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#"> Embed playlist </a>
+      </li>
+      <li class="dropdown-divider"></li>
+      <li>
+        <a class="dropdown-item" href="#"> Download annotations </a>
+      </li>
+      <li>
+        <a class="dropdown-item disabled" href="#"> Leave module </a>
+      </li>
+      <li class="danger">
+        <a class="dropdown-item" href="#"> Reset module </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<section class="mb-4">
+  <!-- Styles -->
+  <style>
+    #chartdiv {
+      background-color: #f8f9fa;
+      border-left: 1px solid #ff4d96;
+
+      width: 100%;
+      height: 21rem;
+      max-width: 100%;
+    }
+  </style>
+
+  <!-- Resources -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+  <!-- Chart code -->
+  <script>
+    am5.ready(function () {
+      // Create root element
+      // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+      var root = am5.Root.new("chartdiv");
+
+      // Set themes
+      // https://www.amcharts.com/docs/v5/concepts/themes/
+      root.setThemes([am5themes_Animated.new(root)]);
+
+      // Create chart
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/
+      var chart = root.container.children.push(
+        am5xy.XYChart.new(root, {
+          panX: true,
+          panY: true,
+          wheelX: "panX",
+          wheelY: "zoomX",
+        })
+      );
+
+      // Add cursor
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+      var cursor = chart.set(
+        "cursor",
+        am5xy.XYCursor.new(root, { behavior: "none" })
+      );
+      cursor.lineY.set("visible", false);
+
+      // Generate random data
+      var date = new Date();
+      date.setHours(0, 0, 0, 0);
+      var value = 100;
+
+      function generateData() {
+        value = Math.round(Math.random() * 10 - 5 + value);
+        am5.time.add(date, "day", 1);
+        return { date: date.getTime(), value: value };
+      }
+
+      function generateDatas(count) {
+        var data = [];
+        for (var i = 0; i < count; ++i) {
+          data.push(generateData());
+        }
+        return data;
+      }
+
+      // Create axes
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+      var xAxis = chart.xAxes.push(
+        am5xy.DateAxis.new(root, {
+          maxDeviation: 0.2,
+          baseInterval: {
+            timeUnit: "day",
+            count: 1,
+          },
+          renderer: am5xy.AxisRendererX.new(root, {}),
+          tooltip: am5.Tooltip.new(root, {}),
+        })
+      );
+
+      var yAxis = chart.yAxes.push(
+        am5xy.ValueAxis.new(root, {
+          renderer: am5xy.AxisRendererY.new(root, {}),
+        })
+      );
+
+      // Add series
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+      var series = chart.series.push(
+        am5xy.LineSeries.new(root, {
+          name: "Series",
+          xAxis: xAxis,
+          yAxis: yAxis,
+          valueYField: "value",
+          valueXField: "date",
+          tooltip: am5.Tooltip.new(root, { labelText: "{valueY}" }),
+        })
+      );
+
+      // Add scrollbar
+      // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
+      chart.set(
+        "scrollbarX",
+        am5.Scrollbar.new(root, { orientation: "horizontal" })
+      );
+
+      // Set data
+      var data = generateDatas(1200);
+      series.data.setAll(data);
+
+      // Make stuff animate on load
+      // https://www.amcharts.com/docs/v5/concepts/animations/
+      series.appear(1000);
+      chart.appear(1000, 100);
+    }); // end am5.ready()
+  </script>
+
+  <div id="chartdiv"></div>
+</section>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">XX Resources</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">XX Students</a>
+  </li>
+</ul>
+
+<div class="table-responsive">
+  <table class="table table-lg table-striped mb-3">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Personal notes</th>
+        <th>Class comments</th>
+        <th>Time spent in resource</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="otis/module">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="otis/module">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Astronomy or Astrology</a>
+        </td>
+        <td>02 Mar 2021</td>
+        <td>02 Sep 2021</td>
+        <td class="text-end">10</td>
+        <td class="text-end">24</td>
+        <td class="text-end">110</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer class="py-4 mt-5">
+  <hr />
+  <small class="d-block mb-0">
+    <a href="https://talis.com/accessibility" rel="noreferrer">Accessibility</a>
+  </small>
+  <small class="d-block mb-0"
+    >Copyright © Talis Education Limited, all rights reserved</small
+  >
+</footer>
