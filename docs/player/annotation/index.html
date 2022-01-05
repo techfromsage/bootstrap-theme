@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="/bootstrap-theme/assets/css/talis.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1f723026cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    
+    <title>Annotation Demo | Talis</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="o-skip-link" href="#content">Skip to main content</a>
+      <div class="container">
+        <a class="navbar-brand" href="/bootstrap-theme/">
+          <img src="/bootstrap-theme/assets/img/logo.svg" alt="Talis" width="75" height="30">
+        </a>
+      </div>
+    </nav>
+
+    <div class="container ">
+<div class="row g-0">
+<main class="col-8">
+  <article>
+    <ol class="list-unstyled pages">
+      <li class="page">
+        <img class="img-fluid" src="https://depot-resources-prod.s3.eu-west-1.amazonaws.com/b2da02f580302adbc035d500826a182ad7cb0d7c747fa469fa8c6a83bd0cc40a?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAV7YI6FRILKNJLSOJ%2F20211216%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20211216T114420Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=5c368bfc0968b316e86197eb3d016ddd00906c9bcf2fdbb567770c4532febc4b" alt="">
+      </li>
+    </ol>
+  </article>
+</main>
+<aside class="col-3">
+  <h2>Class comments</h2>
+  <button type="button" class="btn btn-primary js-add-comment mb-4" onclick="showCommentForm()">Add class comment</button>
+  <form class="mb-4" hidden onsubmit="submitComment(event)">
+    <div class="form-group">
+      <label>Your comment</label>
+      <textarea class="form-control" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit comment</button>
+    <button type="button" class="btn btn-default" onclick="hideCommentForm()">Cancel</button>
+  </form>
+  <ol class="list-unstyled" id="comments">
+    <li>
+      <div>
+        <div>
+          <b>Barry Whatshisface</b>
+        </div>
+        <p>
+          a really good comment cheers
+        </p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <div>
+          <b>Naomi Whatshername</b>
+        </div>
+        <p>
+          This is a very well thought out point. Thank you for sharing.
+        </p>
+      </div>
+    </li>
+  </ol>
+</aside>
+<nav class="col-1">
+  <ul class="list-unstyled">
+    <li>
+      <button class="btn btn-link" type="button">
+          <i class="fal fa-info-circle"></i>
+      </button>
+    </li>
+    <li>
+      <button class="btn btn-link" type="button">
+          <i class="fal fa-list-alt"></i>
+      </button>
+    </li>
+    <li>
+      <button class="btn btn-link" type="button" aria-pressed="true">
+          <i class="fal fa-comments"></i>
+      </button>
+    </li>
+    <li>
+      <button class="btn btn-link" type="button">
+          <i class="fal fa-sticky-note"></i>
+      </button>
+    </li>
+  </ul>
+</nav>
+</div>
+<template id="comment">
+<li>
+  <div>
+    <div>
+      <b>Your Name-Here</b>
+    </div>
+    <p class="comment__content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+  </div>
+  </li>
+</template>
+<style>
+  nav {
+    background-color: #E9ECEF;
+  }
+
+  .page {
+    margin: 0 5px 1em 5px;
+    box-shadow: 0 0 10px 0 #e6e6e6;
+  }
+</style>
+<script>
+  function showCommentForm() {
+    document.forms[0].hidden = false;
+  }
+
+  function hideCommentForm() {
+    document.forms[0].hidden = true;
+  }
+
+  function submitComment(event) {
+    event.preventDefault();
+    const comment = document.querySelector('textarea').value;
+
+    if (!comment) {
+      return false;
+    }
+
+    addComment(comment);
+    document.forms[0].hidden = true;
+  }
+
+  function addComment(content) {
+    const list = document.getElementById('comments');
+    const template = document.getElementById('comment');
+
+    const clone = template.content.cloneNode(true);
+    const comment = clone.querySelector('.comment__content');
+    comment.textContent = content;
+
+    list.prepend(clone);
+  }
+</script>
+</div>
+  </body>
+</html>
