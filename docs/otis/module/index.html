@@ -353,17 +353,33 @@
     <tbody>
       <tr>
         <td>
-          <a href="#">Astronomy or Astrology</a>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="radio-checked-again"
+              name="radio"
+            />
+            <label class="form-check-label form-label" for="radio-checked-again">
+            <a href="/bootstrap-theme/otis/module">The Impact of Digitalization on Literacy - Digital Immigrants vs Digital Natives</a>
+            <p>Considering the speed at which new digital technologies are evolving, this paper aims to investigate the impact of digital transformation on multiple dimensions of literacy.</p></label>
+          </div>
         </td>
         <td><span class="label label-default">Video</span></td>
         <td>0</td>
         <td>3</td>
         <td>75 min</td>
         <td class="text-end">
-          <button class="btn btn-default btn-lg">
+          <button class="btn btn-default btn-lg" id="resource-actions-xxx" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="sr-only">Actions for resource title</span>
             <i class="far fa-ellipsis-v"></i>
           </button>
+          <ul class="dropdown-menu dropdown-menu-end" id="item-actions-dropdown">
+            <li><a class="dropdown-item" href="#">View resource</a></li>
+            <li><a class="dropdown-item" href="#">Edit resource</a></li>
+            <li><button class="dropdown-item" type="button">Remove resource</button></li>
+            <li><button class="dropdown-item" type="button">Share resource</button></li>
+          </ul>
         </td>
       </tr>
     </tbody>
