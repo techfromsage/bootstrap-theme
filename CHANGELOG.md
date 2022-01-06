@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/talis/bootstrap-theme/compare/v1.3.1...v1.3.2) (2022-01-06)
+
+
+### Bug Fixes
+
+* **table:** monkey patch top table border ([827eae1](https://github.com/talis/bootstrap-theme/commit/827eae1c70aae2ed6989f3b2c7181a2e2bec49ee))
+
 ### [1.3.1](https://github.com/talis/bootstrap-theme/compare/v1.3.0...v1.3.1) (2021-11-24)
 
 
