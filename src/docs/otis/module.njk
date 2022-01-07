@@ -33,7 +33,9 @@ title: Single Module
       aria-labelledby="module-actions"
     >
       <li>
-        <a class="dropdown-item" href="{{ '/otis/edit-module' | url }}"> Edit module </a>
+        <a class="dropdown-item" href="{{ '/otis/edit-module' | url }}">
+          Edit module
+        </a>
       </li>
       <li class="dropdown-divider"></li>
       <li>
@@ -50,13 +52,16 @@ title: Single Module
         <a class="dropdown-item disabled" href="#"> Leave module </a>
       </li>
       <li class="danger">
-        <a class="dropdown-item" href="{{ '/otis/reset-module' | url }}"> Reset module </a>
+        <a class="dropdown-item" href="{{ '/otis/reset-module' | url }}">
+          Reset module
+        </a>
       </li>
     </ul>
   </div>
 </header>
 
 <section class="mb-4">
+  <h2 class="visually-hidden">Data vis</h2>
   <!-- Styles -->
   <style>
     #chartdiv {
@@ -187,14 +192,21 @@ title: Single Module
 </ul>
 
 <div class="table-responsive">
+  <style>
+    .c-resources__resource-select {
+      flex: 0 0 1rem;
+    }
+  </style>
   <table class="table table-lg table-striped mb-3">
-    <caption class="visually-hidden">A brief summary of the contents of this table.</caption>
+    <caption class="visually-hidden">
+      A brief summary of the contents of this table.
+    </caption>
     <thead>
       <tr>
         <th>Title</th>
         <th>Type</th>
-        <th>Personal notes</th>
-        <th>Class comments</th>
+        <th class="text-end">Personal notes</th>
+        <th class="text-end">Class comments</th>
         <th>Time spent in resource</th>
         <th class="text-end">Actions</th>
       </tr>
@@ -202,32 +214,81 @@ title: Single Module
     <tbody>
       <tr>
         <td>
-          <div class="form-check">
+          <div class="form-check d-flex align-items-center">
             <input
-              class="form-check-input"
+              class="form-check-input mt-0 c-resources__resource-select"
               type="radio"
               id="radio-checked-again"
               name="radio"
             />
-            <label class="form-check-label form-label" for="radio-checked-again">
-            <a href="{{ '/otis/module' | url }}">The Impact of Digitalization on Literacy - Digital Immigrants vs Digital Natives</a>
-            <p>Considering the speed at which new digital technologies are evolving, this paper aims to investigate the impact of digital transformation on multiple dimensions of literacy.</p></label>
+            <label
+              class="
+                form-check-label form-label
+                d-flex
+                align-items-center
+              "
+              for="radio-checked-again"
+            >
+                <img
+                class="mx-3"
+                  src="https://via.placeholder.com/48x68"
+                  alt=""
+                  width="50"
+                  height="68"
+                  style="max-width: 50px; height: auto;"
+                />
+              <div>
+
+                <a href="{{ '/otis/module' | url }}"
+                  >The Impact of Digitalization on Literacy - Digital Immigrants
+                  vs Digital Natives</a
+                >
+                <p class="m-0">
+                  Considering the speed at which new digital technologies are
+                  evolving, this paper aims to investigate the impact of digital
+                  transformation on multiple dimensions of literacy.
+                </p>
+              </div>
+            </label>
           </div>
         </td>
         <td><span class="label label-default">Video</span></td>
-        <td>0</td>
-        <td>3</td>
-        <td>75 min</td>
+        <td class="text-end lead">
+          <i class="fal fa-sticky-note"></i>
+          0
+        </td>
+        <td class="text-end lead">
+          <i class="fal fa-comments"></i>
+          3
+        </td>
+        <td class="lead">75 min</td>
         <td class="text-end">
-          <button class="btn btn-default btn-lg" id="resource-actions-xxx" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button
+            class="btn btn-default btn-lg"
+            id="resource-actions-xxx"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <span class="sr-only">Actions for resource title</span>
             <i class="far fa-ellipsis-v"></i>
           </button>
-          <ul class="dropdown-menu dropdown-menu-end" id="item-actions-dropdown">
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            id="item-actions-dropdown"
+          >
             <li><a class="dropdown-item" href="#">View resource</a></li>
             <li><a class="dropdown-item" href="#">Edit resource</a></li>
-            <li><button class="dropdown-item" type="button">Remove resource</button></li>
-            <li><button class="dropdown-item" type="button">Share resource</button></li>
+            <li>
+              <button class="dropdown-item" type="button">
+                Remove resource
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">
+                Share resource
+              </button>
+            </li>
           </ul>
         </td>
       </tr>
