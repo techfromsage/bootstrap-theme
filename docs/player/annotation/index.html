@@ -23,7 +23,7 @@
     <title>Annotation Demo | Talis</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
       <a class="o-skip-link" href="#content">Skip to main content</a>
       <div class="container">
         <a class="navbar-brand" href="/bootstrap-theme/">
@@ -33,12 +33,12 @@
     </nav>
 
     <div class="container ">
-<div class="row g-0">
-<main class="col-8">
+<div class="row">
+<main class="col-9">
   <article>
     <ol class="list-unstyled pages">
       <li class="page">
-        <img class="img-fluid" src="https://depot-resources-prod.s3.eu-west-1.amazonaws.com/b2da02f580302adbc035d500826a182ad7cb0d7c747fa469fa8c6a83bd0cc40a?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAV7YI6FRILKNJLSOJ%2F20211216%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20211216T114420Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=5c368bfc0968b316e86197eb3d016ddd00906c9bcf2fdbb567770c4532febc4b" alt="">
+        <img class="img-fluid" src="/bootstrap-theme/assets/img/page.png" alt="">
       </li>
     </ol>
   </article>
@@ -77,30 +77,6 @@
     </li>
   </ol>
 </aside>
-<nav class="col-1">
-  <ul class="list-unstyled">
-    <li>
-      <button class="btn btn-link" type="button">
-          <i class="fal fa-info-circle"></i>
-      </button>
-    </li>
-    <li>
-      <button class="btn btn-link" type="button">
-          <i class="fal fa-list-alt"></i>
-      </button>
-    </li>
-    <li>
-      <button class="btn btn-link" type="button" aria-pressed="true">
-          <i class="fal fa-comments"></i>
-      </button>
-    </li>
-    <li>
-      <button class="btn btn-link" type="button">
-          <i class="fal fa-sticky-note"></i>
-      </button>
-    </li>
-  </ul>
-</nav>
 </div>
 <template id="comment">
 <li>
@@ -130,6 +106,7 @@
   }
 
   function hideCommentForm() {
+    document.forms[0].elements[0].value = null;
     document.forms[0].hidden = true;
   }
 
