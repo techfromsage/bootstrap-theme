@@ -2,3 +2,7 @@
 .sr-only {
   @extend .visually-hidden;
 }
+
+.o-list--striped > li:nth-child(odd) {
+  background-color: $table-striped-bg;
+}
