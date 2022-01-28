@@ -169,6 +169,7 @@
     
 
 
+
 <div class="d-flex justify-content-between align-items-center">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -287,7 +288,7 @@
       </div>
     </form>
 
-      <ol class="list-unstyled o-list--striped u-mb1">
+            <ol class="list-unstyled o-list--striped u-mb1">
         <li>
           <article class="py-2 px-3 d-flex align-items-center justify-content-between">
             <header class="d-flex align-items-center">
@@ -299,19 +300,14 @@
                 height="68"
                 style="max-width: 50px; height: auto;"
               />
-              <div style="max-width: 25vw;">
+              <div  style="max-width: 25vw;">
                 <a href="/bootstrap-theme/otis/module"
                   >Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</a
                 >
               </div>
             </header>
             <div>
-              
-  <button
-    class="btn btn-default "
-    type="button"
-  >Reuse</button>
-
+                            <button type="button" class="btn btn-default">Reuse <span class="visually-hidden">Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</span></button>
             </div>
           </article>
         </li>
@@ -333,12 +329,7 @@
               </div>
             </header>
             <div>
-              
-  <button
-    class="btn btn-default "
-    type="button"
-  >Reuse</button>
-
+              <button type="button" class="btn btn-default">Reuse <span class="visually-hidden">Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</span></button>
             </div>
           </article>
         </li>
@@ -360,34 +351,78 @@
               </div>
             </header>
             <div>
-              
-  <button
-    class="btn btn-default "
-    type="button"
-  >Reuse</button>
-
+                            <button type="button" class="btn btn-default">Reuse <span class="visually-hidden">Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</span></button>
             </div>
           </article>
         </li>
       </ol>
+
 
       </div>
       <div class="tab-pane fade" id="resource-digitisation" role="tabpanel" aria-labelledby="contact-tab">
       <form role="search">
       <div class="form-group">
-        <label for="resource-title" class="form-label">Search by resource name or type</label>
-        <div class="col col-lg-6 input-group">
-          <input type="text" id="resource-title" class="form-control" />
-          <span class="input-group-text">
-            <i class="fal fa-search"></i>
-            <span class="visually-hidden">Search</span>
-          </span>
-        </div>
+        
+  <style>
+  .c-search-field input::-webkit-search-cancel-button,
+.c-search-field input::-webkit-search-decoration {
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-appearance: none;
+}
+
+.c-search-icon {
+  margin-left: -26px;
+  margin-bottom: -2px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+</style>
+<div class="c-search-field">
+
+  <label class="form-label">
+    Search by resource name or type
+  </label>
+  <div class="d-flex">
+
+    <input class="form-control pe-5" type="search"/>
+    <i class="far fa-search c-search-icon align-self-center js-search-icon"></i>
+    <button
+      type="button"
+      class="c-search-icon text-primary bg-transparent border-0 p-0 js-search-clear"
+      hidden
+    >
+      <i class="fas fa-times-circle"></i>
+      <span class="visually-hidden">
+        Clear search
+      </span>
+    </button>
+  </div>
+</div>
+<script>
+  document.querySelector('.c-search-field [type="search"]').addEventListener('keyup', (event) => {
+    if (event.target.value.length > 0) {
+      toggleButton();
+      toggleIcon();
+    }
+  });
+
+  function toggleButton() {
+    document.querySelector('.js-search-clear').hidden = !document.querySelector('.js-search-clear').hidden;
+  }
+
+  function toggleIcon() {
+    document.querySelector('.js-search-icon').classList.toggle('d-none');
+  }
+</script>
+
       </div>
     </form>
 
       <h2>Last updated</h2>
-      <ol class="list-unstyled o-list--striped u-mb1">
+            <ol class="list-unstyled o-list--striped u-mb1">
         <li>
           <article class="py-2 px-3 d-flex align-items-center justify-content-between">
             <header class="d-flex align-items-center">
@@ -406,12 +441,7 @@
               </div>
             </header>
             <div>
-              
-  <button
-    class="btn btn-default "
-    type="button"
-  >Reuse</button>
-
+                            <button type="button" class="btn btn-default">Reuse <span class="visually-hidden">Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</span></button>
             </div>
           </article>
         </li>
@@ -433,12 +463,7 @@
               </div>
             </header>
             <div>
-              
-  <button
-    class="btn btn-default "
-    type="button"
-  >Reuse</button>
-
+              <button type="button" class="btn btn-default">Reuse <span class="visually-hidden">Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</span></button>
             </div>
           </article>
         </li>
@@ -460,16 +485,12 @@
               </div>
             </header>
             <div>
-              
-  <button
-    class="btn btn-default "
-    type="button"
-  >Reuse</button>
-
+                            <button type="button" class="btn btn-default">Reuse <span class="visually-hidden">Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</span></button>
             </div>
           </article>
         </li>
       </ol>
+
       </div>
     </div>
   </div>

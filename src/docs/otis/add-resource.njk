@@ -3,6 +3,7 @@ title: Add resource
 ---
 
 {% from "macros/buttons.njk" import button %}
+{% from "macros/search.njk" import search %}
 
 <div class="d-flex justify-content-between align-items-center">
   <nav aria-label="breadcrumb">
@@ -112,159 +113,18 @@ title: Add resource
       </div>
     </form>
 
-      <ol class="list-unstyled o-list--striped u-mb1">
-        <li>
-          <article class="py-2 px-3 d-flex align-items-center justify-content-between">
-            <header class="d-flex align-items-center">
-              <img
-                class="me-3"
-                src="https://via.placeholder.com/48x68"
-                alt=""
-                width="50"
-                height="68"
-                style="max-width: 50px; height: auto;"
-              />
-              <div style="max-width: 25vw;">
-                <a href="{{ '/otis/module' | url }}"
-                  >Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</a
-                >
-              </div>
-            </header>
-            <div>
-              {{ button("Reuse", { type: 'default' }) }}
-            </div>
-          </article>
-        </li>
-        <li>
-          <article class="py-2 px-3 d-flex align-items-center justify-content-between">
-            <header class="d-flex align-items-center">
-              <img
-                class="me-3"
-                src="https://via.placeholder.com/48x68"
-                alt=""
-                width="50"
-                height="68"
-                style="max-width: 50px; height: auto;"
-              />
-              <div  style="max-width: 25vw;">
-                <a href="{{ '/otis/module' | url }}"
-                  >Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</a
-                >
-              </div>
-            </header>
-            <div>
-              {{ button("Reuse", { type: 'default' }) }}
-            </div>
-          </article>
-        </li>
-        <li>
-          <article class="py-2 px-3 d-flex align-items-center justify-content-between">
-            <header class="d-flex align-items-center">
-              <img
-                class="me-3"
-                src="https://via.placeholder.com/48x68"
-                alt=""
-                width="50"
-                height="68"
-                style="max-width: 50px; height: auto;"
-              />
-              <div  style="max-width: 25vw;">
-                <a href="{{ '/otis/module' | url }}"
-                  >Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</a
-                >
-              </div>
-            </header>
-            <div>
-              {{ button("Reuse", { type: 'default' }) }}
-            </div>
-          </article>
-        </li>
-      </ol>
+      {% include "partials/otis/resources.njk" %}
 
       </div>
       <div class="tab-pane fade" id="resource-digitisation" role="tabpanel" aria-labelledby="contact-tab">
       <form role="search">
       <div class="form-group">
-        <label for="resource-title" class="form-label">Search by resource name or type</label>
-        <div class="col col-lg-6 input-group">
-          <input type="text" id="resource-title" class="form-control" />
-          <span class="input-group-text">
-            <i class="fal fa-search"></i>
-            <span class="visually-hidden">Search</span>
-          </span>
-        </div>
+        {{ search("Search by resource name or type", { type: 'default' }) }}
       </div>
     </form>
 
       <h2>Last updated</h2>
-      <ol class="list-unstyled o-list--striped u-mb1">
-        <li>
-          <article class="py-2 px-3 d-flex align-items-center justify-content-between">
-            <header class="d-flex align-items-center">
-              <img
-                class="me-3"
-                src="https://via.placeholder.com/48x68"
-                alt=""
-                width="50"
-                height="68"
-                style="max-width: 50px; height: auto;"
-              />
-              <div  style="max-width: 25vw;">
-                <a href="{{ '/otis/module' | url }}"
-                  >Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</a
-                >
-              </div>
-            </header>
-            <div>
-              {{ button("Reuse", { type: 'default' }) }}
-            </div>
-          </article>
-        </li>
-        <li>
-          <article class="py-2 px-3 d-flex align-items-center justify-content-between">
-            <header class="d-flex align-items-center">
-              <img
-                class="me-3"
-                src="https://via.placeholder.com/48x68"
-                alt=""
-                width="50"
-                height="68"
-                style="max-width: 50px; height: auto;"
-              />
-              <div  style="max-width: 25vw;">
-                <a href="{{ '/otis/module' | url }}"
-                  >Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</a
-                >
-              </div>
-            </header>
-            <div>
-              {{ button("Reuse", { type: 'default' }) }}
-            </div>
-          </article>
-        </li>
-        <li>
-          <article class="py-2 px-3 d-flex align-items-center justify-content-between">
-            <header class="d-flex align-items-center">
-              <img
-                class="me-3"
-                src="https://via.placeholder.com/48x68"
-                alt=""
-                width="50"
-                height="68"
-                style="max-width: 50px; height: auto;"
-              />
-              <div  style="max-width: 25vw;">
-                <a href="{{ '/otis/module' | url }}"
-                  >Clever cats will take control of the world sed ut perspiciatis onmis iste natus error sit voluptatem</a
-                >
-              </div>
-            </header>
-            <div>
-              {{ button("Reuse", { type: 'default' }) }}
-            </div>
-          </article>
-        </li>
-      </ol>
+      {% include "partials/otis/resources.njk" %}
       </div>
     </div>
   </div>
