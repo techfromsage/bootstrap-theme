@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/talis/bootstrap-theme/compare/v1.3.3...v2.0.0) (2022-02-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* move customisations to standalone partial (#17)
+
+### Bug Fixes
+
+* move customisations to standalone partial ([#17](https://github.com/talis/bootstrap-theme/issues/17)) ([f11e808](https://github.com/talis/bootstrap-theme/commit/f11e808cc50346cf2aea1ed203519ed6e2ea07a3))
+
 ### [1.3.3](https://github.com/talis/bootstrap-theme/compare/v1.3.2...v1.3.3) (2022-01-26)
 
 ### [1.3.2](https://github.com/talis/bootstrap-theme/compare/v1.3.1...v1.3.2) (2022-01-06)
