@@ -35,9 +35,11 @@
 }
 
 .navbar-brand {
-  margin-inline-start: -.75rem;
-  padding-inline-start: .9375rem;
-  padding-inline-end: .9375rem;
+  margin-left: -$spacer;
+  padding-block-start: .9375rem;
+  padding-block-end: .9375rem;
+  padding-inline-start: $spacer;
+  padding-inline-end: $spacer;
 }
 
 @media (max-width: 992px) {

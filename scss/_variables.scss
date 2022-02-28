@@ -1,17 +1,18 @@
 $enable-gradients: false;
 $enable-shadows: false;
+$enable-rounded: true;
 
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
-$white: #fff !default;
+$gray-100: #f8f9fa ;
+$gray-200: #e9ecef ;
+$gray-300: #dee2e6 ;
+$gray-400: #ced4da ;
+$gray-500: #adb5bd ;
+$gray-600: #868e96 ;
+$gray-700: #495057 ;
+$gray-800: #343a40 ;
+$gray-900: #212529 ;
+$black:    #000 ;
+$white: #fff ;
 
 $turquoise: #017d87;
 $accent: #005d64;
@@ -22,58 +23,67 @@ $red: #c42129;
 $purple: #4a2b80;
 $orange: #f47821;
 
-$brand-success:         #77e0ce !default;
-$brand-info:            #4cc3d6 !default;
-$brand-warning:         #ffc943 !default;
-$brand-danger:          #c42129 !default;
+$brand-success:         #77e0ce ;
+$brand-info:            #4cc3d6 ;
+$brand-warning:         #ffc943 ;
+$brand-danger:          #c42129 ;
 
-$primary:       $turquoise !default;
-$secondary:     $accent !default;
-$success:       $brand-success !default;
-$info:          $brand-info !default;
-$warning:       $brand-warning !default;
-$danger:        $brand-danger !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$primary:       $turquoise ;
+$secondary:     $accent ;
+$success:       $brand-success ;
+$info:          $brand-info ;
+$warning:       $brand-warning ;
+$danger:        $brand-danger ;
+$light:         $gray-100 ;
+$dark:          $gray-900 ;
 
-$body-color: $gray-700 !default;
+$body-color: $gray-700 ;
 $body-bg: #fff;
 
-$font-family-sans-serif: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-size-base: .8125rem !default;
-$font-size-lg:                $font-size-base * 1.25 !default;
+$font-family-sans-serif: "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+$font-size-base: .8125rem ;
+$font-size-lg:                $font-size-base * 1.25 ;
 
-$line-height-base: 1.6 !default;
+$line-height-base: 1.6 ;
 
-$paragraph-margin-bottom: .625rem !default;
+$paragraph-margin-bottom: .625rem ;
 
-$h1-font-size: 13px * 2.3076923077 !default;
-$h2-font-size: 13px * 2.3076923077 !default;
-$h3-font-size: 13px * 1.538461538 !default;
-$h4-font-size: 13px * 1.538461538 !default;
-$h5-font-size: 13px !default;
-$h6-font-size: 13px !default;
+$h1-font-size: 13px * 2.3076923077 ;
+$h2-font-size: 13px * 2.3076923077 ;
+$h3-font-size: 13px * 1.538461538 ;
+$h4-font-size: 13px * 1.538461538 ;
+$h5-font-size: 13px ;
+$h6-font-size: 13px ;
 
 $headings-font-weight: 300;
 
-$border-radius: 3px !default;
+$border-width:                1px;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+);
 
-$spacer: .9375rem !default;
+$border-radius: 3px ;
 
-$nav-link-font-weight:              600 !default;
-$nav-link-hover-color:              $accent !default;
-$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $primary !default;
-$nav-tabs-link-active-border-color: $white $white $primary !default;
-$nav-tabs-border-radius: 0 !default;
-$nav-link-disabled-color:           $gray-500 !default;
-$nav-tabs-border-color:             transparent !default;
-$nav-tabs-link-active-color:        $primary !default;
+$spacer: .9375rem ;
 
-$nav-pills-link-active-color:       $primary !default;
-$nav-pills-link-active-bg:          $white !default;
+$nav-link-font-weight:              600 ;
+$nav-link-hover-color:              $accent ;
+$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $primary ;
+$nav-tabs-link-active-border-color: $white $white $primary ;
+$nav-tabs-border-radius: 0 ;
+$nav-link-disabled-color:           $gray-500 ;
+$nav-tabs-border-color:             transparent ;
+$nav-tabs-link-active-color:        $primary ;
+
+$nav-pills-link-active-color:       $primary ;
+$nav-pills-link-active-bg:          $white ;
 $nav-pills-border-radius:           3px;
 
-$alert-margin-bottom:           1.25rem !default;
+$alert-margin-bottom:           1.25rem ;
 $alert-border-radius: 0;
 $alert-border-width: 0;
 $alert-bg-scale: -60%;
@@ -88,36 +98,42 @@ $badge-padding-y:                   .1538461538em;
 $badge-padding-x:                   .3076923077em;
 $badge-border-radius:               .2307692308em;
 
-$breadcrumb-padding-y:              .5rem !default;
-$breadcrumb-margin-bottom:          1.25rem !default;
+$breadcrumb-padding-y:              .5rem ;
+$breadcrumb-margin-bottom:          1.25rem ;
 $breadcrumb-divider-color:          $gray-700;
 $breadcrumb-active-color:           $gray-700;
 
-$dropdown-divider-bg:               $gray-400 !default;
-$dropdown-divider-margin-y:         .5625rem !default;
-$dropdown-link-color:               $primary !default;
-$dropdown-link-hover-color:         $accent !default;
+$dropdown-divider-bg:               $gray-400 ;
+$dropdown-divider-margin-y:         .5625rem ;
+$dropdown-link-color:               $primary ;
+$dropdown-link-hover-color:         $accent ;
 $dropdown-header-color:             $gray-700;
-$dropdown-item-padding-y:           3px !default;
-$dropdown-item-padding-x:           20px !default;
-$dropdown-header-padding:           3px $dropdown-item-padding-x !default;
+$dropdown-item-padding-y:           3px ;
+$dropdown-item-padding-x:           20px ;
+$dropdown-header-padding:           3px $dropdown-item-padding-x ;
 
-$input-btn-focus-width: 1px !default;
-$input-btn-focus-box-shadow: 0 0 0 1px currentColor !default;
-$btn-font-weight: 600 !default;
-$btn-border-width: 1px !default;
-$btn-transition: background-color 1s cubic-bezier(.19, 1, .22, 1) !default;
-$btn-disabled-opacity: 1 !default;
-$btn-active-box-shadow:       0 !default;
-$btn-active-border-shade-amount:  0 !default;
-$btn-active-border-tint-amount:   0 !default;
-$btn-link-color: $primary !default;
-$btn-link-hover-color: $accent !default;
-$btn-link-disabled-color: $gray-500 !default;
-$btn-padding-y-lg:            11px !default;
-$btn-padding-x-lg:            19px !default;
-$btn-font-size-lg:            1.09375rem !default;
-$btn-disabled-color:  #69727f !default;
+$input-btn-focus-width: 1px ;
+$input-btn-focus-box-shadow: 0 0 0 1px currentColor ;
+$btn-font-weight: 600 ;
+$btn-border-width: 1px ;
+$btn-transition: background-color 1s cubic-bezier(.19, 1, .22, 1) ;
+$btn-disabled-opacity: 1 ;
+$btn-box-shadow:              0;
+$btn-active-box-shadow:       0 ;
+$btn-active-border-shade-amount:  0 ;
+$btn-active-border-tint-amount:   0 ;
+$btn-link-color: $primary ;
+$btn-link-hover-color: $accent ;
+$btn-link-disabled-color: $gray-500 ;
+$btn-padding-y-lg:            11px ;
+$btn-padding-x-lg:            19px ;
+$btn-font-size-lg:            1.09375rem ;
+$btn-disabled-color:  #69727f ;
+
+$caret-width:                 .3em;
+$caret-vertical-align:        $caret-width * .85;
+$caret-spacing:               $caret-width * .85;
+
 
 $cradle-anim-dur: 607.5ms;
 $cradle-anim-fun: cubic-bezier(0, 0, .5, 1);
@@ -129,91 +145,99 @@ $cradle-ball-colour-pink: #fc4589;
 $cradle-ball-colour-blue: #59d1e4;
 $cradle-shadow-colour: rgba($black, .15);
 
-$input-color:                           $black !default;
-$input-border-color:                    $gray-600 !default;
-$input-disabled-bg:                     $gray-100 !default;
-$input-disabled-border-color:           $gray-200 !default;
+$input-color:                           $black ;
+$input-border-color:                    $gray-600 ;
+$input-disabled-bg:                     $gray-100 ;
+$input-disabled-border-color:           $gray-200 ;
 
-$input-focus-border-color:              $primary !default;
-$input-focus-width:                     1px !default;
-$input-focus-box-shadow:                0 0 0 1px $primary !default;
+$input-focus-border-color:              $primary ;
+$input-focus-width:                     1px ;
+$input-focus-box-shadow:                0 0 0 1px $primary ;
 
-$input-placeholder-color:               $gray-700 !default;
-$input-plaintext-color:                 $black !default;
+$input-placeholder-color:               $gray-700 ;
+$input-plaintext-color:                 $black ;
 
-$input-btn-focus-color:                 $primary !default;
+$input-btn-focus-color:                 $primary ;
 
-$form-label-color:                      $black !default;
-$form-label-margin-bottom:              .3846153846em !default;
+$form-label-color:                      $black ;
+$form-label-margin-bottom:              .3846153846em ;
 
-$form-select-focus-border-color:        $input-focus-border-color !default;
-$form-select-focus-width:               $input-focus-width !default;
-$form-select-focus-box-shadow:          0 0 0 $form-select-focus-width $input-btn-focus-color !default;
+$form-select-focus-border-color:        $input-focus-border-color ;
+$form-select-focus-width:               $input-focus-width ;
+$form-select-focus-box-shadow:          0 0 0 $form-select-focus-width $input-btn-focus-color ;
 
-$form-check-input-border:                 none !default;
-$form-check-input-checked-color:          $primary !default;
-$form-check-input-checked-color--alt:     $pink !default;
-$form-check-input-checked-bg-color:       $white !default;
-$form-check-input-checked-border-color:   $primary !default;
-$form-check-min-height:                   2rem !default;
-$form-check-padding-start:                1.5rem !default;
-$form-check-input-border-radius:          3px !default;
+$form-check-input-border:                 none ;
+$form-check-input-checked-color:          $primary ;
+$form-check-input-checked-color--alt:     $pink ;
+$form-check-input-checked-bg-color:       $white ;
+$form-check-input-checked-border-color:   $primary ;
+$form-check-min-height:                   2rem ;
+$form-check-padding-start:                1.5rem ;
+$form-check-input-border-radius:          3px ;
 $form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$form-check-input-checked-color}'/></svg>");
 $form-check-input-checked-bg-image--alt:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color--alt}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
 $form-check-radio-checked-bg-image--alt:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$form-check-input-checked-color--alt}'/></svg>");
 
-$form-feedback-valid-color: $turquoise !default;
-$form-feedback-invalid-color: $red !default;
+$form-feedback-valid-color: $turquoise ;
+$form-feedback-invalid-color: $red ;
 
-$link-hover-color: $accent !default;
-$link-hover-decoration: none !default;
+$link-hover-color: $accent ;
+$link-hover-decoration: none ;
 
-$modal-backdrop-opacity: .8 !default;
-$modal-md:                          600px !default;
-$modal-header-border-color:         $gray-200 !default;
-$modal-header-border-width:         0 !default;
-$modal-footer-border-width:         1px !default;
-$modal-header-padding:              $spacer * 2 $spacer $spacer !default;
-$modal-title-line-height:           1.6 !default;
-$modal-footer-border-color:         $gray-300 !default;
-$modal-dialog-margin-y-sm-up:       1.875rem !default;
+$modal-backdrop-opacity: .8 ;
+$modal-inner-padding:               $spacer;
+$modal-md:                          600px ;
+$modal-header-border-color:         $gray-200 ;
+$modal-header-border-width:         0 ;
+$modal-footer-border-width:         1px ;
+$modal-header-padding:              $spacer * 2 $spacer $spacer ;
+$modal-title-line-height:           1.6 ;
+$modal-footer-border-color:         $gray-300 ;
+$modal-dialog-margin-y-sm-up:       1.875rem ;
 
-$navbar-dark-color:                     $white !default;
-$navbar-dark-hover-color:               $white !default;
-$navbar-dark-active-color:              $white !default;
-$navbar-padding-y:                  0 !default;
-$navbar-nav-link-padding-x:         .75rem !default;
-$nav-link-height:                   3.75rem !default;
-$navbar-brand-font-size:            1.09375rem !default;
+$navbar-dark-color:                     $white ;
+$navbar-dark-hover-color:               $white ;
+$navbar-dark-active-color:              $white ;
+$navbar-padding-y:                  0 ;
+$navbar-nav-link-padding-x:         .75rem ;
+$nav-link-height:                   3.75rem ;
+$navbar-brand-font-size:            1.09375rem ;
 
-$pagination-border-radius: 0.3125rem !default;
+$pagination-border-radius: 0.3125rem ;
 $pagination-border-color: $primary;
-$pagination-padding-y:              .5rem !default;
-$pagination-padding-x:              1rem !default;
-$pagination-transition: none !default;
-$pagination-hover-border-color: $primary !default;
+$pagination-padding-y:              .5rem ;
+$pagination-padding-x:              1rem ;
+$pagination-transition: none ;
+$pagination-hover-border-color: $primary ;
 
 $pagination-disabled-color:         $btn-disabled-color;
 $pagination-disabled-bg:            $white;
 $pagination-disabled-border-color:  $primary;
 
-$progress-height:                   .5rem !default;
-$progress-bg:                       transparent !default;
-$progress-border-radius:            .5rem !default;
+$progress-height:                   .5rem ;
+$progress-bg:                       transparent ;
+$progress-border-radius:            .5rem ;
 
 $table-striped-bg:            $gray-100;
 $table-cell-vertical-align:   middle;
 $table-border-color:          $gray-200;
+$table-border-width:         $btn-border-width;
 $table-group-separator-color: $gray-200;
-$table-cell-padding-x-lg:     1.25rem !default;
-$table-cell-padding-y-lg:     1.25rem !default;
+$table-cell-padding-x-lg:     1.25rem ;
+$table-cell-padding-y-lg:     1.25rem ;
 
-$toast-padding-x: 1.5em !default;
-$toast-padding-y: .75em !default;
-$toast-font-size: 1.09375rem !default;
-$toast-background-color: #a4d1ea !default;
-$toast-color: $black !default;
-$toast-border-radius: 2rem !default;
-$toast-box-shadow: 0 !default;
-$toast-border-width:                0 !default;
-$toast-max-width: 100% !default;
+$toast-padding-x: 1.5em ;
+$toast-padding-y: .75em ;
+$toast-font-size: 1.09375rem ;
+$toast-background-color: #a4d1ea ;
+$toast-color: $black ;
+$toast-border-radius: 2rem ;
+$toast-box-shadow: 0 ;
+$toast-border-width:                0 ;
+$toast-max-width: 100% ;
+
+$zindex-modal: 1055;
+$zindex-popover:                    1070;
+
+$btn-focus-width: 1px;
+
