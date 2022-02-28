@@ -1,11 +1,57 @@
 # Bootstrap v5 Theme
 ## Usage
-1. Create a [Personal Access Token](https://github.com/settings/tokens/) granting the `write:packages` scope. `write` also allows `read`… 
+1. Create a [Personal Access Token](https://github.com/settings/tokens/) granting the `write:packages` scope. `write` also allows `read`…
 2. Add `@talis:registry=https://npm.pkg.github.com` to your project's `.npmrc` file.
-3. Two options:
-   - **Either** import `talis.scss` which includes Bootstrap customisations _and_ Bootstrap v5;
-   - **Or** include the Talis variables ahead of Bootstrap, and the Talis components afterwards.
+3. Place variable overrides first, then import the styles you need. Some Bootstrap partials stylesheets are required no matter what.
 
+```scss
+// Toggle global options
+$enable-gradients: false;
+$enable-shadows: false;
+
+// Customize some defaults
+@import "bootstrap/scss/functions"; // Required
+
+@import "variables"; // Talis customisations are here
+
+@import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/mixins"; // Required
+@import "bootstrap/scss/utilities"; // Required
+
+@import "bootstrap/scss/root"; // Required
+@import "bootstrap/scss/reboot"; // Required
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+
+// Core Bootstrap components
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+
+@import 'theme';
+```
 
 ## Contributing
 
