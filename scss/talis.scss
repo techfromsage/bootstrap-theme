@@ -1,28 +1,3 @@
-// Override Bootstrap's Sass default variables
-//
-// Nearly all variables in Bootstrap are written with the `!default` flag.
-// This allows you to override the default values of those variables before
-// you import Bootstrap's source Sass files.
-//
-// Overriding the default variable values is the best way to customize your
-// CSS without writing _new_ styles. For example, change you can either change
-// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
-// `body { color: red; }`.
-
-//
-// Bring in Bootstrap
-//
-
-// Option 1
-//
-// Import all of Bootstrap's CSS
-
-// @import "bootstrap/scss/bootstrap";
-
-// Option 2
-//
-// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
-
 // Toggle global options
 $enable-gradients: false;
 $enable-shadows: false;
@@ -51,22 +26,15 @@ $enable-shadows: false;
 @import "bootstrap/scss/button-group";
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/navbar";
-@import "bootstrap/scss/card";
 @import "bootstrap/scss/accordion";
 @import "bootstrap/scss/breadcrumb";
 @import "bootstrap/scss/pagination";
 @import "bootstrap/scss/badge";
 @import "bootstrap/scss/alert";
 @import "bootstrap/scss/progress";
-@import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
 @import "bootstrap/scss/toasts";
 @import "bootstrap/scss/modal";
-@import "bootstrap/scss/tooltip";
-@import "bootstrap/scss/popover";
-@import "bootstrap/scss/carousel";
-@import "bootstrap/scss/spinners";
-@import "bootstrap/scss/offcanvas";
 
 // Helpers
 @import "bootstrap/scss/helpers";
@@ -74,24 +42,4 @@ $enable-shadows: false;
 // Utilities
 @import "bootstrap/scss/utilities/api";
 
-@import "alerts";
-@import "badges";
-@import "buttons";
-@import "dropdown";
-@import "error";
-@import "forms";
-@import "loader";
-@import "modal";
-@import "navbar";
-@import "navs";
-@import "pager";
-@import "pagination";
-@import "progress";
-@import "skip-link";
-@import "tables";
-@import "toasts";
-@import "typography";
-@import "utils";
-@import "well";
-
-@import "confirmation-modal";
+@import "theme";
