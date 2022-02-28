@@ -1,5 +1,7 @@
+@use 'bootstrap/scss/mixins/_visually-hidden' as bootstrap;
+
 .o-skip-link {
-  @include visually-hidden-focusable ();
+  @include bootstrap.visually-hidden-focusable();
 }
 
 .c-skip-link:focus,
