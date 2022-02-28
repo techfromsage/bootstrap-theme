@@ -2,7 +2,23 @@
 ## Usage
 1. Create a [Personal Access Token](https://github.com/settings/tokens/) granting the `write:packages` scope. `write` also allows `read`…
 2. Add `@talis:registry=https://npm.pkg.github.com` to your project's `.npmrc` file.
-3. Place variable overrides first, then import the styles you need. Some Bootstrap partials stylesheets are required no matter what.
+
+3. Pull in the theme. Either:
+  - Specify the variable overrides, import the rest of Bootstrap, and then include the theme partial
+
+```scss
+// Toggle global options
+$enable-gradients: false;
+$enable-shadows: false;
+
+@import "variables"; // Talis customisations are here
+@import "bootstrap/scss/bootstrap";
+@import 'theme';
+```
+
+Or
+- Place variable overrides first, then import the styles you need.
+
 
 ```scss
 // Toggle global options
