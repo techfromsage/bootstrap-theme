@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/talis/bootstrap-theme/compare/v2.0.0...v2.0.1) (2022-03-01)
+
+
+### Bug Fixes
+
+* define -breakpoints ([5dbd8ad](https://github.com/talis/bootstrap-theme/commit/5dbd8ad3735cbf4cc3b3105f3096a767369b4c69))
+
 ## [2.0.0](https://github.com/talis/bootstrap-theme/compare/v1.3.3...v2.0.0) (2022-02-28)
 
 
