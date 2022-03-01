@@ -7,10 +7,6 @@
   - Specify the variable overrides, import the rest of Bootstrap, and then include the theme partial
 
 ```scss
-// Toggle global options
-$enable-gradients: false;
-$enable-shadows: false;
-
 @import "variables"; // Talis customisations are here
 @import "bootstrap/scss/bootstrap";
 @import 'theme';
@@ -21,7 +17,7 @@ Or
 
 
 ```scss
-// Toggle global options
+// Toggle global options – these need to be set ahead of the functions
 $enable-gradients: false;
 $enable-shadows: false;
 
