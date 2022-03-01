@@ -1,7 +1,7 @@
 .t-error {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.8125em;
+  font-size: .8125em;
   line-height: 1.6;
   color: #fff;
   background-color: #017d87;
@@ -17,8 +17,8 @@
 
   a:hover,
   a:focus {
-    background-color: white;
     color: #017d87;
+    background-color: white;
     outline: 2px solid white;
     outline-offset: 2px;
   }
@@ -38,23 +38,23 @@
 }
 
 .c-error-page__header {
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-family: inherit;
   font-size: 3.25rem;
   font-weight: 700;
-  color: $white;
   line-height: 1.1;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  color: $white;
 }
 
 .c-error-page__subheader {
   margin-top: 20px;
   margin-bottom: 10px;
-  color: $white;
-  font-size: 2.4375rem;
   font-family: inherit;
+  font-size: 2.4375rem;
   font-weight: 300;
   line-height: 1.1;
+  color: $white;
 }
 
 .c-error-page__context {
