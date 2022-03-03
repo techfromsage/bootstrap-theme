@@ -7,7 +7,8 @@
   border-top: (2 * $table-border-width) solid $table-group-separator-color !important;
 }
 
-th {
+th,
+.o-table__sort-btn {
   color: $black;
 }
 
