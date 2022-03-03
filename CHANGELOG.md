@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.3](https://github.com/talis/bootstrap-theme/compare/v2.1.2...v2.1.3) (2022-03-03)
+
+
+### Bug Fixes
+
+* sort btn focus ([20b4c0c](https://github.com/talis/bootstrap-theme/commit/20b4c0ccb47c5f93b7a164eba09135f3ad4f50e9))
+
 ### [2.1.2](https://github.com/talis/bootstrap-theme/compare/v2.1.1...v2.1.2) (2022-03-03)
 
 
