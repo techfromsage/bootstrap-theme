@@ -12,7 +12,7 @@ th {
 }
 
 .table-lg {
-  > :not(caption) > * > * {
+  > :not(caption) > * > td {
     padding: $table-cell-padding-y-lg $table-cell-padding-x-lg;
   }
 }
