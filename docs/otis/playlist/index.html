@@ -27,7 +27,7 @@
 </colgroup>
   <thead>
     <tr>
-      <th id="colTitle" scope="col">
+      <th id="colTitle" scope="col" class="p-0">
         <button type="button" class="btn o-table__sort-btn" onclick="toggleSort(this.id, 'colTitle', 1)">
           <span>Title</span>
           <i class="fa fa-sort fa-fw o-table__sort-btn__arrow--both"></i>
@@ -35,13 +35,16 @@
           <i class="fa fa-sort-down fa-fw o-table__sort-btn__arrow--down"></i>
         </button>
       </th>
-      <th id="colDate" scope="col">
+      <th id="colDate" scope="col" class="p-0">
         <button type="button" class="btn o-table__sort-btn" onclick="toggleSort(this.id, 'colDate', 2)">
           <span>Date uploaded</span>
           <i class="fa fa-sort fa-fw o-table__sort-btn__arrow--both"></i>
           <i class="fa fa-sort-up fa-fw o-table__sort-btn__arrow--up"></i>
           <i class="fa fa-sort-down fa-fw o-table__sort-btn__arrow--down"></i>
         </button>
+      </th>
+      <th id="colActions" scope="col">
+        Actions
       </th>
     </tr>
   </thead>

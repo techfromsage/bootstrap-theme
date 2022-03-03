@@ -17,18 +17,12 @@ th {
   }
 }
 
-.o-table--sortable {
-  th {
-    padding: 0;
-  }
-}
-
 .o-table__sort-btn {
   width: 100%;
-  padding: 0.5rem 0.5rem;
+  padding: .5rem;
   font-weight: bold;
+  text-align: inherit;
   border-radius: 0;
-  text-align: left;
 }
 
 th:not([aria-sort]) .o-table__sort-btn .o-table__sort-btn__arrow--up,
