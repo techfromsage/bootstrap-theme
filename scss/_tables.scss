@@ -1,3 +1,7 @@
+.table > :not(:first-child) {
+  border-top: none;
+}
+
 // Temp override while we wait for https://github.com/twbs/bootstrap/pull/35200 to end up in live
 .table > :not(caption):not(colgroup) + * {
   border-top: (2 * $table-border-width) solid $table-group-separator-color !important;
@@ -11,4 +15,42 @@ th {
   > :not(caption) > * > * {
     padding: $table-cell-padding-y-lg $table-cell-padding-x-lg;
   }
+}
+
+.o-table--sortable {
+  th {
+    padding: 0;
+  }
+}
+
+.o-table__sort-btn {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  font-weight: bold;
+  border-radius: 0;
+  text-align: left;
+
+  :focus {
+    outline: 1px;
+    box-shadow: none;
+  }
+}
+
+th:not([aria-sort]) .o-table__sort-btn .o-table__sort-btn__arrow--up,
+th:not([aria-sort]) .o-table__sort-btn .o-table__sort-btn__arrow--down {
+  display: none;
+}
+
+th[aria-sort="descending"] .o-table__sort-btn .o-table__sort-btn__arrow--both,
+th[aria-sort="descending"] .o-table__sort-btn .o-table__sort-btn__arrow--down {
+  display: none;
+}
+
+th[aria-sort="ascending"] .o-table__sort-btn .o-table__sort-btn__arrow--both,
+th[aria-sort="ascending"] .o-table__sort-btn .o-table__sort-btn__arrow--up {
+  display: none;
+}
+
+.sorted {
+  background-color: #017e872a;
 }
