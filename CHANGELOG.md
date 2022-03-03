@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.2](https://github.com/talis/bootstrap-theme/compare/v2.1.1...v2.1.2) (2022-03-03)
+
+
+### Bug Fixes
+
+* make large selector more specific ([3662d3c](https://github.com/talis/bootstrap-theme/commit/3662d3c66288e6d09d648e4382cc8972952bf355))
+
 ### [2.1.1](https://github.com/talis/bootstrap-theme/compare/v2.1.0...v2.1.1) (2022-03-03)
 
 
