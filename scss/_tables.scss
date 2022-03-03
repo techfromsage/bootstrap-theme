@@ -29,11 +29,6 @@ th {
   font-weight: bold;
   border-radius: 0;
   text-align: left;
-
-  :focus {
-    outline: 1px;
-    box-shadow: none;
-  }
 }
 
 th:not([aria-sort]) .o-table__sort-btn .o-table__sort-btn__arrow--up,
