@@ -20,9 +20,10 @@ legend {
 }
 
 .form-check-input {
-  width: 16px;
-  height: 16px;
-  flex: 100%;
+  width: 1rem;
+  height: 1rem;
+  flex-grow: 0;
+  flex-basis: 1rem;
   box-shadow: 0 0 0 1px $primary;
 }
 
