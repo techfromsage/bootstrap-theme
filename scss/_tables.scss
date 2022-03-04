@@ -34,12 +34,18 @@ th,
 
 .o-table__sort-btn:focus {
   color: $black;
+  border-radius: $border-radius;
   background-color: $table-striped-bg;
   box-shadow: 0 0 0 2px inset $accent;
 }
 
 .table-lg .o-table__sort-btn {
-  padding: $table-cell-padding-y-lg $table-cell-padding-x-lg
+  padding: $table-cell-padding-y-lg $table-cell-padding-x-lg;
+}
+
+.table-lg .o-table__sort-btn:focus {
+  padding: $table-cell-padding-y-lg $table-cell-padding-x-lg;
+  border-radius: $border-radius-lg;
 }
 
 th:not([aria-sort]) .o-table__sort-btn .o-table__sort-btn__arrow--up,
