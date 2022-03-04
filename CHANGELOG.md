@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.4](https://github.com/talis/bootstrap-theme/compare/v2.1.3...v2.1.4) (2022-03-04)
+
+
+### Bug Fixes
+
+* apply border-radius ([688583b](https://github.com/talis/bootstrap-theme/commit/688583b1be7dcbe972ccef028042682e84a4baf8))
+* button hover/focus styles ([236afd2](https://github.com/talis/bootstrap-theme/commit/236afd2f793c616c981931021457505efa466943))
+* fix sort btn colour ([33aa8a1](https://github.com/talis/bootstrap-theme/commit/33aa8a17a5b0775e53fa1d2ac533e0b91419b977))
+* prefer flex shorthand ([4f7630d](https://github.com/talis/bootstrap-theme/commit/4f7630df3d34cec2fda77e2231332dba2eafed0a))
+* prevent sort indicator breaking to new line ([652c22d](https://github.com/talis/bootstrap-theme/commit/652c22d0d7106a4f8d74a17a2551bf6a4ef1da08))
+* set form-check flex basis ([12bf3eb](https://github.com/talis/bootstrap-theme/commit/12bf3ebfe00fb46e7a4b619e3331856987dd2564))
+* use grow & basis flex properties ([2d937d0](https://github.com/talis/bootstrap-theme/commit/2d937d039d2dda0cd6376f09dcc2b3d3c83439b6))
+
 ### [2.1.3](https://github.com/talis/bootstrap-theme/compare/v2.1.2...v2.1.3) (2022-03-03)
 
 
