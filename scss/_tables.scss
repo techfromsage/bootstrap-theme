@@ -27,8 +27,15 @@ th,
   white-space: nowrap;
 }
 
+.o-table__sort-btn:hover {
+  color: $black;
+  background-color: $table-striped-bg;
+}
+
 .o-table__sort-btn:focus {
-  box-shadow: 0 0 0 1px inset currentColor;
+  color: $black;
+  background-color: $table-striped-bg;
+  box-shadow: 0 0 0 2px inset $accent;
 }
 
 .table-lg .o-table__sort-btn {
