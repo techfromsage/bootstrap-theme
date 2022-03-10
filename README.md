@@ -9,7 +9,7 @@
 ```scss
 @import "variables"; // Talis customisations are here
 @import "bootstrap/scss/bootstrap";
-@import 'theme';
+@import "theme";
 ```
 
 Or
@@ -62,7 +62,7 @@ $enable-shadows: false;
 // Utilities
 @import "bootstrap/scss/utilities/api";
 
-@import 'theme';
+@import "theme";
 ```
 
 ## Contributing
