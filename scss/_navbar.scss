@@ -19,7 +19,7 @@
 
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-brand:focus {
-  outline: 2px solid currentColor;
+  outline: 2px solid currentcolor;
   outline-offset: -2px;
 }
 
@@ -35,11 +35,11 @@
 }
 
 .navbar-brand {
-  margin-left: -$spacer;
   padding-block-start: .9375rem;
   padding-block-end: .9375rem;
   padding-inline-start: $spacer;
   padding-inline-end: $spacer;
+  margin-left: -$spacer;
 }
 
 @media (max-width: 992px) {

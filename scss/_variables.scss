@@ -114,7 +114,7 @@ $dropdown-item-padding-x: 20px;
 $dropdown-header-padding: 3px $dropdown-item-padding-x;
 
 $input-btn-focus-width: 1px;
-$input-btn-focus-box-shadow: 0 0 0 1px currentColor;
+$input-btn-focus-box-shadow: 0 0 0 1px currentcolor;
 $btn-font-weight: 600;
 $btn-border-width: 1px;
 $btn-transition: background-color 1s cubic-bezier(.19, 1, .22, 1);
@@ -178,15 +178,15 @@ $form-select-focus-box-shadow: 0 0 0 $form-select-focus-width
 
 $form-check-input-border: none;
 $form-check-input-checked-color: $primary;
-$form-check-input-checked-color--alt: $pink;
+$form-check-input-checked-color-alt: $pink;
 $form-check-input-checked-bg-color: $white;
 $form-check-input-checked-border-color: $primary;
 $form-check-min-height: 2rem;
 $form-check-padding-start: 1.5rem;
 $form-check-input-border-radius: 3px;
 $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$form-check-input-checked-color}'/></svg>");
-$form-check-input-checked-bg-image--alt: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color--alt}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
-$form-check-radio-checked-bg-image--alt: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$form-check-input-checked-color--alt}'/></svg>");
+$form-check-input-checked-bg-image-alt: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color-alt}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+$form-check-radio-checked-bg-image-alt: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$form-check-input-checked-color-alt}'/></svg>");
 
 $form-feedback-valid-color: $turquoise;
 $form-feedback-invalid-color: $red;

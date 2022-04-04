@@ -34,9 +34,9 @@ $toast-spacing:                     $container-padding-x;
     padding: 0;
     font-weight: 300;
     text-decoration: underline;
+    text-underline-offset: 1px;
     background: transparent;
     opacity: 1;
-    text-underline-offset: 1px;
 
     &:hover,
     &:focus {
