@@ -1,3 +1,7 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
 h1,
 h2,
 h3,
@@ -83,8 +87,4 @@ h6,
 
 a:focus {
   outline: 1px solid currentcolor;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
 }
