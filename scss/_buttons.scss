@@ -34,7 +34,9 @@
     background-color: $gray-200;
   }
 
-  &:active {
+  &:active,
+  &.active,
+  &.show {
     &:focus {
       box-shadow: 0 0 0 $btn-focus-width $accent;
     }

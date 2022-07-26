@@ -25,8 +25,11 @@ $enable-shadows: false;
 @import "bootstrap/scss/functions"; // Required
 
 @import "variables"; // Talis customisations are here
-
 @import "bootstrap/scss/variables"; // Required
+
+// Map overrides go here
+@import "bootstrap/scss/maps"; // Required
+
 @import "bootstrap/scss/mixins"; // Required
 @import "bootstrap/scss/utilities"; // Required
 
