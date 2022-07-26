@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/talis/bootstrap-theme/compare/v2.1.4...v3.0.0) (2022-07-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* support Bootstrap 5.2 (#25)
+
+### Bug Fixes
+
+* override btn-secondary-outline ([885ecce](https://github.com/talis/bootstrap-theme/commit/885ecceac09fe122f3b24cf3cc6e96c82b503b53))
+* remove pink form controls ([6096906](https://github.com/talis/bootstrap-theme/commit/6096906221bb7ff0f63a893f2c5e28175cfecdf2))
+* support Bootstrap 5.2 ([#25](https://github.com/talis/bootstrap-theme/issues/25)) ([cc86e84](https://github.com/talis/bootstrap-theme/commit/cc86e848f206d9069f27591d33093f6766b6e94f))
+
 ### [2.1.4](https://github.com/talis/bootstrap-theme/compare/v2.1.3...v2.1.4) (2022-03-04)
 
 
