@@ -519,6 +519,7 @@ I'm a textarea</textarea
 
 <h2>Tables</h2>
 <table class="table table-striped">
+  <caption class="visually-hidden">An example caption</caption>
   <thead>
     <tr>
       <th>#</th>
@@ -528,7 +529,7 @@ I'm a textarea</textarea
       <th class="text-end">Actions</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="table-group-divider">
     <tr>
       <td>1</td>
       <td>
@@ -646,15 +647,16 @@ I'm a textarea</textarea
 
 <div class="table-responsive">
   <table class="table table-striped table-responsive">
-      <thead>
-    <tr>
-      <th>#</th>
-      <th>Status</th>
-      <th>Course</th>
-      <th>Requester</th>
-      <th class="text-end">Actions</th>
-    </tr>
-  </thead>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Status</th>
+        <th>Course</th>
+        <th>Requester</th>
+        <th class="text-end">Actions</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
       
     <tr>
       <td>1</td>
@@ -810,6 +812,7 @@ I'm a textarea</textarea
       </td>
     </tr>
 
+    </tbody>
   </table>
 </div>
 <hr>
