@@ -40,22 +40,6 @@ legend {
   box-shadow: 0 0 0 2px $primary;
 }
 
-.form-check-input--alt {
-  box-shadow: 0 0 0 1px $pink;
-
-  &:focus {
-    box-shadow: 0 0 0 2px $pink;
-  }
-
-  &:checked[type="checkbox"] {
-    background-image: escape-svg($form-check-input-checked-bg-image-alt);
-  }
-
-  &:checked[type="radio"] {
-    background-image: escape-svg($form-check-radio-checked-bg-image-alt);
-  }
-}
-
 .field-label,
 .field-hint,
 .field-error {
