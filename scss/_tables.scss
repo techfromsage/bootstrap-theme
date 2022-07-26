@@ -1,12 +1,3 @@
-.table > :not(:first-child) {
-  border-top: none;
-}
-
-// Temp override while we wait for https://github.com/twbs/bootstrap/pull/35200 to end up in live
-.table > :not(caption):not(colgroup) + * {
-  border-top: (2 * $table-border-width) solid $table-group-separator-color !important;
-}
-
 th,
 .o-table__sort-btn {
   color: $black;
