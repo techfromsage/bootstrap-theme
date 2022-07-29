@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/talis/bootstrap-theme/compare/v3.0.0...v3.0.1) (2022-07-29)
+
+
+### Bug Fixes
+
+* **pagination:** define active variables ([c0713b4](https://github.com/talis/bootstrap-theme/commit/c0713b4a665c9ab8cb3e1ecc1aaa1451260c0029))
+
 ## [3.0.0](https://github.com/talis/bootstrap-theme/compare/v2.1.4...v3.0.0) (2022-07-26)
 
 
