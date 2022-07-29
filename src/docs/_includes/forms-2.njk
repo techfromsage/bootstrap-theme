@@ -2,7 +2,7 @@
 <form>
   <div class="form-group">
     <label class="form-label" for="exampleInputEmailAgain"
-      >Email address</label
+      >Email address <span class="field-required">(Required)</label
     >
     <input
       type="email"
@@ -13,13 +13,15 @@
   </div>
   <div class="form-group">
     <label class="form-label" for="exampleInputPassword1"
-      >Password</label
+      >Email <span class="field-hint">This field is read-only; useful for prepopulated information</span></label
     >
     <input
-      type="password"
+      type="email"
       class="form-control"
       id="exampleInputPassword1"
       placeholder="Password"
+      readonly
+      value="dm@talis.com"
     />
   </div>
   <div class="form-group">
