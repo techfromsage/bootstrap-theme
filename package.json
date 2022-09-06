@@ -58,7 +58,7 @@
     "serve": "^14.0.1",
     "standard-version": "^9.5.0",
     "stylelint": "^14.9.1",
-    "stylelint-config-twbs-bootstrap": "^5.0.0"
+    "stylelint-config-twbs-bootstrap": "^6.0.0"
   },
   "browserslist": [
     "last 2 versions"
