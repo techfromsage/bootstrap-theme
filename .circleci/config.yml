@@ -19,12 +19,20 @@ jobs:
 workflows:
   build_test_release:
     jobs:
-      - build_and_test
-      # - release:
-          requires:
-            - build_and_test
+      - be_kind_to_your_colleagues:
+          type: approval
           filters:
             branches:
-              only: main
+              ignore:
+                - main
+      - build_and_test
+          requires:
+            - be_kind_to_your_colleagues
+      # - release:
+          # requires:
+          #   - build_and_test
+          # filters:
+          #   branches:
+          #     only: main
 
 
