@@ -24,6 +24,8 @@
     $btn-disabled-color
   );
 
+  border-color: currentColor !important;
+
   &:focus,
   &:active {
     background-color: $white;
