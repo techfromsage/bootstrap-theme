@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.5](https://github.com/talis/bootstrap-theme/compare/v3.0.4...v3.0.5) (2022-09-22)
+
+
+### Bug Fixes
+
+* update btn states ([fa6c5b2](https://github.com/talis/bootstrap-theme/commit/fa6c5b24cad8ef6e499fcd0742cadd3e32e0626d))
+
 ### [3.0.4](https://github.com/talis/bootstrap-theme/compare/v3.0.3...v3.0.4) (2022-09-22)
 
 
