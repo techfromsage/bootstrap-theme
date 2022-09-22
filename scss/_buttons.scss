@@ -7,8 +7,7 @@
 .btn-default,
 .btn-success,
 .btn-warning,
-.btn-info,
-.btn-link {
+.btn-info {
   @include button-variant(
     $white,
     $primary,
@@ -46,6 +45,21 @@
 }
 
 .btn-link {
+  @include button-variant(
+    $white,
+    $primary,
+    $primary,
+    $gray-200,
+    $accent,
+    $accent,
+    $gray-200,
+    $accent,
+    $accent,
+    $white,
+    $btn-disabled-color,
+    $btn-disabled-color
+  );
+
   font-weight: 600;
   text-decoration: none;
   background-color: transparent;
@@ -121,18 +135,20 @@
 }
 
 .btn-alert {
-  @include button-outline-variant(
-    $black,
-    $black,
+  @include button-variant(
     transparent,
     $black,
-    $black
+    $black,
+    rgba(0,0,0,0.1),
+    $black,
+    $black,
+    rgba(0,0,0,0.1),
+    $black,
+    $black,
+    $gray-700,
+    $btn-disabled-color,
+    $btn-disabled-color
   );
-
-  &:hover {
-    color: $black;
-    background-color: rgba(0, 0, 0, .1);
-  }
 
   &:focus {
     border-color: $black;
@@ -141,12 +157,6 @@
 
   &:active:focus {
     box-shadow: 0 0 0 $btn-focus-width $black, 0 0 0 2px transparent;
-  }
-
-  &:disabled,
-  &.disabled {
-    color: $gray-700;
-    border-color: $btn-disabled-color;
   }
 }
 
@@ -194,7 +204,7 @@
   vertical-align: baseline;
 }
 
-/// @deprecated Compose existing classes instead
+/// @deprecated Compose existing classes instead. To be removed in v4
 .btn-action {
   @extend .btn-lg;
   @extend .btn-link;
