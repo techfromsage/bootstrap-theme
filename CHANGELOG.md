@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.4](https://github.com/talis/bootstrap-theme/compare/v3.0.3...v3.0.4) (2022-09-22)
+
+
+### Bug Fixes
+
+* **buttons:** change border-color alongside color ([cd4caa7](https://github.com/talis/bootstrap-theme/commit/cd4caa7b92fad9fbd221b2119c21b326120ced5c))
+* **buttons:** update btn-alert hover colour ([751aa3f](https://github.com/talis/bootstrap-theme/commit/751aa3ff74bb9232d8b066706d8eefca3d7e3fdf))
+* **navbar:** update nav-link bg colour ([c1c50ae](https://github.com/talis/bootstrap-theme/commit/c1c50aeb3a9f3e0a8840ae6bc329f9883ef1eaf9))
+
 ### [3.0.3](https://github.com/talis/bootstrap-theme/compare/v3.0.2...v3.0.3) (2022-09-13)
 
 
