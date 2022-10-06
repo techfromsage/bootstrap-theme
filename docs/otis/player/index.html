@@ -114,7 +114,7 @@
           </div><!-- / document -->
         </main>
         <aside class="col d-none d-lg-block">
-          <div class="position-sticky bg-white">
+          <div class="position-sticky bg-white pt-3" data-talis-sticky="true">
             <ul class="nav nav-tabs mb-4" role="tablist">
               <li class="nav-item flex-grow-1 text-center" role="presentation">
                 <button class="nav-link active w-100" type="button" id="comments-tab" aria-current="page" data-bs-toggle="tab" data-bs-target="#comments-tab-pane" aria-controls="comments-tab-pane" aria-selected="true" role="tab">Class comments</button>
@@ -343,10 +343,14 @@
           if (entry.contentBoxSize) {
             const contentBoxSize = Array.isArray(entry.contentBoxSize) ? entry.contentBoxSize[0] : entry.contentBoxSize;
 
-            const stickyElements = document.querySelectorAll('.position-sticky:not(header)');
+            const stickyElements = document.querySelectorAll('.position-sticky:not(header):not([data-talis-sticky]');
             stickyElements.forEach(element => {
               element.style.top = `${headerHeight + headerMargin}px`;
             });
+
+            document.querySelector('[data-talis-sticky]').style.top = `${headerHeight}px`;
+            document.querySelector('[data-talis-sticky]').style.marginTop = `-${headerMargin}px`;
+
           } else {
             document.querySelector('.nav-tabs.position-sticky').style.top = `${headerHeight}px`;
           }
