@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="/bootstrap-theme/assets/css/custom.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <style>
+      .page {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+      }
+
+      @layer utils {
+        .shadowed {
+          box-shadow: 0 0 10px 0 #E6E6E6;
+        }
+      }
+
+      ol.comment {
+        border-left: 3px solid transparent;
+      }
+
+      ol.comment--selected {
+        border-left-color: rebeccapurple;
+      }
+
+
+    </style>
+    <title>Document Title | Talis Elevate</title>
+  </head>
+  <body>
+    <a class="o-skip-link" href="#content">Skip to main content</a>
+    <div class="container-fluid">
+      <header class="row sticky-top bg-white border-bottom py-4 mb-lg-3">
+        <div class="col-7 d-flex align-items-center">
+          <h1 class="m-0 me-2">Document Title</h1>
+          <div class="vr me-2 d-none d-lg-block"></div>
+          <a class="fw-semibold d-none d-lg-block" href="#">Show description</a>
+        </div>
+        <nav class="col-5 d-none d-lg-flex align-items-center justify-content-end">
+          <div class="btn-group me-2">
+            <button class="btn btn-default btn-lg" type="button">Prev<span class="visually-hidden">ious page</span></button>
+            <button class="btn btn-default btn-lg" type="button">Next <span class="visually-hidden">page</span></button>
+          </div>
+          <a class="fa-stack fa-2x h-auto" style="color:#0093BC" href="#">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <span class="visually-hidden">Edit profile</span>
+          </a>
+        </nav>
+        <nav class="col d-flex d-lg-none align-items-center justify-content-end">
+          <div class="dropdown">
+            <button class="btn btn-default btn-lg" type="button" data-bs-toggle="dropdown">
+              <i class="fas fa-hamburger"></i>
+              <span class="visually-hidden">Menu</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Notifications</a></li>
+              <li><a class="dropdown-item" href="#">Analytics</a></li>
+              <li><a class="dropdown-item" href="#">Print</a></li>
+              <li><a class="dropdown-item" href="#">Invite colleague</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Help</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="row mb-3 mb-lg-0">
+        <div class="col d-none d-lg-flex flex-grow-0 flex-column">
+          <div class="position-sticky">
+            <div class="dropend">
+              <button class="btn btn-default btn-lg mb-2 shadowed" type="button" data-bs-toggle="dropdown" ><i class="fal fa-search"></i><span class="visually-hidden">Search</span></button>
+              <ul class="dropdown-menu px-2">
+                <h2 class="text-dark">Search</h2>
+                <p>lorem</p>
+              </ul>
+            </div>
+            <button class="btn btn-default btn-lg mb-2 shadowed" type="button" data-bs-toggle="offcanvas" data-bs-target="offcanvas-example"><i class="fal fa-list"></i><span class="visually-hidden">Table of contents</span></button>
+            <button class="btn btn-default btn-lg mb-2 shadowed" type="button" data-bs-toggle="offcanvas" data-bs-target="offcanvas-example"><i class="fal fa-cog"></i><span class="visually-hidden">Settings</span></button>
+          </div>
+        </div>
+        <ul class="d-flex d-lg-none nav nav-tabs mb-4 position-sticky bg-white">
+          <li class="nav-item flex-grow-1 text-center">
+            <a class="nav-link fs-1 active" aria-current="page" href="#">
+              <i class="far fa-comments-alt"></i>
+              <span class="visually-hidden">Class comments</span>
+            </a>
+          </li>
+          <li class="nav-item flex-grow-1 text-center">
+            <a class="nav-link fs-1" href="#">
+              <i class="far fa-ballot"></i>
+              <span class="visually-hidden">Personal notes</span>
+            </a>
+          </li>
+        </ul><!-- / mobile comment tabs-->
+        <main class="col-sm-auto col-lg-8" id="content">
+          <div class="page bg-white p-3 shadowed">
+            <h1>A Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
+          </div><!-- / document -->
+        </main>
+        <aside class="col d-none d-lg-block">
+          <div class="position-sticky bg-white">
+            <ul class="nav nav-tabs mb-4" role="tablist">
+              <li class="nav-item flex-grow-1 text-center" role="presentation">
+                <button class="nav-link active w-100" type="button" id="comments-tab" aria-current="page" data-bs-toggle="tab" data-bs-target="#comments-tab-pane" aria-controls="comments-tab-pane" aria-selected="true" role="tab">Class comments</button>
+              </li>
+              <li class="nav-item flex-grow-1 text-center" role="presentation">
+                <button class="nav-link w-100" type="button" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes-tab-pane" aria-controls="notes-tab-pane" role="tab">Personal notes</button>
+              </li>
+            </ul><!-- / sidebar tabs -->
+
+            <div class="c-comments-bumper pb-3 text-uppercase fw-bold"><i class="fa fa-arrow-up" aria-hidden="true"></i> XX comments <span class="visually-hidden">before</span></div>
+          </div>
+
+          <div class="tab-content">
+            <div class="tab-pane show active" id="comments-tab-pane" aria-labelledby="comments-tab" tabindex="0" role="tabpanel">
+          <ol class="list-unstyled text-black" id="comments-tab-pane" role="list">
+            <li class="mb-3">
+              <ol class="list-unstyled ps-3 comment comment--selected " role="list">
+                <li class="d-flex mb-3">
+                  <div class="comment">
+                    <div class="comment__meta mb-2">
+                      <i class="fa fa-user-graduate" style="color:rebeccapurple; font-size:16px;"></i>
+                      <span class="comment__author fw-bold ms-2">Random Name</span>
+                      <time class="comment__timestamp ">Some time ago</time>
+                    </div>
+                    <div class="comment__content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab quisquam facilis nisi eius dolore atque!</p>
+                    </div>
+                    <div class="comment__controls">
+                      <button class="btn btn-sm btn-link b-0 me-1">
+                        <i class="far fa-reply"></i>
+                        Reply
+                      </button>
+                      <button class="btn btn-sm btn-link b-0 me-1">
+                        <i class="far fa-thumbs-up"></i>
+                        Agree
+                      </button>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for comment</span></button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Share</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <ol class="list-unstyled" role="list">
+                    <li class="mb-3 ps-3">
+                      <div class="comment-reply mb-3">
+                        <label class="form-label" for="comment-reply">Your comment</label>
+                        <textarea
+                        id="comment-reply"
+                        class="form-control mb-2"
+                        ></textarea>
+                        <button class="btn btn-primary btn-sm">Reply</button>
+                        <button class="btn btn-default btn-sm">Cancel</button>
+                      </div>
+                    </li>
+                    <li class="d-flex ps-3 comment">
+                      <div class="comment">
+                        <div class="comment__meta mb-2">
+                          <i class="fa fa-user-graduate" style="color:rebeccapurple;font-size:16px;"></i>
+                          <span class="comment__author fw-bold ms-2">Random Name</span>
+                          <time class="comment__timestamp" datetime="2022-09-30">Some time ago</time>
+                        </div>
+                        <div class="comment__content">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab quisquam facilis nisi eius dolore atque!</p>
+                        </div>
+                        <div class="comment__controls">
+                          <button class="btn btn-sm btn-link b-0 me-1">
+                            <i class="far fa-reply"></i>
+                            Reply
+                          </button>
+                          <button class="btn btn-sm btn-link b-0 me-1">
+                            <i class="far fa-thumbs-up"></i>
+                            Agree
+                          </button>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for comment</span></button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Share</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ol>
+                </li>
+              </ol><!-- /single comment -->
+            </li><!-- /Single thread -->
+            <li class="mb-3">
+              <ol class="list-unstyled ps-3 comment comment--selected " role="list">
+                <li class="d-flex mb-3">
+                  <div class="comment">
+                    <div class="comment__meta mb-2">
+                      <i class="fa fa-user-graduate" style="color:rebeccapurple; font-size:16px;"></i>
+                      <span class="comment__author fw-bold ms-2">Random Name</span>
+                      <time class="comment__timestamp ">Some time ago</time>
+                    </div>
+                    <div class="comment__content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab quisquam facilis nisi eius dolore atque!</p>
+                    </div>
+                    <div class="comment__controls">
+                      <button class="btn btn-sm btn-link b-0 me-1">
+                        <i class="far fa-reply"></i>
+                        Reply
+                      </button>
+                      <button class="btn btn-sm btn-link b-0 me-1">
+                        <i class="far fa-thumbs-up"></i>
+                        Agree
+                      </button>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for comment</span></button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Share</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <ol class="list-unstyled" role="list">
+                    <li class="d-flex ps-3 comment">
+                      <div class="comment">
+                        <div class="comment__meta mb-2">
+                          <i class="fa fa-user-graduate" style="color:rebeccapurple;font-size:16px;"></i>
+                          <span class="comment__author fw-bold ms-2">Random Name</span>
+                          <time class="comment__timestamp" datetime="2022-09-30">Some time ago</time>
+                        </div>
+                        <div class="comment__content">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab quisquam facilis nisi eius dolore atque!</p>
+                        </div>
+                        <div class="comment__controls">
+                          <button class="btn btn-sm btn-link b-0 me-1">
+                            <i class="far fa-reply"></i>
+                            Reply
+                          </button>
+                          <button class="btn btn-sm btn-link b-0 me-1">
+                            <i class="far fa-thumbs-up"></i>
+                            Agree
+                          </button>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for comment</span></button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Share</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ol>
+                </li>
+              </ol><!-- /single comment -->
+            </li><!-- /Single thread -->
+          </ol><!-- /Resource comments-->
+          </div>
+          <div class="tab-pane" id="notes-tab-pane" aria-labelledby="notes-tab" tabindex="0" role="tabpanel">
+            <ol class="list-unstyled text-black tab-pane show active" id="notes-tab-pane" role="list">
+              <li class="mb-3">
+                <ol class="list-unstyled ps-3 comment comment--selected " role="list">
+                  <li class="d-flex mb-3">
+                    <div class="comment">
+                      <div class="comment__meta mb-2">
+                        <span class="comment__author fw-bold">You</span>
+                        <time class="comment__timestamp ">Some time ago</time>
+                      </div>
+                      <div class="comment__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab quisquam facilis nisi eius dolore atque!</p>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for comment</span></button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Share</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ol><!-- /single comment -->
+              </li><!-- /Single thread -->
+            </ol><!-- /Resource comments-->
+          </div>
+          </div>
+          <div class="c-comments-bumper mt-3 text-uppercase fw-bold"><i class="fa fa-arrow-down" aria-hidden="true"></i> XX comments <span class="visually-hidden">after</span></div>
+        </aside><!-- /sidebar -->
+      </div>
+    </div>
+    <div class="d-lg-none position-sticky bottom-0 bg-white">
+      <nav class="d-flex align-items-center justify-content-between btn-group border-top" aria-label="Pagination">
+          <button class="flex-grow-1 border-0 btn btn-default btn-lg text-start" type="button" style="--talis-btn-border-radius:0;">Prev</button>
+          <button class="flex-grow-1 border-0 btn btn-default btn-lg text-end" type="button" style="--talis-btn-border-radius:0;">Next</button>
+      </nav>
+      <div class="d-flex border-top">
+        <button class="btn btn-default btn-lg border-0 flex-grow-1" type="button" style="--talis-btn-border-radius:0;">
+          <i class="fal fa-list"></i>
+          <span class="visually-hidden">Table of contents</span>
+        </button>
+        <div class="vr"></div>
+        <button class="btn btn-default btn-lg border-0 flex-grow-1" type="button" style="--talis-btn-border-radius:0;">
+          <i class="fal fa-cog"></i>
+          <span class="visually-hidden">Settings</span>
+        </button>
+      </div>
+    </div><!-- /Mobile reading controls -->
+
+    <script>
+      // Resize observer watches header
+      const headerResizeObserver = new ResizeObserver(entries => {
+        const headerHeight = document.querySelector('header').offsetHeight;
+        const headerMargin = parseInt(getComputedStyle(document.querySelector('header'))['margin-bottom'], 10);
+        for (const entry of entries) {
+          if (entry.contentBoxSize) {
+            const contentBoxSize = Array.isArray(entry.contentBoxSize) ? entry.contentBoxSize[0] : entry.contentBoxSize;
+
+            const stickyElements = document.querySelectorAll('.position-sticky:not(header)');
+            stickyElements.forEach(element => {
+              element.style.top = `${headerHeight + headerMargin}px`;
+            });
+          } else {
+            document.querySelector('.nav-tabs.position-sticky').style.top = `${headerHeight}px`;
+          }
+        }
+      })
+
+      headerResizeObserver.observe(document.querySelector('header'));
+
+    </script>
+  </body>
+</html>
