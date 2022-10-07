@@ -39,41 +39,65 @@
     <a class="o-skip-link" href="#content">Skip to main content</a>
     <div class="container-fluid">
       <header class="row sticky-top bg-white border-bottom py-4 mb-lg-3">
-        <div class="col-7 d-flex align-items-center">
-          <h1 class="m-0 me-3">Document Title</h1>
-          <div class="vr me-3 d-none d-lg-block"></div>
-          <a class="fw-semibold d-none d-lg-block" href="#">Show description</a>
-        </div><!-- resource meta -->
+        <div class="d-flex align-items-center mb-3 mb-lg-0">
+          <div class="col-7">
+            <h1 class="m-0 me-3 text-truncate">Document Title</h1>
+            <div class="d-none d-lg-flex align-items-baseline">
+              <span class="text-truncate fst-italic" data-js-description style="flex:1;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia quas similique ea rem debitis vero alias repellendus, provident enim qui quae corrupti repellat rerum illo! Consequatur architecto autem alias!</span>
+              <button class="btn btn-link ms-2" onclick="document.querySelector('[data-js-description]').classList.toggle('text-truncate')">Show more</button>
+            </div>
+          </div><!-- resource meta -->
+          <div class="col">
+            <nav class="d-none d-lg-flex align-items-center justify-content-end">
+              <button class="btn btn-default btn-lg border-0 me-2" type="button">
+                <i class="fal fa-search"></i>
+                <span class="visually-hidden">Search resource</span>
+              </button>
+              <div class="btn-group me-2">
+                <button class="btn btn-default btn-lg" type="button">Prev<span class="visually-hidden">ious page</span></button>
+                <button class="btn btn-default btn-lg" type="button">Next <span class="visually-hidden">page</span></button>
+              </div>
+              <a class="fa-stack fa-2x h-auto" style="color:#0093BC" href="#">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <span class="visually-hidden">Edit profile</span>
+              </a>
+            </nav><!-- desktop header controls -->
 
-        <nav class="col-5 d-none d-lg-flex align-items-center justify-content-end">
-          <div class="btn-group me-2">
-            <button class="btn btn-default btn-lg" type="button">Prev<span class="visually-hidden">ious page</span></button>
-            <button class="btn btn-default btn-lg" type="button">Next <span class="visually-hidden">page</span></button>
+            <nav class="d-flex d-lg-none align-items-start justify-content-end">
+              <div class="dropdown">
+                <button class="btn btn-default btn-lg" type="button" data-bs-toggle="dropdown">
+                  <i class="far fa-ellipsis-v"></i>
+                  <span class="visually-hidden">Menu</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Notifications</a></li>
+                  <li><a class="dropdown-item" href="#">Analytics</a></li>
+                  <li><a class="dropdown-item" href="#">Print</a></li>
+                  <li><a class="dropdown-item" href="#">Invite colleague</a></li>
+                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                  <li><a class="dropdown-item" href="#">Help</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </nav><!-- mobile header controls -->
           </div>
-          <a class="fa-stack fa-2x h-auto" style="color:#0093BC" href="#">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <span class="visually-hidden">Edit profile</span>
-          </a>
-        </nav><!-- desktop header controls -->
+        </div>
 
-        <nav class="col d-flex d-lg-none align-items-center justify-content-end">
-          <div class="dropdown">
-            <button class="btn btn-default btn-lg" type="button" data-bs-toggle="dropdown">
-              <i class="fas fa-hamburger"></i>
-              <span class="visually-hidden">Menu</span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Notifications</a></li>
-              <li><a class="dropdown-item" href="#">Analytics</a></li>
-              <li><a class="dropdown-item" href="#">Print</a></li>
-              <li><a class="dropdown-item" href="#">Invite colleague</a></li>
-              <li><a class="dropdown-item" href="#">Accessibility</a></li>
-              <li><a class="dropdown-item" href="#">Help</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
-            </ul>
-          </div>
-        </nav><!-- mobile header controls -->
+        <div class="d-lg-none mb-1">
+          <span class="fst-italic" data-js-description-mobile-truncated>Lorem ipsum dolor sit amet consectetur adipisicing elit…<button class="btn btn-link btn-sm p-1 ms-1" onclick="document.querySelector('[data-js-description-mobile-full]').classList.toggle('d-none');document.querySelector('[data-js-description-mobile-truncated]').classList.toggle('d-none')">Show more</button></span>
+
+          <span class="fst-italic d-none" data-js-description-mobile-full>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto fuga eveniet officiis, voluptate soluta voluptatem ipsa iusto eum fugit earum doloribus maiores minima aut, pariatur voluptas expedita cum deleniti. Cupiditate! <button class="btn btn-link btn-sm p-1 ms-1" onclick="document.querySelector('[data-js-description-mobile-truncated]').classList.toggle('d-none');document.querySelector('[data-js-description-mobile-full]').classList.toggle('d-none')">Show less</button></span>
+        </div>
+
+        <div class="d-lg-none input-group-lg" role="search" data-mobile-search>
+          <button class="btn btn-default border-color-white" type="button" onclick="document.querySelector('[data-mobile-search-input]').classList.toggle('d-none');document.querySelector('[data-mobile-search]').classList.toggle('input-group');" >
+            <i class="fal fa-search"></i>
+            <span class="visually-hidden">Search resource</span>
+          </button>
+          <label for="search" class="visually-hidden">Search</label>
+          <input id="search" type="text" class="d-none form-control" data-mobile-search-input>
+        </div>
       </header>
 
       <section class="row mb-3 mb-lg-0">
