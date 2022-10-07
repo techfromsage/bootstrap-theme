@@ -143,10 +143,22 @@
             <li class="dropend">
               <button class="btn btn-default btn-lg mb-3 p-3 shadowed" type="button" data-bs-toggle="dropdown" data-bs-offset="0,8"><i class="fal fa-cog fa-fw"></i><span class="visually-hidden">Settings</span></button>
               <div class="dropdown-menu p-3 shadowed" style="--talis-dropdown-min-width:25vw">
-                <div class="alert alert-danger">
-                  <i class="far fa-construction"></i>
-                  Under construction – keep out
+                <header class="d-flex justify-content-between align-items-start mb-4">
+                  <h2 class="fs-3 text-dark m-0">Settings</h2>
+                  <button class="btn-close text-primary"><span class="visually-hidden">Close Settings</span></button>
+                </header>
+                <fieldset>
+                  <legend>Font size of content</legend>
+                  <div class="d-flex align-items-center">
+                  <i class="far fa-text"></i>
+                  <div class="flex-grow-1 px-3">
+                    <label for="size-range" class="visually-hidden form-label">Font-size</label>
+                    <input type="range" class="form-range" id="size-range" min="0" max="5" step="0.5">
+                  </div>
+                  <i class="far fa-text fa-4x"></i>
                 </div>
+                </fieldset>
+                <button type="button" class="btn btn-default">Reset to default</button>
               </div>
             </li>
           </ul>
