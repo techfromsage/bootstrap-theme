@@ -80,26 +80,6 @@
         <nav class="col d-none d-lg-flex flex-grow-0 flex-column" aria-label="Resource controls">
           <ul class="position-sticky nav list-unstyled">
             <li class="dropend">
-              <button class="btn btn-default btn-lg mb-3 shadowed p-3" type="button" data-bs-toggle="dropdown" data-bs-offset="0,8"><i class="fal fa-search fa-fw"></i><span class="visually-hidden">Search</span></button>
-              <ul class="dropdown-menu p-3 shadowed" style="--talis-dropdown-min-width:25vw">
-                <div class="alert alert-danger">
-                  <i class="far fa-construction"></i>
-                  Under construction – keep out
-                </div>
-                <header class="d-flex justify-content-between align-items-center mb-3">
-                  <h2 class="text-dark m-0">Search</h2>
-                  <button class="btn-close"><span class="visually-hidden">Close</span></button>
-                </header>
-                <form>
-                  <div class="form-group">
-                    <label for="search" class="form-label">Search</label>
-                    <input class="form-control" type="text" id="search">
-                  </div>
-                  <button class="btn btn-primary" type="submit">Search</button>
-                </form>
-              </ul>
-            </li>
-            <li class="dropend">
               <button class="btn btn-default btn-lg mb-3 p-3 shadowed" type="button" data-bs-toggle="dropdown" data-bs-offset="0,8"><i class="fal fa-list fa-fw"></i><span class="visually-hidden">Table of contents</span></button>
               <div class="dropdown-menu px-3 py-3 shadowed" style="--talis-dropdown-min-width:15vw">
                 <header class="d-flex justify-content-between align-items-start mb-4">
@@ -146,19 +126,29 @@
               </div>
             </li>
           </ul>
+
+          <div class="btn-group-vertical shadowed position-fixed bottom-0 mb-3" role="group" aria-label="Document zoom">
+            <button class="btn btn-default px-3 py-2">
+              <i class="fal fa-plus"></i>
+              <span class="visually-hidden">Increase zoom</span>
+            </button>
+            <span class="p-2 bg-white border-start border-end border-primary text-primary">100%</span>
+            <button class="btn btn-default px-3 py-2">
+              <i class="fal fa-minus"></i>
+              <span class="visually-hidden">Decrease zoom</span>
+            </button>
+          </div>
         </nav><!-- / desktop controls -->
 
         <ul class="d-flex d-lg-none nav nav-tabs mb-4 p-0 position-sticky bg-white">
           <li class="nav-item flex-grow-1 text-center">
-            <a class="nav-link fs-1 active" aria-current="page" href="#">
-              <i class="far fa-comments-alt"></i>
-              <span class="visually-hidden">Class comments</span>
+            <a class="nav-link active" aria-current="page" href="#">
+              Class comments
             </a>
           </li>
           <li class="nav-item flex-grow-1 text-center">
-            <a class="nav-link fs-1" href="#">
-              <i class="far fa-ballot"></i>
-              <span class="visually-hidden">Personal notes</span>
+            <a class="nav-link" href="#">
+              Personal notes
             </a>
           </li>
         </ul><!-- / mobile comment tabs-->
@@ -397,11 +387,6 @@
           <!--/ Can be links if navigation updates URL -->
       </div>
       <div class="d-flex border-top">
-        <button class="btn btn-default btn-lg border-0 flex-grow-1" type="button" style="--talis-btn-border-radius:0;">
-          <i class="fal fa-search"></i>
-          <span class="visually-hidden">Search</span>
-        </button>
-        <div class="vr"></div>
         <button class="btn btn-default btn-lg border-0 flex-grow-1" type="button" style="--talis-btn-border-radius:0;">
           <i class="fal fa-list"></i>
           <span class="visually-hidden">Table of contents</span>
