@@ -30,8 +30,6 @@
       ol.comment--selected {
         border-left-color: rebeccapurple;
       }
-
-
     </style>
     <title>Document Title | Talis Elevate</title>
   </head>
@@ -49,18 +47,45 @@
           </div><!-- resource meta -->
           <div class="col">
             <nav class="d-none d-lg-flex align-items-center justify-content-end">
-              <button class="btn btn-default btn-lg border-0 me-2" type="button">
-                <i class="fal fa-search"></i>
-                <span class="visually-hidden">Search resource</span>
-              </button>
-              <div class="btn-group me-2">
+              <form role="search" class="me-2">
+                <button class="btn btn-default btn-lg border-0" type="button" data-search-toggle onclick="toggleSearch()">
+                  <i class="fal fa-search"></i>
+                  <span class="visually-hidden">Search resource</span>
+                </button>
+                <label for="header-search" class="visually-hidden">Search</label>
+                <input id="header-search" type="text" class="form-control d-none">
+              </form>
+              <script>
+                const toggleSearch = () => {
+                  document.querySelector('[data-search-toggle').classList.toggle('border-0');
+                  document.querySelector('#header-search').classList.toggle('d-none');
+                  document.querySelector('[role=search]').classList.toggle('input-group');
+                  document.querySelector('[role=search]').classList.toggle('input-group-lg');
+                  document.querySelector('[data-pagination-controls]').classList.toggle('d-none');
+                  document.querySelector('#header-search').focus();
+                }
+              </script>
+              <div class="btn-group me-2" data-pagination-controls>
                 <button class="btn btn-default btn-lg" type="button">Prev<span class="visually-hidden">ious page</span></button>
                 <button class="btn btn-default btn-lg" type="button">Next <span class="visually-hidden">page</span></button>
               </div>
-              <a class="fa-stack fa-2x h-auto" style="color:#0093BC" href="#">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <span class="visually-hidden">Edit profile</span>
-              </a>
+              <div class="dropdown">
+                  <span class="btn-link btn-lg fa-stack fa-2x" role="button" style="color:#0093BC; --talis-btn-border-radius: 1em; --talis-btn-padding-x: 0;--talis-btn-padding-y: 0; --talis-btn-line-height: 1;" data-bs-toggle="dropdown">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-user-graduate fa-stack-1x fa-inverse"></i>
+                    <span class="visually-hidden">Edit profile</span>
+                  </span>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Notifications</a></li>
+                  <li><a class="dropdown-item" href="#">Analytics</a></li>
+                  <li><a class="dropdown-item" href="#">Print</a></li>
+                  <li><a class="dropdown-item" href="#">Invite colleague</a></li>
+                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                  <li><a class="dropdown-item" href="#">Help</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
             </nav><!-- desktop header controls -->
 
             <nav class="d-flex d-lg-none align-items-start justify-content-end">
