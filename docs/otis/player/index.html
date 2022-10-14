@@ -135,6 +135,15 @@
                   <button class="btn-close text-primary"><span class="visually-hidden">Close table of contents</span></button>
                 </header>
                 <style>
+                  .c-resource-thumbnails img {
+                    aspect-ratio: 2/3;
+                    object-fit: contain;
+                  }
+
+                  .c-resource-thumbnails li {
+                    border: 2px solid transparent;
+                  }
+
                   .c-resource-thumbnails a:after{
                     position: absolute;
                     top: 0;
@@ -148,46 +157,46 @@
                     outline: 0;
                   }
 
+                  .c-resource-thumbnails li:has([aria-current]),
                   .c-resource-thumbnails li:focus-within {
-                    outline: 2px solid currentColor;
-                    outline-offset: 2px;
+                    border-color: var(--talis-primary);
                   }
                 </style>
                 <ol class="row row-cols-1 row-cols-md-2 g-3 list-unstyled fw-semibold c-resource-thumbnails overflow-auto" role="list" style="max-height:50vh;">
                   <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1">
-                    <a class="d-block text-center" href="#">Cover</a>
+                    <img src="https://placekitten.com/300/200" alt="" height="200" width="300" class="img-fluid mb-1 border bg-light">
+                    <a class="d-block text-center" href="#" aria-current="page">Cover</a>
                   </li>
                   <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1">
+                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1 border bg-light">
                     <a class="d-block text-center" href="#">Title page</a>
                   </li>
                   <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1">
+                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1 border bg-light">
                     <a class="d-block text-center" href="#">Copyright</a>
                   </li>
                   <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1">
+                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
                     <a class="d-block text-center" href="#">Copyright</a>
                   </li>
                   <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1">
+                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
                     <a class="d-block text-center" href="#">Copyright</a>
                   </li>
                   <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1">
+                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
                     <a class="d-block text-center" href="#">Copyright</a>
                   </li>
                   <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1">
+                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
                     <a class="d-block text-center" href="#">Copyright</a>
                   </li>
                   <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1">
+                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
                     <a class="d-block text-center" href="#">Copyright</a>
                   </li>
                   <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1">
+                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
                     <a class="d-block text-center" href="#">Copyright</a>
                   </li>
                 </ol>
