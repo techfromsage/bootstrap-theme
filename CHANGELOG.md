@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.6](https://github.com/talis/bootstrap-theme/compare/v3.0.5...v3.0.6) (2022-10-18)
+
+
+### Bug Fixes
+
+* **forms:** update switch styling ([6843d8d](https://github.com/talis/bootstrap-theme/commit/6843d8d62bbd6a96f2fc3d9d6b227ab312df54c6))
+* **switch:** increase size ([46a2d66](https://github.com/talis/bootstrap-theme/commit/46a2d66acca54ebce713a5634662e09cdc456eb4))
+
 ### [3.0.5](https://github.com/talis/bootstrap-theme/compare/v3.0.4...v3.0.5) (2022-09-22)
 
 
