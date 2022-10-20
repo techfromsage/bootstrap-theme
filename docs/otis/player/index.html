@@ -1,491 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="/bootstrap-theme/assets/css/custom-full.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
-    <style>
-      .page {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 24px;
-      }
 
-      @layer utils {
-        .shadowed {
-          box-shadow: 0 0 10px 0 #E6E6E6;
-        }
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="/bootstrap-theme/assets/css/custom-full.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
+  <style>
+    .page {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 24px;
+    }
 
-      ol.comment {
-        border-left: 3px solid transparent;
+    @layer utils {
+      .shadowed {
+        box-shadow: 0 0 10px 0 #E6E6E6;
       }
+    }
 
-      ol.comment--selected {
-        border-left-color: rebeccapurple;
-      }
-    </style>
-    <title>Document Title | Talis Elevate</title>
-  </head>
-  <body>
-    <a class="o-skip-link" href="#content">Skip to main content</a>
-    <div class="container-fluid pb-3">
-      <header class="row sticky-top bg-white border-bottom py-4 mb-lg-3">
-        <div class="d-flex align-items-center mb-1 mb-lg-0">
-          <div class="col-7">
-            <h1 class="m-0 me-3 text-truncate">Document Title</h1>
-            <div class="d-none d-lg-flex align-items-baseline">
-              <span class="text-truncate fst-italic" data-js-description style="flex:1;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia quas similique ea rem debitis vero alias repellendus, provident enim qui quae corrupti repellat rerum illo! Consequatur architecto autem alias!</span>
-              <button class="btn btn-link ms-2" onclick="document.querySelector('[data-js-description]').classList.toggle('text-truncate')">Show more</button>
+    ol.comment {
+      border-left: 3px solid transparent;
+    }
+
+    ol.comment--selected {
+      border-left-color: rebeccapurple;
+    }
+
+  </style>
+  <title>Document Title | Talis Elevate</title>
+</head>
+
+<body>
+  <a class="o-skip-link" href="#content">Skip to main content</a>
+  <div class="container-fluid pb-3">
+    <header class="row sticky-top bg-white border-bottom py-4 mb-lg-3">
+      <div class="d-flex align-items-center mb-1 mb-lg-0">
+        <div class="col-7">
+          <h1 class="m-0 me-3 text-truncate">Document Title</h1>
+          <div class="d-none d-lg-flex align-items-baseline">
+            <span class="text-truncate fst-italic" data-js-description style="flex:1;">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Obcaecati officia quas similique ea rem debitis vero alias repellendus,
+              provident enim qui quae corrupti repellat rerum illo! Consequatur architecto autem alias!</span>
+            <button class="btn btn-link ms-2"
+              onclick="document.querySelector('[data-js-description]').classList.toggle('text-truncate')">Show
+              more</button>
+          </div>
+        </div><!-- resource meta -->
+        <div class="col">
+          <nav class="d-none d-lg-flex align-items-center justify-content-end">
+            <form role="search" class="me-2">
+              <button class="btn btn-default btn-lg border-0" type="button" data-search-toggle onclick="toggleSearch()">
+                <i class="fal fa-search"></i>
+                <span class="visually-hidden">Search resource</span>
+              </button>
+              <label for="header-search" class="visually-hidden">Search</label>
+              <input id="header-search" type="text" class="form-control d-none">
+            </form>
+            <script>
+              const toggleSearch = () => {
+                document.querySelector('[data-search-toggle').classList.toggle('border-0');
+                document.querySelector('#header-search').classList.toggle('d-none');
+                document.querySelector('[role=search]').classList.toggle('input-group');
+                document.querySelector('[role=search]').classList.toggle('input-group-lg');
+                document.querySelector('[data-pagination-controls]').classList.toggle('d-none');
+                document.querySelector('#header-search').focus();
+              }
+            </script>
+            <div class="btn-group me-2" data-pagination-controls>
+              <button class="btn btn-default btn-lg" type="button">Prev<span class="visually-hidden">ious
+                  page</span></button>
+              <button class="btn btn-default btn-lg" type="button">Next <span
+                  class="visually-hidden">page</span></button>
             </div>
-          </div><!-- resource meta -->
-          <div class="col">
-            <nav class="d-none d-lg-flex align-items-center justify-content-end">
-              <form role="search" class="me-2">
-                <button class="btn btn-default btn-lg border-0" type="button" data-search-toggle onclick="toggleSearch()">
-                  <i class="fal fa-search"></i>
-                  <span class="visually-hidden">Search resource</span>
-                </button>
-                <label for="header-search" class="visually-hidden">Search</label>
-                <input id="header-search" type="text" class="form-control d-none">
-              </form>
-              <script>
-                const toggleSearch = () => {
-                  document.querySelector('[data-search-toggle').classList.toggle('border-0');
-                  document.querySelector('#header-search').classList.toggle('d-none');
-                  document.querySelector('[role=search]').classList.toggle('input-group');
-                  document.querySelector('[role=search]').classList.toggle('input-group-lg');
-                  document.querySelector('[data-pagination-controls]').classList.toggle('d-none');
-                  document.querySelector('#header-search').focus();
+            <div class="dropdown">
+              <span class="btn-link btn-lg fa-stack fa-2x" role="button"
+                style="color:#0093BC; --talis-btn-border-radius: 1em; --talis-btn-padding-x: 0;--talis-btn-padding-y: 0; --talis-btn-line-height: 1;"
+                data-bs-toggle="dropdown">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-user-graduate fa-stack-1x fa-inverse"></i>
+                <span class="visually-hidden">Edit profile</span>
+              </span>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Notifications</a></li>
+                <li><a class="dropdown-item" href="#">Analytics</a></li>
+                <li><a class="dropdown-item" href="#">Print</a></li>
+                <li><a class="dropdown-item" href="#">Invite colleague</a></li>
+                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                <li><a class="dropdown-item" href="#">Help</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </nav><!-- desktop header controls -->
+
+          <nav class="d-flex d-lg-none align-items-start justify-content-end">
+            <div class="dropdown">
+              <button class="btn btn-default btn-lg" type="button" data-bs-toggle="dropdown">
+                <i class="far fa-ellipsis-v"></i>
+                <span class="visually-hidden">Menu</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Notifications</a></li>
+                <li><a class="dropdown-item" href="#">Analytics</a></li>
+                <li><a class="dropdown-item" href="#">Print</a></li>
+                <li><a class="dropdown-item" href="#">Invite colleague</a></li>
+                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                <li><a class="dropdown-item" href="#">Help</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </nav><!-- mobile header controls -->
+        </div>
+      </div>
+
+      <div class="d-lg-none mb-1">
+        <span class="fst-italic" data-js-description-mobile-truncated>Lorem ipsum dolor sit amet consectetur adipisicing
+          elit…<button class="btn btn-link btn-sm p-1 ms-1"
+            onclick="document.querySelector('[data-js-description-mobile-full]').classList.toggle('d-none');document.querySelector('[data-js-description-mobile-truncated]').classList.toggle('d-none')">Show
+            more</button></span>
+
+        <span class="fst-italic d-none" data-js-description-mobile-full>Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Architecto fuga eveniet officiis, voluptate soluta voluptatem ipsa iusto eum fugit earum
+          doloribus maiores minima aut, pariatur voluptas expedita cum deleniti. Cupiditate! <button
+            class="btn btn-link btn-sm p-1 ms-1"
+            onclick="document.querySelector('[data-js-description-mobile-truncated]').classList.toggle('d-none');document.querySelector('[data-js-description-mobile-full]').classList.toggle('d-none')">Show
+            less</button></span>
+      </div>
+
+      <div class="d-lg-none input-group-lg" role="search" data-mobile-search>
+        <button class="btn btn-default border-color-white" type="button"
+          onclick="document.querySelector('[data-mobile-search-input]').classList.toggle('d-none');document.querySelector('[data-mobile-search]').classList.toggle('input-group');">
+          <i class="fal fa-search"></i>
+          <span class="visually-hidden">Search resource</span>
+        </button>
+        <label for="search" class="visually-hidden">Search</label>
+        <input id="search" type="text" class="d-none form-control" data-mobile-search-input>
+      </div>
+    </header>
+
+    <section class="row mb-3 mb-lg-0">
+      <nav class="col d-none d-lg-flex flex-grow-0 flex-column" aria-label="Resource controls">
+        <ul class="position-sticky nav list-unstyled">
+          <li class="dropend">
+            <button class="btn btn-default btn-lg mb-3 p-3 shadowed" type="button" data-bs-toggle="dropdown"
+              data-bs-auto-close="outside" data-bs-offset="0,8"><i class="fal fa-list fa-fw"></i><span
+                class="visually-hidden">Pages</span></button>
+            <div class="dropdown-menu px-3 py-3 shadowed" style="--talis-dropdown-min-width:25vw; width: 20rem;">
+              <header class="d-flex justify-content-between align-items-start mb-4">
+                <h2 class="fs-3 text-dark m-0">Pages</h2>
+                <button class="btn-close text-primary"><span class="visually-hidden">Close table of
+                    contents</span></button>
+              </header>
+              <style>
+                .c-resource-thumbnails img {
+                  aspect-ratio: 2/3;
+                  object-fit: contain;
                 }
-              </script>
-              <div class="btn-group me-2" data-pagination-controls>
-                <button class="btn btn-default btn-lg" type="button">Prev<span class="visually-hidden">ious page</span></button>
-                <button class="btn btn-default btn-lg" type="button">Next <span class="visually-hidden">page</span></button>
-              </div>
-              <div class="dropdown">
-                  <span class="btn-link btn-lg fa-stack fa-2x" role="button" style="color:#0093BC; --talis-btn-border-radius: 1em; --talis-btn-padding-x: 0;--talis-btn-padding-y: 0; --talis-btn-line-height: 1;" data-bs-toggle="dropdown">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-user-graduate fa-stack-1x fa-inverse"></i>
-                    <span class="visually-hidden">Edit profile</span>
-                  </span>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Notifications</a></li>
-                  <li><a class="dropdown-item" href="#">Analytics</a></li>
-                  <li><a class="dropdown-item" href="#">Print</a></li>
-                  <li><a class="dropdown-item" href="#">Invite colleague</a></li>
-                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                  <li><a class="dropdown-item" href="#">Help</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </div>
-            </nav><!-- desktop header controls -->
 
-            <nav class="d-flex d-lg-none align-items-start justify-content-end">
-              <div class="dropdown">
-                <button class="btn btn-default btn-lg" type="button" data-bs-toggle="dropdown">
-                  <i class="far fa-ellipsis-v"></i>
-                  <span class="visually-hidden">Menu</span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Notifications</a></li>
-                  <li><a class="dropdown-item" href="#">Analytics</a></li>
-                  <li><a class="dropdown-item" href="#">Print</a></li>
-                  <li><a class="dropdown-item" href="#">Invite colleague</a></li>
-                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                  <li><a class="dropdown-item" href="#">Help</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </div>
-            </nav><!-- mobile header controls -->
-          </div>
-        </div>
+                .c-resource-thumbnails li {
+                  border: 2px solid transparent;
+                }
 
-        <div class="d-lg-none mb-1">
-          <span class="fst-italic" data-js-description-mobile-truncated>Lorem ipsum dolor sit amet consectetur adipisicing elit…<button class="btn btn-link btn-sm p-1 ms-1" onclick="document.querySelector('[data-js-description-mobile-full]').classList.toggle('d-none');document.querySelector('[data-js-description-mobile-truncated]').classList.toggle('d-none')">Show more</button></span>
+                .c-resource-thumbnails a:after {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  content: '';
+                }
 
-          <span class="fst-italic d-none" data-js-description-mobile-full>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto fuga eveniet officiis, voluptate soluta voluptatem ipsa iusto eum fugit earum doloribus maiores minima aut, pariatur voluptas expedita cum deleniti. Cupiditate! <button class="btn btn-link btn-sm p-1 ms-1" onclick="document.querySelector('[data-js-description-mobile-truncated]').classList.toggle('d-none');document.querySelector('[data-js-description-mobile-full]').classList.toggle('d-none')">Show less</button></span>
-        </div>
+                .c-resource-thumbnails a:focus {
+                  outline: 0;
+                }
 
-        <div class="d-lg-none input-group-lg" role="search" data-mobile-search>
-          <button class="btn btn-default border-color-white" type="button" onclick="document.querySelector('[data-mobile-search-input]').classList.toggle('d-none');document.querySelector('[data-mobile-search]').classList.toggle('input-group');" >
-            <i class="fal fa-search"></i>
-            <span class="visually-hidden">Search resource</span>
+                .c-resource-thumbnails li:has([aria-current]),
+                .c-resource-thumbnails li:focus-within {
+                  border-color: var(--talis-primary);
+                }
+
+              </style>
+              <ol class="row row-cols-1 row-cols-md-2 g-3 list-unstyled fw-semibold c-resource-thumbnails overflow-auto"
+                role="list" style="max-height:50vh;">
+                <li class="col mb-2 position-relative">
+                  <img src="https://placekitten.com/300/200" alt="" height="200" width="300"
+                    class="img-fluid mb-1 border bg-light">
+                  <a class="d-block text-center" href="#" aria-current="page">Cover</a>
+                </li>
+                <li class="col mb-2 position-relative">
+                  <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200"
+                    class="img-fluid mb-1 border bg-light">
+                  <a class="d-block text-center" href="#">Title page</a>
+                </li>
+                <li class="col mb-2 position-relative">
+                  <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200"
+                    class="img-fluid mb-1 border bg-light">
+                  <a class="d-block text-center" href="#">Copyright</a>
+                </li>
+                <li class="col mb-2 position-relative">
+                  <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200"
+                    class="img-fluid mb-1  border bg-light">
+                  <a class="d-block text-center" href="#">Copyright</a>
+                </li>
+                <li class="col mb-2 position-relative">
+                  <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200"
+                    class="img-fluid mb-1  border bg-light">
+                  <a class="d-block text-center" href="#">Copyright</a>
+                </li>
+                <li class="col mb-2 position-relative">
+                  <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200"
+                    class="img-fluid mb-1  border bg-light">
+                  <a class="d-block text-center" href="#">Copyright</a>
+                </li>
+                <li class="col mb-2 position-relative">
+                  <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200"
+                    class="img-fluid mb-1  border bg-light">
+                  <a class="d-block text-center" href="#">Copyright</a>
+                </li>
+                <li class="col mb-2 position-relative">
+                  <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200"
+                    class="img-fluid mb-1  border bg-light">
+                  <a class="d-block text-center" href="#">Copyright</a>
+                </li>
+                <li class="col mb-2 position-relative">
+                  <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200"
+                    class="img-fluid mb-1  border bg-light">
+                  <a class="d-block text-center" href="#">Copyright</a>
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li class="dropend">
+            <button class="btn btn-default btn-lg mb-3 p-3 shadowed" type="button" data-bs-toggle="dropdown"
+              data-bs-auto-close="outside" data-bs-offset="0,8"><i class="fal fa-list fa-fw"></i><span
+                class="visually-hidden">Table of contents</span></button>
+            <div class="dropdown-menu px-3 py-3 shadowed" style="--talis-dropdown-min-width:25vw; width: 20rem;">
+              <header class="d-flex justify-content-between align-items-start mb-4">
+                <h2 class="fs-3 text-dark m-0">Table of Contents</h2>
+                <button class="btn-close text-primary"><span class="visually-hidden">Close table of
+                    contents</span></button>
+              </header>
+              <ol class="list-unstyled fw-semibold" role="list">
+                <li>
+                  <a class="d-block pb-3" href="#">Cover</a>
+                </li>
+                <li>
+                  <a class="d-block pb-3" href="#">Title page</a>
+                </li>
+                <li>
+                  <a class="d-block pb-3" href="#">Copyright</a>
+                </li>
+                <li>
+                  <a class="d-block pb-3" href="#">Chapter X - Supercalifragilisticexpialidocious</a>
+                  <ol class="list-unstyled ps-4" role="list">
+                    <li><a class="d-block pb-3" href="#">Section Y</a></li>
+                    <li><a class="d-block pb-3" href="#">Section Y</a></li>
+                    <li><a class="d-block pb-3" href="#">Section Y</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a class="d-block pb-3" href="#">Chapter X</a>
+                  <ol class="list-unstyled ps-4 mb-4" role="list">
+                    <li><a class="d-block pb-3" href="#">Section Y</a></li>
+                    <li><a class="d-block pb-3" href="#">Section Y</a></li>
+                    <li><a class="d-block pb-3" href="#">Section Y</a></li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li class="dropend">
+            <button class="btn btn-default btn-lg mb-3 p-3 shadowed" type="button" data-bs-toggle="dropdown"
+              data-bs-auto-close="outside" data-bs-offset="0,8"><i class="fal fa-cog fa-fw"></i><span
+                class="visually-hidden">Settings</span></button>
+            <div class="dropdown-menu p-3 shadowed" style="--talis-dropdown-min-width:25vw; width: 20rem;">
+              <header class="d-flex justify-content-between align-items-start mb-4">
+                <h2 class="fs-3 text-dark m-0">Settings</h2>
+                <button class="btn-close text-primary"><span class="visually-hidden">Close Settings</span></button>
+              </header>
+              <section>
+                <h3 class="h5 fw-semibold">Font size of content</h3>
+                <div class="d-flex align-items-center">
+                  <i class="far fa-text text-primary"></i>
+                  <div class="flex-grow-1 px-3">
+                    <label for="size-range" class="visually-hidden form-label">Font-size</label>
+                    <input type="range" class="form-range" id="size-range" min="0" max="5" step="0.5">
+                  </div>
+                  <i class="far fa-text fa-4x text-primary"></i>
+                </div>
+                <button type="button" class="btn btn-default mb-3">Reset to default</button>
+                <h3 class="h5 fw-semibold mb-3">Annotations</h3>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                  <label class="form-check-label" for="flexSwitchCheckDefault">Show Class Comments & Personal
+                    Notes</label>
+                </div>
+              </section>
+            </div>
+          </li>
+        </ul>
+
+        <div class="btn-group-vertical shadowed position-fixed bottom-0 mb-3" role="group" aria-label="Document zoom">
+          <button class="btn btn-default px-3 py-2">
+            <i class="fal fa-plus"></i>
+            <span class="visually-hidden">Increase zoom</span>
           </button>
-          <label for="search" class="visually-hidden">Search</label>
-          <input id="search" type="text" class="d-none form-control" data-mobile-search-input>
+          <span class="p-2 bg-white border-start border-end border-primary text-primary">100%</span>
+          <button class="btn btn-default px-3 py-2">
+            <i class="fal fa-minus"></i>
+            <span class="visually-hidden">Decrease zoom</span>
+          </button>
         </div>
-      </header>
+      </nav><!-- / desktop controls -->
 
-      <section class="row mb-3 mb-lg-0">
-        <nav class="col d-none d-lg-flex flex-grow-0 flex-column" aria-label="Resource controls">
-          <ul class="position-sticky nav list-unstyled">
-            <li class="dropend">
-              <button class="btn btn-default btn-lg mb-3 p-3 shadowed" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,8"><i class="fal fa-list fa-fw"></i><span class="visually-hidden">Pages</span></button>
-              <div class="dropdown-menu px-3 py-3 shadowed" style="--talis-dropdown-min-width:25vw; width: 20rem;">
-                <header class="d-flex justify-content-between align-items-start mb-4">
-                  <h2 class="fs-3 text-dark m-0">Pages</h2>
-                  <button class="btn-close text-primary"><span class="visually-hidden">Close table of contents</span></button>
-                </header>
-                <style>
-                  .c-resource-thumbnails img {
-                    aspect-ratio: 2/3;
-                    object-fit: contain;
-                  }
+      <ul class="d-flex d-lg-none nav nav-tabs mb-4 p-0 position-sticky bg-white">
+        <li class="nav-item flex-grow-1 text-center">
+          <a class="nav-link active" aria-current="page" href="#">
+            Class comments
+          </a>
+        </li>
+        <li class="nav-item flex-grow-1 text-center">
+          <a class="nav-link" href="#">
+            Personal notes
+          </a>
+        </li>
+      </ul><!-- / mobile comment tabs-->
 
-                  .c-resource-thumbnails li {
-                    border: 2px solid transparent;
-                  }
+      <main class="col-sm-auto col-lg-8" id="content">
+        <div class="page bg-white mb-3 shadowed">
+          <figure>
+            <img class="img-fluid" src="/bootstrap-theme/assets/img/invoice.png" alt="">
+            <figcaption class="visually-hidden">OCRd text goes here?</figcaption>
+          </figure>
+        </div>
+        <div class="page bg-white mb-3 shadowed">
+          <figure>
+            <img class="img-fluid" src="/bootstrap-theme/assets/img/page.png" alt="">
+            <figcaption class="visually-hidden">OCRd text goes here?</figcaption>
+          </figure>
+        </div>
+        <div class="page bg-white p-3 shadowed">
+          <h1>A Title</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio
+            doloremque
+            nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a
+            ut!
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio
+            doloremque
+            nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a
+            ut!
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio
+            doloremque
+            nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a
+            ut!
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio
+            doloremque
+            nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a
+            ut!
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio
+            doloremque
+            nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a
+            ut!
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio
+            doloremque
+            nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a
+            ut!
+          </p>
+        </div>
+      </main><!-- / resource -->
 
-                  .c-resource-thumbnails a:after{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    content: '';
-                  }
-
-                  .c-resource-thumbnails a:focus {
-                    outline: 0;
-                  }
-
-                  .c-resource-thumbnails li:has([aria-current]),
-                  .c-resource-thumbnails li:focus-within {
-                    border-color: var(--talis-primary);
-                  }
-                </style>
-                <ol class="row row-cols-1 row-cols-md-2 g-3 list-unstyled fw-semibold c-resource-thumbnails overflow-auto" role="list" style="max-height:50vh;">
-                  <li class="col mb-2 position-relative">
-                    <img src="https://placekitten.com/300/200" alt="" height="200" width="300" class="img-fluid mb-1 border bg-light">
-                    <a class="d-block text-center" href="#" aria-current="page">Cover</a>
-                  </li>
-                  <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1 border bg-light">
-                    <a class="d-block text-center" href="#">Title page</a>
-                  </li>
-                  <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1 border bg-light">
-                    <a class="d-block text-center" href="#">Copyright</a>
-                  </li>
-                  <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
-                    <a class="d-block text-center" href="#">Copyright</a>
-                  </li>
-                  <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
-                    <a class="d-block text-center" href="#">Copyright</a>
-                  </li>
-                  <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
-                    <a class="d-block text-center" href="#">Copyright</a>
-                  </li>
-                  <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
-                    <a class="d-block text-center" href="#">Copyright</a>
-                  </li>
-                  <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
-                    <a class="d-block text-center" href="#">Copyright</a>
-                  </li>
-                  <li class="col mb-2 position-relative">
-                    <img src="/bootstrap-theme/assets/img/invoice.png" alt="" height="300" width="200" class="img-fluid mb-1  border bg-light">
-                    <a class="d-block text-center" href="#">Copyright</a>
-                  </li>
-                </ol>
-              </div>
+      <aside class="col d-none d-lg-block">
+        <div class="position-sticky pt-3" style="background-image: linear-gradient(white 90%, transparent);"
+          data-talis-sticky="true">
+          <ul class="nav nav-tabs mb-4" role="tablist">
+            <li class="nav-item flex-grow-1 text-center" role="presentation">
+              <button class="nav-link active w-100" type="button" id="comments-tab" aria-current="page"
+                data-bs-toggle="tab" data-bs-target="#comments-tab-pane" aria-controls="comments-tab-pane"
+                aria-selected="true" role="tab">Class
+                comments</button>
             </li>
-            <li class="dropend">
-              <button class="btn btn-default btn-lg mb-3 p-3 shadowed" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,8"><i class="fal fa-list fa-fw"></i><span class="visually-hidden">Table of contents</span></button>
-              <div class="dropdown-menu px-3 py-3 shadowed" style="--talis-dropdown-min-width:25vw; width: 20rem;">
-                <header class="d-flex justify-content-between align-items-start mb-4">
-                  <h2 class="fs-3 text-dark m-0">Table of Contents</h2>
-                  <button class="btn-close text-primary"><span class="visually-hidden">Close table of contents</span></button>
-                </header>
-                <ol class="list-unstyled fw-semibold" role="list">
-                  <li>
-                    <a class="d-block pb-3" href="#">Cover</a>
+            <li class="nav-item flex-grow-1 text-center" role="presentation">
+              <button class="nav-link w-100" type="button" id="notes-tab" data-bs-toggle="tab"
+                data-bs-target="#notes-tab-pane" aria-controls="notes-tab-pane" role="tab">Personal notes</button>
+            </li>
+          </ul><!-- / sidebar tabs -->
+
+          <div class="c-comments-bumper pb-3 text-uppercase fw-bold"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+            XX
+            comments <span class="visually-hidden">before</span></div>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane show active" id="comments-tab-pane" aria-labelledby="comments-tab" tabindex="0"
+            role="tabpanel">
+            <ol class="list-unstyled text-black" id="comments-tab-pane" role="list">
+              <li class="mb-3">
+                <ol class="list-unstyled ps-3 comment comment--selected " role="list">
+                  <li class="d-flex mb-3">
+                    <div class="comment">
+                      <div class="comment__meta mb-2">
+                        <i class="fa fa-user-graduate" style="color:rebeccapurple; font-size:16px;"></i>
+                        <span class="comment__author fw-bold ms-2">Random Name</span>
+                        <time class="comment__timestamp ">Some time ago</time>
+                      </div>
+                      <div class="comment__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt
+                          laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab
+                          quisquam facilis nisi eius dolore atque!</p>
+                      </div>
+                      <div class="comment__controls">
+                        <button class="btn btn-sm btn-link b-0 me-1">
+                          <i class="far fa-reply"></i>
+                          Reply
+                        </button>
+                        <button class="btn btn-sm btn-link b-0 me-1">
+                          <i class="far fa-thumbs-up"></i>
+                          Agree
+                        </button>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i
+                          class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for
+                          comment</span></button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Share</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
                   </li>
                   <li>
-                    <a class="d-block pb-3" href="#">Title page</a>
-                  </li>
-                  <li>
-                    <a class="d-block pb-3" href="#">Copyright</a>
-                  </li>
-                  <li>
-                    <a class="d-block pb-3" href="#">Chapter X - Supercalifragilisticexpialidocious</a>
-                    <ol class="list-unstyled ps-4" role="list">
-                      <li><a class="d-block pb-3" href="#">Section Y</a></li>
-                      <li><a class="d-block pb-3" href="#">Section Y</a></li>
-                      <li><a class="d-block pb-3" href="#">Section Y</a></li>
+                    <ol class="list-unstyled" role="list">
+                      <li class="mb-3 ps-3">
+                        <div class="comment-reply mb-3">
+                          <label class="form-label" for="comment-reply">Your comment</label>
+                          <textarea id="comment-reply" class="form-control mb-2"></textarea>
+                          <button class="btn btn-primary btn-sm">Reply</button>
+                          <button class="btn btn-default btn-sm">Cancel</button>
+                        </div>
+                      </li>
+                      <li class="d-flex ps-3 comment">
+                        <div class="comment">
+                          <div class="comment__meta mb-2">
+                            <i class="fa fa-user-graduate" style="color:rebeccapurple;font-size:16px;"></i>
+                            <span class="comment__author fw-bold ms-2">Random Name</span>
+                            <time class="comment__timestamp" datetime="2022-09-30">Some time ago</time>
+                          </div>
+                          <div class="comment__content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A
+                              incidunt
+                              laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus.
+                              Ab
+                              quisquam facilis nisi eius dolore atque!</p>
+                          </div>
+                          <div class="comment__controls">
+                            <button class="btn btn-sm btn-link b-0 me-1">
+                              <i class="far fa-reply"></i>
+                              Reply
+                            </button>
+                            <button class="btn btn-sm btn-link b-0 me-1">
+                              <i class="far fa-thumbs-up"></i>
+                              Agree
+                            </button>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i
+                              class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu
+                              for
+                              comment</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Share</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </li>
                     </ol>
                   </li>
+                </ol><!-- /single comment -->
+              </li><!-- /Single thread -->
+              <li class="mb-3">
+                <ol class="list-unstyled ps-3 comment comment--selected " role="list">
+                  <li class="d-flex mb-3">
+                    <div class="comment">
+                      <div class="comment__meta mb-2">
+                        <i class="fa fa-user-graduate" style="color:rebeccapurple; font-size:16px;"></i>
+                        <span class="comment__author fw-bold ms-2">Random Name</span>
+                        <time class="comment__timestamp ">Some time ago</time>
+                      </div>
+                      <div class="comment__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt
+                          laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab
+                          quisquam facilis nisi eius dolore atque!</p>
+                      </div>
+                      <div class="comment__controls">
+                        <button class="btn btn-sm btn-link b-0 me-1">
+                          <i class="far fa-reply"></i>
+                          Reply
+                        </button>
+                        <button class="btn btn-sm btn-link b-0 me-1">
+                          <i class="far fa-thumbs-up"></i>
+                          Agree
+                        </button>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i
+                          class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for
+                          comment</span></button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Share</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </li>
                   <li>
-                    <a class="d-block pb-3" href="#">Chapter X</a>
-                    <ol class="list-unstyled ps-4 mb-4" role="list">
-                      <li><a class="d-block pb-3" href="#">Section Y</a></li>
-                      <li><a class="d-block pb-3" href="#">Section Y</a></li>
-                      <li><a class="d-block pb-3" href="#">Section Y</a></li>
+                    <ol class="list-unstyled" role="list">
+                      <li class="d-flex ps-3 comment">
+                        <div class="comment">
+                          <div class="comment__meta mb-2">
+                            <i class="fa fa-user-graduate" style="color:rebeccapurple;font-size:16px;"></i>
+                            <span class="comment__author fw-bold ms-2">Random Name</span>
+                            <time class="comment__timestamp" datetime="2022-09-30">Some time ago</time>
+                          </div>
+                          <div class="comment__content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A
+                              incidunt
+                              laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus.
+                              Ab
+                              quisquam facilis nisi eius dolore atque!</p>
+                          </div>
+                          <div class="comment__controls">
+                            <button class="btn btn-sm btn-link b-0 me-1">
+                              <i class="far fa-reply"></i>
+                              Reply
+                            </button>
+                            <button class="btn btn-sm btn-link b-0 me-1">
+                              <i class="far fa-thumbs-up"></i>
+                              Agree
+                            </button>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i
+                              class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu
+                              for
+                              comment</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Share</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </li>
                     </ol>
                   </li>
-                  </li>
-                </ol>
-              </div>
-            </li>
-            <li class="dropend">
-              <button class="btn btn-default btn-lg mb-3 p-3 shadowed" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,8"><i class="fal fa-cog fa-fw"></i><span class="visually-hidden">Settings</span></button>
-              <div class="dropdown-menu p-3 shadowed" style="--talis-dropdown-min-width:25vw; width: 20rem;">
-                <header class="d-flex justify-content-between align-items-start mb-4">
-                  <h2 class="fs-3 text-dark m-0">Settings</h2>
-                  <button class="btn-close text-primary"><span class="visually-hidden">Close Settings</span></button>
-                </header>
-                <section>
-                  <h3 class="h5 fw-semibold">Font size of content</h3>
-                  <div class="d-flex align-items-center">
-                    <i class="far fa-text text-primary"></i>
-                    <div class="flex-grow-1 px-3">
-                      <label for="size-range" class="visually-hidden form-label">Font-size</label>
-                      <input type="range" class="form-range" id="size-range" min="0" max="5" step="0.5">
-                    </div>
-                    <i class="far fa-text fa-4x text-primary"></i>
-                  </div>
-                  <button type="button" class="btn btn-default mb-3">Reset to default</button>
-                  <h3 class="h5 fw-semibold mb-3">Annotations</h3>
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                    <label class="form-check-label" for="flexSwitchCheckDefault">Show Class Comments & Personal Notes</label>
-                  </div>
-                </section>
-              </div>
-            </li>
-          </ul>
-
-          <div class="btn-group-vertical shadowed position-fixed bottom-0 mb-3" role="group" aria-label="Document zoom">
-            <button class="btn btn-default px-3 py-2">
-              <i class="fal fa-plus"></i>
-              <span class="visually-hidden">Increase zoom</span>
-            </button>
-            <span class="p-2 bg-white border-start border-end border-primary text-primary">100%</span>
-            <button class="btn btn-default px-3 py-2">
-              <i class="fal fa-minus"></i>
-              <span class="visually-hidden">Decrease zoom</span>
-            </button>
-          </div>
-        </nav><!-- / desktop controls -->
-
-        <ul class="d-flex d-lg-none nav nav-tabs mb-4 p-0 position-sticky bg-white">
-          <li class="nav-item flex-grow-1 text-center">
-            <a class="nav-link active" aria-current="page" href="#">
-              Class comments
-            </a>
-          </li>
-          <li class="nav-item flex-grow-1 text-center">
-            <a class="nav-link" href="#">
-              Personal notes
-            </a>
-          </li>
-        </ul><!-- / mobile comment tabs-->
-
-        <main class="col-sm-auto col-lg-8" id="content">
-          <div class="page bg-white mb-3 shadowed">
-            <figure>
-              <img class="img-fluid" src="/bootstrap-theme/assets/img/invoice.png" alt="">
-              <figcaption class="visually-hidden">OCRd text goes here?</figcaption>
-            </figure>
-          </div>
-          <div class="page bg-white mb-3 shadowed">
-            <figure>
-              <img class="img-fluid" src="/bootstrap-theme/assets/img/page.png" alt="">
-              <figcaption class="visually-hidden">OCRd text goes here?</figcaption>
-            </figure>
-          </div>
-          <div class="page bg-white p-3 shadowed">
-            <h1>A Title</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde vitae sunt vero alias optio doloremque nostrum quam, nesciunt accusantium omnis dolor voluptate officia recusandae repudiandae atque! Deserunt, a ut!</p>
-          </div>
-        </main><!-- / resource -->
-
-        <aside class="col d-none d-lg-block">
-          <div class="position-sticky pt-3" style="background-image: linear-gradient(white 90%, transparent);" data-talis-sticky="true">
-            <ul class="nav nav-tabs mb-4" role="tablist">
-              <li class="nav-item flex-grow-1 text-center" role="presentation">
-                <button class="nav-link active w-100" type="button" id="comments-tab" aria-current="page" data-bs-toggle="tab" data-bs-target="#comments-tab-pane" aria-controls="comments-tab-pane" aria-selected="true" role="tab">Class comments</button>
-              </li>
-              <li class="nav-item flex-grow-1 text-center" role="presentation">
-                <button class="nav-link w-100" type="button" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes-tab-pane" aria-controls="notes-tab-pane" role="tab">Personal notes</button>
-              </li>
-            </ul><!-- / sidebar tabs -->
-
-            <div class="c-comments-bumper pb-3 text-uppercase fw-bold"><i class="fa fa-arrow-up" aria-hidden="true"></i> XX comments <span class="visually-hidden">before</span></div>
-          </div>
-
-          <div class="tab-content">
-            <div class="tab-pane show active" id="comments-tab-pane" aria-labelledby="comments-tab" tabindex="0" role="tabpanel">
-          <ol class="list-unstyled text-black" id="comments-tab-pane" role="list">
-            <li class="mb-3">
-              <ol class="list-unstyled ps-3 comment comment--selected " role="list">
-                <li class="d-flex mb-3">
-                  <div class="comment">
-                    <div class="comment__meta mb-2">
-                      <i class="fa fa-user-graduate" style="color:rebeccapurple; font-size:16px;"></i>
-                      <span class="comment__author fw-bold ms-2">Random Name</span>
-                      <time class="comment__timestamp ">Some time ago</time>
-                    </div>
-                    <div class="comment__content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab quisquam facilis nisi eius dolore atque!</p>
-                    </div>
-                    <div class="comment__controls">
-                      <button class="btn btn-sm btn-link b-0 me-1">
-                        <i class="far fa-reply"></i>
-                        Reply
-                      </button>
-                      <button class="btn btn-sm btn-link b-0 me-1">
-                        <i class="far fa-thumbs-up"></i>
-                        Agree
-                      </button>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for comment</span></button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Share</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Edit</a></li>
-                      <li><a class="dropdown-item" href="#">Delete</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <ol class="list-unstyled" role="list">
-                    <li class="mb-3 ps-3">
-                      <div class="comment-reply mb-3">
-                        <label class="form-label" for="comment-reply">Your comment</label>
-                        <textarea
-                        id="comment-reply"
-                        class="form-control mb-2"
-                        ></textarea>
-                        <button class="btn btn-primary btn-sm">Reply</button>
-                        <button class="btn btn-default btn-sm">Cancel</button>
-                      </div>
-                    </li>
-                    <li class="d-flex ps-3 comment">
-                      <div class="comment">
-                        <div class="comment__meta mb-2">
-                          <i class="fa fa-user-graduate" style="color:rebeccapurple;font-size:16px;"></i>
-                          <span class="comment__author fw-bold ms-2">Random Name</span>
-                          <time class="comment__timestamp" datetime="2022-09-30">Some time ago</time>
-                        </div>
-                        <div class="comment__content">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab quisquam facilis nisi eius dolore atque!</p>
-                        </div>
-                        <div class="comment__controls">
-                          <button class="btn btn-sm btn-link b-0 me-1">
-                            <i class="far fa-reply"></i>
-                            Reply
-                          </button>
-                          <button class="btn btn-sm btn-link b-0 me-1">
-                            <i class="far fa-thumbs-up"></i>
-                            Agree
-                          </button>
-                        </div>
-                      </div>
-                      <div class="dropdown">
-                        <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for comment</span></button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Share</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Edit</a></li>
-                          <li><a class="dropdown-item" href="#">Delete</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ol>
-                </li>
-              </ol><!-- /single comment -->
-            </li><!-- /Single thread -->
-            <li class="mb-3">
-              <ol class="list-unstyled ps-3 comment comment--selected " role="list">
-                <li class="d-flex mb-3">
-                  <div class="comment">
-                    <div class="comment__meta mb-2">
-                      <i class="fa fa-user-graduate" style="color:rebeccapurple; font-size:16px;"></i>
-                      <span class="comment__author fw-bold ms-2">Random Name</span>
-                      <time class="comment__timestamp ">Some time ago</time>
-                    </div>
-                    <div class="comment__content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab quisquam facilis nisi eius dolore atque!</p>
-                    </div>
-                    <div class="comment__controls">
-                      <button class="btn btn-sm btn-link b-0 me-1">
-                        <i class="far fa-reply"></i>
-                        Reply
-                      </button>
-                      <button class="btn btn-sm btn-link b-0 me-1">
-                        <i class="far fa-thumbs-up"></i>
-                        Agree
-                      </button>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for comment</span></button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Share</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Edit</a></li>
-                      <li><a class="dropdown-item" href="#">Delete</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <ol class="list-unstyled" role="list">
-                    <li class="d-flex ps-3 comment">
-                      <div class="comment">
-                        <div class="comment__meta mb-2">
-                          <i class="fa fa-user-graduate" style="color:rebeccapurple;font-size:16px;"></i>
-                          <span class="comment__author fw-bold ms-2">Random Name</span>
-                          <time class="comment__timestamp" datetime="2022-09-30">Some time ago</time>
-                        </div>
-                        <div class="comment__content">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab quisquam facilis nisi eius dolore atque!</p>
-                        </div>
-                        <div class="comment__controls">
-                          <button class="btn btn-sm btn-link b-0 me-1">
-                            <i class="far fa-reply"></i>
-                            Reply
-                          </button>
-                          <button class="btn btn-sm btn-link b-0 me-1">
-                            <i class="far fa-thumbs-up"></i>
-                            Agree
-                          </button>
-                        </div>
-                      </div>
-                      <div class="dropdown">
-                        <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for comment</span></button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Share</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Edit</a></li>
-                          <li><a class="dropdown-item" href="#">Delete</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ol>
-                </li>
-              </ol><!-- /single comment -->
-            </li><!-- /Single thread -->
-          </ol><!-- /Resource comments-->
+                </ol><!-- /single comment -->
+              </li><!-- /Single thread -->
+            </ol><!-- /Resource comments-->
           </div>
           <div class="tab-pane" id="notes-tab-pane" aria-labelledby="notes-tab" tabindex="0" role="tabpanel">
             <ol class="list-unstyled text-black tab-pane show active" id="notes-tab-pane" role="list">
@@ -498,14 +597,20 @@
                         <time class="comment__timestamp ">Some time ago</time>
                       </div>
                       <div class="comment__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab quisquam facilis nisi eius dolore atque!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, earum hic! A incidunt
+                          laboriosam saepe voluptatem quis exercitationem voluptates ut aperiam consectetur ducimus. Ab
+                          quisquam facilis nisi eius dolore atque!</p>
                       </div>
                     </div>
                     <div class="dropdown">
-                      <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for comment</span></button>
+                      <button type="button" class="btn btn-link" data-bs-toggle="dropdown" aria-expanded="false"><i
+                          class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i><span class="visually-hidden">Menu for
+                          comment</span></button>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Share</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="#">Edit</a></li>
                         <li><a class="dropdown-item" href="#">Delete</a></li>
                       </ul>
@@ -515,119 +620,129 @@
               </li><!-- /Single thread -->
             </ol><!-- /Resource comments-->
           </div>
-          </div>
-          <div class="c-comments-bumper text-uppercase fw-bold position-fixed bottom-0 py-3 w-100" style="background-image:linear-gradient(transparent, white 40%)"><i class="fa fa-arrow-down" aria-hidden="true"></i> XX comments <span class="visually-hidden">after</span></div>
-        </aside><!-- /sidebar -->
-      </section>
+        </div>
+        <div class="c-comments-bumper text-uppercase fw-bold position-fixed bottom-0 py-3 w-100"
+          style="background-image:linear-gradient(transparent, white 40%)"><i class="fa fa-arrow-down"
+            aria-hidden="true"></i> XX comments <span class="visually-hidden">after</span></div>
+      </aside><!-- /sidebar -->
+    </section>
+  </div>
+
+  <nav class="d-lg-none position-sticky bottom-0 bg-white">
+    <div class="d-flex align-items-center justify-content-between btn-group border-top" aria-label="Pagination">
+      <button class="flex-grow-1 border-0 btn btn-default btn-lg text-start rounded-0" type="button">Prev</button>
+      <button class="flex-grow-1 border-0 btn btn-default btn-lg text-end rounded-0" type="button">Next</button>
+      <!--/ Can be links if navigation updates URL -->
     </div>
-    <nav class="d-lg-none position-sticky bottom-0 bg-white">
-      <div class="d-flex align-items-center justify-content-between btn-group border-top" aria-label="Pagination">
-          <button class="flex-grow-1 border-0 btn btn-default btn-lg text-start rounded-0" type="button">Prev</button>
-          <button class="flex-grow-1 border-0 btn btn-default btn-lg text-end rounded-0" type="button">Next</button>
-          <!--/ Can be links if navigation updates URL -->
-      </div>
-      <div class="d-flex border-top">
-          <button class="btn btn-default btn-lg border-0 flex-grow-1 rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#table-of-contents" aria-controls="table-of-contents">
-            <i class="fal fa-list"></i>
-            <span class="visually-hidden">Table of contents</span>
-          </button>
-        <div class="vr"></div>
-        <!-- <div class="dropup flex-grow-1"> -->
-          <button class="btn btn-default btn-lg border-0 flex-grow-1 rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#settings" aria-controls="settings">
-            <i class="fal fa-cog"></i>
-            <span class="visually-hidden">Settings</span>
-          </button>
-      </div>
+    <div class="d-flex border-top">
+      <button class="btn btn-default btn-lg border-0 flex-grow-1 rounded-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#table-of-contents" aria-controls="table-of-contents">
+        <i class="fal fa-list"></i>
+        <span class="visually-hidden">Table of contents</span>
+      </button>
+      <div class="vr"></div>
+      <!-- <div class="dropup flex-grow-1"> -->
+      <button class="btn btn-default btn-lg border-0 flex-grow-1 rounded-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#settings" aria-controls="settings">
+        <i class="fal fa-cog"></i>
+        <span class="visually-hidden">Settings</span>
+      </button>
+    </div>
     </div><!-- /Mobile reading controls -->
+  </nav>
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="settings" aria-labelledby="offcanvasExampleLabel">
-      <header class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Settings</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </header>
-      <section class="offcanvas-body">
-          <h3 class="h5 fw-semibold">Font size of content</h3>
-          <div class="d-flex align-items-center mb-3">
-            <i class="far fa-text text-primary"></i>
-            <div class="flex-grow-1 px-3">
-              <label for="size-range" class="visually-hidden form-label">Font-size</label>
-              <input type="range" class="form-range" id="size-range" min="0" max="5" step="0.5">
-            </div>
-            <i class="far fa-text fa-4x text-primary"></i>
-          </div>
-          <h3 class="h5 fw-semibold mb-3">Annotations</h3>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">Show Class Comments & Personal Notes</label>
-          </div>
-          <button type="button" class="btn btn-default">Reset to default</button>
-      </section>
-    </div><!-- /Settings panel -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="settings" aria-labelledby="offcanvasExampleLabel">
+    <header class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Settings</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </header>
+    <section class="offcanvas-body">
+      <h3 class="h5 fw-semibold">Font size of content</h3>
+      <div class="d-flex align-items-center mb-3">
+        <i class="far fa-text text-primary"></i>
+        <div class="flex-grow-1 px-3">
+          <label for="size-range" class="visually-hidden form-label">Font-size</label>
+          <input type="range" class="form-range" id="size-range" min="0" max="5" step="0.5">
+        </div>
+        <i class="far fa-text fa-4x text-primary"></i>
+      </div>
+      <h3 class="h5 fw-semibold mb-3">Annotations</h3>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Show Class Comments & Personal Notes</label>
+      </div>
+      <button type="button" class="btn btn-default">Reset to default</button>
+    </section>
+  </div><!-- /Settings panel -->
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="table-of-contents" aria-labelledby="offcanvasExampleLabel">
-      <header class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Table of contents</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </header>
-      <section class="offcanvas-body">
-        <ol class="list-unstyled fw-semibold" role="list">
-          <li>
-            <a class="d-block pb-3" href="#">Cover</a>
-          </li>
-          <li>
-            <a class="d-block pb-3" href="#">Title page</a>
-          </li>
-          <li>
-            <a class="d-block pb-3" href="#">Copyright</a>
-          </li>
-          <li>
-            <a class="d-block pb-3" href="#">Chapter X - Supercalifragilisticexpialidocious</a>
-            <ol class="list-unstyled ps-4" role="list">
-              <li><a class="d-block pb-3" href="#">Section Y</a></li>
-              <li><a class="d-block pb-3" href="#">Section Y</a></li>
-              <li><a class="d-block pb-3" href="#">Section Y</a></li>
-            </ol>
-          </li>
-          <li>
-            <a class="d-block pb-3" href="#">Chapter X</a>
-            <ol class="list-unstyled ps-4 mb-4" role="list">
-              <li><a class="d-block pb-3" href="#">Section Y</a></li>
-              <li><a class="d-block pb-3" href="#">Section Y</a></li>
-              <li><a class="d-block pb-3" href="#">Section Y</a></li>
-            </ol>
-          </li>
-          </li>
-        </ol>
-      </section>
-    </div><!-- /Contents panel -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js" integrity="sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-  const offcanvasElementList = document.querySelectorAll('.offcanvas')
-const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl));
-  // Resize observer watches header
-  const headerResizeObserver = new ResizeObserver(entries => {
-    const headerHeight = document.querySelector('header').offsetHeight;
-    const headerMargin = parseInt(getComputedStyle(document.querySelector('header'))['margin-bottom'], 10);
-    for (const entry of entries) {
-      if (entry.contentBoxSize) {
-        const contentBoxSize = Array.isArray(entry.contentBoxSize) ? entry.contentBoxSize[0] : entry.contentBoxSize;
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="table-of-contents" aria-labelledby="offcanvasExampleLabel">
+    <header class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Table of contents</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </header>
+    <section class="offcanvas-body">
+      <ol class="list-unstyled fw-semibold" role="list">
+        <li>
+          <a class="d-block pb-3" href="#">Cover</a>
+        </li>
+        <li>
+          <a class="d-block pb-3" href="#">Title page</a>
+        </li>
+        <li>
+          <a class="d-block pb-3" href="#">Copyright</a>
+        </li>
+        <li>
+          <a class="d-block pb-3" href="#">Chapter X - Supercalifragilisticexpialidocious</a>
+          <ol class="list-unstyled ps-4" role="list">
+            <li><a class="d-block pb-3" href="#">Section Y</a></li>
+            <li><a class="d-block pb-3" href="#">Section Y</a></li>
+            <li><a class="d-block pb-3" href="#">Section Y</a></li>
+          </ol>
+        </li>
+        <li>
+          <a class="d-block pb-3" href="#">Chapter X</a>
+          <ol class="list-unstyled ps-4 mb-4" role="list">
+            <li><a class="d-block pb-3" href="#">Section Y</a></li>
+            <li><a class="d-block pb-3" href="#">Section Y</a></li>
+            <li><a class="d-block pb-3" href="#">Section Y</a></li>
+          </ol>
+        </li>
+        </li>
+      </ol>
+    </section>
+  </div><!-- /Contents panel -->
 
-        const stickyElements = document.querySelectorAll('.position-sticky:not(header):not([data-talis-sticky]');
-        stickyElements.forEach(element => {
-          element.style.top = `${headerHeight + headerMargin}px`;
-        });
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"
+    integrity="sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    const offcanvasElementList = document.querySelectorAll('.offcanvas')
+    const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl));
+    // Resize observer watches header
+    const headerResizeObserver = new ResizeObserver(entries => {
+      const headerHeight = document.querySelector('header').offsetHeight;
+      const headerMargin = parseInt(getComputedStyle(document.querySelector('header'))['margin-bottom'], 10);
+      for (const entry of entries) {
+        if (entry.contentBoxSize) {
+          const contentBoxSize = Array.isArray(entry.contentBoxSize) ? entry.contentBoxSize[0] : entry.contentBoxSize;
 
-        document.querySelector('[data-talis-sticky]').style.top = `${headerHeight}px`;
-        document.querySelector('[data-talis-sticky]').style.marginTop = `-${headerMargin}px`;
+          const stickyElements = document.querySelectorAll('.position-sticky:not(header):not([data-talis-sticky]');
+          stickyElements.forEach(element => {
+            element.style.top = `${headerHeight + headerMargin}px`;
+          });
 
-      } else {
-        document.querySelector('.nav-tabs.position-sticky').style.top = `${headerHeight}px`;
+          document.querySelector('[data-talis-sticky]').style.top = `${headerHeight}px`;
+          document.querySelector('[data-talis-sticky]').style.marginTop = `-${headerMargin}px`;
+
+        } else {
+          document.querySelector('.nav-tabs.position-sticky').style.top = `${headerHeight}px`;
+        }
       }
-    }
-  })
+    })
 
-  headerResizeObserver.observe(document.querySelector('header'));
+    headerResizeObserver.observe(document.querySelector('header'));
 
-</script>
-  </body>
+  </script>
+
+</body>
 </html>
