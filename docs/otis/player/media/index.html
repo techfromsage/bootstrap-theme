@@ -24,6 +24,10 @@
       ol.comment--selected {
         border-left-color: rebeccapurple;
       }
+
+      :root {
+        accent-color: #017d87;
+      }
     </style>
     <title>Resource Title | Talis Elevate</title>
   </head>
@@ -108,13 +112,13 @@
           </li>
         </ul><!-- / mobile comment tabs-->
 
-        <main class="col-sm-auto col-lg-8 d-grid" id="content">
+        <main class="col-sm-auto col-lg-8 d-grid pb-3" id="content">
           <style>
             main {
               grid-template-areas:
                 "video"
                 "toolbar";
-              grid-template-columns: 1fr auto;
+              grid-template-rows: 1fr auto;
             }
 
             video {
@@ -127,10 +131,32 @@
           </style>
           <video class="ratio ratio-4x3 w-100 h-100 bg-dark"></video>
           <div class="d-flex align-items-center bg-dark" role="toolbar">
-            <button class="btn btn-lg btn-dark" >Play/pause</button>
-            <progress value="50"></progress>
-            <button class="btn btn-lg btn-dark">Volume</button>
-            <button class="btn btn-lg btn-dark">Add annotation</button>
+            <div class="btn-group me-3">
+              <button class="btn btn-lg btn-dark rounded-0">
+                <i class="fal fa-fw fa-play"></i>
+                <span class="visually-hidden">Play</span>
+                <span class="ps-2">31:00</span>
+              </button>
+            </div>
+            <div class="progress flex-grow-1" style=" --talis-progress-height:1rem;--talis-progress-bg: rgba(73,80,87,0.3)">
+              <div class="progress-bar" role="progressbar" aria-label="Video timer" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="btn-group ms-3">
+              <div class="dropup-center dropup">
+              <button class="btn btn-lg btn-dark rounded-0" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fal fa-fw fa-volume"></i>
+                <span class="visually-hidden">Adjust volume</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-dark p-3">
+                <label for="volume" class="visually-hidden">Adjust volume</label>
+                <input id="volume" class="form-range" type="range" min="0" value="50" max="100" step="5" >
+              </div>
+              </div>
+              <button class="btn btn-lg btn-dark rounded-0">
+                <i class="fal fa-fw fa-pencil"></i>
+                <span class="visually-hidden">Add annotation</span>
+              </button>
+            </div>
           </div>
         </main><!-- / resource -->
 
@@ -346,13 +372,6 @@
     const headerMargin = parseInt(getComputedStyle(document.querySelector('header'))['margin-bottom'], 10);
     for (const entry of entries) {
       if (entry.contentBoxSize) {
-        const contentBoxSize = Array.isArray(entry.contentBoxSize) ? entry.contentBoxSize[0] : entry.contentBoxSize;
-
-        // const stickyElements = document.querySelectorAll('.position-sticky:not(header):not([data-talis-sticky]');
-        // stickyElements.forEach(element => {
-        //   element.style.top = `${headerHeight + headerMargin}px`;
-        // });
-
         document.querySelector('aside').style.height = `calc(100vh - ${headerHeight + headerMargin}px)`;
       } else {
         document.querySelector('.nav-tabs.position-sticky').style.top = `${headerHeight}px`;
