@@ -33,16 +33,8 @@
   </head>
   <body>
     <a class="o-skip-link" href="#content">Skip to main content</a>
-    <div class="container-fluid pb-3" style="height: 100vh;">
-      <style>
-        .container-fluid.d-grid {
-          grid-template-areas:
-            "header"
-            "main";
-          grid-template-rows: auto 1fr;
-        }
-      </style>
-      <header class="row bg-white border-bottom py-4 mb-lg-3">
+    <div class="container-fluid" style="height: 100vh;">
+      <header class="row bg-white border-bottom py-4 mb-3">
         <div class="d-flex align-items-center mb-1 mb-lg-0">
           <div class="col-7">
             <h1 class="m-0 me-3 text-truncate">What's new for the web platform</h1>
@@ -112,17 +104,17 @@
               grid-area: video;
             }
 
-            [role="toolbar"] {
+            .o-video__controls {
               grid-area: toolbar;
             }
           </style>
           <video class="ratio ratio-4x3 w-100 h-100 bg-dark"></video>
-          <div class="d-flex align-items-center bg-dark" role="toolbar">
+          <div class="o-video__controls d-flex align-items-center bg-dark">
             <div class="btn-group me-3">
               <button class="btn btn-lg btn-dark rounded-0">
                 <i class="fal fa-fw fa-play"></i>
                 <span class="visually-hidden">Play</span>
-                <span class="ps-2">31:00</span>
+                <span class="ps-2 d-none d-lg-inline-block">31:00</span>
               </button>
             </div>
             <div class="progress flex-grow-1" style=" --talis-progress-height:1rem;--talis-progress-bg: rgba(73,80,87,0.3)">
