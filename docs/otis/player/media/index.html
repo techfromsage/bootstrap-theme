@@ -91,24 +91,8 @@
       </header>
 
       <section class="row mb-3 mb-lg-0">
-        <main class="col col-lg-8 d-flex flex-column d-lg-grid pb-3" id="content">
-          <style>
-            main {
-              grid-template-areas:
-                "video"
-                "toolbar";
-              grid-template-rows: 1fr auto;
-            }
-
-            video {
-              grid-area: video;
-            }
-
-            .o-video__controls {
-              grid-area: toolbar;
-            }
-          </style>
-          <video class="ratio ratio-4x3 w-100 h-100 bg-dark"></video>
+        <main class="col col-lg-8 d-flex flex-column pb-3" id="content">
+          <video class="w-100 h-100 bg-dark flex-grow-1"></video>
           <div class="o-video__controls d-flex align-items-center bg-dark">
             <div class="btn-group me-3">
               <button class="btn btn-lg btn-dark rounded-0">
