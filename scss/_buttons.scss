@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 @import "bootstrap/scss/mixins/buttons";
 @import "bootstrap/scss/mixins/gradients";
 @import "bootstrap/scss/mixins/box-shadow";
@@ -23,7 +24,8 @@
     $btn-disabled-color
   );
 
-  border-color: currentColor !important;
+  /* stylelint-disable-next-line declaration-no-important */
+  border-color: currentcolor !important;
 
   &:focus,
   &:active {
@@ -139,10 +141,10 @@
     transparent,
     $black,
     $black,
-    rgba(0,0,0,0.1),
+    rgba(0,0,0,.1),
     $black,
     $black,
-    rgba(0,0,0,0.1),
+    rgba(0,0,0,.1),
     $black,
     $black,
     $gray-700,
