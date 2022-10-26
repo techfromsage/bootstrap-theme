@@ -152,27 +152,58 @@
             <button class="btn btn-default btn-lg mb-3 p-3 shadowed" type="button" data-bs-toggle="dropdown"
               data-bs-auto-close="outside" data-bs-offset="0,8"><i class="fal fa-search fa-fw"></i><span
                 class="visually-hidden">Search</span></button>
-                <div class="dropdown-menu px-3 py-3 shadowed" style="--talis-dropdown-min-width:25vw; width: 20rem;">
-                  <header class="d-flex justify-content-between align-items-start mb-4">
-                    <h2 class="fs-3 text-dark m-0">Search</h2>
-                    <button class="btn-close text-primary"><span class="visually-hidden">Close search</span></button>
-                  </header>
-                  <form role="search">
-                    <div class="form-group">
-                      <label class="form-label" for="search-query">Search query <span class="field-required">(Required)</span>
-                      <span class="field-hint">Max length XX characters</span></label>
-                      <input class="form-control" type="text">
-                    </div>
-                    <div class="form-group">
+            <div class="dropdown-menu px-3 py-3 shadowed" style="--talis-dropdown-min-width:25vw; width: 20rem;">
+              <header class="d-flex justify-content-between align-items-start mb-4">
+                <h2 class="fs-3 text-dark m-0">Search</h2>
+                <button class="btn-close text-primary"><span class="visually-hidden">Close search</span></button>
+              </header>
+              <form role="search">
+                <div class="form-group">
+                  <label class="form-label" for="search-query">Search query <span
+                      class="field-required">(Required)</span>
+                    <span class="field-hint">Validation requirements go here?</span></label>
+                  <input class="form-control" type="text">
+                </div>
+                <!-- <div class="form-group">
                       <label for="search-type" class="form-label">Search type</label>
                       <select class="form-select" name="search-type" id="search-type">
                         <option>Resource</option>
                         <option>Comments</option>
                       </select>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Search</button>
-                  </form>
+                    </div> -->
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+              <hr>
+              <section>
+                <span>Showing 6 results of XXX</span>
+                <ol class="list-unstyled" role="list">
+                  <li>
+                    <a class="fw-bold" href="#">Chapter or page title? Should I be a link…</a>
+                    <h3>…or a heading?</h3>
+                    <ol class="list-unstyled ms-3 mb-2" role="list">
+                      <li><a class="d-block py-2 mb-1" href="#">…A <mark class="text-bg-primary">result</mark> in this
+                          string…</a></li>
+                      <li><a class="d-block py-2 mb-1" href="#">…A <mark class="text-bg-primary">result</mark> in this
+                          rather long made-up string and I just can't stop typing hahahaha…</a></li>
+                      <li><a class="d-block py-2 mb-1" href="#">…A <mark class="text-bg-primary">result</mark> in this
+                          string…</a></li>
+                      <li><a class="d-block py-2 mb-1" href="#">…A <mark class="text-bg-primary">result</mark> in this
+                          string…</a></li>
+                      <li><a class="d-block py-2 mb-1" href="#">…A <mark class="text-bg-primary">result</mark> in this
+                          string…</a></li>
+                    </ol>
+                  </li>
+                </ol>
+
+                <div class="c-show-more d-flex align-items-center">
+                  <hr class="flex-grow-1">
+                  <button type="button" class="btn btn-link">
+                    Show more
+                  </button>
+                  <hr class="flex-grow-1">
                 </div>
+              </section>
+            </div>
           </li>
           <li class="dropend">
             <button class="btn btn-default btn-lg mb-3 p-3 shadowed" type="button" data-bs-toggle="dropdown"
@@ -839,4 +870,5 @@
   </script>
 
 </body>
+
 </html>
