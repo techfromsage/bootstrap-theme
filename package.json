@@ -67,6 +67,7 @@
     "*.js": [
       "eslint --fix",
       "prettier --write"
-    ]
+    ],
+    "*.scss": "npm run format:stylelint"
   }
 }
