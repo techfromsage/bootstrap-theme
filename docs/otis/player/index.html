@@ -75,13 +75,12 @@
                   class="visually-hidden">page</span></button>
             </div>
             <div class="dropdown">
-              <button class="btn btn-link" style="--talis-btn-border-radius: 100%; --talis-btn-padding-x: 0;--talis-btn-padding-y: 0; --talis-btn-line-height: 1;" data-bs-toggle="dropdown">
-                <span class="fa-stack fa-2x"
-                style="color:#0093BC; vertical-align: middle; height: 2.5em">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-user-graduate fa-stack-1x fa-inverse"></i>
+              <button class="btn btn-lg rounded-circle d-flex justify-content-center align-items-center" style="--talis-btn-padding-x: 0.8rem; --talis-btn-padding-y: 0.8rem; --talis-btn-font-size: 2em; background-color:#0093BC; " data-bs-toggle="dropdown">
+                <i class="fa fa-fw fa-user-graduate fa-inverse" style="width: 1em; height: 1em;"></i>
                 <span class="visually-hidden">Edit profile</span>
               </span>
+              </button>
+
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Notifications</a></li>
                 <li><a class="dropdown-item" href="#">Analytics</a></li>
@@ -94,6 +93,24 @@
                 </li>
                 <li><a class="dropdown-item" href="#">Logout</a></li>
               </ul>
+
+              <div class="modal" tabindex="-1" id="exampleModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </nav><!-- desktop header controls -->
 
@@ -858,7 +875,6 @@
       const headerHeight = document.querySelector('header').offsetHeight;
       const headerMargin = parseInt(getComputedStyle(document.querySelector('header'))['margin-bottom'], 10);
       for (const entry of entries) {
-        if (entry.contentBoxSize) {
           const contentBoxSize = Array.isArray(entry.contentBoxSize) ? entry.contentBoxSize[0] : entry.contentBoxSize;
 
           const stickyElements = document.querySelectorAll('.position-sticky:not(header):not([data-talis-sticky]');
@@ -868,10 +884,6 @@
 
           document.querySelector('[data-talis-sticky]').style.top = `${headerHeight}px`;
           document.querySelector('[data-talis-sticky]').style.marginTop = `-${headerMargin}px`;
-
-        } else {
-          document.querySelector('.nav-tabs.position-sticky').style.top = `${headerHeight}px`;
-        }
       }
     })
 
