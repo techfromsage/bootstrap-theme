@@ -16,6 +16,11 @@ jobs:
       - run:
           command: npm run build
           name: Compile stylesheets; build docs
+  release:
+    executor: node/default
+    resource_class: small
+    steps:
+      - run: npx semantic-release
 
 workflows:
   build_test_release:
@@ -29,11 +34,11 @@ workflows:
       - build_and_test:
           requires:
             - be_kind_to_your_colleagues
-      # - release:
-          # requires:
-          #   - build_and_test
-          # filters:
-          #   branches:
-          #     only: main
+      - release:
+          requires:
+            - build_and_test
+          filters:
+            branches:
+              only: main
 
 
