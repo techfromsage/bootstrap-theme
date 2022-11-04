@@ -55,6 +55,7 @@
     "prettier": "^2.7.1",
     "purgecss": "^5.0.0",
     "sass": "^1.55.0",
+    "semantic-release": "^19.0.5",
     "serve": "^14.0.1",
     "standard-version": "^9.5.0",
     "stylelint": "^14.12.1",
