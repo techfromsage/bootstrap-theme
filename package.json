@@ -70,5 +70,8 @@
       "prettier --write"
     ],
     "*.scss": "npm run format:stylelint"
+  },
+  "release": {
+    "branches": ["main", "add-build-process"]
   }
 }
