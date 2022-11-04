@@ -8,8 +8,7 @@ jobs:
     resource_class: small
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
+      - node/install-packages
       - run:
           command: npm run test
           name: Run tests
@@ -20,6 +19,8 @@ jobs:
     executor: node/default
     resource_class: small
     steps:
+      - checkout
+      - node/install-packages
       - run: npx semantic-release
 
 workflows:
