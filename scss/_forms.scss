@@ -11,6 +11,10 @@ legend {
   color: $black;
 }
 
+[type=search]::-webkit-search-cancel-button {
+  display: none;
+}
+
 .form-group {
   @extend .mb-3;
 }
