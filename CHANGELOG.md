@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.7](https://github.com/talis/bootstrap-theme/compare/v3.0.6...v3.0.7) (2022-11-15)
+
+
+### Bug Fixes
+
+* add badge success modifier ([acea7cf](https://github.com/talis/bootstrap-theme/commit/acea7cfd4dc36a9847bd53e12ee7e8208681ec75))
+* remove decoration from search field ([3c7a79c](https://github.com/talis/bootstrap-theme/commit/3c7a79c22cf204be935c0f36b039c1f5a206bf59))
+
 ### [3.0.6](https://github.com/talis/bootstrap-theme/compare/v3.0.5...v3.0.6) (2022-10-18)
 
 
