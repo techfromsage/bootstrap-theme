@@ -31,3 +31,9 @@
 .label-default {
   background-color: #aad0d0;
 }
+
+.badge-success,
+.label-success {
+  background-color: $success;
+  color: $black;
+}
