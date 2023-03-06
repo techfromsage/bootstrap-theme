@@ -42,7 +42,7 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "autoprefixer": "^10.4.12",
