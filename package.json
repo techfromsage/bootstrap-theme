@@ -42,7 +42,7 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "autoprefixer": "^10.4.12",
@@ -57,7 +57,7 @@
     "sass": "^1.55.0",
     "serve": "^14.1.1",
     "standard-version": "^9.5.0",
-    "stylelint": "^14.12.1",
+    "stylelint": "^15.2.0",
     "stylelint-config-twbs-bootstrap": "^7.0.0"
   },
   "browserslist": [
