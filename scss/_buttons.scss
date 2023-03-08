@@ -158,6 +158,13 @@
   &:active:focus {
     box-shadow: 0 0 0 $btn-focus-width $black, 0 0 0 2px transparent;
   }
+
+  &:disabled,
+  &.disabled {
+    background-color: $btn-disabled-color;
+    border-color: $btn-disabled-color;
+    color: $white;
+  }
 }
 
 .btn-alert--primary {
