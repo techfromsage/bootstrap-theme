@@ -39,6 +39,21 @@ $danger: $brand-danger;
 $light: $gray-100;
 $dark: $gray-900;
 
+$success-text:            $black !default;
+$info-text:               $black !default;
+$warning-text:            $black !default;
+$danger-text:             $black !default;
+
+$success-bg-subtle:       #c9f3eb !default;
+$info-bg-subtle:          #b7e7ef !default;
+$warning-bg-subtle:       #ffeab6 !default;
+$danger-bg-subtle:        #f3d5d5 !default;
+
+$success-border-subtle:   #77e0ce !default;
+$info-border-subtle:      #4cc3d6 !default;
+$warning-border-subtle:   #ffc943 !default;
+$danger-border-subtle:    #c42129 !default;
+
 $body-color: $gray-700;
 $body-bg: #fff;
 
