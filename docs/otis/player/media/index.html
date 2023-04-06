@@ -45,21 +45,16 @@
 <body>
   <a class="o-skip-link" href="#content">Skip to main content</a>
   <div class="container-fluid" style="height: 100vh;">
-    <header class="row bg-white border-bottom py-4 mb-lg-3">
+    <header class="row bg-white border-bottom py-2 mb-lg-3">
       <div class="d-flex align-items-center mb-1 mb-lg-0">
         <div class="col-7">
-          <h1 class="m-0 me-3 text-truncate">What's new for the web platform</h1>
-          <div class="d-none d-lg-flex align-items-baseline">
-            <span class="text-truncate fst-italic" data-js-description style="flex:1;">Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Obcaecati officia quas similique ea rem debitis vero alias repellendus,
-              provident enim qui quae corrupti repellat rerum illo! Consequatur architecto autem alias!</span>
-            <button class="btn btn-link ms-2"
-              onclick="document.querySelector('[data-js-description]').classList.toggle('text-truncate')">Show
-              more</button>
-          </div>
+          <h1 class="m-0 lh-sm fs-3 me-3 text-truncate">What's new for the web platform</h1>
         </div><!-- resource meta -->
         <div class="col">
           <nav class="d-none d-lg-flex align-items-center justify-content-end">
+            <button class="btn btn-default btn-lg px-3 me-2" data-bs-toggle="offcanvas" data-bs-target="#resource-info" aria-controls="offcanvasExample">
+              <i class="fal fa-info-circle fa-fw"></i>
+            </button>
             <div class="dropdown">
               <span class="btn-link btn-lg fa-stack fa-2x" role="button"
                 style="color:#0093BC; --talis-btn-border-radius: 1em; --talis-btn-padding-x: 0;--talis-btn-padding-y: 0; --talis-btn-line-height: 1;"
@@ -102,20 +97,6 @@
             </div>
           </nav><!-- mobile header controls -->
         </div>
-      </div>
-
-      <div class="d-lg-none mb-1">
-        <span class="fst-italic" data-js-description-mobile-truncated>Lorem ipsum dolor sit amet consectetur adipisicing
-          elit…<button class="btn btn-link btn-sm p-1 ms-1"
-            onclick="document.querySelector('[data-js-description-mobile-full]').classList.toggle('d-none');document.querySelector('[data-js-description-mobile-truncated]').classList.toggle('d-none')">Show
-            more</button></span>
-
-        <span class="fst-italic d-none" data-js-description-mobile-full>Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Architecto fuga eveniet officiis, voluptate soluta voluptatem ipsa iusto eum fugit earum
-          doloribus maiores minima aut, pariatur voluptas expedita cum deleniti. Cupiditate! <button
-            class="btn btn-link btn-sm p-1 ms-1"
-            onclick="document.querySelector('[data-js-description-mobile-truncated]').classList.toggle('d-none');document.querySelector('[data-js-description-mobile-full]').classList.toggle('d-none')">Show
-            less</button></span>
       </div>
     </header>
 
@@ -613,6 +594,26 @@
       </aside><!-- /sidebar -->
     </section>
   </div>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="resource-info">
+    <header class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Example document</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </header>
+    <div class="offcanvas-body">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis iure? Quae unde soluta tempora! Doloremque, accusantium! Esse rem cupiditate natus doloremque ipsa unde neque modi a, eos, inventore expedita.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis delectus asperiores quae error itaque exercitationem nisi culpa dolore expedita ipsam qui, aliquid saepe mollitia autem, eveniet minima doloribus aperiam?</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa assumenda quam modi, velit et atque at consequatur magni quisquam? Quasi minus harum rerum facilis, quidem reiciendis libero autem id exercitationem.</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam placeat saepe impedit voluptates tenetur quidem. Dolores maiores corrupti nobis cupiditate eos tenetur, fugit vero, non unde dolor veritatis odio.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi ea eaque, animi quo optio officiis accusamus omnis sapiente labore beatae a fuga delectus deleniti adipisci. Unde asperiores saepe iste eaque!</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quod natus nobis nostrum eveniet rerum ipsam, sapiente mollitia magnam exercitationem ipsum beatae neque deleniti quaerat praesentium placeat sequi aliquid ullam.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt doloribus ipsam quia. Cupiditate dolorem fugit aut quia tenetur quidem consequatur. Esse obcaecati eligendi facilis nihil cumque qui enim. Natus?</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni error optio hic nemo, eius quaerat! Perspiciatis, odit saepe id incidunt obcaecati sed pariatur vel assumenda provident deleniti, reiciendis sapiente libero!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quos eveniet aliquam tenetur? Cupiditate consequuntur nisi quod alias quidem eaque voluptatibus, veniam magni natus ab accusantium perferendis aut rem error?</p>
+    </div>
+  </div><!-- /Info panel -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"
     integrity="sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w=="
