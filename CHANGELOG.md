@@ -2,13 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [3.0.8](https://github.com/talis/bootstrap-theme/compare/v3.0.7...v3.0.8) (2023-03-06)
-
-
-### Bug Fixes
-
-* increase input font-size ([635d719](https://github.com/talis/bootstrap-theme/commit/635d7190c955aa157d363a044d1e7cd532db3a73))
-
 ### [3.0.7](https://github.com/talis/bootstrap-theme/compare/v3.0.6...v3.0.7) (2022-11-15)
 
 
