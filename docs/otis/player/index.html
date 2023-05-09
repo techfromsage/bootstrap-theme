@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="stylesheet" href="/bootstrap-theme/assets/css/custom-full.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
   <style>
@@ -764,28 +766,67 @@
     </section>
   </div>
 
-  <nav class="d-lg-none position-sticky bottom-0 bg-white">
-    <div class="d-flex align-items-center justify-content-between btn-group border-top" aria-label="Pagination">
-      <button class="flex-grow-1 border-0 btn btn-default btn-lg text-start rounded-0" type="button">Prev</button>
-      <button class="flex-grow-1 border-0 btn btn-default btn-lg text-end rounded-0" type="button">Next</button>
-      <!--/ Can be links if navigation updates URL -->
-    </div>
-    <div class="d-flex border-top">
-      <button class="btn btn-default btn-lg border-0 flex-grow-1 rounded-0" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#table-of-contents" aria-controls="table-of-contents">
-        <i class="fal fa-list"></i>
-        <span class="visually-hidden">Table of contents</span>
-      </button>
-      <div class="vr"></div>
-      <!-- <div class="dropup flex-grow-1"> -->
-      <button class="btn btn-default btn-lg border-0 flex-grow-1 rounded-0" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#settings" aria-controls="settings">
-        <i class="fal fa-cog"></i>
-        <span class="visually-hidden">Settings</span>
-      </button>
+  <nav class="d-lg-none position-sticky bottom-0 bg-white border-top">
+    <div id="pageNumberRow" class="p2 small text-center">p. XXX</div>
+    <div id="nav">
+      <div class="d-flex align-items-center justify-content-between btn-group" aria-label="Pagination">
+        <button class="flex-grow-1 border-0 btn btn-default btn-lg text-start rounded-0" type="button">Prev</button>
+        <div>p. XXX</div>
+        <button class="flex-grow-1 border-0 btn btn-default btn-lg text-end rounded-0" type="button">Next</button>
+        <!--/ Can be links if navigation updates URL -->
+      </div>
+      <div class="d-flex border-top">
+        <button class="btn btn-default btn-lg border-0 flex-grow-1 rounded-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#table-of-contents" aria-controls="table-of-contents">
+          <i class="fal fa-list"></i>
+          <span class="visually-hidden">Table of contents</span>
+        </button>
+        <div class="vr"></div>
+        <!-- <div class="dropup flex-grow-1"> -->
+        <button class="btn btn-default btn-lg border-0 flex-grow-1 rounded-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#settings" aria-controls="settings">
+          <i class="fal fa-cog"></i>
+          <span class="visually-hidden">Settings</span>
+        </button>
+      </div>
     </div>
     </div><!-- /Mobile reading controls -->
   </nav>
+
+  <script>
+    let prevScroll = 0;
+
+    const pageNumberRow = new bootstrap.Collapse('#pageNumberRow');
+
+    const myNav = document.getElementById('nav');
+    const myPageNumber = document.getElementById('pageNumberRow');
+
+    const nav = new bootstrap.Collapse('#nav');
+    const rootEl = document.querySelector('html');
+
+    document.addEventListener('scroll', (event) => {
+      let scroll = rootEl.scrollTop;
+
+      if (scroll > prevScroll) {
+        pageNumberRow.show();
+        nav.hide();
+      } else {
+        pageNumberRow.hide();
+        nav.show();
+      }
+
+      prevScroll = scroll;
+    });
+
+    myNav.addEventListener('hidden.bs.collapse', () => {
+      pageNumberRow.show();
+    });
+
+    myNav.addEventListener('shown.bs.collapse', () => {
+      pageNumberRow.hide();
+    });
+
+  </script>
 
   <div class="offcanvas offcanvas-start" tabindex="-1" id="settings" aria-labelledby="offcanvasExampleLabel">
     <header class="offcanvas-header">
