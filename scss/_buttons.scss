@@ -23,7 +23,7 @@
     $btn-disabled-color
   );
 
-  border-color: currentColor !important;
+  border-color: currentcolor !important;
 
   &:focus,
   &:active {
@@ -204,7 +204,7 @@
   vertical-align: baseline;
 }
 
-/// @deprecated Compose existing classes instead. To be removed in v4
+/* @deprecated Compose existing classes instead. To be removed in v4 */
 .btn-action {
   @extend .btn-lg;
   @extend .btn-link;

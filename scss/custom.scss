@@ -1,22 +1,18 @@
-// Toggle global options
+/* Toggle global options */
 $enable-gradients: false;
 $enable-shadows: false;
 
-// Customize some defaults
-@import "bootstrap/scss/functions"; // Required
-
+/* Customize some defaults */
+@import "bootstrap/scss/functions"; /* Required */
 @import "variables";
-
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
-
-@import "bootstrap/scss/root"; // Required
-@import "bootstrap/scss/reboot"; // Required
+@import "bootstrap/scss/root"; /* Required */
+@import "bootstrap/scss/reboot"; /* Required */
 @import "bootstrap/scss/type";
 @import "bootstrap/scss/images";
-
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
 @import "bootstrap/scss/tables";
@@ -37,10 +33,9 @@ $enable-shadows: false;
 @import "bootstrap/scss/toasts";
 @import "bootstrap/scss/modal";
 
-// Helpers
+/* Helpers */
 @import "bootstrap/scss/helpers";
 
-// Utilities
+/* Utilities */
 @import "bootstrap/scss/utilities/api";
-
 @import "theme";
