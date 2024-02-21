@@ -4,7 +4,7 @@ orbs:
   node: circleci/node@5.2.0
 
 jobs:
-  build_and_test:
+  lint_and_test:
     executor: node/default
     steps:
       - checkout
@@ -13,3 +13,17 @@ jobs:
       - run:
           name: "Test"
           command: npm run test
+
+workflows:
+  build-and-test:
+    jobs:
+      - start
+      - be_kind_to_your_colleagues:
+          type: approval
+          filters:
+            branches:
+              ignore:
+                - main
+      - lint_and_test:
+          requires:
+            - be_kind_to_your_colleagues
