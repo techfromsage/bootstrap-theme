@@ -57,7 +57,8 @@
     "sass": "1.62.0",
     "serve": "14.2.0",
     "standard-version": "9.5.0",
-    "stylelint": "15.6.0"
+    "stylelint": "16.2.1",
+    "stylelint-config-standard": "36.0.0"
   },
   "browserslist": [
     "last 2 versions"

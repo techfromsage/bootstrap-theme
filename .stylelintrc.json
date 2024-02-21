@@ -1,0 +1,106 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "rules": {
+    "selector-class-pattern": ["^[a-z_\\-0-9]+$"],
+    "number-max-precision": [
+      2,
+      {
+        "ignoreUnits": ["em"],
+        "severity": "warning"
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["extend", "at-root", "debug", "warn", "error", "if", "else", "for", "each", "while", "mixin", "include", "content", "return", "function"],
+        "severity": "warning"
+      }
+    ],
+    "import-notation": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "at-rule-empty-line-before": [
+      true,
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"],
+        "ignoreAtRules": ["else"]
+      }
+    ],
+    "no-descending-specificity": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "color-function-notation": [
+      "modern",
+      {
+        "severity": "warning"
+      }
+    ],
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "alpha-value-notation": [
+      "number",
+      {
+        "severity": "warning"
+      }
+    ],
+    "media-feature-range-notation": [
+      "context",
+      {
+        "severity": "warning"
+      }
+    ],
+    "function-no-unknown": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"],
+        "severity": "warning"
+      }
+    ],
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["after-declaration", "first-nested"],
+        "ignore": ["after-comment"],
+        "severity": "warning"
+      }
+    ],
+    "no-duplicate-selectors": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "selector-attribute-quotes": [
+      "always",
+      {
+        "severity": "warning"
+      }
+    ],
+    "value-keyword-case": [
+      "lower",
+      {
+        "severity": "warning"
+      }
+    ]
+  }
+}
