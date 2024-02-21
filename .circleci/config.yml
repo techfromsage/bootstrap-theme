@@ -17,7 +17,6 @@ jobs:
 workflows:
   build-and-test:
     jobs:
-      - start
       - be_kind_to_your_colleagues:
           type: approval
           filters:
