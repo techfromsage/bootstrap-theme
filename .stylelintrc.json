@@ -18,69 +18,9 @@
         "severity": "warning"
       }
     ],
-    "import-notation": [
-      true,
-      {
-        "severity": "warning"
-      }
-    ],
-    "at-rule-empty-line-before": [
-      true,
-      {
-        "except": ["first-nested"],
-        "ignore": ["after-comment"],
-        "ignoreAtRules": ["else"]
-      }
-    ],
     "no-descending-specificity": [
       true,
       {
-        "severity": "warning"
-      }
-    ],
-    "color-function-notation": [
-      "modern",
-      {
-        "severity": "warning"
-      }
-    ],
-    "declaration-block-no-redundant-longhand-properties": [
-      true,
-      {
-        "severity": "warning"
-      }
-    ],
-    "alpha-value-notation": [
-      "number",
-      {
-        "severity": "warning"
-      }
-    ],
-    "media-feature-range-notation": [
-      "context",
-      {
-        "severity": "warning"
-      }
-    ],
-    "function-no-unknown": [
-      true,
-      {
-        "severity": "warning"
-      }
-    ],
-    "rule-empty-line-before": [
-      "always",
-      {
-        "except": ["first-nested"],
-        "ignore": ["after-comment"],
-        "severity": "warning"
-      }
-    ],
-    "declaration-empty-line-before": [
-      "always",
-      {
-        "except": ["after-declaration", "first-nested"],
-        "ignore": ["after-comment"],
         "severity": "warning"
       }
     ],
@@ -90,14 +30,8 @@
         "severity": "warning"
       }
     ],
-    "selector-attribute-quotes": [
-      "always",
-      {
-        "severity": "warning"
-      }
-    ],
-    "value-keyword-case": [
-      "lower",
+    "function-no-unknown": [
+      true,
       {
         "severity": "warning"
       }

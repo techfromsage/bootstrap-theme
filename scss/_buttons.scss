@@ -1,8 +1,8 @@
-@import "bootstrap/scss/mixins/buttons";
-@import "bootstrap/scss/mixins/gradients";
-@import "bootstrap/scss/mixins/box-shadow";
-@import "bootstrap/scss/vendor/rfs";
-@import "bootstrap/scss/mixins/border-radius";
+@import url("bootstrap/scss/mixins/buttons");
+@import url("bootstrap/scss/mixins/gradients");
+@import url("bootstrap/scss/mixins/box-shadow");
+@import url("bootstrap/scss/vendor/rfs");
+@import url("bootstrap/scss/mixins/border-radius");
 
 .btn-default,
 .btn-success,
@@ -23,7 +23,7 @@
     $btn-disabled-color
   );
 
-  border-color: currentColor !important;
+  border-color: currentcolor !important;
 
   &:focus,
   &:active {

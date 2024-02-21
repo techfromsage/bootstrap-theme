@@ -1,5 +1,6 @@
 $enable-caret: true;
-@import "bootstrap/scss/mixins/caret";
+
+@import url("bootstrap/scss/mixins/caret");
 
 .show.dropdown-toggle {
   @include caret(up);

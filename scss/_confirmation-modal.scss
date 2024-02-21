@@ -1,7 +1,6 @@
 @use "sass:math";
 
 .o-confirmation-modal {
-
   .modal-dialog {
     max-width: 26.25rem;
   }
@@ -17,7 +16,9 @@
 
   .modal-content {
     padding: math.div($modal-inner-padding, 2);
+
     @include border-radius(.5rem);
+
     font-size: 1rem;
   }
 

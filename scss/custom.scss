@@ -3,44 +3,39 @@ $enable-gradients: false;
 $enable-shadows: false;
 
 /* Customize some defaults */
-@import "bootstrap/scss/functions"; /* Required */
-
-@import "variables";
-
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/maps";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
-
-@import "bootstrap/scss/root"; /* Required */
-@import "bootstrap/scss/reboot"; /* Required */
-@import "bootstrap/scss/type";
-@import "bootstrap/scss/images";
-
-@import "bootstrap/scss/containers";
-@import "bootstrap/scss/grid";
-@import "bootstrap/scss/tables";
-@import "bootstrap/scss/forms";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
-@import "bootstrap/scss/dropdown";
-@import "bootstrap/scss/button-group";
-@import "bootstrap/scss/nav";
-@import "bootstrap/scss/navbar";
-@import "bootstrap/scss/accordion";
-@import "bootstrap/scss/breadcrumb";
-@import "bootstrap/scss/pagination";
-@import "bootstrap/scss/badge";
-@import "bootstrap/scss/alert";
-@import "bootstrap/scss/progress";
-@import "bootstrap/scss/close";
-@import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal";
+@import url("bootstrap/scss/functions"); /* Required */
+@import url("variables");
+@import url("bootstrap/scss/variables");
+@import url("bootstrap/scss/maps");
+@import url("bootstrap/scss/mixins");
+@import url("bootstrap/scss/utilities");
+@import url("bootstrap/scss/root"); /* Required */
+@import url("bootstrap/scss/reboot"); /* Required */
+@import url("bootstrap/scss/type");
+@import url("bootstrap/scss/images");
+@import url("bootstrap/scss/containers");
+@import url("bootstrap/scss/grid");
+@import url("bootstrap/scss/tables");
+@import url("bootstrap/scss/forms");
+@import url("bootstrap/scss/buttons");
+@import url("bootstrap/scss/transitions");
+@import url("bootstrap/scss/dropdown");
+@import url("bootstrap/scss/button-group");
+@import url("bootstrap/scss/nav");
+@import url("bootstrap/scss/navbar");
+@import url("bootstrap/scss/accordion");
+@import url("bootstrap/scss/breadcrumb");
+@import url("bootstrap/scss/pagination");
+@import url("bootstrap/scss/badge");
+@import url("bootstrap/scss/alert");
+@import url("bootstrap/scss/progress");
+@import url("bootstrap/scss/close");
+@import url("bootstrap/scss/toasts");
+@import url("bootstrap/scss/modal");
 
 /* Helpers */
-@import "bootstrap/scss/helpers";
+@import url("bootstrap/scss/helpers");
 
 /* Utilities */
-@import "bootstrap/scss/utilities/api";
-
-@import "theme";
+@import url("bootstrap/scss/utilities/api");
+@import url("theme");
