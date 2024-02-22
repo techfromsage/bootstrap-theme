@@ -91,6 +91,7 @@ workflows:
       - lint_and_test:
           name: Lint and test
           requires:
+            - Start
             - Be kind to your colleagues
       - push_to_github_pages:
           name: Push to Github Pages
