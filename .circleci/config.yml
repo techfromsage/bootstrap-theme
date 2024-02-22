@@ -3,20 +3,79 @@ version: 2.1
 orbs:
   node: circleci/node@5.2.0
 
+executor_node: &executor_node
+  executor:
+    name: node/default
+    tag: "20.11.0"
+  resource_class: small
+
+parameters:
+  node_modules_cache_key:
+    type: string
+    default: v2-dependencies-{{ checksum "package-lock.json" }}
+
+commands:
+  restore_cache_node_modules:
+    steps:
+      - restore_cache:
+          name: Restore cached node_modules/
+          keys:
+            - << pipeline.parameters.node_modules_cache_key >>
+
+  save_cache_node_modules:
+    steps:
+      - save_cache:
+          paths:
+            - node_modules
+          key: << pipeline.parameters.node_modules_cache_key >>
+  
+  save_cache_build:
+    steps:
+      - save_cache:
+          name: Save build folder to cache
+          key: build--{{ .Revision }}
+          paths:
+            - build
+
+  restore_cache_build:
+    steps:
+      - restore_cache:
+          name: Restore build folder from cache
+          keys:
+            - build--{{ .Revision }}
+
 jobs:
+  start:
+    <<: *executor_node
+    steps:
+      - run:
+          name: start
+          command: |
+            echo start
   lint_and_test:
-    executor: node/default
+    <<: *executor_node
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
+      - restore_cache_node_modules
+      - run:
+          name: "Installing dependencies"
+          command: npm ci
+      - save_cache_node_modules
       - run:
           name: "Test"
           command: npm run test
+  push_to_google_pages:
+    <<: *executor_node
+    steps:
+      - run:
+          name: "Push to google pages"
+          command: |
+            echo googlepages
 
 workflows:
   build-and-test:
     jobs:
+      - start
       - be_kind_to_your_colleagues:
           type: approval
           filters:
@@ -25,4 +84,10 @@ workflows:
                 - main
       - lint_and_test:
           requires:
+            - start
             - be_kind_to_your_colleagues
+      - push_to_google_pages:
+          filters:
+            branches:
+              only:
+                -main
