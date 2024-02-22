@@ -94,7 +94,9 @@ workflows:
             - Start
             - Be kind to your colleagues
       - push_to_google_pages:
-          name: Push to Google Pages
+          name: Lint and test
+          requires:
+            - Start
           filters:
             branches:
               ignore:
