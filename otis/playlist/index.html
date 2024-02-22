@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="/bootstrap-theme/assets/css/custom.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <title>Playlist | Talis</title>
+  </head>
+  <body>
+  <div class="container">
+     
+<h1 class="mb-3">Encouraging deeper discussion</h1>
+
+<table class="table table-striped o-table--sortable">
+  <caption class="visually-hidden">Playlist resources</caption>
+  <colgroup>
+    <col>
+    <col>
+</colgroup>
+  <thead>
+    <tr>
+      <th id="colTitle" scope="col" class="p-0">
+        <button type="button" class="btn o-table__sort-btn" onclick="toggleSort(this.id, 'colTitle', 1)">
+          <span>Title</span>
+          <i class="fa fa-sort fa-fw o-table__sort-btn__arrow--both"></i>
+          <i class="fa fa-sort-up fa-fw o-table__sort-btn__arrow--up"></i>
+          <i class="fa fa-sort-down fa-fw o-table__sort-btn__arrow--down"></i>
+        </button>
+      </th>
+      <th id="colDate" scope="col" class="p-0">
+        <button type="button" class="btn o-table__sort-btn" onclick="toggleSort(this.id, 'colDate', 2)">
+          <span>Date uploaded</span>
+          <i class="fa fa-sort fa-fw o-table__sort-btn__arrow--both"></i>
+          <i class="fa fa-sort-up fa-fw o-table__sort-btn__arrow--up"></i>
+          <i class="fa fa-sort-down fa-fw o-table__sort-btn__arrow--down"></i>
+        </button>
+      </th>
+      <th id="colActions" scope="col">
+        Actions
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img class="me-3" src="https://via.placeholder.com/48x68" alt="" width="50" height="68"
+            style="max-width: 50px; height: auto;" />
+          <div style="max-width: 25vw;">
+
+            <a href="/bootstrap-theme/otis/module">The Impact of Digitalization on Literacy - Digital
+              Immigrants
+              vs Digital Natives</a>
+            <p class="m-0 text-truncate">
+              Considering the speed at which new digital technologies are
+              evolving, this paper aims to investigate the impact of digital
+              transformation on multiple dimensions of literacy.
+            </p>
+          </div>
+        </div>
+      </td>
+      <td class="lead">
+        <time datetime="2021-09-01">02 Sep 2021</time>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img class="me-3" src="https://via.placeholder.com/48x68" alt="" width="50" height="68"
+            style="max-width: 50px; height: auto;" />
+          <div style="max-width: 25vw;">
+
+            <a href="/bootstrap-theme/otis/module">The Impact of Digitalization on Literacy - Digital
+              Immigrants
+              vs Digital Natives</a>
+            <p class="m-0 text-truncate">
+              Considering the speed at which new digital technologies are
+              evolving, this paper aims to investigate the impact of digital
+              transformation on multiple dimensions of literacy.
+            </p>
+          </div>
+        </div>
+      </td>
+      <td class="lead">
+        <time datetime="2021-09-01">02 Sep 2021</time>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img class="me-3" src="https://via.placeholder.com/48x68" alt="" width="50" height="68"
+            style="max-width: 50px; height: auto;" />
+          <div style="max-width: 25vw;">
+
+            <a href="/bootstrap-theme/otis/module">The Impact of Digitalization on Literacy - Digital
+              Immigrants
+              vs Digital Natives</a>
+            <p class="m-0 text-truncate">
+              Considering the speed at which new digital technologies are
+              evolving, this paper aims to investigate the impact of digital
+              transformation on multiple dimensions of literacy.
+            </p>
+          </div>
+        </div>
+      </td>
+      <td class="lead">
+        <time datetime="2021-09-01">02 Sep 2021</time>
+      </td>
+    </tr>
+  </tbody>
+
+</table>
+
+<script>
+  function toggleSort(btnId, colId, colNum) {
+    const button = document.getElementById(btnId);
+    const column = document.getElementById(colId);
+    const sortedCol = document.querySelector(`col:nth-child(${colNum}`);
+
+    const currentSort = column.getAttribute('aria-sort');
+
+    if (currentSort == 'descending') {
+      clearSorts();
+      column.setAttribute('aria-sort', 'ascending');
+    } else {
+      clearSorts();
+      column.setAttribute('aria-sort', 'descending');
+    }
+
+    sortedCol.classList.add('sorted');
+  }
+
+  function clearSorts() {
+    const thSort = document.querySelectorAll('*[aria-sort]');
+    const tdSort = document.querySelectorAll('.sorted');
+    const thButton = document.querySelectorAll('th > button');
+
+    for (var i = 0; i < thSort.length; i++) {
+      thSort[i].removeAttribute("aria-sort");
+    }
+
+    for (var i = 0; i < tdSort.length; i++) {
+      tdSort[i].classList.remove('sorted');
+    }
+  }
+</script>
+
+    </div>
+  </body>
+</html>
