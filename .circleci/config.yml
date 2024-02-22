@@ -58,7 +58,7 @@ jobs:
       - checkout
       - restore_cache_node_modules
       - run:
-          name: "Installing dependencies"
+          name: Installing dependencies
           command: npm ci
       - save_cache_node_modules
       - run:
@@ -67,10 +67,14 @@ jobs:
   push_to_google_pages:
     <<: *executor_node
     steps:
+      - checkout
+      - restore_cache_node_modules
       - run:
-          name: "Push to google pages"
-          command: |
-            echo googlepages
+          name: Generate documentation
+          command: npm run build:eleventy
+      - run:
+          name: Deploy docs to github pages
+          command: gh-pages --dist docs
 
 workflows:
   build-and-test:
@@ -89,5 +93,5 @@ workflows:
       - push_to_google_pages:
           filters:
             branches:
-              only:
+              ignore:
                 -main
