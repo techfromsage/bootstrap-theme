@@ -64,7 +64,7 @@ jobs:
       - run:
           name: "Test"
           command: npm run test
-  push_to_google_pages:
+  push_to_github_pages:
     <<: *executor_node
     steps:
       - checkout
@@ -93,8 +93,8 @@ workflows:
           requires:
             - Start
             - Be kind to your colleagues
-      - push_to_google_pages:
-          name: Push to Google Pages
+      - push_to_github_pages:
+          name: Push to Github Pages
           requires:
             - Lint and test
           filters:
