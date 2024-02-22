@@ -74,7 +74,7 @@ jobs:
           command: npm run build:eleventy
       - run:
           name: Deploy docs to github pages
-          command: npx run gh-pages --dist docs
+          command: npm run publish:githubpages
 
 workflows:
   build-and-test:
