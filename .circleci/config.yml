@@ -93,7 +93,7 @@ workflows:
       - lint_and_test:
           requires:
             - start
-            - be_kind_to_your_colleagues
+            - Be kind to your colleagues
       - push_to_google_pages:
           requires:
             - start
