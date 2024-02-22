@@ -95,9 +95,7 @@ workflows:
             - Be kind to your colleagues
       - push_to_google_pages:
           name: Push to Google Pages
-          requires:
-            - Start
           filters:
             branches:
-              ignore:
+              only:
                 -main
