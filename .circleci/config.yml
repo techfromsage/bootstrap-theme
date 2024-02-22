@@ -70,14 +70,11 @@ jobs:
       - checkout
       - restore_cache_node_modules
       - run:
-          name: Install and configure dependencies
-          command: npm install gh-pages@2.0.1
-      - run:
           name: Generate documentation
           command: npm run build:eleventy
       - run:
           name: Deploy docs to github pages
-          command: gh-pages --dist docs
+          command: npm run publish:githubpages
 
 workflows:
   build-and-test:
