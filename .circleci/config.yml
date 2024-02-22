@@ -99,5 +99,5 @@ workflows:
             - Lint and test
           filters:
             branches:
-              ignore:
+              only:
                 -main
