@@ -49,9 +49,9 @@ jobs:
     <<: *executor_node
     steps:
       - run:
-          name: start
+          name: Start
           command: |
-            echo start
+            echo Start
   lint_and_test:
     <<: *executor_node
     steps:
@@ -87,7 +87,8 @@ jobs:
 workflows:
   build-and-test:
     jobs:
-      - start
+      - start:
+          name: Start
       - be_kind_to_your_colleagues:
           name: Be kind to your colleagues
           type: approval
@@ -98,12 +99,12 @@ workflows:
       - lint_and_test:
           name: Lint and test
           requires:
-            - start
+            - Start
             - Be kind to your colleagues
       - push_to_google_pages:
           name: Push to Google Pages
           requires:
-            - start
+            - Start
           filters:
             branches:
               ignore:
