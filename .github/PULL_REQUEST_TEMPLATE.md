@@ -1,5 +1,5 @@
 #### Problem
-- TA-XXX
+- https://techfromsage.atlassian.net/browse/TA-###
 
 * What is happening for the user?
 * What is happening technically?
@@ -14,5 +14,6 @@
 
 #### Checklist
 - [ ] PO review
+- [ ] Branch build
 - [ ] UX review
 - [ ] Accessibility review (See: https://github.com/talis/elevate-app/wiki/Accessibility)
