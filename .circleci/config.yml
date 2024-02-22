@@ -77,6 +77,9 @@ jobs:
           command: |
             git config user.email "darren.arbon@technologyfromsage.com"
             git config user.name "darren-arbon"
+      - add_ssh_keys:
+          fingerprints:
+            - "y6uCZBdmwmyfwepi7fDRF8wN0IVPMKq8MmKYLyFwLuY"
       - run:
           name: Deploy docs to github pages
           command: npm run publish:githubpages
