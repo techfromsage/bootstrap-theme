@@ -73,6 +73,11 @@ jobs:
           name: Generate documentation
           command: npm run build:eleventy
       - run:
+          name: Configure github
+          command: |
+            git config user.email "darren.arbon@technologyfromsage.com"
+            git config user.name "darren-arbon"
+      - run:
           name: Deploy docs to github pages
           command: npm run publish:githubpages
 
@@ -88,10 +93,12 @@ workflows:
               ignore:
                 - main
       - lint_and_test:
+          name: Lint and test
           requires:
             - start
             - Be kind to your colleagues
       - push_to_google_pages:
+          name: Push to Google Pages
           requires:
             - start
           filters:
