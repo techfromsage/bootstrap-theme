@@ -97,5 +97,5 @@ workflows:
           name: Push to Google Pages
           filters:
             branches:
-              only:
+              ignore:
                 -main
