@@ -50,6 +50,6 @@
         "severity": "warning"
       }
     ],
-    "import-notation": "less"
+    "import-notation": "string"
   }
 }

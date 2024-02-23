@@ -1,0 +1,103 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.2.0
+
+executor_node: &executor_node
+  executor:
+    name: node/default
+    tag: "18.14.0"
+  resource_class: small
+
+parameters:
+  node_modules_cache_key:
+    type: string
+    default: v2-dependencies-{{ checksum "package-lock.json" }}
+
+commands:
+  restore_cache_node_modules:
+    steps:
+      - restore_cache:
+          name: Restore cached node_modules/
+          keys:
+            - << pipeline.parameters.node_modules_cache_key >>
+
+  save_cache_node_modules:
+    steps:
+      - save_cache:
+          paths:
+            - node_modules
+          key: << pipeline.parameters.node_modules_cache_key >>
+  
+  save_cache_build:
+    steps:
+      - save_cache:
+          name: Save build folder to cache
+          key: build--{{ .Revision }}
+          paths:
+            - build
+
+  restore_cache_build:
+    steps:
+      - restore_cache:
+          name: Restore build folder from cache
+          keys:
+            - build--{{ .Revision }}
+
+jobs:
+  start:
+    <<: *executor_node
+    steps:
+      - run:
+          name: Start
+          command: |
+            echo Start
+  lint_and_test:
+    <<: *executor_node
+    steps:
+      - checkout
+      - restore_cache_node_modules
+      - run:
+          name: Installing dependencies
+          command: npm ci
+      - save_cache_node_modules
+      - run:
+          name: "Test"
+          command: npm run test
+  push_to_github_pages:
+    <<: *executor_node
+    steps:
+      - checkout
+      - restore_cache_node_modules
+      - run:
+          name: Generate documentation
+          command: npm run build:eleventy
+      - run:
+          name: Deploy docs to github pages
+          command: npm run publish:githubpages
+
+workflows:
+  build-and-test:
+    jobs:
+      - start:
+          name: Start
+      - be_kind_to_your_colleagues:
+          name: Be kind to your colleagues
+          type: approval
+          filters:
+            branches:
+              ignore:
+                - main
+      - lint_and_test:
+          name: Lint and test
+          requires:
+            - Start
+            - Be kind to your colleagues
+      - push_to_github_pages:
+          name: Push to Github Pages
+          requires:
+            - Lint and test
+          filters:
+            branches:
+              only:
+                -main
