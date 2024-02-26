@@ -73,6 +73,11 @@ jobs:
           name: Generate documentation
           command: npm run build:eleventy
       - run:
+          name: Configure dependencies
+          command: |
+            git config user.email "talisaspire@technologyfromsage.com"
+            git config user.name "talisaspire"
+      - run:
           name: Deploy docs to github pages
           command: npm run publish:githubpages
 
@@ -99,5 +104,5 @@ workflows:
             - Lint and test
           filters:
             branches:
-              only:
+              ignore:
                 - main
