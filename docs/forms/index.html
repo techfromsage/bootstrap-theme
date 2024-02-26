@@ -352,8 +352,19 @@
       <li>Labels always visible</li>
       <li>A new row for each question</li>
       <li>
-        Use a hint to explain any validation rules which have been applied to
-        the input
+          Only use the character count component when there is a good reason for limiting the number of characters users can enter.
+          When using this component:
+        <ul>
+          <li>
+            Display how many characters the user has remaining as they type.
+          </li>
+          <li>
+            Display the remaining characters below the text area.
+          </li>
+          <li>
+            Allow the user to enter more characters than the maximum limit. The form validation will handle any excess.
+          </li>
+        </ul>
       </li>
       <li>
         Use the appropriate <code>autocomplete</code> attribute for the field in
@@ -364,8 +375,8 @@
         >
       </li>
       <li>
-        All fields required by default; explicitly mark those which are
-        optional.
+        All fields optional by default; explicitly mark those which are
+        required.
       </li>
       <li>
         Use a <code>fieldset</code> to group multiple controls. A
