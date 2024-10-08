@@ -13,11 +13,11 @@
     $primary,
     $primary,
     $gray-200,
-    $accent,
-    $accent,
+    $accessible-green,
+    $accessible-green,
     $gray-200,
-    $accent,
-    $accent,
+    $accessible-green,
+    $accessible-green,
     $white,
     $btn-disabled-color,
     $btn-disabled-color
@@ -28,7 +28,7 @@
   &:focus,
   &:active {
     background-color: $white;
-    box-shadow: 0 0 0 $btn-focus-width $accent;
+    box-shadow: 0 0 0 $btn-focus-width $primary;
   }
 
   &:hover:focus {
@@ -39,7 +39,7 @@
   &.active,
   &.show {
     &:focus {
-      box-shadow: 0 0 0 $btn-focus-width $accent;
+      box-shadow: 0 0 0 $btn-focus-width $primary;
     }
   }
 }
@@ -50,11 +50,11 @@
     $primary,
     $primary,
     $gray-200,
-    $accent,
-    $accent,
+    $accessible-green,
+    $accessible-green,
     $gray-200,
-    $accent,
-    $accent,
+    $accessible-green,
+    $accessible-green,
     $white,
     $btn-disabled-color,
     $btn-disabled-color
@@ -113,23 +113,34 @@
 }
 
 .btn-primary {
+  background-color: $primary;
+  color: $white;
+
+  &:hover {
+    background-color: $accessible-green;
+    color: $white;
+  }
+
   &:focus {
+    background-color: $accessible-green;
     border-color: $white;
-    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $primary;
+    color: $white;
+    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $accessible-green;
   }
 
   &:disabled,
   &.disabled {
     background-color: $btn-disabled-color;
     border-color: $btn-disabled-color;
+    color: $white;
   }
 
   &:active {
-    background-color: #004b50;
-    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px #004b50;
+    background-color: $primary;
+    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $primary;
 
     &:focus {
-      box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px #004b50;
+      box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $primary;
     }
   }
 }
