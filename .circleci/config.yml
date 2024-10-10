@@ -102,7 +102,3 @@ workflows:
           name: Push to Github Pages
           requires:
             - Lint and test
-          filters:
-            branches:
-              only:
-                - main
