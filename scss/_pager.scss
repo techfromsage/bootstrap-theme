@@ -13,10 +13,17 @@
     display: inline-block;
     padding: 5px 14px;
     border-color: $primary;
+    color: $primary;
     border-radius: 15px;
 
     &:focus {
+      color: $accessible-green;
       box-shadow: 0 0 0 1px $primary;
+    }
+
+    &:hover {
+      color: $accessible-green;
+      border-color: $accessible-green;
     }
   }
 

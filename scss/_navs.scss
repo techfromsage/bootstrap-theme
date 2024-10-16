@@ -1,5 +1,5 @@
 .nav-tabs {
-  border-bottom: 1px solid #017d87;
+  border-bottom: 1px solid $primary;
 
   .nav-link {
     padding-top: 10px;
@@ -10,17 +10,18 @@
   }
 
   .nav-link.active {
-    background-image: linear-gradient(0deg, #017d87 4px, transparent 4px);
+    background-image: linear-gradient(0deg, $primary 4px, transparent 4px);
   }
 
   .nav-link:focus {
-    background-color: #fff;
-    outline: 2px solid #017d87;
+    background-color: $white;
+    outline: 2px solid $primary;
     outline-offset: -1px;
   }
 
   .nav-link:hover {
-    background-color: $gray-200;
+    background-image: linear-gradient(0deg, $accessible-green 4px, transparent 4px);
+    color: $accessible-green;
   }
 }
 
@@ -42,6 +43,7 @@
   }
 
   .nav-link:hover {
-    background: $gray-200;
+    border-color: $accessible-green;
+    color: $accessible-green;
   }
 }
