@@ -26,8 +26,7 @@
 
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .show > .nav-link,
-.navbar-dark .navbar-brand:focus,
-.navbar-dark .navbar-brand:hover {
+.navbar-dark .navbar-brand:focus {
   color: $primary;
   outline: 2px solid currentcolor;
   outline-offset: -2px;
