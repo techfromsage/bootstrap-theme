@@ -57,8 +57,11 @@
 }
 
 .navbar-brand {
+  display: flex;
   padding-inline: $spacer $spacer;
   margin-left: -$spacer;
+  align-self: stretch;
+  align-items: center;
 }
 
 @media (width <= 992px) {
