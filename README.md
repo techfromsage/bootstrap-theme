@@ -1,4 +1,11 @@
 # Bootstrap v5 Theme
+
+## Versions
+There are currently two versions of this theme:
+
+1. The v3 version, this is on the `main` branch and has the old Talis branding, this is the version used by the apps.
+2. The v4 version, this is on the `v4` branch and has the new Talis branding, it is not currently in use anywhere.
+
 ## Usage
 1. Create a [Personal Access Token](https://github.com/settings/tokens/) granting the `write:packages` scope. `write` also allows `read`…
 2. Add `@talis:registry=https://npm.pkg.github.com` to your project's `.npmrc` file.
