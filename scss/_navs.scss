@@ -10,7 +10,7 @@
   }
 
   .nav-link.active {
-    background-image: linear-gradient(0deg, #017d87 4px, transparent 4px);
+    border-bottom: 4px solid $primary;
   }
 
   .nav-link:focus {
