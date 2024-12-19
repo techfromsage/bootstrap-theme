@@ -3,8 +3,8 @@
   font-family: "Open Sans", sans-serif;
   font-size: .8125em;
   line-height: 1.6;
-  color: #fff;
-  background-color: #017d87;
+  color: $primary;
+  background-color: $white;
 
   hr {
     max-width: 20rem;
@@ -12,14 +12,13 @@
   }
 
   a {
-    color: $white;
+    color: $primary;
   }
 
   a:hover,
   a:focus {
-    color: #017d87;
-    background-color: $white;
-    outline: 2px solid $white;
+    color: $accessible-green;
+    outline: 2px solid $accessible-green;
     outline-offset: 2px;
   }
 }
@@ -44,7 +43,6 @@
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 1.1;
-  color: $white;
 }
 
 .c-error-page__subheader {
@@ -54,7 +52,6 @@
   font-size: 2.4375rem;
   font-weight: 300;
   line-height: 1.1;
-  color: $white;
 }
 
 .c-error-page__context {
