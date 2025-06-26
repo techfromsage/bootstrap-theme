@@ -73,6 +73,11 @@ jobs:
       - run:
           name: Report uncommitted changes produced by the build, failing if any exist
           command: UNCOMMITTED=$(git status --untracked-files=no --porcelain) && echo "$UNCOMMITTED" && [ -z "$UNCOMMITTED" ]
+      - run:
+          name: Dry-run a semantic-release to confirm no issues upon merge
+          command: npx semantic-release --dry-run
+
+
   publish_release:
     <<: *executor_node
     steps:
