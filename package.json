@@ -22,7 +22,6 @@
     "css-compile": "sass scss/:docs/assets/css/ --style=compressed --load-path=node_modules --source-map",
     "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace docs/assets/css/talis.css --use autoprefixer --map",
-    "css-purge": "purgecss --keyframes --css docs/assets/css/talis.css --content docs/index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output docs/assets/css/",
     "format:stylelint": "stylelint scss/ --fix",
     "prepare": "husky install",
     "publish:githubpages": "gh-pages --dist docs",
@@ -45,13 +44,10 @@
     "autoprefixer": "10.4.14",
     "gh-pages": "6.1.1",
     "husky": "8.0.3",
-    "lint-staged": "13.2.1",
     "nodemon": "2.0.22",
     "npm-run-all": "4.1.5",
     "postcss": "8.4.23",
     "postcss-cli": "10.1.0",
-    "prettier": "2.8.8",
-    "purgecss": "5.0.0",
     "sass": "1.89.2",
     "semantic-release": "24.2.5",
     "serve": "14.2.0",
@@ -60,11 +56,5 @@
   },
   "browserslist": [
     "last 2 versions"
-  ],
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "prettier --write"
-    ]
-  }
+  ]
 }

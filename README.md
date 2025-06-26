@@ -133,12 +133,7 @@ The following npm scripts are available.
 | `css-compile` | Compiles source Sass into CSS |
 | `css-lint` | Runs [Stylelint](https://stylelint.io) against source Sass for code quality |
 | `css-prefix` | Runs [Autoprefixer](https://github.com/postcss/autoprefixer) on the compiled CSS |
-| `css-purge` | Runs [PurgeCSS](https://purgecss.com) to remove CSS that is unused by `index.html` |
 | `test` | Runs `css-lint` and `css`, in sequential order |
-
-### Optimizing CSS
-
-Before you start to use tools that remove Bootstrap styling like [PurgeCSS](#purgecss), you can make some broad optimizations by only including the stylesheets you think you'll need.
 
 
 ### Stylelint
