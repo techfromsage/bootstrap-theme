@@ -28,7 +28,7 @@ commands:
           paths:
             - node_modules
           key: << pipeline.parameters.node_modules_cache_key >>
-  
+
   save_cache_build:
     steps:
       - save_cache:
@@ -45,13 +45,16 @@ commands:
             - build--{{ .Revision }}
 
 jobs:
-  start:
+  start_build:
+    type: no-op
+
+  complete_build:
     <<: *executor_node
     steps:
       - run:
-          name: Start
-          command: |
-            echo Start
+          name: "Complete build"
+          command: echo "Build completed successfully"
+
   lint_and_test:
     <<: *executor_node
     steps:
@@ -64,6 +67,9 @@ jobs:
       - run:
           name: "Test"
           command: npm run test
+      - run:
+          name: "Build"
+          command: npm run build
   push_to_github_pages:
     <<: *executor_node
     steps:
@@ -71,7 +77,7 @@ jobs:
       - restore_cache_node_modules
       - run:
           name: Generate documentation
-          command: npm run build:eleventy
+          command: npm run build
       - run:
           name: Configure dependencies
           command: |
@@ -84,25 +90,25 @@ jobs:
 workflows:
   build-and-test:
     jobs:
-      - start:
-          name: Start
+      - start_build
       - be_kind_to_your_colleagues:
-          name: Be kind to your colleagues
           type: approval
           filters:
             branches:
               ignore:
                 - main
       - lint_and_test:
-          name: Lint and test
           requires:
-            - Start
-            - Be kind to your colleagues
+            - start_build
+            - be_kind_to_your_colleagues
       - push_to_github_pages:
-          name: Push to Github Pages
           requires:
-            - Lint and test
+            - lint_and_test
           filters:
             branches:
               only:
                 - main
+      - complete_build:
+          requires:
+            - lint_and_test
+            - push_to_github_pages

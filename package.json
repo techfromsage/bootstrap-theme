@@ -20,7 +20,7 @@
   "homepage": "https://github.com/talis/bootstrap-theme#readme",
   "scripts": {
     "build": "npm-run-all build:*",
-    "build:css": "sass scss/:docs/assets/css/ --style=compressed --load-path=node_modules --source-map",
+    "build:css": "npm run css-compile",
     "build:eleventy": "eleventy",
     "css": "npm-run-all css-compile css-prefix",
     "css-compile": "sass scss/:docs/assets/css/ --style=compressed --load-path=node_modules --source-map",
@@ -33,10 +33,10 @@
     "release": "standard-version",
     "server": "serve docs --listen 3000",
     "start": "npm-run-all --parallel build:css watch:*",
-    "test": "npm run css-lint && npm run css",
+    "test": "npm-run-all css-lint css",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
     "watch:eleventy": "eleventy --serve",
-    "watch:sass": "sass scss/:docs/assets/css/ --style=compressed --load-path=node_modules --source-map --watch"
+    "watch:sass": "npm run css-compile -- --watch"
   },
   "peerDependencies": {
     "bootstrap": "5.2.2",
