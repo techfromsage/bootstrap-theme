@@ -70,6 +70,9 @@ jobs:
       - run:
           name: "Build"
           command: npm run build
+      - run:
+          name: Report uncommitted changes produced by the build, failing if any exist
+          command: UNCOMMITTED=$(git status --untracked-files=no --porcelain) && echo "$UNCOMMITTED" && [ -z "$UNCOMMITTED" ]
   push_to_github_pages:
     <<: *executor_node
     steps:
