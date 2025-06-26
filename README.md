@@ -77,21 +77,40 @@ $enable-shadows: false;
 
 ## Contributing
 
-Be sure to have [Node.js](https://nodejs.org/) installed before proceeding.
+1. Ensure you have installed https://github.com/nvm-sh/nvm
 
-```shell
-# Clone the repo
-git clone https://github.com/talis/bootstrap-theme
-cd $DEVELOPMENT_WORK_DIR/bootstrap-theme
+1. Clone this repository:
 
-# Install dependencies
-npm i
+   ```bash
+   git clone git@github.com:techfromsage/bootstrap-theme.git
+   ```
 
-# Compiles Sass, builds the Eleventy-powered docs, watches both for changes
-npm start
-```
 
-Open <http://localhost:8080> to see the page in action.
+1. Change into the repository directory:
+
+   ```bash
+   cd bootstrap-theme
+   ```
+
+1. Install the correct Node version:
+
+   ```bash
+   nvm install && nvm use
+   ```
+
+1. Install dependencies:
+
+   ```bash
+   npm ci
+   ```
+
+1. Run the application locally:
+
+   ```bash
+   npm run start
+   ```
+
+1. Open <http://localhost:8080> to see the page in action.
 
 ## Building
 
@@ -103,7 +122,7 @@ npm run build
 
 ## Scripts
 
-The following npm scripts are available. With the exception of `npm start` and `npm test`, the remaining scripts can be run from your command line with `npm run scriptName`.
+The following npm scripts are available.
 
 | Script | Description |
 | --- | --- |
