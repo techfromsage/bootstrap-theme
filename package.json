@@ -34,14 +34,14 @@
     "watch:sass": "npm run css-compile -- --watch"
   },
   "peerDependencies": {
-    "bootstrap": "5.2.2",
-    "popper.js": "1.16.1"
+    "bootstrap": "~5.2.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "2.0.1",
     "@commitlint/cli": "17.6.1",
     "@commitlint/config-conventional": "17.6.1",
     "autoprefixer": "10.4.14",
+    "bootstrap": "5.2.2",
     "gh-pages": "6.1.1",
     "husky": "8.0.3",
     "nodemon": "2.0.22",
