@@ -6,7 +6,7 @@ orbs:
 executor_node: &executor_node
   executor:
     name: node/default
-    tag: "18.14.0"
+    tag: "22.17.0"
   resource_class: small
 
 parameters:
