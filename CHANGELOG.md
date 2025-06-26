@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/talis/bootstrap-theme/compare/v3.0.7...v3.1.0) (2025-06-26)
+
+
+### Features
+
+* **TA-471:** add circle config ([#40](https://github.com/talis/bootstrap-theme/issues/40)) ([8cf0dea](https://github.com/talis/bootstrap-theme/commit/8cf0deab047f522691c553903025fbb019493256))
+
+
+### Bug Fixes
+
+* increase input font-size ([635d719](https://github.com/talis/bootstrap-theme/commit/635d7190c955aa157d363a044d1e7cd532db3a73))
+* remove stylelint-config-twbs-bootstrap and pin dep version ([#37](https://github.com/talis/bootstrap-theme/issues/37)) ([777233c](https://github.com/talis/bootstrap-theme/commit/777233ceea2fb1aa58732e5e34bbf0d3ce2a9baa))
+* **TA-471:** fix gitconfig ([#44](https://github.com/talis/bootstrap-theme/issues/44)) ([e89421d](https://github.com/talis/bootstrap-theme/commit/e89421dd7330fdcc95bd4f9788dd2a87f281330f))
+* **TA-471:** typo in branch name ([#42](https://github.com/talis/bootstrap-theme/issues/42)) ([c4469e1](https://github.com/talis/bootstrap-theme/commit/c4469e18af6ad11d15300425f6e21384b89a3b1e))
+* update linter ruleset ([#38](https://github.com/talis/bootstrap-theme/issues/38)) ([8c4d745](https://github.com/talis/bootstrap-theme/commit/8c4d745226590fdaff8f884f6f9cd31060fff862))
+* updating readme to document that we have two versions of the theme ([#48](https://github.com/talis/bootstrap-theme/issues/48)) ([bf875f8](https://github.com/talis/bootstrap-theme/commit/bf875f8c17ba265a28dac99aac497b859484af71))
+
 ### [3.0.7](https://github.com/talis/bootstrap-theme/compare/v3.0.6...v3.0.7) (2022-11-15)
 
 
