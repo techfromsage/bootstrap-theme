@@ -73,7 +73,7 @@ jobs:
       - run:
           name: Report uncommitted changes produced by the build, failing if any exist
           command: UNCOMMITTED=$(git status --untracked-files=no --porcelain) && echo "$UNCOMMITTED" && [ -z "$UNCOMMITTED" ]
-  push_to_github_pages:
+  publish_release:
     <<: *executor_node
     steps:
       - checkout
@@ -89,6 +89,9 @@ jobs:
       - run:
           name: Deploy docs to github pages
           command: npm run publish:githubpages
+      - run:
+          name: Release to npm and Github
+          command: npx semantic-release
 
 workflows:
   build-and-test:
@@ -104,7 +107,7 @@ workflows:
           requires:
             - start_build
             - be_kind_to_your_colleagues
-      - push_to_github_pages:
+      - publish_release:
           requires:
             - lint_and_test
           filters:
@@ -114,4 +117,4 @@ workflows:
       - complete_build:
           requires:
             - lint_and_test
-            - push_to_github_pages
+            - publish_release
