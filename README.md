@@ -93,6 +93,14 @@ npm start
 
 Open <http://localhost:8080> to see the page in action.
 
+## Building
+
+We have an automated build that runs quality checks. However, the GitHub Pages site relies on having all generated files checked in to source control. Therefore, if you're making changes on a branch, the final step will always be to run the following in a final commit to ensure the generated files are all checked in:
+
+```bash
+npm run build
+```
+
 ## Scripts
 
 The following npm scripts are available. With the exception of `npm start` and `npm test`, the remaining scripts can be run from your command line with `npm run scriptName`.
