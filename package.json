@@ -1,23 +1,19 @@
 {
-  "name": "@talis/bootstrap-theme",
-  "version": "3.1.0",
-  "description": "A theme to make Bootstrap look like Talis",
-  "author": "dm@talis.com",
-  "license": "ISC",
+  "name": "@technologyfromsage/bootstrap-theme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/talis/bootstrap-theme.git"
+    "url": "git+https://github.com/techfromsage/bootstrap-theme.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+  "version": "3.1.0",
+  "description": "A theme to make Bootstrap look like Talis",
+  "license": "ISC",
   "files": [
     "scss"
   ],
   "bugs": {
-    "url": "https://github.com/talis/bootstrap-theme/issues"
+    "url": "https://github.com/techfromsage/bootstrap-theme/issues"
   },
-  "homepage": "https://github.com/talis/bootstrap-theme#readme",
+  "homepage": "https://github.com/techfromsage/bootstrap-theme#readme",
   "scripts": {
     "build": "npm-run-all build:*",
     "build:css": "npm run css-compile",
@@ -57,8 +53,8 @@
     "prettier": "2.8.8",
     "purgecss": "5.0.0",
     "sass": "1.89.2",
+    "semantic-release": "24.2.5",
     "serve": "14.2.0",
-    "standard-version": "9.5.0",
     "stylelint": "16.2.1",
     "stylelint-config-standard": "36.0.0"
   },
