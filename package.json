@@ -23,7 +23,7 @@
     "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace docs/assets/css/talis.css --use autoprefixer --map",
     "format:stylelint": "stylelint scss/ --fix",
-    "prepare": "husky install",
+    "prepare": "husky",
     "publish:githubpages": "gh-pages --dist docs",
     "release": "standard-version",
     "server": "serve docs --listen 3000",
