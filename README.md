@@ -7,10 +7,14 @@ There are currently two versions of this theme:
 2. The v4 version, this is on the `v4` branch and has the new Talis branding, it is not currently in use anywhere.
 
 ## Usage
-1. Create a [Personal Access Token](https://github.com/settings/tokens/) granting the `write:packages` scope. `write` also allows `read`…
-2. Add `@talis:registry=https://npm.pkg.github.com` to your project's `.npmrc` file.
 
-3. Pull in the theme. Either:
+1. Install from npm:
+
+   ```bash
+   npm install --save @technologyfromsage/bootstrap-theme
+   ```
+
+2. Pull in the theme. Either:
   - Specify the variable overrides, import the rest of Bootstrap, and then include the theme partial
 
 ```scss
