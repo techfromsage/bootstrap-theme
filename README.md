@@ -81,9 +81,15 @@ $enable-shadows: false;
 @import "theme";
 ```
 
-Alternatively, you can temporarily use the following file which is hosted on GitHub pages:
+### Important note on using hosted CSS
+
+This project is hosted on GitHub pages, and is not considered a suitable production-hosting domain. We should not be relying upon it.
+
+However, for legacy reasons, we appear to have relied on this hosting arrangement to provide CSS URLs to other applications. Specifically, we have a commitment to maintain:
 
 https://techfromsage.github.io/bootstrap-theme/assets/css/talis.css
+
+We will work to remove this from our applications, but in the meantime we must not delete `scss/talis.scss`, which exists only to reproduce this hosted file arrangement.
 
 ## Contributing
 
@@ -135,14 +141,13 @@ The following npm scripts are available.
 
 | Script        | Description                                                                                              |
 | ------------- | -------------------------------------------------------------------------------------------------------- |
-| `docs`        | Builds the Eleventy-powered documentation site                                                           |
+| `build`       | Builds the Eleventy-powered documentation site                                                           |
 | `server`      | Starts a local server (<http://localhost:3000>) for development                                          |
 | `watch`       | Automatically recompiles CSS as it watches the `scss` directory for changes                              |
-| `css`         | Runs `css-compile` and `css-prefix`                                                                      |
+| `build:css`   | Runs `css-compile` and `css-prefix`                                                                      |
 | `css-compile` | Compiles source Sass into CSS                                                                            |
 | `lint`        | Runs [Prettier] over sources, and [Stylelint](https://stylelint.io) against source Sass for code quality |
 | `css-prefix`  | Runs [Autoprefixer](https://github.com/postcss/autoprefixer) on the compiled CSS                         |
-| `test`        | Runs `css-lint` and `css`, in sequential order                                                           |
 
 ### Stylelint
 
