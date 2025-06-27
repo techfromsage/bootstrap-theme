@@ -139,7 +139,7 @@ The following npm scripts are available.
 | `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
 | `css` | Runs `css-compile` and `css-prefix` |
 | `css-compile` | Compiles source Sass into CSS |
-| `css-lint` | Runs [Stylelint](https://stylelint.io) against source Sass for code quality |
+| `lint` | Runs [Prettier] over sources, and [Stylelint](https://stylelint.io) against source Sass for code quality |
 | `css-prefix` | Runs [Autoprefixer](https://github.com/postcss/autoprefixer) on the compiled CSS |
 | `test` | Runs `css-lint` and `css`, in sequential order |
 
