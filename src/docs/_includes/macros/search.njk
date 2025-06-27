@@ -1,29 +1,24 @@
 {% macro search( text = 'This is your alert text', data = { type: 'default'}) %}
-  <style>
+<style>
   .c-search-field input::-webkit-search-cancel-button,
-.c-search-field input::-webkit-search-decoration {
-  /* stylelint-disable-next-line property-no-vendor-prefix */
-  -webkit-appearance: none;
-}
+  .c-search-field input::-webkit-search-decoration {
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-appearance: none;
+  }
 
-.c-search-icon {
-  margin-left: -26px;
-  margin-bottom: -2px;
-}
+  .c-search-icon {
+    margin-left: -26px;
+    margin-bottom: -2px;
+  }
 
-[hidden] {
-  display: none !important;
-}
-
+  [hidden] {
+    display: none !important;
+  }
 </style>
 <div class="c-search-field">
-
-  <label class="form-label">
-    {{ text }}
-  </label>
+  <label class="form-label"> {{ text }} </label>
   <div class="d-flex">
-
-    <input class="form-control pe-5" type="search"/>
+    <input class="form-control pe-5" type="search" />
     <i class="far fa-search c-search-icon align-self-center js-search-icon"></i>
     <button
       type="button"
@@ -31,26 +26,27 @@
       hidden
     >
       <i class="fas fa-times-circle"></i>
-      <span class="visually-hidden">
-        Clear search
-      </span>
+      <span class="visually-hidden"> Clear search </span>
     </button>
   </div>
 </div>
 <script>
-  document.querySelector('.c-search-field [type="search"]').addEventListener('keyup', (event) => {
-    if (event.target.value.length > 0) {
-      toggleButton();
-      toggleIcon();
-    }
-  });
+  document
+    .querySelector('.c-search-field [type="search"]')
+    .addEventListener("keyup", (event) => {
+      if (event.target.value.length > 0) {
+        toggleButton()
+        toggleIcon()
+      }
+    })
 
   function toggleButton() {
-    document.querySelector('.js-search-clear').hidden = !document.querySelector('.js-search-clear').hidden;
+    document.querySelector(".js-search-clear").hidden =
+      !document.querySelector(".js-search-clear").hidden
   }
 
   function toggleIcon() {
-    document.querySelector('.js-search-icon').classList.toggle('d-none');
+    document.querySelector(".js-search-icon").classList.toggle("d-none")
   }
 </script>
 {% endmacro %}

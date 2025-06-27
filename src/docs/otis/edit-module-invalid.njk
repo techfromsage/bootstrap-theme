@@ -2,10 +2,13 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="{{ '/otis/page-layout' | url }}"><i class="far fa-arrow-alt-circle-left"></i> My Modules</a>
+        <a href="{{ '/otis/page-layout' | url }}"
+          ><i class="far fa-arrow-alt-circle-left"></i> My Modules</a
+        >
       </li>
       <li class="breadcrumb-item" aria-current="page">
-      <a href="{{ '/otis/module' | url }}">Encouraging deeper discussion</a></li>
+        <a href="{{ '/otis/module' | url }}">Encouraging deeper discussion</a>
+      </li>
       <li class="breadcrumb-item active" aria-current="page">Edit module</li>
     </ol>
   </nav>
@@ -351,20 +354,34 @@
     </header>
 
     <form>
-      <div tabindex="-1" role="group" id="error-summary" class="alert alert-danger error-summary" aria-labelledby="error-summary-heading">
+      <div
+        tabindex="-1"
+        role="group"
+        id="error-summary"
+        class="alert alert-danger error-summary"
+        aria-labelledby="error-summary-heading"
+      >
         <h2 class="h5" id="error-summary-heading">There's a problem</h2>
         <ul class="m-0">
           <li>
-            <a class="alert-link" href="#module-title">Title cannot exceed xxx characters</a>
+            <a class="alert-link" href="#module-title"
+              >Title cannot exceed xxx characters</a
+            >
           </li>
           <li>
-            <a class="alert-link" href="#module-code">Code must consist of alphanumeric characters</a>
+            <a class="alert-link" href="#module-code"
+              >Code must consist of alphanumeric characters</a
+            >
           </li>
           <li>
-            <a class="alert-link" href="#module-start">Start date cannot be in the past</a>
+            <a class="alert-link" href="#module-start"
+              >Start date cannot be in the past</a
+            >
           </li>
           <li>
-            <a class="alert-link" href="#module-end">End date cannot be earlier than the start date</a>
+            <a class="alert-link" href="#module-end"
+              >End date cannot be earlier than the start date</a
+            >
           </li>
         </ul>
       </div>
@@ -373,7 +390,12 @@
           >Title <span class="field-required">(Required)</span></label
         >
         <div class="col col-lg-6">
-          <input type="text" id="module-title" class="form-control" value="Encouraging deeper discussion"/>
+          <input
+            type="text"
+            id="module-title"
+            class="form-control"
+            value="Encouraging deeper discussion"
+          />
         </div>
         <span class="field-error">Title cannot exceed xxx characters</span>
       </div>
@@ -382,16 +404,28 @@
           >Code <span class="field-required">(Required)</span></label
         >
         <div class="col-6">
-          <input type="text" id="module-code" class="form-control" value="edd101!"/>
+          <input
+            type="text"
+            id="module-code"
+            class="form-control"
+            value="edd101!"
+          />
         </div>
-        <span class="field-error">Code must consist of alphanumeric characters</span>
+        <span class="field-error"
+          >Code must consist of alphanumeric characters</span
+        >
       </div>
       <div class="form-group">
         <label for="module-start" class="form-label"
           >Start date <span class="field-required">(Required)</span></label
         >
         <div class="col-6 col-lg-3">
-          <input type="date" id="module-start" class="form-control" value="2021-10-01"/>
+          <input
+            type="date"
+            id="module-start"
+            class="form-control"
+            value="2021-10-01"
+          />
         </div>
         <span class="field-error">Start date cannot be in the past</span>
       </div>
@@ -400,14 +434,30 @@
           >End date <span class="field-required">(Required)</span></label
         >
         <div class="col-6 col-lg-3">
-          <input type="date" id="module-end" class="form-control" value="2022-02-01" />
+          <input
+            type="date"
+            id="module-end"
+            class="form-control"
+            value="2022-02-01"
+          />
         </div>
-        <span class="field-error">End date cannot be earlier than the start date</span>
+        <span class="field-error"
+          >End date cannot be earlier than the start date</span
+        >
       </div>
       <div class="form-group">
-        <label for="module-numbers" class="form-label">Expected student numbers</label>
+        <label for="module-numbers" class="form-label"
+          >Expected student numbers</label
+        >
         <div class="col-3 col-lg-1">
-          <input type="text" id="module-numbers" class="form-control"  inputmode="numeric" pattern="[0-9]*" value="12"/>
+          <input
+            type="text"
+            id="module-numbers"
+            class="form-control"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            value="12"
+          />
         </div>
       </div>
       <div class="form-controls">

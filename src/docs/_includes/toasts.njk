@@ -9,35 +9,27 @@
   aria-atomic="true"
 >
   <div
-    class="
-      toast-container
-      position-absolute
-      bottom-0
-      start-50
-      translate-middle-x
-    "
+    class="toast-container position-absolute bottom-0 start-50 translate-middle-x"
   >
     <div class="toast align-items-center" data-bs-autohide="false">
       <div class="d-flex">
         <i class="fal fa-spinner-third fa-spin fa-fw"></i>
         <div class="toast-body">Hello, world! This is a toast message.</div>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="toast"
-        >Close</button>
+        <button type="button" class="btn-close" data-bs-dismiss="toast">
+          Close
+        </button>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  var toastElList = [].slice.call(document.querySelectorAll(".toast"));
+  var toastElList = [].slice.call(document.querySelectorAll(".toast"))
   var toastList = toastElList.map(function (toastEl) {
-    return new bootstrap.Toast(toastEl);
-  });
+    return new bootstrap.Toast(toastEl)
+  })
 
   document.querySelector(".js-btn-toast").addEventListener("click", () => {
-    toastList[0].show();
-  });
+    toastList[0].show()
+  })
 </script>

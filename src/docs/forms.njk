@@ -27,9 +27,10 @@ title: Forms
 
       <fieldset>
         <legend>Your details</legend>
-          <div class="help-block">
-              Here is some instructional text about completing this input successfully.
-          </div>
+        <div class="help-block">
+          Here is some instructional text about completing this input
+          successfully.
+        </div>
         <div class="row">
           <div class="form-group field col-6">
             <label class="form-label" for="name">Name</label>
@@ -44,122 +45,154 @@ title: Forms
         </div>
 
         <div class="row">
-                <div class="form-group field col-6">
-                  <label class="form-label" for="email">
-                    <span class="field-label"
-                      >Email <span class="field-required">(Required)</span></span
-                    >
-                    <span class="field-hint">A valid email address</span>
-                  </label>
-                  <input
-                    class="form-control mb-2"
-                    type="email"
-                    name="email"
-                    id="email"
-                    autocomplete="email"
-                    aria-required="true"
-                  />
-                </div>
+          <div class="form-group field col-6">
+            <label class="form-label" for="email">
+              <span class="field-label">
+                Email <span class="field-required">(Required)</span>
+              </span>
+              <span class="field-hint">A valid email address</span>
+            </label>
+            <input
+              class="form-control mb-2"
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              aria-required="true"
+            />
+          </div>
         </div>
+
         <div class="row">
+          <div class="form-group field col-6">
+            <label class="form-label" for="password">
+              <span class="field-label"
+                >Password <span class="field-required">(Required)</span></span
+              >
+              <span class="field-hint">Longer than 8 characters</span>
+            </label>
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              id="password"
+              autocomplete="current-password"
+              aria-required="true"
+              min-length="8"
+            />
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="form-group field">
+            <label class="form-label" for="otp">
+              <span class="field-label">
+                One-time code <span class="field-required">(Required)</span>
+              </span>
+            </label>
+            <div class="col-2">
+              <input
+                class="form-control"
+                type="otp"
+                name="otp"
+                id="otp"
+                autocomplete="one-time-password"
+                aria-required="true"
+                min-length="6"
+                max-length="6"
+              />
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Date ranges</legend>
+
+        <div class="row">
+          <div class="col-auto">
+            <p class="help-block my-2">
+              I am a help block. Here is some instructional text about
+              completing this input successfully.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group field">
+              <label class="form-label" for="date--start">
+                <span class="field-label">
+                  Start date <span class="field-required">(Required)</span>
+                </span>
+              </label>
+
+              <div class="input-group">
+                <input
+                  id="date--start"
+                  required
+                  type="text"
+                  class="form-control"
+                  placeholder="YYYY-MM-DD"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon-start"
+                />
+                <button
+                  class="btn btn-outline-primary"
+                  type="button"
+                  id="button-addon-start"
+                >
+                  <div class="visually-hidden">Open date picker</div>
+                  <i class="far fa-calendar-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group field">
+              <label class="form-label" for="date--end">
+                <span class="field-label"
+                  >End date <span class="field-required">(Required)</span></span
+                >
+              </label>
+
+              <div class="input-group">
+                <input
+                  id="date--end"
+                  type="text"
+                  required
+                  class="form-control"
+                  placeholder="YYYY-MM-DD"
+                  aria-describedby="button-addon-end"
+                />
+                <button
+                  class="btn btn-outline-primary"
+                  type="button"
+                  id="button-addon-end"
+                >
+                  <div class="visually-hidden">Open date picker</div>
+                  <i class="far fa-calendar-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="row">
         <div class="form-group field col-6">
-          <label class="form-label" for="password">
-            <span class="field-label">Password <span class="field-required">(Required)</span></span>
-            <span class="field-hint">Longer than 8 characters</span>
+          <label class="form-label" for="custom-select-again">
+            <span class="field-label">Options</span>
           </label>
-          <input
-            class="form-control"
-            type="password"
-            name="password"
-            id="password"
-            autocomplete="current-password"
-            aria-required="true"
-            min-length="8"
-          />
-        </div>
-        </div>
-
-      <div class="row">
-        <div class="form-group field">
-          <label class="form-label" for="otp">
-            <span class="field-label">One-time code <span class="field-required">(Required)</span></span>
-          </label>
-          <div class="col-2">
-          <input
-            class="form-control"
-            type="otp"
-            name="otp"
-            id="otp"
-            autocomplete="one-time-password"
-            aria-required="true"
-            min-length="6"
-            max-length="6"
-          />
+          <select class="form-select" id="custom-select-again">
+            <option>1 (One)</option>
+            <option>2 (Two)</option>
+            <option>3 (Three)</option>
+            <option>4 (Four)</option>
+            <option>5 (Five)</option>
+          </select>
         </div>
       </div>
-
-    </fieldset>
-
-    <fieldset>
-      <legend>Date ranges</legend>
-
-      <div class="row">
-
-        <div class="col-auto">
-        <p class="help-block my-2">
-          I am a help block. Here is some instructional text about completing this input successfully.
-        </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="form-group field">
-            <label class="form-label" for="date--start">
-              <span class="field-label">Start date <span class="field-required">(Required)</span></span>
-            </label>
-
-            <div class="input-group">
-              <input id="date--start" required type="text" class="form-control" placeholder="YYYY-MM-DD" aria-label="Recipient's username" aria-describedby="button-addon-start">
-              <button class="btn btn-outline-primary" type="button" id="button-addon-start">
-                <div class="visually-hidden">Open date picker</div>
-                <i class="far fa-calendar-alt"></i></button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="form-group field">
-
-            <label class="form-label" for="date--end">
-              <span class="field-label">End date <span class="field-required">(Required)</span></span>
-            </label>
-
-            <div class="input-group">
-              <input id="date--end" type="text" required class="form-control" placeholder="YYYY-MM-DD" aria-describedby="button-addon-end">
-              <button class="btn btn-outline-primary" type="button" id="button-addon-end">
-                <div class="visually-hidden">Open date picker</div>
-                <i class="far fa-calendar-alt"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </fieldset>
-
-    <div class="row">
-      <div class="form-group field col-6">
-        <label class="form-label" for="custom-select-again">
-          <span class="field-label">Options</span>
-        </label>
-        <select class="form-select" id="custom-select-again">
-          <option>1 (One)</option>
-          <option>2 (Two)</option>
-          <option>3 (Three)</option>
-          <option>4 (Four)</option>
-          <option>5 (Five)</option>
-        </select>
-      </div>
-</div>
 
       <div class="form-group field">
         <label class="form-label" for="message">
@@ -226,15 +259,15 @@ title: Forms
         >
       </div>
 
-<div class="row">
-      <div class="form-group col-6">
-        <label class="form-label" for="exampleInputFile-jazzy">
-          <span class="field-label">File input</span>
-          <span class="field-hint">Pick a file… any file…</span>
-        </label>
-        <input class="form-control" type="file" id="exampleInputFile-jazzy" />
+      <div class="row">
+        <div class="form-group col-6">
+          <label class="form-label" for="exampleInputFile-jazzy">
+            <span class="field-label">File input</span>
+            <span class="field-hint">Pick a file… any file…</span>
+          </label>
+          <input class="form-control" type="file" id="exampleInputFile-jazzy" />
+        </div>
       </div>
-</div>
       <div class="controls mb-5">
         <button type="submit" class="btn btn-primary">Login</button>
         <button type="reset" class="btn btn-default">Clear</button>
@@ -249,17 +282,17 @@ title: Forms
       <li>Labels always visible</li>
       <li>A new row for each question</li>
       <li>
-          Only use the character count component when there is a good reason for limiting the number of characters users can enter.
-          When using this component:
+        Only use the character count component when there is a good reason for
+        limiting the number of characters users can enter. When using this
+        component:
         <ul>
           <li>
             Display how many characters the user has remaining as they type.
           </li>
+          <li>Display the remaining characters below the text area.</li>
           <li>
-            Display the remaining characters below the text area.
-          </li>
-          <li>
-            Allow the user to enter more characters than the maximum limit. The form validation will handle any excess.
+            Allow the user to enter more characters than the maximum limit. The
+            form validation will handle any excess.
           </li>
         </ul>
       </li>

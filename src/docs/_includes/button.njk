@@ -2,40 +2,28 @@
 
 <h2>Buttons</h2>
 <h3>Normal</h3>
-  {{ button("Normal button", { type: 'default' }) }}
-  {{ button("Primary button", { type: 'primary' }) }}
-  {{ button("Success button", { type: 'success' }) }}
-  {{ button("Warning button", { type: 'warning' }) }}
-  {{ button("Info button", { type: 'info' }) }}
-  {{ button("Danger button", { type: 'danger' }) }}
-  {{ button("Link button", { type: 'link' }) }}
+{{ button("Normal button", { type: 'default' }) }}
+{{ button("Primary button", { type: 'primary' }) }}
+{{ button("Success button", { type: 'success' }) }}
+{{ button("Warning button", { type: 'warning' }) }}
+{{ button("Info button", { type: 'info' }) }}
+{{ button("Danger button", { type: 'danger' }) }}
+{{ button("Link button", { type: 'link' }) }}
 
-  <h3>Large</h3>
-  {{ button("Normal button", { type: 'default', size: 'lg' }) }}
-  <button type="button" class="btn btn-lg btn-primary">
-    Primary button
-  </button>
-  <button type="button" class="btn btn-lg btn-success">
-    Success button
-  </button>
-  <button type="button" class="btn btn-lg btn-warning">
-    Warning button
-  </button>
-  <button type="button" class="btn btn-lg btn-info">
-    Info button
-  </button>
-  <button type="button" class="btn btn-lg btn-danger">
-    Danger button
-  </button>
-  <button type="button" class="btn btn-lg btn-link">
-    Link button
-  </button>
-  <button type="button" class="btn btn-default btn-lg" disabled>
-    Default inactive button
-  </button>
-  <button type="button" class="btn btn-primary btn-lg" disabled>
-    Default inactive button
-  </button>
+<h3>Large</h3>
+{{ button("Normal button", { type: 'default', size: 'lg' }) }}
+<button type="button" class="btn btn-lg btn-primary">Primary button</button>
+<button type="button" class="btn btn-lg btn-success">Success button</button>
+<button type="button" class="btn btn-lg btn-warning">Warning button</button>
+<button type="button" class="btn btn-lg btn-info">Info button</button>
+<button type="button" class="btn btn-lg btn-danger">Danger button</button>
+<button type="button" class="btn btn-lg btn-link">Link button</button>
+<button type="button" class="btn btn-default btn-lg" disabled>
+  Default inactive button
+</button>
+<button type="button" class="btn btn-primary btn-lg" disabled>
+  Default inactive button
+</button>
 
 <div class="btn-group">
   <button
@@ -72,4 +60,4 @@
 <button class="btn btn-xs btn-primary">XS button</button>
 <button class="btn btn-xs btn-primary" disabled>XS button</button>
 <button class="btn btn-xs btn-default" disabled>XS button</button>
-<hr>
+<hr />

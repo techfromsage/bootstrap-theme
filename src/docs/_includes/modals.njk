@@ -1,14 +1,31 @@
 <h2>Modals</h2>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">
+<button
+  type="button"
+  class="btn btn-primary btn-lg"
+  data-bs-toggle="modal"
+  data-bs-target="#myModal"
+>
   Launch demo modal
 </button>
 
-<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#confirmation-modal">
+<button
+  type="button"
+  class="btn btn-primary btn-lg"
+  data-bs-toggle="modal"
+  data-bs-target="#confirmation-modal"
+>
   Launch confirmation modal
 </button>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+<div
+  class="modal fade"
+  id="myModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="modal-label"
+  aria-hidden="true"
+>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -16,19 +33,16 @@
       </div>
       <div class="modal-body">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          quis dolore voluptas et, sint, impedit amet quos, sequi minima
-          commodi odio accusantium excepturi ratione ullam qui libero
-          error laborum quam!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem quis
+          dolore voluptas et, sint, impedit amet quos, sequi minima commodi odio
+          accusantium excepturi ratione ullam qui libero error laborum quam!
         </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-bs-dismiss="modal">
           Close
         </button>
-        <button type="button" class="btn btn-primary">
-          Save changes
-        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
     <!-- /.modal-content -->
@@ -36,29 +50,42 @@
   <!-- /.modal-dialog -->
 </div>
 
-<div class="modal o-confirmation-modal fade" id="confirmation-modal" tabindex="-1" role="dialog" aria-labelledby="confirmation-label" aria-hidden="true">
+<div
+  class="modal o-confirmation-modal fade"
+  id="confirmation-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="confirmation-label"
+  aria-hidden="true"
+>
   <div class="modal-dialog">
     <div class="modal-content">
-      <img src="{{ '/assets/img/discard.svg' | url }}" class="modal-image" alt="" width="149" height="158" />
+      <img
+        src="{{ '/assets/img/discard.svg' | url }}"
+        class="modal-image"
+        alt=""
+        width="149"
+        height="158"
+      />
       <div class="modal-header">
         <h2 class="modal-title" id="confirmation-label">Are you sure?</h2>
       </div>
       <div class="modal-body">
-        <p>
-          You will lose your unsaved data.
-        </p>
+        <p>You will lose your unsaved data.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal">
+        <button
+          type="button"
+          class="btn btn-lg btn-danger"
+          data-bs-dismiss="modal"
+        >
           Yes
         </button>
-        <button type="button" class="btn btn-lg btn-default">
-          Cancel
-        </button>
+        <button type="button" class="btn btn-lg btn-default">Cancel</button>
       </div>
     </div>
     <!-- /.modal-content -->
   </div>
   <!-- /.modal-dialog -->
 </div>
-<hr>
+<hr />

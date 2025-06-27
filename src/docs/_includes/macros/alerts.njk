@@ -1,7 +1,5 @@
 {% macro alert( text = 'This is your alert text', data = { type: 'default'}) %}
-  <div
-    class="alert alert-{{ data.type }}"
-  >
+  <div class="alert alert-{{ data.type }}">
     <span>{{ text }}</span>
   </div>
 {% endmacro %}

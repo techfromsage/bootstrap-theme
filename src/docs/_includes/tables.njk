@@ -2,7 +2,9 @@
 
 <h2>Tables</h2>
 <table class="table table-striped">
-  <caption class="visually-hidden">An example caption</caption>
+  <caption class="visually-hidden">
+    An example caption
+  </caption>
   <thead>
     <tr>
       <th>#</th>
@@ -34,9 +36,7 @@
               <a class="dropdown-item" href="#">Upload document</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"
-                >Edit &amp; resubmit</a
-              >
+              <a class="dropdown-item" href="#">Edit &amp; resubmit</a>
             </li>
           </ul>
         </div>
@@ -90,9 +90,7 @@
               <a class="dropdown-item" href="#">Upload document</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"
-                >Edit &amp; resubmit</a
-              >
+              <a class="dropdown-item" href="#">Edit &amp; resubmit</a>
             </li>
           </ul>
         </div>
@@ -140,12 +138,13 @@
       </tr>
     </thead>
     <tbody class="table-group-divider">
-      {{ tableRow("1", { label: 'Alpha', student: 'One', subject: 'Mathematics' }) }}
-      {{ tableRow("2", { label: 'Beta', student: 'Two', subject: 'Mathematics' }) }}
-      {{ tableRow("3", { label: 'Delta', student: 'Three', subject: 'Mathematics' }) }}
-      {{ tableRow("4", { label: 'Epsilon', student: 'Four', subject: 'Mathematics' }) }}
-      {{ tableRow("5", { label: 'Gamma', student: 'Five', subject: 'Mathematics' }) }}
+      {{ tableRow("1", { label: 'Alpha', student: 'One', subject: 'Mathematics'
+      }) }} {{ tableRow("2", { label: 'Beta', student: 'Two', subject:
+      'Mathematics' }) }} {{ tableRow("3", { label: 'Delta', student: 'Three',
+      subject: 'Mathematics' }) }} {{ tableRow("4", { label: 'Epsilon', student:
+      'Four', subject: 'Mathematics' }) }} {{ tableRow("5", { label: 'Gamma',
+      student: 'Five', subject: 'Mathematics' }) }}
     </tbody>
   </table>
 </div>
-<hr>
+<hr />

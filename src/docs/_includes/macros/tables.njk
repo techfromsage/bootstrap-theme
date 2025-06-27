@@ -1,31 +1,29 @@
 {% macro tableRow( id = '1', data = { label: 'default'}) %}
-    <tr>
-      <td>{{ id }}</td>
-      <td>
-        <span class="label label-default">{{ data.label }}</span>
-      </td>
-      <td>{{ data.subject }}</td>
-      <td>{{ data.student }}</td>
-      <td>
-        <div class="text-end">
-          <button data-bs-toggle="dropdown" class="btn btn-lg btn-default">
-            <span class="visually-hidden">Actions</span>
-            <i class="far fa-ellipsis-v"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">View details</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Upload document</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                >Edit & resubmit</a
-              >
-            </li>
-          </ul>
-        </div>
-      </td>
-    </tr>
+<tr>
+  <td>{{ id }}</td>
+  <td>
+    <span class="label label-default">{{ data.label }}</span>
+  </td>
+  <td>{{ data.subject }}</td>
+  <td>{{ data.student }}</td>
+  <td>
+    <div class="text-end">
+      <button data-bs-toggle="dropdown" class="btn btn-lg btn-default">
+        <span class="visually-hidden">Actions</span>
+        <i class="far fa-ellipsis-v"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="dropdown-item" href="#">View details</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#">Upload document</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#">Edit & resubmit</a>
+        </li>
+      </ul>
+    </div>
+  </td>
+</tr>
 {% endmacro %}

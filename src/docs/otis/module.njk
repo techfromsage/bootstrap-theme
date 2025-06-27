@@ -37,14 +37,14 @@ title: Single Module
           Edit module
         </a>
       </li>
-      <li class="dropdown-divider"></li>
+      <li><hr class="dropdown-divider" /></li>
       <li>
         <a class="dropdown-item" href="#"> Copy playlist link </a>
       </li>
       <li>
         <a class="dropdown-item" href="#"> Embed playlist </a>
       </li>
-      <li class="dropdown-divider"></li>
+      <li><hr class="dropdown-divider" /></li>
       <li>
         <a class="dropdown-item" href="#"> Download annotations </a>
       </li>
@@ -84,11 +84,11 @@ title: Single Module
     am5.ready(function () {
       // Create root element
       // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-      var root = am5.Root.new("chartdiv");
+      var root = am5.Root.new("chartdiv")
 
       // Set themes
       // https://www.amcharts.com/docs/v5/concepts/themes/
-      root.setThemes([am5themes_Animated.new(root)]);
+      root.setThemes([am5themes_Animated.new(root)])
 
       // Create chart
       // https://www.amcharts.com/docs/v5/charts/xy-chart/
@@ -99,33 +99,33 @@ title: Single Module
           wheelX: "panX",
           wheelY: "zoomX",
         })
-      );
+      )
 
       // Add cursor
       // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
       var cursor = chart.set(
         "cursor",
         am5xy.XYCursor.new(root, { behavior: "none" })
-      );
-      cursor.lineY.set("visible", false);
+      )
+      cursor.lineY.set("visible", false)
 
       // Generate random data
-      var date = new Date();
-      date.setHours(0, 0, 0, 0);
-      var value = 100;
+      var date = new Date()
+      date.setHours(0, 0, 0, 0)
+      var value = 100
 
       function generateData() {
-        value = Math.round(Math.random() * 10 - 5 + value);
-        am5.time.add(date, "day", 1);
-        return { date: date.getTime(), value: value };
+        value = Math.round(Math.random() * 10 - 5 + value)
+        am5.time.add(date, "day", 1)
+        return { date: date.getTime(), value: value }
       }
 
       function generateDatas(count) {
-        var data = [];
+        var data = []
         for (var i = 0; i < count; ++i) {
-          data.push(generateData());
+          data.push(generateData())
         }
-        return data;
+        return data
       }
 
       // Create axes
@@ -140,13 +140,13 @@ title: Single Module
           renderer: am5xy.AxisRendererX.new(root, {}),
           tooltip: am5.Tooltip.new(root, {}),
         })
-      );
+      )
 
       var yAxis = chart.yAxes.push(
         am5xy.ValueAxis.new(root, {
           renderer: am5xy.AxisRendererY.new(root, {}),
         })
-      );
+      )
 
       // Add series
       // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
@@ -159,24 +159,24 @@ title: Single Module
           valueXField: "date",
           tooltip: am5.Tooltip.new(root, { labelText: "{valueY}" }),
         })
-      );
+      )
 
       // Add scrollbar
       // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
       chart.set(
         "scrollbarX",
         am5.Scrollbar.new(root, { orientation: "horizontal" })
-      );
+      )
 
       // Set data
-      var data = generateDatas(1200);
-      series.data.setAll(data);
+      var data = generateDatas(1200)
+      series.data.setAll(data)
 
       // Make stuff animate on load
       // https://www.amcharts.com/docs/v5/concepts/animations/
-      series.appear(1000);
-      chart.appear(1000, 100);
-    }); // end am5.ready()
+      series.appear(1000)
+      chart.appear(1000, 100)
+    }) // end am5.ready()
   </script>
 
   <div id="chartdiv"></div>
@@ -222,23 +222,18 @@ title: Single Module
               name="radio"
             />
             <label
-              class="
-                form-check-label form-label
-                d-flex
-                align-items-center
-              "
+              class="form-check-label form-label d-flex align-items-center"
               for="radio-checked-again"
             >
-                <img
+              <img
                 class="mx-3"
-                  src="https://via.placeholder.com/48x68"
-                  alt=""
-                  width="50"
-                  height="68"
-                  style="max-width: 50px; height: auto;"
-                />
-              <div  style="max-width: 25vw;">
-
+                src="https://via.placeholder.com/48x68"
+                alt=""
+                width="50"
+                height="68"
+                style="max-width: 50px; height: auto"
+              />
+              <div style="max-width: 25vw">
                 <a href="{{ '/otis/module' | url }}"
                   >The Impact of Digitalization on Literacy - Digital Immigrants
                   vs Digital Natives</a
@@ -284,9 +279,7 @@ title: Single Module
                 Share resource
               </button>
             </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
+            <li><hr class="dropdown-divider" /></li>
             <li>
               <button class="dropdown-item" type="button">
                 Remove resource
