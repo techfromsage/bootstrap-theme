@@ -65,6 +65,9 @@ jobs:
           command: npm ci
       - save_cache_node_modules
       - run:
+          name: "Lint"
+          command: npm run lint
+      - run:
           name: "Test"
           command: npm run test
       - run:
@@ -76,7 +79,6 @@ jobs:
       - run:
           name: Dry-run a semantic-release to confirm no issues upon merge
           command: npx semantic-release --dry-run
-
 
   publish_release:
     <<: *executor_node

@@ -1,6 +1,7 @@
 # Bootstrap v5 Theme
 
 ## Versions
+
 There are currently two versions of this theme:
 
 1. The v3 version, this is on the `main` branch and has the old Talis branding, this is the version used by the apps.
@@ -15,7 +16,8 @@ There are currently two versions of this theme:
    ```
 
 2. Pull in the theme. Either:
-  - Specify the variable overrides, import the rest of Bootstrap, and then include the theme partial
+
+- Specify the variable overrides, import the rest of Bootstrap, and then include the theme partial
 
 ```scss
 @import "variables"; // Talis customisations are here
@@ -24,8 +26,8 @@ There are currently two versions of this theme:
 ```
 
 Or
-- Place variable overrides first, then import the styles you need.
 
+- Place variable overrides first, then import the styles you need.
 
 ```scss
 // Toggle global options – these need to be set ahead of the functions
@@ -93,7 +95,6 @@ https://techfromsage.github.io/bootstrap-theme/assets/css/talis.css
    git clone git@github.com:techfromsage/bootstrap-theme.git
    ```
 
-
 1. Change into the repository directory:
 
    ```bash
@@ -132,17 +133,16 @@ npm run build
 
 The following npm scripts are available.
 
-| Script | Description |
-| --- | --- |
-| `docs` | Builds the Eleventy-powered documentation site
-| `server` | Starts a local server (<http://localhost:3000>) for development |
-| `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
-| `css` | Runs `css-compile` and `css-prefix` |
-| `css-compile` | Compiles source Sass into CSS |
-| `css-lint` | Runs [Stylelint](https://stylelint.io) against source Sass for code quality |
-| `css-prefix` | Runs [Autoprefixer](https://github.com/postcss/autoprefixer) on the compiled CSS |
-| `test` | Runs `css-lint` and `css`, in sequential order |
-
+| Script        | Description                                                                                              |
+| ------------- | -------------------------------------------------------------------------------------------------------- |
+| `docs`        | Builds the Eleventy-powered documentation site                                                           |
+| `server`      | Starts a local server (<http://localhost:3000>) for development                                          |
+| `watch`       | Automatically recompiles CSS as it watches the `scss` directory for changes                              |
+| `css`         | Runs `css-compile` and `css-prefix`                                                                      |
+| `css-compile` | Compiles source Sass into CSS                                                                            |
+| `lint`        | Runs [Prettier] over sources, and [Stylelint](https://stylelint.io) against source Sass for code quality |
+| `css-prefix`  | Runs [Autoprefixer](https://github.com/postcss/autoprefixer) on the compiled CSS                         |
+| `test`        | Runs `css-lint` and `css`, in sequential order                                                           |
 
 ### Stylelint
 
