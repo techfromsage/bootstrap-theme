@@ -141,14 +141,13 @@ The following npm scripts are available.
 
 | Script        | Description                                                                                              |
 | ------------- | -------------------------------------------------------------------------------------------------------- |
-| `docs`        | Builds the Eleventy-powered documentation site                                                           |
+| `build`       | Builds the Eleventy-powered documentation site                                                           |
 | `server`      | Starts a local server (<http://localhost:3000>) for development                                          |
 | `watch`       | Automatically recompiles CSS as it watches the `scss` directory for changes                              |
 | `build:css`   | Runs `css-compile` and `css-prefix`                                                                      |
 | `css-compile` | Compiles source Sass into CSS                                                                            |
 | `lint`        | Runs [Prettier] over sources, and [Stylelint](https://stylelint.io) against source Sass for code quality |
 | `css-prefix`  | Runs [Autoprefixer](https://github.com/postcss/autoprefixer) on the compiled CSS                         |
-| `test`        | Runs `css-lint` and `css`, in sequential order                                                           |
 
 ### Stylelint
 

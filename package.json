@@ -31,7 +31,6 @@
     "release": "standard-version",
     "server": "serve docs --listen 3000",
     "start": "npm-run-all --parallel build:css watch:*",
-    "test": "npm-run-all css",
     "watch": "nodemon -e html,scss -x \"npm run build:css\"",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run css-compile -- --watch"
