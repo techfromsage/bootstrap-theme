@@ -115,7 +115,9 @@
 .btn-primary {
   &:focus {
     border-color: $white;
-    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $primary;
+    box-shadow:
+      0 0 0 $btn-focus-width $white,
+      0 0 0 2px $primary;
   }
 
   &:disabled,
@@ -126,10 +128,14 @@
 
   &:active {
     background-color: #004b50;
-    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px #004b50;
+    box-shadow:
+      0 0 0 $btn-focus-width $white,
+      0 0 0 2px #004b50;
 
     &:focus {
-      box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px #004b50;
+      box-shadow:
+        0 0 0 $btn-focus-width $white,
+        0 0 0 2px #004b50;
     }
   }
 }
@@ -139,10 +145,10 @@
     transparent,
     $black,
     $black,
-    rgba(0,0,0,0.1),
+    rgba(0, 0, 0, 0.1),
     $black,
     $black,
-    rgba(0,0,0,0.1),
+    rgba(0, 0, 0, 0.1),
     $black,
     $black,
     $gray-700,
@@ -152,11 +158,15 @@
 
   &:focus {
     border-color: $black;
-    box-shadow: 0 0 0 $btn-focus-width $black, 0 0 0 2px transparent;
+    box-shadow:
+      0 0 0 $btn-focus-width $black,
+      0 0 0 2px transparent;
   }
 
   &:active:focus {
-    box-shadow: 0 0 0 $btn-focus-width $black, 0 0 0 2px transparent;
+    box-shadow:
+      0 0 0 $btn-focus-width $black,
+      0 0 0 2px transparent;
   }
 }
 
@@ -178,11 +188,15 @@
 
   &:focus {
     border-color: $black;
-    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $black;
+    box-shadow:
+      0 0 0 $btn-focus-width $white,
+      0 0 0 2px $black;
   }
 
   &:active:focus {
-    box-shadow: 0 0 0 $btn-focus-width $white, 0 0 0 2px $black;
+    box-shadow:
+      0 0 0 $btn-focus-width $white,
+      0 0 0 2px $black;
   }
 }
 
@@ -192,12 +206,7 @@
 }
 
 .btn-xs {
-  @include button-size(
-    .15385em,
-    .30769em,
-    1em,
-    3px
-  );
+  @include button-size(0.15385em, 0.30769em, 1em, 3px);
 
   line-height: 1.0769230769;
   text-transform: uppercase;

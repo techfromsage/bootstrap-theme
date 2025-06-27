@@ -5,7 +5,7 @@ label {
 }
 
 legend {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   font-size: 1.125rem;
   font-weight: 300;
   color: $black;
@@ -83,8 +83,8 @@ legend {
 .help-block {
   display: block;
   padding: math.div($spacer, 4) $spacer;
-  margin-top: .3125rem;
-  margin-bottom: .625rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.625rem;
   margin-bottom: math.div($spacer, 2);
   font-style: italic;
   color: $black;
@@ -101,7 +101,6 @@ legend {
 .form-control.is-valid {
   border-color: $input-border-color;
 }
-
 
 .was-validated .form-control:invalid:focus,
 .form-control.is-invalid:focus,
@@ -131,10 +130,12 @@ legend {
 
 .form-switch .form-check-input:focus {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
-  box-shadow: 0 0 0 2px $white, 0 0 0 3px $primary;
+  box-shadow:
+    0 0 0 2px $white,
+    0 0 0 3px $primary;
 }
 
 .form-switch .form-check-input:checked {
   background-color: $primary;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e")
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
 }

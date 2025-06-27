@@ -80,7 +80,6 @@ jobs:
           name: Dry-run a semantic-release to confirm no issues upon merge
           command: npx semantic-release --dry-run
 
-
   publish_release:
     <<: *executor_node
     steps:

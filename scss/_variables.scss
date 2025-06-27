@@ -42,14 +42,15 @@ $dark: $gray-900;
 $body-color: $gray-700;
 $body-bg: #fff;
 
-$font-family-sans-serif: "Open Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-size-base: .8125rem;
+$font-family-sans-serif:
+  "Open Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji";
+$font-size-base: 0.8125rem;
 $font-size-lg: $font-size-base * 1.25;
 
 $line-height-base: 1.6;
 
-$paragraph-margin-bottom: .625rem;
+$paragraph-margin-bottom: 0.625rem;
 
 $h1-font-size: 13px * 2.3076923077;
 $h2-font-size: 13px * 2.3076923077;
@@ -69,10 +70,10 @@ $border-widths: (
   5: 5px,
 );
 
-$border-radius: .1875rem;
-$border-radius-lg: .3125rem;
+$border-radius: 0.1875rem;
+$border-radius-lg: 0.3125rem;
 
-$spacer: .9375rem;
+$spacer: 0.9375rem;
 
 $nav-link-font-weight: 600;
 $nav-link-hover-color: $accent;
@@ -98,17 +99,17 @@ $alert-link-font-weight: 400;
 $badge-font-size: 1em;
 $badge-font-weight: 600;
 $badge-color: $black;
-$badge-padding-y: .1538461538em;
-$badge-padding-x: .3076923077em;
-$badge-border-radius: .2307692308em;
+$badge-padding-y: 0.1538461538em;
+$badge-padding-x: 0.3076923077em;
+$badge-border-radius: 0.2307692308em;
 
-$breadcrumb-padding-y: .5rem;
+$breadcrumb-padding-y: 0.5rem;
 $breadcrumb-margin-bottom: 1.25rem;
 $breadcrumb-divider-color: $gray-700;
 $breadcrumb-active-color: $gray-700;
 
 $dropdown-divider-bg: $gray-400;
-$dropdown-divider-margin-y: .5625rem;
+$dropdown-divider-margin-y: 0.5625rem;
 $dropdown-link-color: $primary;
 $dropdown-link-hover-color: $accent;
 $dropdown-link-disabled-color: $gray-700;
@@ -121,7 +122,7 @@ $input-btn-focus-width: 1px;
 $input-btn-focus-box-shadow: 0 0 0 1px currentcolor;
 $btn-font-weight: 600;
 $btn-border-width: 1px;
-$btn-transition: background-color 1s cubic-bezier(.19, 1, .22, 1);
+$btn-transition: background-color 1s cubic-bezier(0.19, 1, 0.22, 1);
 $btn-disabled-opacity: 1;
 $btn-box-shadow: 0;
 $btn-active-box-shadow: 0;
@@ -135,19 +136,19 @@ $btn-padding-x-lg: 19px;
 $btn-font-size-lg: 1.09375rem;
 $btn-disabled-color: #69727f;
 
-$caret-width: .3em;
-$caret-vertical-align: $caret-width * .85;
-$caret-spacing: $caret-width * .85;
+$caret-width: 0.3em;
+$caret-vertical-align: $caret-width * 0.85;
+$caret-spacing: $caret-width * 0.85;
 
 $cradle-anim-dur: 607.5ms;
-$cradle-anim-fun: cubic-bezier(0, 0, .5, 1);
+$cradle-anim-fun: cubic-bezier(0, 0, 0.5, 1);
 $cradle-colour-anim-dur: $cradle-anim-dur * 4;
 $cradle-ball-colour-default: #107179;
 $cradle-ball-colour-teal: #6fdac9;
 $cradle-ball-colour-gold: #fbbf45;
 $cradle-ball-colour-pink: #fc4589;
 $cradle-ball-colour-blue: #59d1e4;
-$cradle-shadow-colour: rgba($black, .15);
+$cradle-shadow-colour: rgba($black, 0.15);
 
 $grid-breakpoints: (
   xs: 0,
@@ -155,7 +156,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1400px,
 );
 
 $input-color: $black;
@@ -173,7 +174,7 @@ $input-plaintext-color: $black;
 $input-btn-focus-color: $primary;
 
 $form-label-color: $black;
-$form-label-margin-bottom: .3846153846em;
+$form-label-margin-bottom: 0.3846153846em;
 
 $form-select-focus-border-color: $input-focus-border-color;
 $form-select-focus-width: $input-focus-width;
@@ -196,7 +197,7 @@ $form-feedback-invalid-color: $red;
 $link-hover-color: $accent;
 $link-hover-decoration: none;
 
-$modal-backdrop-opacity: .8;
+$modal-backdrop-opacity: 0.8;
 $modal-inner-padding: $spacer;
 $modal-md: 600px;
 $modal-header-border-color: $gray-200;
@@ -211,13 +212,13 @@ $navbar-dark-color: $white;
 $navbar-dark-hover-color: $white;
 $navbar-dark-active-color: $white;
 $navbar-padding-y: 0;
-$navbar-nav-link-padding-x: .75rem;
+$navbar-nav-link-padding-x: 0.75rem;
 $nav-link-height: 3.75rem;
 $navbar-brand-font-size: 1.09375rem;
 
-$pagination-border-radius: .3125rem;
+$pagination-border-radius: 0.3125rem;
 $pagination-border-color: $primary;
-$pagination-padding-y: .5rem;
+$pagination-padding-y: 0.5rem;
 $pagination-padding-x: 1rem;
 $pagination-transition: none;
 $pagination-hover-border-color: $primary;
@@ -230,9 +231,9 @@ $pagination-disabled-color: $btn-disabled-color;
 $pagination-disabled-bg: $white;
 $pagination-disabled-border-color: $primary;
 
-$progress-height: .5rem;
+$progress-height: 0.5rem;
 $progress-bg: transparent;
-$progress-border-radius: .5rem;
+$progress-border-radius: 0.5rem;
 
 $table-striped-bg: $gray-100;
 $table-cell-vertical-align: middle;
@@ -243,7 +244,7 @@ $table-cell-padding-x-lg: 1.25rem;
 $table-cell-padding-y-lg: 1.25rem;
 
 $toast-padding-x: 1.5em;
-$toast-padding-y: .75em;
+$toast-padding-y: 0.75em;
 $toast-font-size: 1.09375rem;
 $toast-background-color: #a4d1ea;
 $toast-color: $black;

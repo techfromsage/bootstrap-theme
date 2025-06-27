@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget('./scss');
+  eleventyConfig.addWatchTarget("./scss");
   eleventyConfig.addPassthroughCopy("./src/css");
   return {
     pathPrefix: "/bootstrap-theme/",
