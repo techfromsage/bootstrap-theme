@@ -15,20 +15,26 @@
     <title>Playlist | Talis</title>
   </head>
   <body>
-  <div class="container">
+    <div class="container">
      
 <h1 class="mb-3">Encouraging deeper discussion</h1>
 
 <table class="table table-striped o-table--sortable">
-  <caption class="visually-hidden">Playlist resources</caption>
+  <caption class="visually-hidden">
+    Playlist resources
+  </caption>
   <colgroup>
-    <col>
-    <col>
-</colgroup>
+    <col />
+    <col />
+  </colgroup>
   <thead>
     <tr>
       <th id="colTitle" scope="col" class="p-0">
-        <button type="button" class="btn o-table__sort-btn" onclick="toggleSort(this.id, 'colTitle', 1)">
+        <button
+          type="button"
+          class="btn o-table__sort-btn"
+          onclick="toggleSort(this.id, 'colTitle', 1)"
+        >
           <span>Title</span>
           <i class="fa fa-sort fa-fw o-table__sort-btn__arrow--both"></i>
           <i class="fa fa-sort-up fa-fw o-table__sort-btn__arrow--up"></i>
@@ -36,29 +42,37 @@
         </button>
       </th>
       <th id="colDate" scope="col" class="p-0">
-        <button type="button" class="btn o-table__sort-btn" onclick="toggleSort(this.id, 'colDate', 2)">
+        <button
+          type="button"
+          class="btn o-table__sort-btn"
+          onclick="toggleSort(this.id, 'colDate', 2)"
+        >
           <span>Date uploaded</span>
           <i class="fa fa-sort fa-fw o-table__sort-btn__arrow--both"></i>
           <i class="fa fa-sort-up fa-fw o-table__sort-btn__arrow--up"></i>
           <i class="fa fa-sort-down fa-fw o-table__sort-btn__arrow--down"></i>
         </button>
       </th>
-      <th id="colActions" scope="col">
-        Actions
-      </th>
+      <th id="colActions" scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
         <div class="d-flex align-items-center">
-          <img class="me-3" src="https://via.placeholder.com/48x68" alt="" width="50" height="68"
-            style="max-width: 50px; height: auto;" />
-          <div style="max-width: 25vw;">
-
-            <a href="/bootstrap-theme/otis/module">The Impact of Digitalization on Literacy - Digital
-              Immigrants
-              vs Digital Natives</a>
+          <img
+            class="me-3"
+            src="https://via.placeholder.com/48x68"
+            alt=""
+            width="50"
+            height="68"
+            style="max-width: 50px; height: auto"
+          />
+          <div style="max-width: 25vw">
+            <a href="/bootstrap-theme/otis/module"
+              >The Impact of Digitalization on Literacy - Digital Immigrants vs
+              Digital Natives</a
+            >
             <p class="m-0 text-truncate">
               Considering the speed at which new digital technologies are
               evolving, this paper aims to investigate the impact of digital
@@ -74,13 +88,19 @@
     <tr>
       <td>
         <div class="d-flex align-items-center">
-          <img class="me-3" src="https://via.placeholder.com/48x68" alt="" width="50" height="68"
-            style="max-width: 50px; height: auto;" />
-          <div style="max-width: 25vw;">
-
-            <a href="/bootstrap-theme/otis/module">The Impact of Digitalization on Literacy - Digital
-              Immigrants
-              vs Digital Natives</a>
+          <img
+            class="me-3"
+            src="https://via.placeholder.com/48x68"
+            alt=""
+            width="50"
+            height="68"
+            style="max-width: 50px; height: auto"
+          />
+          <div style="max-width: 25vw">
+            <a href="/bootstrap-theme/otis/module"
+              >The Impact of Digitalization on Literacy - Digital Immigrants vs
+              Digital Natives</a
+            >
             <p class="m-0 text-truncate">
               Considering the speed at which new digital technologies are
               evolving, this paper aims to investigate the impact of digital
@@ -96,13 +116,19 @@
     <tr>
       <td>
         <div class="d-flex align-items-center">
-          <img class="me-3" src="https://via.placeholder.com/48x68" alt="" width="50" height="68"
-            style="max-width: 50px; height: auto;" />
-          <div style="max-width: 25vw;">
-
-            <a href="/bootstrap-theme/otis/module">The Impact of Digitalization on Literacy - Digital
-              Immigrants
-              vs Digital Natives</a>
+          <img
+            class="me-3"
+            src="https://via.placeholder.com/48x68"
+            alt=""
+            width="50"
+            height="68"
+            style="max-width: 50px; height: auto"
+          />
+          <div style="max-width: 25vw">
+            <a href="/bootstrap-theme/otis/module"
+              >The Impact of Digitalization on Literacy - Digital Immigrants vs
+              Digital Natives</a
+            >
             <p class="m-0 text-truncate">
               Considering the speed at which new digital technologies are
               evolving, this paper aims to investigate the impact of digital
@@ -116,39 +142,38 @@
       </td>
     </tr>
   </tbody>
-
 </table>
 
 <script>
   function toggleSort(btnId, colId, colNum) {
-    const button = document.getElementById(btnId);
-    const column = document.getElementById(colId);
-    const sortedCol = document.querySelector(`col:nth-child(${colNum}`);
+    const button = document.getElementById(btnId)
+    const column = document.getElementById(colId)
+    const sortedCol = document.querySelector(`col:nth-child(${colNum}`)
 
-    const currentSort = column.getAttribute('aria-sort');
+    const currentSort = column.getAttribute("aria-sort")
 
-    if (currentSort == 'descending') {
-      clearSorts();
-      column.setAttribute('aria-sort', 'ascending');
+    if (currentSort == "descending") {
+      clearSorts()
+      column.setAttribute("aria-sort", "ascending")
     } else {
-      clearSorts();
-      column.setAttribute('aria-sort', 'descending');
+      clearSorts()
+      column.setAttribute("aria-sort", "descending")
     }
 
-    sortedCol.classList.add('sorted');
+    sortedCol.classList.add("sorted")
   }
 
   function clearSorts() {
-    const thSort = document.querySelectorAll('*[aria-sort]');
-    const tdSort = document.querySelectorAll('.sorted');
-    const thButton = document.querySelectorAll('th > button');
+    const thSort = document.querySelectorAll("*[aria-sort]")
+    const tdSort = document.querySelectorAll(".sorted")
+    const thButton = document.querySelectorAll("th > button")
 
     for (var i = 0; i < thSort.length; i++) {
-      thSort[i].removeAttribute("aria-sort");
+      thSort[i].removeAttribute("aria-sort")
     }
 
     for (var i = 0; i < tdSort.length; i++) {
-      tdSort[i].classList.remove('sorted');
+      tdSort[i].classList.remove("sorted")
     }
   }
 </script>

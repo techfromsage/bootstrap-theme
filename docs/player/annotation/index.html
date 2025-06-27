@@ -34,65 +34,73 @@
 
     <div class="container ">
 <div class="row">
-<main class="col-9">
-  <article>
-    <ol class="list-unstyled pages">
-      <li class="page">
-        <img class="img-fluid" src="/bootstrap-theme/assets/img/page.png" alt="">
+  <main class="col-9">
+    <article>
+      <ol class="list-unstyled pages">
+        <li class="page">
+          <img
+            class="img-fluid"
+            src="/bootstrap-theme/assets/img/page.png"
+            alt=""
+          />
+        </li>
+      </ol>
+    </article>
+  </main>
+  <aside class="col-3">
+    <h2>Class comments</h2>
+    <button
+      type="button"
+      class="btn btn-primary js-add-comment mb-4"
+      onclick="showCommentForm()"
+    >
+      Add class comment
+    </button>
+    <form class="mb-4" hidden onsubmit="submitComment(event)">
+      <div class="form-group">
+        <label>Your comment</label>
+        <textarea class="form-control" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit comment</button>
+      <button type="button" class="btn btn-default" onclick="hideCommentForm()">
+        Cancel
+      </button>
+    </form>
+    <ol class="list-unstyled" id="comments">
+      <li>
+        <div>
+          <div>
+            <b>Barry Whatshisface</b>
+          </div>
+          <p>a really good comment cheers</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            <b>Naomi Whatshername</b>
+          </div>
+          <p>This is a very well thought out point. Thank you for sharing.</p>
+        </div>
       </li>
     </ol>
-  </article>
-</main>
-<aside class="col-3">
-  <h2>Class comments</h2>
-  <button type="button" class="btn btn-primary js-add-comment mb-4" onclick="showCommentForm()">Add class comment</button>
-  <form class="mb-4" hidden onsubmit="submitComment(event)">
-    <div class="form-group">
-      <label>Your comment</label>
-      <textarea class="form-control" rows="3"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit comment</button>
-    <button type="button" class="btn btn-default" onclick="hideCommentForm()">Cancel</button>
-  </form>
-  <ol class="list-unstyled" id="comments">
-    <li>
-      <div>
-        <div>
-          <b>Barry Whatshisface</b>
-        </div>
-        <p>
-          a really good comment cheers
-        </p>
-      </div>
-    </li>
-    <li>
-      <div>
-        <div>
-          <b>Naomi Whatshername</b>
-        </div>
-        <p>
-          This is a very well thought out point. Thank you for sharing.
-        </p>
-      </div>
-    </li>
-  </ol>
-</aside>
+  </aside>
 </div>
 <template id="comment">
-<li>
-  <div>
+  <li>
     <div>
-      <b>Your Name-Here</b>
+      <div>
+        <b>Your Name-Here</b>
+      </div>
+      <p class="comment__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
     </div>
-    <p class="comment__content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
-  </div>
   </li>
 </template>
 <style>
   nav {
-    background-color: #E9ECEF;
+    background-color: #e9ecef;
   }
 
   .page {
@@ -102,35 +110,35 @@
 </style>
 <script>
   function showCommentForm() {
-    document.forms[0].hidden = false;
+    document.forms[0].hidden = false
   }
 
   function hideCommentForm() {
-    document.forms[0].elements[0].value = null;
-    document.forms[0].hidden = true;
+    document.forms[0].elements[0].value = null
+    document.forms[0].hidden = true
   }
 
   function submitComment(event) {
-    event.preventDefault();
-    const comment = document.querySelector('textarea').value;
+    event.preventDefault()
+    const comment = document.querySelector("textarea").value
 
     if (!comment) {
-      return false;
+      return false
     }
 
-    addComment(comment);
-    hideCommentForm();
+    addComment(comment)
+    hideCommentForm()
   }
 
   function addComment(content) {
-    const list = document.getElementById('comments');
-    const template = document.getElementById('comment');
+    const list = document.getElementById("comments")
+    const template = document.getElementById("comment")
 
-    const clone = template.content.cloneNode(true);
-    const comment = clone.querySelector('.comment__content');
-    comment.textContent = content;
+    const clone = template.content.cloneNode(true)
+    const comment = clone.querySelector(".comment__content")
+    comment.textContent = content
 
-    list.prepend(clone);
+    list.prepend(clone)
   }
 </script>
 </div>
