@@ -15,6 +15,12 @@ parameters:
     default: v2-dependencies-{{ checksum "package-lock.json" }}
 
 commands:
+  add_deploy_key:
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:y6uCZBdmwmyfwepi7fDRF8wN0IVPMKq8MmKYLyFwLuY"
+
   restore_cache_node_modules:
     steps:
       - restore_cache:
@@ -58,6 +64,7 @@ jobs:
   lint_and_test:
     <<: *executor_node
     steps:
+      - add_deploy_key
       - checkout
       - restore_cache_node_modules
       - run:
@@ -83,6 +90,7 @@ jobs:
   publish_release:
     <<: *executor_node
     steps:
+      - add_deploy_key
       - checkout
       - restore_cache_node_modules
       - run:
