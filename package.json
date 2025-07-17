@@ -16,9 +16,9 @@
   "homepage": "https://github.com/techfromsage/bootstrap-theme#readme",
   "scripts": {
     "build": "npm-run-all build:*",
+    "build:assets": "mkdir -p docs/assets && cp -r assets/* docs/assets/",
     "build:css": "sass scss/:docs/assets/css/ --style=compressed --load-path=node_modules --source-map",
     "build:eleventy": "eleventy",
-    "build:img": "cp -r assets/img docs/assets",
     "format": "npm-run-all format:*",
     "format:prettier": "prettier --write .",
     "format:stylelint": "stylelint scss/ --fix",
