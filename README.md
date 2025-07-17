@@ -81,10 +81,6 @@ $enable-shadows: false;
 @import "theme";
 ```
 
-Alternatively, you can temporarily use the following file which is hosted on GitHub pages:
-
-https://techfromsage.github.io/bootstrap-theme/assets/css/talis.css
-
 ## Contributing
 
 1. Ensure you have installed https://github.com/nvm-sh/nvm
@@ -138,10 +134,9 @@ The following npm scripts are available.
 | `docs`        | Builds the Eleventy-powered documentation site                                                           |
 | `server`      | Starts a local server (<http://localhost:3000>) for development                                          |
 | `watch`       | Automatically recompiles CSS as it watches the `scss` directory for changes                              |
-| `css`         | Runs `css-compile` and `css-prefix`                                                                      |
+| `css`         | Runs `css-compile`.                                                                                      |
 | `css-compile` | Compiles source Sass into CSS                                                                            |
 | `lint`        | Runs [Prettier] over sources, and [Stylelint](https://stylelint.io) against source Sass for code quality |
-| `css-prefix`  | Runs [Autoprefixer](https://github.com/postcss/autoprefixer) on the compiled CSS                         |
 | `test`        | Runs `css-lint` and `css`, in sequential order                                                           |
 
 ### Stylelint
