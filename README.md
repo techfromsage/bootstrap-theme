@@ -81,10 +81,6 @@ $enable-shadows: false;
 @import "theme";
 ```
 
-Alternatively, you can temporarily use the following file which is hosted on GitHub pages:
-
-https://techfromsage.github.io/bootstrap-theme/assets/css/talis.css
-
 ## Contributing
 
 1. Ensure you have installed https://github.com/nvm-sh/nvm
