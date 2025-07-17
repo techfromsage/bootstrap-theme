@@ -129,15 +129,13 @@ npm run build
 
 The following npm scripts are available.
 
-| Script        | Description                                                                                              |
-| ------------- | -------------------------------------------------------------------------------------------------------- |
-| `docs`        | Builds the Eleventy-powered documentation site                                                           |
-| `server`      | Starts a local server (<http://localhost:3000>) for development                                          |
-| `watch`       | Automatically recompiles CSS as it watches the `scss` directory for changes                              |
-| `css`         | Runs `css-compile`.                                                                                      |
-| `css-compile` | Compiles source Sass into CSS                                                                            |
-| `lint`        | Runs [Prettier] over sources, and [Stylelint](https://stylelint.io) against source Sass for code quality |
-| `test`        | Runs `css-lint` and `css`, in sequential order                                                           |
+| Script      | Description                                                                                              |
+| ----------- | -------------------------------------------------------------------------------------------------------- |
+| `docs`      | Builds the Eleventy-powered documentation site                                                           |
+| `server`    | Starts a local server (<http://localhost:3000>) for development                                          |
+| `build:css` | Compiles source Sass into CSS                                                                            |
+| `watch`     | Runs `build:css` in watch-mode, recompiling CSS as the `scss` directory changes                          |
+| `lint`      | Runs [Prettier] over sources, and [Stylelint](https://stylelint.io) against source Sass for code quality |
 
 ### Stylelint
 
