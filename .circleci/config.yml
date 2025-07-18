@@ -75,6 +75,9 @@ jobs:
           name: "Lint"
           command: npm run lint
       - run:
+          name: "Remove docs directory - to ensure all files are produced by build"
+          command: rm -rf docs
+      - run:
           name: "Build"
           command: npm run build
       - run:
