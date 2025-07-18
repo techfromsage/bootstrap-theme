@@ -5,7 +5,7 @@ validator.addValidator("email", [
     method: function (field) {
       return field.value.length > 0;
     },
-    message: "Field cannot be empty",
+    message: "Enter your email address",
   },
   {
     method: function (field) {
@@ -19,7 +19,7 @@ validator.addValidator("password", [
     method: function (field) {
       return field.value.length > 0;
     },
-    message: "Field cannot be empty",
+    message: "Enter your password",
   },
   {
     method: function (field) {
@@ -33,7 +33,7 @@ validator.addValidator("message", [
     method: function (field) {
       return field.value.length > 0;
     },
-    message: "Field cannot be empty",
+    message: "Enter your message",
   },
   {
     method: function (field) {
@@ -42,10 +42,25 @@ validator.addValidator("message", [
     message: "Your message cannot exceed 240 characters.",
   },
 ]);
+validator.addValidator("date--start", [
+  {
+    method: function (field) {
+      return field.value.length > 0;
+    },
+    message: "A rather lengthy string as if this text has been translated into a very verbose language. There is lots going on here.",
+  }
+]);
+validator.addValidator("date--end", [
+  {
+    method: function (field) {
+      return field.value.length > 0;
+    },
+    message: "End date cannot be empty.",
+  }
+]);
 
 const messageBox = new CharacterCountdown(document.getElementById('message'), {maxLength: 240});
 const password = new PasswordRevealer(document.getElementById('password'))
-
 
 // Fetch all the forms we want to apply custom Bootstrap validation styles to
 var forms = document.querySelectorAll('.needs-validation')
