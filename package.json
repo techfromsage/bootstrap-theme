@@ -4,6 +4,10 @@
     "type": "git",
     "url": "git+https://github.com/techfromsage/bootstrap-theme.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "private": false,
   "version": "3.1.0",
   "description": "A theme to make Bootstrap look like Talis",
   "license": "ISC",
