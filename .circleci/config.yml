@@ -118,7 +118,6 @@ workflows:
             branches:
               ignore:
                 - main
-                - /^renovate\/.*/
       - lint_and_test:
           requires:
             - start_build
