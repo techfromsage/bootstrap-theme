@@ -9,9 +9,9 @@
     ":maintainLockFilesWeekly",
     "schedule:weekends"
   ],
-  "autoApprove": false,
+  "autoApprove": true,
   "automergeType": "pr",
-  "automerge": false,
+  "automerge": true,
   "configMigration": true,
   "labels": ["dependencies"],
   "lockFileMaintenance": {
